@@ -1,0 +1,144 @@
+{
+  "configuration": {
+    "decision_date": "2026-10-29",
+    "status": "exploratory on previously examined dates and current-survivor selected securities",
+    "data": "equity_daily_expanded_2016_2026-10-27",
+    "stocks": 200,
+    "benchmark": "SPY",
+    "no_additional_download": true,
+    "primary_models": [
+      "SPY_only",
+      "SPY_PCA3"
+    ],
+    "additional_comparators": [
+      "Sector11",
+      "Average11",
+      "SPY_PCA10"
+    ],
+    "primary_lookback": 120,
+    "sensitivity_lookback": 252,
+    "eligibility": "272 complete contiguous prior log returns ending t-1; same admitted stocks across windows/models; no future availability filtering",
+    "signal": "one-session vendor-adjusted close-to-close log return at t",
+    "training": "prior observations t-lookback:t, exclusive of signal day",
+    "weights": "inverse prior total-return variance; daily sigma floor 0.0001",
+    "holdings": "minus W times cross-sectional WLS residual, normalized to unit gross; no caps",
+    "exposures": "SPY_only: dollars+SPY beta; PCA3/PCA10: additional raw-return-scaled residual PCs; sectors/average: 11 group indicators+SPY beta",
+    "pca_scaling": "standardize prior SPY residual histories; raw exposure basis = residual_sigma[:,None] * right_singular_vectors",
+    "primary_execution": "next vendor raw daily-bar open to same session raw close; ideal fractional-dollar targets, flat nightly",
+    "horizon_response": "1/5/20-session cumulative all-adjusted next-open-to-exit-close returns of frozen initial sleeves; common complete 20-session dates, omit split-crossing events; not a funded overlapping-cohort strategy",
+    "horizon_slope": "pooled e'W R / e'W e; equivalent to future formation-exposure residual/sigma on signal residual/sigma; negative indicates reversal",
+    "universe_control": "rerun original30 SPY_only and PCA3 on identical dates/windows; groups/PCA10 comparators only expanded200",
+    "split": "entry before 2024-01-01 development, otherwise later; not untouched holdout",
+    "descriptive_PCA": "2016-2023 only, balance using availability in that period only; original30 and expanded200; standardized raw log returns; full-panel membership is not used for backtest admission",
+    "uncertainty": "1000 circular moving-block resamples of 60 formation dates per period; pointwise approximate 95%; paired broad-minus-original control uses identical resamples",
+    "reported_selection": "all declared models/windows/periods; no winning setting selected",
+    "state_features": "save past-fit mean residual correlation, residual PC1 share, H0 death quantiles, prior SPY volatility as potential regime inputs; no state-to-profit model fitted",
+    "representation_snapshot": "formation 2023-12-29, prior 252 sessions, current admitted stocks; stock residual-history geometry, full weighted loadings identity control, top3 weighted loading geometry, and day points in top3 factor-score space",
+    "snapshot_scaling": "each non-control distance matrix divided by its own positive median pair distance for diagram comparison; raw scale saved separately",
+    "persistence": "snapshot H0/H1 Vietoris-Rips, finite intervals saved; no interpretation as economic cycles, significance, calendar duration, or profitable regimes",
+    "fees": "excluded entirely",
+    "regime_filter": false,
+    "seed": 2026102901
+  },
+  "checks": {
+    "causal_training_and_entry": true,
+    "common_past_only_admission": true,
+    "expected_full_exposure_ranks": true,
+    "no_missing_target_member_filtering": true,
+    "original30_SVD_matches_frozen_eigendecomposition": true,
+    "protected_artifacts_unchanged": true
+  },
+  "descriptive_PCA": [
+    {
+      "universe": "original30",
+      "stocks": 30,
+      "omitted_short_histories": [],
+      "return_observations": 2011,
+      "first_date": "2016-01-05",
+      "last_date": "2023-12-29",
+      "PC1_fraction": 0.43591405187350507,
+      "PC3_cumulative": 0.6077910797113998,
+      "PC10_cumulative": 0.8042659696484544,
+      "PC1_SPY_correlation": 0.9275479767051645
+    },
+    {
+      "universe": "expanded200",
+      "stocks": 182,
+      "omitted_short_histories": [
+        "ABNB",
+        "APP",
+        "BE",
+        "BKR",
+        "CEG",
+        "CRWD",
+        "DASH",
+        "DDOG",
+        "DELL",
+        "GEV",
+        "HOOD",
+        "HWM",
+        "LIN",
+        "MRNA",
+        "PLTR",
+        "SNDK",
+        "UBER",
+        "VRT"
+      ],
+      "return_observations": 2011,
+      "first_date": "2016-01-05",
+      "last_date": "2023-12-29",
+      "PC1_fraction": 0.41228777727311855,
+      "PC3_cumulative": 0.5138700467702632,
+      "PC10_cumulative": 0.6126606852924116,
+      "PC1_SPY_correlation": 0.9738098552145009
+    }
+  ],
+  "representation_control": {
+    "full_weighted_loading_distance_identity_max_error": 8.631984016460592e-15,
+    "snapshot_results": [
+      {
+        "representation": "Stocks_return_history",
+        "points": 198,
+        "original_median_distance": 1.4009623710077486,
+        "finite_H0_bars": 197,
+        "finite_H1_bars": 184,
+        "H1_max_lifetime_normalized": 0.10965186357498169
+      },
+      {
+        "representation": "Stocks_top3_loadings",
+        "points": 198,
+        "original_median_distance": 0.5843643833289155,
+        "finite_H0_bars": 197,
+        "finite_H1_bars": 68,
+        "H1_max_lifetime_normalized": 0.17470259964466095
+      },
+      {
+        "representation": "Days_top3_scores",
+        "points": 252,
+        "original_median_distance": 7.7282666982261725,
+        "finite_H0_bars": 251,
+        "finite_H1_bars": 90,
+        "H1_max_lifetime_normalized": 0.16525417566299438
+      }
+    ]
+  },
+  "max_initial_scaled_exposure_error": 4.656137352742412e-14,
+  "max_original30_SVD_eigendecomposition_holdings_error": 4.683753385137379e-16,
+  "daily_dates_by_period": {
+    "development": 1738,
+    "later": 708
+  },
+  "source_sha256": "f06decb8249c323638fbca3ebb4feebbc9452a01601d8a31b5c126430762a898",
+  "protected_sha256": {
+    "market_data/datasets/equity_daily_expanded_2016_2026-10-27/returns_log.csv": "c779b4ea9c20213459f49aa8d7f327cc2876d5e23140a650c236382b0c413a2a",
+    "market_data/datasets/equity_daily_expanded_2016_2026-10-27/bars_raw.csv": "29f088cee3ffd064017f4aad7e4e9968a18830eae2497e601f824b2ba90465fe",
+    "market_data/datasets/equity_daily_expanded_2016_2026-10-27/bars_all.csv": "ae0886190f55ea04648e8de3a1291b85898b6d08a752a89a844c7ab2c2f0ce11",
+    "market_data/datasets/equity_daily_expanded_2016_2026-10-27/universe.csv": "48b808035b20fde59881882b67f5091678651bf7efffbb79cb9c5a535c0e4729",
+    "experiments/equity_residual_backtest.py": "749bed2490f838060445e6371c2dcf4283be21fc47997b66451cefa0a2785c19",
+    "experiments/equity_residual_backtest/evaluated/summary.json": "08718da1d66bf33265ea0348fa055c21afab7f2ac96887fd99e48841647df7aa",
+    "experiments/equity_expanded_structure.py": "62c30cf3faa98c4fd8a3e68f988108af1dfcedbb142e025eeed1ba8de790dff8",
+    "experiments/equity_expanded_structure/summary.json": "033b6c1460b25d7fb41881f9bc22bfebd2cb7db1c5c99d2fa19bb16fd55f2335",
+    "experiments/equity_reversal_response.py": "4c8a266a0bfafd3957713d69492e4ce89f245589d62ed77c0c4fa9f6015131db",
+    "experiments/equity_reversal_response/summary.json": "ab798a73eca573a0cedf85e2fdef5c14fc4365f7933c9ea4a343afcd7fb6a72d"
+  }
+}

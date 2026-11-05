@@ -1,0 +1,112 @@
+{
+  "url": "https://api.tardis.dev/v1/data-feeds/deribit?from=2025-01-01&offset=0&filters=%5B%7B%22channel%22%3A%22book%22%2C%22symbols%22%3A%5B%22BTC-PERPETUAL%22%5D%7D%2C%7B%22channel%22%3A%22trades%22%2C%22symbols%22%3A%5B%22BTC-PERPETUAL%22%5D%7D%5D",
+  "requested_at": "2026-10-29T15:02:14.514752+00:00",
+  "date": "2025-01-01",
+  "requested_minutes": 1,
+  "http_status": 200,
+  "content_encoding": "gzip",
+  "bytes": 209652,
+  "sha256": "d92beaee4ce61b4c5a02c3c7950fc2fc07338d1c5369aa6642b70d7df2bb4c84",
+  "channel_message_counts": {
+    "book.BTC-PERPETUAL.raw": 8653,
+    "trades.BTC-PERPETUAL.raw": 16
+  },
+  "native_snapshots": 1,
+  "native_changes": 8652,
+  "native_change_id_gaps": 0,
+  "book_changes_before_snapshot": 0,
+  "blank_disconnect_markers": 0,
+  "examples": {
+    "book_snapshot": {
+      "local_timestamp": "2025-01-01T00:00:00.2255729Z",
+      "channel": "book.BTC-PERPETUAL.raw",
+      "data": {
+        "timestamp": 1735689600214,
+        "type": "snapshot",
+        "change_id": 83976779525,
+        "instrument_name": "BTC-PERPETUAL",
+        "bids": [
+          [
+            "new",
+            93445.5,
+            1320.0
+          ],
+          [
+            "new",
+            93444.5,
+            1320.0
+          ]
+        ],
+        "asks": [
+          [
+            "new",
+            93446.0,
+            259000.0
+          ],
+          [
+            "new",
+            93446.5,
+            44800.0
+          ]
+        ]
+      }
+    },
+    "book_change": {
+      "local_timestamp": "2025-01-01T00:00:00.2258093Z",
+      "channel": "book.BTC-PERPETUAL.raw",
+      "data": {
+        "timestamp": 1735689600219,
+        "type": "change",
+        "change_id": 83976779526,
+        "instrument_name": "BTC-PERPETUAL",
+        "bids": [],
+        "asks": [
+          [
+            "new",
+            93652.5,
+            1353770.0
+          ],
+          [
+            "delete",
+            93698.0,
+            0.0
+          ]
+        ],
+        "prev_change_id": 83976779525
+      }
+    },
+    "trades.BTC-PERPETUAL.raw": {
+      "local_timestamp": "2025-01-01T00:00:01.6423375Z",
+      "channel": "trades.BTC-PERPETUAL.raw",
+      "data": [
+        {
+          "timestamp": 1735689601635,
+          "price": 93445.5,
+          "amount": 1320.0,
+          "direction": "sell",
+          "index_price": 93369.38,
+          "instrument_name": "BTC-PERPETUAL",
+          "trade_seq": 230579797,
+          "mark_price": 93434.62,
+          "tick_direction": 2,
+          "contracts": 132.0,
+          "trade_id": "338110692"
+        },
+        {
+          "timestamp": 1735689601635,
+          "price": 93444.5,
+          "amount": 1320.0,
+          "direction": "sell",
+          "index_price": 93369.38,
+          "instrument_name": "BTC-PERPETUAL",
+          "trade_seq": 230579798,
+          "mark_price": 93434.62,
+          "tick_direction": 2,
+          "contracts": 132.0,
+          "trade_id": "338110693"
+        }
+      ]
+    }
+  },
+  "scope": "One requested historical minute; not a full-day native continuity audit"
+}

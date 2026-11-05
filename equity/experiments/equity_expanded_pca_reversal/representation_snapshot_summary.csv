@@ -1,0 +1,4 @@
+representation,points,original_median_distance,finite_H0_bars,finite_H1_bars,H1_max_lifetime_normalized
+Stocks_return_history,198,1.4009623710077486,197,184,0.10965186357498169
+Stocks_top3_loadings,198,0.5843643833289155,197,68,0.17470259964466095
+Days_top3_scores,252,7.7282666982261725,251,90,0.16525417566299438

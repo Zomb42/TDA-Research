@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-29",
+  "existing_audits_passed": 8,
+  "legacy_reconstruction_passed": true,
+  "original_files_in_snapshot": 476,
+  "unchanged_original_files_after_documentation_updates": 472,
+  "intentionally_updated_existing_files": [
+    "equity/EQUITY_NEXT_STEPS.md",
+    "equity/EQUITY_PROGRESS_REPORT.md",
+    "equity/EQUITY_RESEARCH_LOG.md",
+    "equity/README.md"
+  ],
+  "original_data_result_code_and_notebooks_unchanged": true,
+  "return_metric_rows": 165,
+  "strategies": 33,
+  "notebooks": 11,
+  "matching_embedded_figures": 50,
+  "local_document_links_checked": 183,
+  "broken_links": [],
+  "aligned_plot_visually_checked": true,
+  "risk_plot_visually_checked": true,
+  "notes": "The only changed snapshotted files are four summary/navigation Markdown documents. No strategy, original numerical result, original plot or notebook was changed. START_HERE.md received only an equity-validation reference."
+}

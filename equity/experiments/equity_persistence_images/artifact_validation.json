@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "notebook_executed_without_errors_or_warnings": true,
+    "six_code_cells_four_embedded_figures": true,
+    "notebook_matches_reproducible_builder": true,
+    "new_python_sources_parse": true,
+    "new_figures_visually_checked": true,
+    "all_local_links_resolve": true,
+    "twelve_sequential_research_log_entries": true,
+    "audit_and_original_protected_hashes_match": true
+  },
+  "local_links_checked": 109,
+  "notebook_cells": 12,
+  "source_sha256": {
+    "equity/experiments/equity_persistence_images.py": "dd178f3dc01812f379513978b36db045a4e7d5b1394e22149736d0e2e6a0762a",
+    "equity/experiments/audit_equity_persistence_images.py": "1dd37d1390903b436b2adc112c74e796b3a223f52949ba1d3571f92d157811fe",
+    "equity/experiments/build_equity_persistence_images_notebook.py": "332b7dc078e1e1947b5e11b58533af9677e8b137b0d07468829249c0c761f255"
+  }
+}

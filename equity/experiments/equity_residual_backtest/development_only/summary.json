@@ -1,0 +1,144 @@
+{
+  "specification": {
+    "training_sessions": 120,
+    "residual_pcs": 3,
+    "volatility_floor_daily": 0.0001,
+    "models": [
+      "SPY_only",
+      "SPY_plus_3_residual_PCs"
+    ],
+    "signal": "one-session adjusted close-to-close log return at t",
+    "exposures_and_weights": "estimated from 120 return observations ending t-1",
+    "entry": "next session vendor daily-bar raw open; ideal fractional-dollar target fill",
+    "exit": "same entry session vendor daily-bar raw close; liquidate all positions",
+    "gross_per_starting_equity": 1.0,
+    "regression_weights": "inverse trailing total-return variance, floored",
+    "neutrality": "dollars, SPY beta; additional 3 residual-PC raw-return exposures for PCA model",
+    "per_side_execution_cost_bps": [
+      0,
+      1,
+      2,
+      5,
+      10
+    ],
+    "annual_borrow_cost_bps": [
+      0,
+      100,
+      500
+    ],
+    "primary_execution_cost_bps_per_side": 5,
+    "primary_annual_borrow_bps": 100,
+    "borrow_convention": "entry short notional * assumed annual rate / 252, charged each trade day",
+    "development_last_execution_date": "2023-12-31",
+    "evaluation_first_execution_date": "2024-01-01",
+    "annual_sessions": 252,
+    "newey_west_lags": 5,
+    "position_caps": null,
+    "signal_threshold": "numerical-zero only",
+    "cash_interest_financing": "omitted; gross and adjusted returns are compared to zero",
+    "selection": "fixed 2026-selected 30-stock basket; survivorship/selection bias remains",
+    "parameter_search": false
+  },
+  "specification_sha256": "9b92bebd8afcce07bcb039ca643f21eb74e3ed2e37d0967aace55c2f60549eaa",
+  "source_script_sha256": "749bed2490f838060445e6371c2dcf4283be21fc47997b66451cefa0a2785c19",
+  "input_sha256": {
+    "returns_log.csv": "2f1b0d66d17db0faeeed7c30b3fafc4685e204e2d79bf25962a271dcdebe42e9",
+    "bars_raw.csv": "2778902ebecd22a866782d521b8182e3666aea8d5beecc04c4984395253003d0",
+    "universe.csv": "bc0fa9f369a0b736089eb66e2e1f2a2ea6560cea08ea1b77e190f0eb23e36b19"
+  },
+  "checks": {
+    "weighted_neutrality": true,
+    "pure_factor_signal_zero": true,
+    "basis_invariance": true,
+    "hypothetical_reversal_sign": true,
+    "entry_and_exit_notional_cost_accounting": true,
+    "training_before_signal_before_execution": true
+  },
+  "paired_comparison": [
+    {
+      "period": "development",
+      "pca_minus_spy_mean_daily_bps": -0.8430821371977538,
+      "paired_hac95_low_bps": -2.0885506923002373,
+      "paired_hac95_high_bps": 0.4023864179047297
+    }
+  ],
+  "max_scaled_exposure_error": 3.185278960539698e-14,
+  "max_abs_SPY_beta_exposure": 7.513857349503978e-15,
+  "max_abs_position": 0.4617869703931476,
+  "average_traded_notional_per_day": 2.000186075469669,
+  "cash_signal_days": 0,
+  "performance": [
+    {
+      "period": "development",
+      "model": "SPY_only",
+      "scenario": "gross",
+      "first_date": "2016-06-28",
+      "last_date": "2023-12-29",
+      "days": 1890,
+      "mean_daily_bps": 0.49657525033642264,
+      "mean_daily_bps_hac95_low": -1.3459968126639081,
+      "mean_daily_bps_hac95_high": 2.3391473133367535,
+      "annualized_arithmetic_mean": 0.01251369630847785,
+      "annualized_volatility": 0.06820589477176307,
+      "sharpe_vs_zero": 0.1834694251919478,
+      "compound_annual_growth": 0.010235976655526224,
+      "total_compound_return": 0.07937220302477432,
+      "max_drawdown": -0.2296830871482669,
+      "positive_day_fraction": 0.5037037037037037
+    },
+    {
+      "period": "development",
+      "model": "SPY_only",
+      "scenario": "primary_cost_adjusted",
+      "first_date": "2016-06-28",
+      "last_date": "2023-12-29",
+      "days": 1890,
+      "mean_daily_bps": -9.702538469231799,
+      "mean_daily_bps_hac95_low": -11.54516265320982,
+      "mean_daily_bps_hac95_high": -7.85991428525378,
+      "annualized_arithmetic_mean": -0.24450396942464134,
+      "annualized_volatility": 0.06820206240235703,
+      "sharpe_vs_zero": -3.5849937789592623,
+      "compound_annual_growth": -0.21882540550242757,
+      "total_compound_return": -0.8431043763512246,
+      "max_drawdown": -0.8433690542577148,
+      "positive_day_fraction": 0.36507936507936506
+    },
+    {
+      "period": "development",
+      "model": "SPY_plus_3_residual_PCs",
+      "scenario": "gross",
+      "first_date": "2016-06-28",
+      "last_date": "2023-12-29",
+      "days": 1890,
+      "mean_daily_bps": -0.3465068868613309,
+      "mean_daily_bps_hac95_low": -1.7667263175091736,
+      "mean_daily_bps_hac95_high": 1.0737125437865118,
+      "annualized_arithmetic_mean": -0.00873197354890554,
+      "annualized_volatility": 0.05044043981946334,
+      "sharpe_vs_zero": -0.17311454024110537,
+      "compound_annual_growth": -0.00995742135677069,
+      "total_compound_return": -0.07230750138499642,
+      "max_drawdown": -0.19981309662637603,
+      "positive_day_fraction": 0.49523809523809526
+    },
+    {
+      "period": "development",
+      "model": "SPY_plus_3_residual_PCs",
+      "scenario": "primary_cost_adjusted",
+      "first_date": "2016-06-28",
+      "last_date": "2023-12-29",
+      "days": 1890,
+      "mean_daily_bps": -10.546079318815195,
+      "mean_daily_bps_hac95_low": -11.966422890425928,
+      "mean_daily_bps_hac95_high": -9.125735747204466,
+      "annualized_arithmetic_mean": -0.26576119883414295,
+      "annualized_volatility": 0.050438938027060745,
+      "sharpe_vs_zero": -5.268968959884935,
+      "compound_annual_growth": -0.2344641007401087,
+      "total_compound_return": -0.8651839151401621,
+      "max_drawdown": -0.8654245208570613,
+      "positive_day_fraction": 0.3232804232804233
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "checked_at": "2026-10-29T15:46:43.798915+00:00",
+  "orders_submitted": 0,
+  "paid_services_used": false,
+  "key_checks": [
+    {
+      "source_file": "secrets/cdp_api_key.json",
+      "field_names": [
+        "id",
+        "privateKey"
+      ],
+      "format": "Ed25519 seed+public",
+      "network_tested": false,
+      "reason": "Coinbase App documentation requires ECDSA; no algorithm guessing or key modification performed"
+    },
+    {
+      "source_file": "collector/misc/cdp_api_key.json",
+      "field_names": [
+        "name",
+        "privateKey"
+      ],
+      "format": "ECPrivateKey",
+      "curve": "secp256r1",
+      "network_tested": true,
+      "http_status": 200,
+      "permissions": {
+        "can_view": true,
+        "can_trade": false,
+        "can_transfer": false
+      }
+    }
+  ],
+  "current_snapshot": {
+    "url": "https://api.exchange.coinbase.com/products/BTC-USD/book?level=2",
+    "http_status": 200,
+    "uncompressed_bytes": 1069725,
+    "compressed_bytes": 286141,
+    "bid_levels": 20252,
+    "ask_levels": 20632,
+    "exchange_time": "2026-10-29T15:46:42.839816986Z",
+    "authentication_used": false
+  },
+  "live_volume_probe": {
+    "duration_seconds": 61.952206665999256,
+    "steady_observation_seconds": 60.637220415999764,
+    "message_counts": {
+      "l2_data": 714,
+      "subscriptions": 3,
+      "market_trades": 258,
+      "heartbeats": 55
+    },
+    "payload_bytes_by_channel": {
+      "l2_data": 8617513,
+      "subscriptions": 506,
+      "market_trades": 146871,
+      "heartbeats": 11258
+    },
+    "l2_event_counts": {
+      "snapshot": 1,
+      "update": 713
+    },
+    "l2_level_updates": 37687,
+    "initial_l2_snapshot_payload_bytes": 4505454,
+    "saved_gzip_bytes": 594854,
+    "authentication_used": false,
+    "estimated_l2_payload_mb_per_hour": 244.13078796227217,
+    "estimated_l2_payload_gb_per_day": 5.859138911094532,
+    "limitations": [
+      "One short live observation; traffic varies with activity and cannot establish historical availability.",
+      "Payload bytes exclude WebSocket/TLS framing. Daily estimate excludes recurring snapshots and is not a capacity guarantee.",
+      "Compressed total includes book, trades, heartbeats and local receipt envelopes."
+    ],
+    "connection_sequence_discontinuities": 0
+  },
+  "offline_replay": {
+    "source_sha256": "e300669ac798d6894dfddfe20b7297bd851e10bd30cc1b6db82dfa00dfa2c216",
+    "sequenced_messages": 1030,
+    "connection_sequence_discontinuities": 0,
+    "sequence_scope": "All subscribed channels on this captured connection, not L2 alone",
+    "snapshots": 1,
+    "replacement_level_updates": 37687,
+    "negative_quantities": 0,
+    "crossed_books_after_l2_event": 0,
+    "initial_best_quote": {
+      "bid": "81794.8",
+      "ask": "81794.81"
+    },
+    "final_best_quote": {
+      "bid": "81755.44",
+      "ask": "81755.45"
+    },
+    "final_bid_levels": 20248,
+    "final_ask_levels": 20632,
+    "steady_gzip_bytes": 278908,
+    "estimated_gzip_mb_per_hour": 16.558621802114562,
+    "estimated_gzip_gb_per_day": 0.39740692325074944,
+    "storage_scope": "Raw receipt envelopes for L2, public trades, subscriptions and heartbeats; initial L2 snapshot excluded",
+    "limitation": "Short local replay, not an independently reconciled historical archive or a long-run traffic forecast"
+  }
+}

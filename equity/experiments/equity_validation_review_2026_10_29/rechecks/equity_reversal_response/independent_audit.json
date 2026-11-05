@@ -1,0 +1,38 @@
+{
+  "checks": {
+    "thirteen_formation_dates_reconstructed_independently": true,
+    "truncating_future_does_not_change_formation": true,
+    "independent_peer_set_stability_reproduces": true,
+    "all_horizon_endpoints_reconstructed_at_sampled_dates": true,
+    "all_event_gross_contributions_reconcile": true,
+    "all_summary_slopes_and_gross_means_reproduce": true,
+    "all_bin_means_and_counts_reproduce": true,
+    "all_stability_subset_slopes_and_counts_reproduce": true,
+    "split_chronology_common_samples_and_protected_hashes_pass": true
+  },
+  "sampled_formation_dates": [
+    "2016-07-26",
+    "2017-05-26",
+    "2018-04-02",
+    "2019-02-01",
+    "2019-12-04",
+    "2020-10-06",
+    "2021-08-10",
+    "2022-06-13",
+    "2023-04-17",
+    "2024-03-18",
+    "2025-01-21",
+    "2025-11-21",
+    "2026-09-29"
+  ],
+  "max_absolute_independent_reconstruction_errors": {
+    "holding": 2.1788126858268697e-15,
+    "signal": 1.0269562977782698e-15,
+    "future": 9.974659986866641e-17,
+    "future_residual": 3.972516759986888e-15,
+    "stability": 2.220446049250313e-16
+  },
+  "all_model_horizon_slope_intervals_include_zero": true,
+  "all_model_horizon_gross_intervals_include_zero": true,
+  "all_high_minus_lower_stability_intervals_include_zero": true
+}

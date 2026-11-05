@@ -1,0 +1,15 @@
+{
+  "window_returns": 288,
+  "stride_bars": 288,
+  "embedding_dimension": 3,
+  "lag_bars": 3,
+  "bar_minutes": 5,
+  "max_points": 128,
+  "distance": "Euclidean",
+  "filtration": "Vietoris-Rips",
+  "max_homology_dimension": 1,
+  "normalization": "center and population-standardize the return window before embedding",
+  "point_selection": "128 deterministic evenly spaced delay vectors, including endpoints",
+  "zero_variance": "all-zero normalized signal; no division by zero",
+  "scope": "descriptive; no future labels or model fitting"
+}

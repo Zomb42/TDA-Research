@@ -1,0 +1,86 @@
+{
+  "bid": [
+    {
+      "display_side": "bid",
+      "yes_price_dollars": "0.7200",
+      "quantity_contracts": "37.23",
+      "source_side": "yes",
+      "source_bid_price_dollars": "0.7200",
+      "timestamp_utc": "2026-04-23T14:52:15+00:00"
+    },
+    {
+      "display_side": "bid",
+      "yes_price_dollars": "0.7100",
+      "quantity_contracts": "2938.29",
+      "source_side": "yes",
+      "source_bid_price_dollars": "0.7100",
+      "timestamp_utc": "2026-04-23T14:52:15+00:00"
+    },
+    {
+      "display_side": "bid",
+      "yes_price_dollars": "0.7000",
+      "quantity_contracts": "106.00",
+      "source_side": "yes",
+      "source_bid_price_dollars": "0.7000",
+      "timestamp_utc": "2026-04-23T14:52:15+00:00"
+    },
+    {
+      "display_side": "bid",
+      "yes_price_dollars": "0.6900",
+      "quantity_contracts": "289.00",
+      "source_side": "yes",
+      "source_bid_price_dollars": "0.6900",
+      "timestamp_utc": "2026-04-23T14:52:15+00:00"
+    },
+    {
+      "display_side": "bid",
+      "yes_price_dollars": "0.6800",
+      "quantity_contracts": "75.00",
+      "source_side": "yes",
+      "source_bid_price_dollars": "0.6800",
+      "timestamp_utc": "2026-04-23T14:52:15+00:00"
+    }
+  ],
+  "ask": [
+    {
+      "display_side": "ask",
+      "yes_price_dollars": "0.7300",
+      "quantity_contracts": "165.61",
+      "source_side": "no",
+      "source_bid_price_dollars": "0.2700",
+      "timestamp_utc": "2026-04-23T14:52:15+00:00"
+    },
+    {
+      "display_side": "ask",
+      "yes_price_dollars": "0.7400",
+      "quantity_contracts": "89.00",
+      "source_side": "no",
+      "source_bid_price_dollars": "0.2600",
+      "timestamp_utc": "2026-04-23T14:52:15+00:00"
+    },
+    {
+      "display_side": "ask",
+      "yes_price_dollars": "0.7500",
+      "quantity_contracts": "810.23",
+      "source_side": "no",
+      "source_bid_price_dollars": "0.2500",
+      "timestamp_utc": "2026-04-23T14:52:15+00:00"
+    },
+    {
+      "display_side": "ask",
+      "yes_price_dollars": "0.7600",
+      "quantity_contracts": "2487.97",
+      "source_side": "no",
+      "source_bid_price_dollars": "0.2400",
+      "timestamp_utc": "2026-04-23T14:52:15+00:00"
+    },
+    {
+      "display_side": "ask",
+      "yes_price_dollars": "0.7700",
+      "quantity_contracts": "95.00",
+      "source_side": "no",
+      "source_bid_price_dollars": "0.2300",
+      "timestamp_utc": "2026-04-23T14:52:15+00:00"
+    }
+  ]
+}

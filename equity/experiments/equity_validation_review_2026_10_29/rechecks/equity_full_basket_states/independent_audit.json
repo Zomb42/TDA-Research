@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "reference_membership_initial_past_only_and_complete": true,
+    "every_full_dimension_distance_and_control_reconstructed": true,
+    "all_H0_MST_pairs_match": true,
+    "selected_H1_diagrams_independently_recomputed": true,
+    "every_Wasserstein_distance_matches_independent_transport_LP": true,
+    "every_risk_and_mean_label_matches_actual_daily_trades": true,
+    "every_forecast_and_coefficient_matches_sklearn": true,
+    "exact_completed_label_memberships_and_calendar": true,
+    "all_gate_returns_and_reported_statistics_reproduced": true,
+    "all_pointwise_and_simultaneous_intervals_reproduced": true,
+    "protected_original_inputs_unchanged": true
+  },
+  "state_anchors_checked": 491,
+  "forecast_dates_checked": 379,
+  "target_model_fits_checked": 4548,
+  "max_geometry_error": 2.842170943040401e-14,
+  "max_H1_recomputation_W1": 1.4901161193847656e-08,
+  "max_transport_error": 1.070930011337623e-10,
+  "max_prediction_error": 2.007283228522283e-13,
+  "max_metric_error": 2.842170943040401e-14,
+  "audit_source_sha256": "3725de9cca0d2611b77130c98e04e911c645254c286ecdb8b5b03cb9951efba4"
+}

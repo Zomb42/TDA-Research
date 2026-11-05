@@ -1,0 +1,81 @@
+{
+  "source": "Tardis historical Deribit BTC-PERPETUAL",
+  "date": "2025-01-01",
+  "book": {
+    "rows": 15452352,
+    "snapshot_blocks": 2,
+    "snapshot_rows": 5837,
+    "update_rows": 15446515,
+    "zero_size_removals": 4571417,
+    "checkpoints": 1440,
+    "first_local_timestamp": 1735689600225572,
+    "last_local_timestamp": 1735775999955258,
+    "first_utc": "2025-01-01T00:00:00.225572+00:00",
+    "last_utc": "2025-01-01T23:59:59.955258+00:00",
+    "local_timestamp_regressions": 0,
+    "exchange_timestamp_regressions": 0,
+    "maximum_observed_message_gap_seconds": 9.182477,
+    "crossed_or_locked_sampled_books": 0,
+    "max_bid_levels_at_checkpoints": 1958,
+    "max_ask_levels_at_checkpoints": 1354,
+    "gzip_crc_verified": true,
+    "ended_in_snapshot_block": false,
+    "update_rule": "Replace the quantity at (side,price); zero removes. Snapshot blocks reset both sides.",
+    "limitation": "Normalized CSV omits native sequence numbers and explicit disconnect events; continuity cannot be independently established here."
+  },
+  "trades": {
+    "rows": 50816,
+    "columns": [
+      "exchange",
+      "symbol",
+      "timestamp",
+      "local_timestamp",
+      "id",
+      "side",
+      "price",
+      "amount"
+    ],
+    "sides": {
+      "sell": 26004,
+      "buy": 24812
+    },
+    "first_local_timestamp": 1735689601642337,
+    "last_local_timestamp": 1735775993900082,
+    "first_utc": "2025-01-01T00:00:01.642337+00:00",
+    "last_utc": "2025-01-01T23:59:53.900082+00:00",
+    "gzip_crc_verified": true,
+    "quantities": "Preserved in original Deribit units; instrument convention must be verified before BTC conversion."
+  },
+  "complete_source_files_downloaded": true,
+  "download_checksums": [
+    {
+      "url": "https://datasets.tardis.dev/v1/deribit/incremental_book_L2/2025/01/01/BTC-PERPETUAL.csv.gz",
+      "kind": "incremental_book_L2",
+      "requested_at": "2026-10-29T15:01:21.631632+00:00",
+      "http_status": 200,
+      "advertised_bytes": "124189509",
+      "advertised_md5": "\"8bb7fe10467a111849627514d7e6b4cd\"",
+      "received_at": "2026-10-29T15:01:25.237828+00:00",
+      "bytes": 124189509,
+      "sha256": "84e87870442c91df5f1a8860474c64c37a40ad6012f2c462cc6e6cb24997ff85",
+      "md5": "8bb7fe10467a111849627514d7e6b4cd",
+      "published_md5_verified": true
+    },
+    {
+      "url": "https://datasets.tardis.dev/v1/deribit/trades/2025/01/01/BTC-PERPETUAL.csv.gz",
+      "kind": "trades",
+      "requested_at": "2026-10-29T15:01:21.631929+00:00",
+      "http_status": 200,
+      "advertised_bytes": "557911",
+      "advertised_md5": "\"ed8eb432c227e32fc17c5e5b0157e06c\"",
+      "received_at": "2026-10-29T15:01:22.319926+00:00",
+      "bytes": 557911,
+      "sha256": "7b9095f13de03142da932f54917a06bc6d8d40beb151e2eaa1c2b6cb667ca6fc",
+      "md5": "ed8eb432c227e32fc17c5e5b0157e06c",
+      "published_md5_verified": true
+    }
+  ],
+  "native_exchange_message_access_tested": false,
+  "orders_submitted": 0,
+  "elapsed_seconds": 59.19743129200651
+}

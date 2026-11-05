@@ -1,0 +1,98 @@
+[
+  {
+    "name": "kalshi_margin_docs",
+    "url": "https://docs.kalshi.com/margin.md",
+    "requested_at": "2026-10-29T04:05:39.897268+00:00",
+    "status": 200,
+    "bytes": 6506,
+    "sha256": "330be2adc5f2308e8f55e950e808b46a0cba0b87e424ea5d7f34ad41d50df6ab"
+  },
+  {
+    "name": "kalshi_candles_docs",
+    "url": "https://docs.kalshi.com/margin-rest/market/get-market-candlesticks.md",
+    "requested_at": "2026-10-29T04:05:39.897652+00:00",
+    "status": 200,
+    "bytes": 11143,
+    "sha256": "675e4e880d2e689d40bb2a167ea1ed658f2ebf8a58ae2bbb3d267239242c0f3d"
+  },
+  {
+    "name": "kalshi_book_docs",
+    "url": "https://docs.kalshi.com/margin-rest/market/get-market-orderbook.md",
+    "requested_at": "2026-10-29T04:05:39.897772+00:00",
+    "status": 200,
+    "bytes": 5545,
+    "sha256": "0e366e9e81ce1a9f2a73e92868566848b3ebe13c6983bb3468d1c7fb7c0fefd9"
+  },
+  {
+    "name": "kalshi_stream_docs",
+    "url": "https://docs.kalshi.com/margin-ws/websockets/orderbook-updates.md",
+    "requested_at": "2026-10-29T04:05:39.897886+00:00",
+    "status": 200,
+    "bytes": 19507,
+    "sha256": "7eb36a5afc4011feeb04f955ad6500ba10dc3fb32399457afa67006d179ff605"
+  },
+  {
+    "name": "kalshi_markets",
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets?limit=100",
+    "requested_at": "2026-10-29T04:05:40.096725+00:00",
+    "status": 200,
+    "bytes": 49899,
+    "sha256": "5a547c6442fd47b79250e0258fe9cbb27c01b65bdaa55e1a4d125fec6d7e42d0"
+  },
+  {
+    "name": "kalshi_btc_book",
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/orderbook",
+    "requested_at": "2026-10-29T04:05:40.108450+00:00",
+    "status": 200,
+    "bytes": 5214,
+    "sha256": "3a451e997fef5c6dc0cbaef6eb8493981b7b5807c5edd2a018119f2a0ed6e9c5"
+  },
+  {
+    "name": "kalshi_btc_candles",
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1793059200&end_ts=1793145600&period_interval=60",
+    "requested_at": "2026-10-29T04:05:40.115019+00:00",
+    "status": 200,
+    "bytes": 11058,
+    "sha256": "0912967c59d9a8ce9e3698c2ce4ed6e4603b074e879aed1c867143a2cb44de4c"
+  },
+  {
+    "name": "hyperliquid_history_docs",
+    "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/historical-data.md",
+    "requested_at": "2026-10-29T04:05:40.118853+00:00",
+    "status": 200,
+    "bytes": 2331,
+    "sha256": "b9ba8cc7be9949cb9911d09014b2577381deacdf1ea844a7a58dbf73b0cd11ae"
+  },
+  {
+    "name": "binance_depth_sample",
+    "url": "https://data.binance.vision/data/futures/um/daily/bookDepth/BTCUSDT/BTCUSDT-bookDepth-2025-01-01.zip",
+    "requested_at": "2026-10-29T04:05:40.237497+00:00",
+    "status": 200,
+    "bytes": 463389,
+    "sha256": "fa37c9f66c96a95cf3081c5812d8e1d8fdbb0fc0df1c05989fd973492eaebd48",
+    "members": [
+      "BTCUSDT-bookDepth-2025-01-01.csv"
+    ],
+    "first_lines": [
+      "timestamp,percentage,depth,notional",
+      "2025-01-01 00:00:07,-5,9445.59000000,860670550.20650000",
+      "2025-01-01 00:00:07,-4,7939.65000000,726293373.33020000"
+    ]
+  },
+  {
+    "name": "binance_bars_sample",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/5m/BTCUSDT-5m-2025-01.zip",
+    "requested_at": "2026-10-29T04:05:40.246960+00:00",
+    "status": 200,
+    "bytes": 412755,
+    "sha256": "0c99422d64fa3cc58564cf77969fc5a96d6f44783c79ecfcf94b103753bf7570",
+    "members": [
+      "BTCUSDT-5m-2025-01.csv"
+    ],
+    "first_lines": [
+      "open_time,open,high,low,close,volume,close_time,quote_volume,count,taker_buy_volume,taker_buy_quote_volume,ignore",
+      "1735689600000,93548.80,93690.00,93514.20,93648.40,341.604,1735689899999,31982601.30680,8176,148.318,13885565.65110,0",
+      "1735689900000,93648.30,93666.70,93576.90,93585.90,166.341,1735690199999,15570568.36860,4688,82.529,7724997.75640,0"
+    ]
+  }
+]

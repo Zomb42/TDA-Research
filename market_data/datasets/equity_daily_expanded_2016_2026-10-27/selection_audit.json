@@ -1,0 +1,29 @@
+{
+  "holdings_asof": "2026-10-27",
+  "provider_equities": 505,
+  "eligible_equities": 504,
+  "selected_equities": 200,
+  "legacy_names_added": [],
+  "all_original_names_retained": true,
+  "rejected_provider_symbols": [
+    {
+      "symbol": "HOLX",
+      "reason": "absent or not active/tradable us_equity in current asset master"
+    }
+  ],
+  "sectors": [
+    "Communication",
+    "Consumer Discretionary",
+    "Consumer Staples",
+    "Energy",
+    "Financials",
+    "Health Care",
+    "Industrials",
+    "Information Technology",
+    "Materials",
+    "Real Estate",
+    "Utilities"
+  ],
+  "universe_sha256": "48b808035b20fde59881882b67f5091678651bf7efffbb79cb9c5a535c0e4729",
+  "plan_sha256": "a9354f66144744ab71d4d99d3121c03fb43e6c0a32a8ce4594d4c8d60cb21f1a"
+}

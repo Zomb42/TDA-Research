@@ -1,0 +1,10 @@
+{
+  "source": "experiments/equity_efa_vs_pca/daily_gross_returns.csv",
+  "source_sha256": "c2c9065cc452a078f92fc0e9ef82b57cddc3eae4da08e378db145c117ae46094",
+  "initial_equity": 100000,
+  "compounding": "daily return reinvestment, unit gross notional relative to current equity",
+  "annualization": "252 trading sessions",
+  "notes": "continuous full trading ledger; no reset at2024; period metrics separately reset for reporting; no rerun or change of strategy",
+  "source_unchanged": true,
+  "source_script_sha256": "dd97a593eded4a2a207b6d1cd6f10db16fb713c209c93b10709d3cb70a3d0916"
+}

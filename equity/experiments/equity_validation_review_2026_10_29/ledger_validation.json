@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "underlying_PCA_identical_across_all_gate_ledgers": true,
+    "Simple_and_stockPD_identical_between_scalar_and_image_studies": true,
+    "all_native_period_return_metrics_reproduce": true,
+    "risk_losses_recomputed_from_predictions_and_targets": true,
+    "all_notebooks_executed_without_saved_errors": true
+  },
+  "return_metric_rows": 165,
+  "strategies": 33,
+  "common_calendar_start": "2019-04-22",
+  "common_calendar_end": "2026-10-27",
+  "common_calendar_days": 1891,
+  "max_return_metric_error": 3.090860900556436e-13,
+  "risk_reduction_RawChange_later_pct": 3.4353911349642496,
+  "notebooks": 11
+}

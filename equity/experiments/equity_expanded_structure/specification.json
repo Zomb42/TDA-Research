@@ -1,0 +1,58 @@
+{
+  "decision_date": "2026-10-28",
+  "status": "exploratory cross-sectional generalization, no fresh time holdout",
+  "input_dataset": "equity_daily_expanded_2016_2026-10-27",
+  "input_equities": 200,
+  "benchmark": "SPY",
+  "eligibility": "272 contiguous finite prior adjusted daily log returns ending t-1; no future eligibility filter or history filling",
+  "common_membership": "same eligible stocks at each anchor for both windows, methods, all cuts and sector baseline",
+  "windows": [
+    120,
+    252
+  ],
+  "scored_group_counts": [
+    6,
+    11,
+    20,
+    40
+  ],
+  "all_cuts": "balance only at K=1..N; no outcome-based cut selection",
+  "geometry": "sample correlation distance sqrt(2*(1-rho)) of separately fitted prior-window SPY residuals",
+  "regularization": "none: distance geometry needs no inverse covariance; longer window and perturbations measure sensitivity",
+  "future_target": "20 future daily log returns after anchor, residualized with the common frozen 252-session SPY fit; same target for both windows and sector reference",
+  "first_signal_index": 272,
+  "anchor_stride": 20,
+  "future_sessions": 20,
+  "boundary": "2024-01-01; exclude future blocks crossing boundary",
+  "history_perturbations": {
+    "120": [
+      100,
+      140
+    ],
+    "252": [
+      232,
+      272
+    ],
+    "older_shift_sessions": 5
+  },
+  "bootstrap_history_repetitions": 40,
+  "bootstrap_history_block_sessions": 5,
+  "random_label_repetitions": 250,
+  "random_labels": "common random relabelings within anchor, preserving every partition's exact group sizes",
+  "stable_local_branches": {
+    "min_size": 3,
+    "max_size": 8,
+    "bootstrap_exact_recovery_min": 0.75,
+    "window_exact_recovery_min": 0.6666666666666666
+  },
+  "branch_recovery": "same exact stock set anywhere in perturbed tree, not restricted to scored K",
+  "uncertainty": "1000 circular bootstrap resamples of six consecutive anchors; approximate pointwise and simultaneous bands",
+  "simultaneous_family": "eight scored (window,K) cells per method and period; paired H0-minus-average same eight cells; sector comparisons analogous; not all research choices",
+  "sector_baseline": "October 27, 2026 provider snapshot; eleven groups when all sectors represented; no empirical membership-stability claim",
+  "seed": 2026102821,
+  "anchor_bootstrap_repetitions": 1000,
+  "anchor_bootstrap_block": 6,
+  "fees": "no performance or fee calculations",
+  "strategy_changes": false,
+  "outcome_selected_settings": false
+}

@@ -1,0 +1,14 @@
+{
+  "raw_files_sha256_verified": 332,
+  "binance_bars_match_originals_exactly": true,
+  "binance_depth_matches_originals_exactly": true,
+  "binance_continuous_5m_prices": true,
+  "kalshi_candles_match_originals": true,
+  "kalshi_unit_conversion_verified": true,
+  "binance_depth_intervals_over_60s": 2,
+  "kalshi_missing_minutes": 6232,
+  "kalshi_missing_ranges": 38,
+  "kalshi_null_trade_closes": 773,
+  "no_filling_applied": true,
+  "conclusion": "Original-byte and transformation checks passed. Depth outages and Kalshi missing/null periods remain quality limitations."
+}

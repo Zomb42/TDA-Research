@@ -1,0 +1,13 @@
+{
+  "original_summary_hash_unchanged": true,
+  "original_input_hashes_unchanged": true,
+  "regime_counts_and_weighted_means_reconcile": true,
+  "variance_coverage_bounded_and_monotonic": true,
+  "diagnostic_identity_checks": {
+    "original_0_and_3_PC_returns_reproduced": true,
+    "adjusted_price_timing_identity": true,
+    "log_variance_identity": true,
+    "regime_inputs_available_by_signal_close": true
+  },
+  "source_sha256": "6d540ad051131893881dab35c60f1a30cf68b34df54c3890dc2f435a5487ed60"
+}

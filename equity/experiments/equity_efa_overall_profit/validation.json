@@ -1,0 +1,7 @@
+{
+  "source_ledger_unchanged": true,
+  "subperiods_match_existing_frozen_results": true,
+  "all_continuous_equity_and_drawdown_rows_reconcile": true,
+  "plot_visually_checked": true,
+  "report_links_resolve": true
+}

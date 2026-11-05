@@ -1,0 +1,15 @@
+{
+  "successful_snapshots": 3584,
+  "failed_snapshots": 0,
+  "elapsed_seconds": 3600.0104184580014,
+  "requested_interval_seconds": 1.0,
+  "contract_size_btc": "0.000100",
+  "collection": "public REST depth=0",
+  "tick_complete": false,
+  "historical_backfill": false,
+  "limitations": [
+    "Receipt-time samples, no exchange event timestamps or sequence numbers.",
+    "Changes between polls and within request latency are unobserved.",
+    "This program exits after its bounded duration; no background service installed."
+  ]
+}

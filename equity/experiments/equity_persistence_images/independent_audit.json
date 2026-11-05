@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "frozen_grid_uses_first_completed_training_set_only": true,
+    "all_images_and_H0_bins_independently_reconstructed": true,
+    "Gaussian_integrals_confirmed_by_quadrature": true,
+    "ordinary_features_covariance_eigen_check": true,
+    "every_forecast_and_coefficient_matches_sklearn": true,
+    "exact_completed_label_membership_and_future_label_exclusion": true,
+    "all_calendar_days_and_flat_returns_reconcile": true,
+    "baseline_forecasts_match_original": true,
+    "every_metric_and_paired_uncertainty_band_reproduced": true,
+    "protected_inputs_unchanged": true
+  },
+  "max_image_error": 5.551115123125783e-16,
+  "max_quadrature_error": 2.220446049250313e-16,
+  "max_ordinary_feature_error": 7.105427357601002e-15,
+  "max_prediction_error_bps": 4.849454171562684e-13,
+  "max_metric_error": 1.4210854715202004e-14,
+  "forecasts_checked": 379,
+  "images_checked": 490,
+  "audit_source_sha256": "1dd37d1390903b436b2adc112c74e796b3a223f52949ba1d3571f92d157811fe"
+}

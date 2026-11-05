@@ -1,0 +1,5 @@
+{
+  "url": "https://datasets.tardis.dev/v1/bitstamp/book_snapshot_5/2025/01/01/BTCUSD.csv.gz",
+  "status": 404,
+  "error": "HTTP Error 404: Not Found"
+}

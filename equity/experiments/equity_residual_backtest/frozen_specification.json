@@ -1,0 +1,43 @@
+{
+  "specification": {
+    "training_sessions": 120,
+    "residual_pcs": 3,
+    "volatility_floor_daily": 0.0001,
+    "models": [
+      "SPY_only",
+      "SPY_plus_3_residual_PCs"
+    ],
+    "signal": "one-session adjusted close-to-close log return at t",
+    "exposures_and_weights": "estimated from 120 return observations ending t-1",
+    "entry": "next session vendor daily-bar raw open; ideal fractional-dollar target fill",
+    "exit": "same entry session vendor daily-bar raw close; liquidate all positions",
+    "gross_per_starting_equity": 1.0,
+    "regression_weights": "inverse trailing total-return variance, floored",
+    "neutrality": "dollars, SPY beta; additional 3 residual-PC raw-return exposures for PCA model",
+    "per_side_execution_cost_bps": [
+      0,
+      1,
+      2,
+      5,
+      10
+    ],
+    "annual_borrow_cost_bps": [
+      0,
+      100,
+      500
+    ],
+    "primary_execution_cost_bps_per_side": 5,
+    "primary_annual_borrow_bps": 100,
+    "borrow_convention": "entry short notional * assumed annual rate / 252, charged each trade day",
+    "development_last_execution_date": "2023-12-31",
+    "evaluation_first_execution_date": "2024-01-01",
+    "annual_sessions": 252,
+    "newey_west_lags": 5,
+    "position_caps": null,
+    "signal_threshold": "numerical-zero only",
+    "cash_interest_financing": "omitted; gross and adjusted returns are compared to zero",
+    "selection": "fixed 2026-selected 30-stock basket; survivorship/selection bias remains",
+    "parameter_search": false
+  },
+  "sha256": "9b92bebd8afcce07bcb039ca643f21eb74e3ed2e37d0967aace55c2f60549eaa"
+}

@@ -1,0 +1,8 @@
+{
+  "all_local_document_links_resolve": true,
+  "data_audits_pass": true,
+  "download_and_audit_source_hashes_match": true,
+  "original_dataset_files_unchanged": true,
+  "coverage_figure_visually_checked": true,
+  "no_new_performance_or_fee_experiment": true
+}

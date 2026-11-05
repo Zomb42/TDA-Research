@@ -1,0 +1,1492 @@
+[
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1780272001&end_ts=1780358400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:34.564239+00:00",
+    "received_at": "2026-10-29T04:07:34.652099+00:00",
+    "status": 200,
+    "bytes": 40,
+    "sha256": "8a3118d114bae6ef0b4f24492a5491b1b40c8be86e9dffc995910a3fc6b21a03",
+    "day": "2026-06-01",
+    "rows": 0
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1780358401&end_ts=1780444800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:34.564505+00:00",
+    "received_at": "2026-10-29T04:07:34.649282+00:00",
+    "status": 200,
+    "bytes": 40,
+    "sha256": "8a3118d114bae6ef0b4f24492a5491b1b40c8be86e9dffc995910a3fc6b21a03",
+    "day": "2026-06-02",
+    "rows": 0
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1780444801&end_ts=1780531200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:34.564578+00:00",
+    "received_at": "2026-10-29T04:07:34.751771+00:00",
+    "status": 200,
+    "bytes": 249358,
+    "sha256": "aa14ca50245a49fd90907de0ca893066e13c36b9aac3e133578b04b2391b665c",
+    "day": "2026-06-03",
+    "rows": 599
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1780531201&end_ts=1780617600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:34.650676+00:00",
+    "received_at": "2026-10-29T04:07:34.868333+00:00",
+    "status": 200,
+    "bytes": 563120,
+    "sha256": "7c0ff397d476abe83b4527749a2c682a701a7901aa7bb63270e3089dc5687538",
+    "day": "2026-06-04",
+    "rows": 1321
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1780617601&end_ts=1780704000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:34.652989+00:00",
+    "received_at": "2026-10-29T04:07:34.878267+00:00",
+    "status": 200,
+    "bytes": 621406,
+    "sha256": "075582d976fc12524f7fb68d7198c9f76714ea6dfa69051a919a8dbf1d46c810",
+    "day": "2026-06-05",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1780704001&end_ts=1780790400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:34.759679+00:00",
+    "received_at": "2026-10-29T04:07:34.977759+00:00",
+    "status": 200,
+    "bytes": 612143,
+    "sha256": "2433697d17742225622a42b7591bfb7de45cf876350bb1ecb171399f480213b5",
+    "day": "2026-06-06",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1780790401&end_ts=1780876800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:34.878340+00:00",
+    "received_at": "2026-10-29T04:07:35.100232+00:00",
+    "status": 200,
+    "bytes": 622619,
+    "sha256": "63c42af8d68272e22de0cbbfd4ca21a345b6dc331f80053af5cf9bf9bea8823f",
+    "day": "2026-06-07",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1780876801&end_ts=1780963200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:34.886986+00:00",
+    "received_at": "2026-10-29T04:07:35.117020+00:00",
+    "status": 200,
+    "bytes": 622292,
+    "sha256": "0e01588ca95301dde4c493d8cbbfb3ba3ddc35f27a5237dfefc09e7df4b8eaff",
+    "day": "2026-06-08",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1780963201&end_ts=1781049600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:34.989628+00:00",
+    "received_at": "2026-10-29T04:07:35.210004+00:00",
+    "status": 200,
+    "bytes": 624397,
+    "sha256": "fa44107c63a41a7e4ea926aec080190c2c9b937e240ed18c96d9dce6a5629c9f",
+    "day": "2026-06-09",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1781049601&end_ts=1781136000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:35.116109+00:00",
+    "received_at": "2026-10-29T04:07:35.350925+00:00",
+    "status": 200,
+    "bytes": 624046,
+    "sha256": "77374f9259289817f35f02d3a9005d9bab73b73022afaec49b782de2ca2880ed",
+    "day": "2026-06-10",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1781136001&end_ts=1781222400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:35.128184+00:00",
+    "received_at": "2026-10-29T04:07:35.351251+00:00",
+    "status": 200,
+    "bytes": 573145,
+    "sha256": "11622078429103c3e2d9269216d854af9a8f8eaa882daba09e19e2baa5d88a71",
+    "day": "2026-06-11",
+    "rows": 1321
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1781222401&end_ts=1781308800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:35.219343+00:00",
+    "received_at": "2026-10-29T04:07:35.449815+00:00",
+    "status": 200,
+    "bytes": 624424,
+    "sha256": "eb54fa8000a968ec4ad55dbe216e36fe04ca49875fb2db15abb0b974393e3886",
+    "day": "2026-06-12",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1781308801&end_ts=1781395200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:35.375508+00:00",
+    "received_at": "2026-10-29T04:07:35.616463+00:00",
+    "status": 200,
+    "bytes": 624086,
+    "sha256": "974f4b0e414969ed196cce5c074e6897681eaca0c8616583a524d2325537c914",
+    "day": "2026-06-13",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1781395201&end_ts=1781481600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:35.375725+00:00",
+    "received_at": "2026-10-29T04:07:35.615914+00:00",
+    "status": 200,
+    "bytes": 624235,
+    "sha256": "c5fc35ef29d7bb49c79653aabd15c8986e1ed3351a941381c63df502d7901338",
+    "day": "2026-06-14",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1781481601&end_ts=1781568000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:35.466374+00:00",
+    "received_at": "2026-10-29T04:07:35.700388+00:00",
+    "status": 200,
+    "bytes": 625178,
+    "sha256": "663bf44c83161bf7022dfcc80fcd2413d69e9ee02f73c3e60930e7a86b1766ef",
+    "day": "2026-06-15",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1781568001&end_ts=1781654400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:35.627651+00:00",
+    "received_at": "2026-10-29T04:07:35.863078+00:00",
+    "status": 200,
+    "bytes": 625675,
+    "sha256": "3920f2af9bbc7ed7980820b82ed88d1e704b86185cf3935508a9147669cfeec5",
+    "day": "2026-06-16",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1781654401&end_ts=1781740800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:36.741295+00:00",
+    "received_at": "2026-10-29T04:07:36.976375+00:00",
+    "status": 200,
+    "bytes": 625060,
+    "sha256": "1a491cd4aa42a1028930f17ace31b5b407062928d91e4815681260193a5b5702",
+    "day": "2026-06-17",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1781740801&end_ts=1781827200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:35.715735+00:00",
+    "received_at": "2026-10-29T04:07:35.939240+00:00",
+    "status": 200,
+    "bytes": 574408,
+    "sha256": "4eb71e2c4d0f8e0db470b1313bd9865a28f5709675e72af35930ebb2fbc09a51",
+    "day": "2026-06-18",
+    "rows": 1322
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1781827201&end_ts=1781913600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:35.871426+00:00",
+    "received_at": "2026-10-29T04:07:36.092277+00:00",
+    "status": 200,
+    "bytes": 625124,
+    "sha256": "c2e91986f06ae918a26a5106545501e673028c715f123bc7ae150c9de257e3cc",
+    "day": "2026-06-19",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1781913601&end_ts=1782000000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:35.948999+00:00",
+    "received_at": "2026-10-29T04:07:36.170180+00:00",
+    "status": 200,
+    "bytes": 624063,
+    "sha256": "799e07ac384f926a16d7808ffecb48d34d3b305e0677f58d7fa3b75058dc1ed5",
+    "day": "2026-06-20",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1782000001&end_ts=1782086400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:36.102254+00:00",
+    "received_at": "2026-10-29T04:07:36.321928+00:00",
+    "status": 200,
+    "bytes": 623714,
+    "sha256": "03a82f968fe16a7733a83d0faf81f9243555cf2f6ebb73e90363da99679bfc90",
+    "day": "2026-06-21",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1782086401&end_ts=1782172800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:37.261316+00:00",
+    "received_at": "2026-10-29T04:07:37.484924+00:00",
+    "status": 200,
+    "bytes": 624225,
+    "sha256": "92fce7512c741d26d4000c4fd1d14281b0a4b730033d4f31cc67287727152af2",
+    "day": "2026-06-22",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1782172801&end_ts=1782259200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:36.337357+00:00",
+    "received_at": "2026-10-29T04:07:36.559972+00:00",
+    "status": 200,
+    "bytes": 624770,
+    "sha256": "08dd153b89aa9e12f17038c62c9a99e0a4e7a76273bbeaf0e27970a80a4103b9",
+    "day": "2026-06-23",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1782259201&end_ts=1782345600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:36.569091+00:00",
+    "received_at": "2026-10-29T04:07:36.790830+00:00",
+    "status": 200,
+    "bytes": 623928,
+    "sha256": "6a52ae0e283bc3d8fdfead5052494f0e5965391b18be6ef39fb5263ac8ca75ba",
+    "day": "2026-06-24",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1782345601&end_ts=1782432000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:36.806499+00:00",
+    "received_at": "2026-10-29T04:07:37.025129+00:00",
+    "status": 200,
+    "bytes": 569302,
+    "sha256": "acb48e49822e5132610dfe3c1251246fad970c434a17442463d083fcc980e38a",
+    "day": "2026-06-25",
+    "rows": 1322
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1782432001&end_ts=1782518400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:36.987929+00:00",
+    "received_at": "2026-10-29T04:07:37.213785+00:00",
+    "status": 200,
+    "bytes": 623074,
+    "sha256": "2d387dfd8482bc10caf7feacb1bb7e76721466e002c579946753f01241d10351",
+    "day": "2026-06-26",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1782518401&end_ts=1782604800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:37.037192+00:00",
+    "received_at": "2026-10-29T04:07:37.266786+00:00",
+    "status": 200,
+    "bytes": 624329,
+    "sha256": "d0893c007866d0e2848ce989db6e667eeefaa328c4d75fd965f716f570e80243",
+    "day": "2026-06-27",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1782604801&end_ts=1782691200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:37.225986+00:00",
+    "received_at": "2026-10-29T04:07:37.443830+00:00",
+    "status": 200,
+    "bytes": 624218,
+    "sha256": "5199f3c7be0c6d9c389c55e891e8489e442211b2c2a23a3b2233dc689707ef92",
+    "day": "2026-06-28",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1782691201&end_ts=1782777600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:37.278001+00:00",
+    "received_at": "2026-10-29T04:07:37.498688+00:00",
+    "status": 200,
+    "bytes": 618931,
+    "sha256": "e4d6d5d09cd36bce54d7ae8863631c04b13585c813a7436103f3f577ef01994f",
+    "day": "2026-06-29",
+    "rows": 1426
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1782777601&end_ts=1782864000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:37.455216+00:00",
+    "received_at": "2026-10-29T04:07:37.787931+00:00",
+    "status": 200,
+    "bytes": 624136,
+    "sha256": "130c9991eaea92056a7beaf662dba0ec988d239c1e12509ef83a0847e69c28a5",
+    "day": "2026-06-30",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1782864001&end_ts=1782950400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:37.495254+00:00",
+    "received_at": "2026-10-29T04:07:37.713813+00:00",
+    "status": 200,
+    "bytes": 624413,
+    "sha256": "fbfaf64c69125f45f54e3299e618985ef0c668e69d01a15776438b6e99414620",
+    "day": "2026-07-01",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1782950401&end_ts=1783036800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:38.592234+00:00",
+    "received_at": "2026-10-29T04:07:38.813726+00:00",
+    "status": 200,
+    "bytes": 572349,
+    "sha256": "16a43b9c9c9f967400345975a8943205c65c50605b2b224973052ea777ed476c",
+    "day": "2026-07-02",
+    "rows": 1321
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1783036801&end_ts=1783123200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:37.729109+00:00",
+    "received_at": "2026-10-29T04:07:37.969197+00:00",
+    "status": 200,
+    "bytes": 623482,
+    "sha256": "fafcc25aa9bd10a772e472942b0a10204434722d0b7ba8a1de358c3265652041",
+    "day": "2026-07-03",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1783123201&end_ts=1783209600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:37.800861+00:00",
+    "received_at": "2026-10-29T04:07:38.038066+00:00",
+    "status": 200,
+    "bytes": 622363,
+    "sha256": "d1a8ff50b5aa90634e77de3e54e26ca06ed977df08394f26931f8c7b660efecc",
+    "day": "2026-07-04",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1783209601&end_ts=1783296000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:37.981399+00:00",
+    "received_at": "2026-10-29T04:07:38.208516+00:00",
+    "status": 200,
+    "bytes": 621933,
+    "sha256": "1a9f4c1bbbf7f7babe999f818ef3d5158bcc0cb2c33bc752f40bc9ef942c1994",
+    "day": "2026-07-05",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1783296001&end_ts=1783382400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:38.049219+00:00",
+    "received_at": "2026-10-29T04:07:38.293258+00:00",
+    "status": 200,
+    "bytes": 622795,
+    "sha256": "80549292f17c46e5aa1896df7b15ef242e862fd91b989ddcfd6a3c1d6dfc1e69",
+    "day": "2026-07-06",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1783382401&end_ts=1783468800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:38.217732+00:00",
+    "received_at": "2026-10-29T04:07:38.451334+00:00",
+    "status": 200,
+    "bytes": 622632,
+    "sha256": "872c104f6a9109fa8fd0626c4c10642676146638ebd97435673c2034dc44ffb7",
+    "day": "2026-07-07",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1783468801&end_ts=1783555200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:38.304035+00:00",
+    "received_at": "2026-10-29T04:07:38.536071+00:00",
+    "status": 200,
+    "bytes": 622926,
+    "sha256": "f24eb4ab265c33ec2784baedf54f82973f99c2c0f3b3e030a8f7282d9f4bb5c2",
+    "day": "2026-07-08",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1783555201&end_ts=1783641600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:38.478167+00:00",
+    "received_at": "2026-10-29T04:07:38.715208+00:00",
+    "status": 200,
+    "bytes": 571033,
+    "sha256": "ec6e91b08b83f957aeaf7ee0a302995466446a1c0e880d30f773fd4399d3d93b",
+    "day": "2026-07-09",
+    "rows": 1321
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1783641601&end_ts=1783728000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:38.548012+00:00",
+    "received_at": "2026-10-29T04:07:38.786403+00:00",
+    "status": 200,
+    "bytes": 623161,
+    "sha256": "619d0dc201033a48509d246bb23c2ccd2b196c8e488f95de62ed715930667ba9",
+    "day": "2026-07-10",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1783728001&end_ts=1783814400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:38.727809+00:00",
+    "received_at": "2026-10-29T04:07:38.957604+00:00",
+    "status": 200,
+    "bytes": 621690,
+    "sha256": "4911fc3fffc71aae1805617cd40451dae904e9cee7fc01e087ca7c535bf84acf",
+    "day": "2026-07-11",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1783814401&end_ts=1783900800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:39.885584+00:00",
+    "received_at": "2026-10-29T04:07:40.118466+00:00",
+    "status": 200,
+    "bytes": 621967,
+    "sha256": "a256c40c4bd91b4b125121052285ddf600447ae4b9d62a7cafd7ec8f80764b3f",
+    "day": "2026-07-12",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1783900801&end_ts=1783987200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:39.909123+00:00",
+    "received_at": "2026-10-29T04:07:40.151858+00:00",
+    "status": 200,
+    "bytes": 625420,
+    "sha256": "e23324c7e2cb89b1b046c22ea4e589e6e1b6a5d27ee92dfa1c089b6fa953954a",
+    "day": "2026-07-13",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1783987201&end_ts=1784073600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:38.971858+00:00",
+    "received_at": "2026-10-29T04:07:39.216941+00:00",
+    "status": 200,
+    "bytes": 625143,
+    "sha256": "a93bc74eeb705d76d8590862b1cee210883b5482785376f09c75973bda2c6ae6",
+    "day": "2026-07-14",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1784073601&end_ts=1784160000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:39.233123+00:00",
+    "received_at": "2026-10-29T04:07:39.456485+00:00",
+    "status": 200,
+    "bytes": 624820,
+    "sha256": "1e4082bc069052a327d32682c16ad89e75d0f8733d2ec0745a3cdccdcdac483a",
+    "day": "2026-07-15",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1784160001&end_ts=1784246400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:39.469923+00:00",
+    "received_at": "2026-10-29T04:07:39.694787+00:00",
+    "status": 200,
+    "bytes": 571406,
+    "sha256": "a7d27a03ce5f528a0ae0328ba446b3e3a61514b2f806c3d63603f8462f7671df",
+    "day": "2026-07-16",
+    "rows": 1321
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1784246401&end_ts=1784332800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:39.706597+00:00",
+    "received_at": "2026-10-29T04:07:39.929641+00:00",
+    "status": 200,
+    "bytes": 623069,
+    "sha256": "8d91e5e5509fe55a305e9e4da90501e91ca8279cd21612bccafc28f42d1f1ba2",
+    "day": "2026-07-17",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1784332801&end_ts=1784419200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:39.945081+00:00",
+    "received_at": "2026-10-29T04:07:40.167102+00:00",
+    "status": 200,
+    "bytes": 621057,
+    "sha256": "5637041e0451a10c74c791780bd93d6e2ceb5cf4374cb6d07748bf23b46250d7",
+    "day": "2026-07-18",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1784419201&end_ts=1784505600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:40.132808+00:00",
+    "received_at": "2026-10-29T04:07:40.358961+00:00",
+    "status": 200,
+    "bytes": 621850,
+    "sha256": "8e24537a7ce2a075cd50a981d61551a330f0d3adb86157cd581976abf7787dfe",
+    "day": "2026-07-19",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1784505601&end_ts=1784592000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:40.163603+00:00",
+    "received_at": "2026-10-29T04:07:40.389497+00:00",
+    "status": 200,
+    "bytes": 624230,
+    "sha256": "3af3409cc84254bacc2a00bf31f4f809e9c10ae685fad37e36bef6c99dc73d04",
+    "day": "2026-07-20",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1784592001&end_ts=1784678400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:40.183390+00:00",
+    "received_at": "2026-10-29T04:07:40.402342+00:00",
+    "status": 200,
+    "bytes": 623413,
+    "sha256": "75a55ec3ecf68ed20d00a152901a6e6e23cf380800c9e2b3cfa0524dc078752c",
+    "day": "2026-07-21",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1784678401&end_ts=1784764800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:40.375962+00:00",
+    "received_at": "2026-10-29T04:07:40.597493+00:00",
+    "status": 200,
+    "bytes": 622205,
+    "sha256": "9393e6dde8f081db71c4cff6eb20fc57b14921a80a98c7e9e8c3b184837031e5",
+    "day": "2026-07-22",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1784764801&end_ts=1784851200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:40.401776+00:00",
+    "received_at": "2026-10-29T04:07:40.619370+00:00",
+    "status": 200,
+    "bytes": 571986,
+    "sha256": "b74aa6ca5f643dbd74ab35097047dfaf47e678b19c4a5e733d662db91112dbc5",
+    "day": "2026-07-23",
+    "rows": 1322
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1784851201&end_ts=1784937600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:40.411749+00:00",
+    "received_at": "2026-10-29T04:07:40.635260+00:00",
+    "status": 200,
+    "bytes": 623511,
+    "sha256": "5311d7ad5c190f3e020ebe61a055652eb0fe1b0863704e65db924b5763136b1e",
+    "day": "2026-07-24",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1784937601&end_ts=1785024000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:40.610607+00:00",
+    "received_at": "2026-10-29T04:07:40.924028+00:00",
+    "status": 200,
+    "bytes": 622102,
+    "sha256": "3c54d7edf17a00df1591bd6ce56ff389cd11c418ac89966e1ee704f04ef4ac43",
+    "day": "2026-07-25",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1785024001&end_ts=1785110400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:40.628541+00:00",
+    "received_at": "2026-10-29T04:07:40.850549+00:00",
+    "status": 200,
+    "bytes": 621937,
+    "sha256": "de4d46fa8770d54dc43400e63fdcef6a588da062c2de55195c416896277600c1",
+    "day": "2026-07-26",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1785110401&end_ts=1785196800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:43.824942+00:00",
+    "received_at": "2026-10-29T04:07:44.043194+00:00",
+    "status": 200,
+    "bytes": 623339,
+    "sha256": "d54e6b2308357c20c6db53da21f1a91d59090e808915002374a7bfb98083b2ae",
+    "day": "2026-07-27",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1785196801&end_ts=1785283200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:40.857888+00:00",
+    "received_at": "2026-10-29T04:07:41.081920+00:00",
+    "status": 200,
+    "bytes": 623798,
+    "sha256": "92a989f9d4c68092d3112c3e43601e412b0506942f7e16446757c39806e45a96",
+    "day": "2026-07-28",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1785283201&end_ts=1785369600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:40.933008+00:00",
+    "received_at": "2026-10-29T04:07:41.152679+00:00",
+    "status": 200,
+    "bytes": 624643,
+    "sha256": "cf3e353e73fa9cd6282c61303444671d8033bb31c9a8631ae2f107b7e10c98b8",
+    "day": "2026-07-29",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1785369601&end_ts=1785456000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:41.096749+00:00",
+    "received_at": "2026-10-29T04:07:41.315766+00:00",
+    "status": 200,
+    "bytes": 571543,
+    "sha256": "ee9f5fb417b60ad60f850b40a7a4459953e25b0f48cd57398dba0fcd67f06188",
+    "day": "2026-07-30",
+    "rows": 1321
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1785456001&end_ts=1785542400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:41.165587+00:00",
+    "received_at": "2026-10-29T04:07:41.377713+00:00",
+    "status": 200,
+    "bytes": 623965,
+    "sha256": "412cd06c68d15122e105f69c22c5855adb006c86d2f19e38e2006a45891a6bd4",
+    "day": "2026-07-31",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1785542401&end_ts=1785628800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:41.326917+00:00",
+    "received_at": "2026-10-29T04:07:41.552553+00:00",
+    "status": 200,
+    "bytes": 622207,
+    "sha256": "fb35a00bc5651a0746ce819aa4b99f43696a852698598106c17b7e9d2c59ecf2",
+    "day": "2026-08-01",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1785628801&end_ts=1785715200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:41.392458+00:00",
+    "received_at": "2026-10-29T04:07:41.646986+00:00",
+    "status": 200,
+    "bytes": 623682,
+    "sha256": "c846005f94153c8e3557201d91e5e742eac93fcfe3417d53facc15ee79afc8db",
+    "day": "2026-08-02",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1785715201&end_ts=1785801600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:41.561807+00:00",
+    "received_at": "2026-10-29T04:07:41.778219+00:00",
+    "status": 200,
+    "bytes": 624437,
+    "sha256": "6a8800fc5df9fe5fdda73f8d00144286d88dbdc7068ec799b44abba87e010d72",
+    "day": "2026-08-03",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1785801601&end_ts=1785888000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:41.653874+00:00",
+    "received_at": "2026-10-29T04:07:41.870784+00:00",
+    "status": 200,
+    "bytes": 624580,
+    "sha256": "6eed732e6ad11383041881711737faf2c7e129715db392675328a432dccad54e",
+    "day": "2026-08-04",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1785888001&end_ts=1785974400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:41.792348+00:00",
+    "received_at": "2026-10-29T04:07:42.011098+00:00",
+    "status": 200,
+    "bytes": 625249,
+    "sha256": "e500b63057b837c5e4a708e042a00c1ce568905c2d501c80a71b2bba5c41f324",
+    "day": "2026-08-05",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1785974401&end_ts=1786060800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:42.969654+00:00",
+    "received_at": "2026-10-29T04:07:43.183772+00:00",
+    "status": 200,
+    "bytes": 572659,
+    "sha256": "283cbf91730a5d17d8c356e8516f57282d7f0facb4a31335d2229abf41ac32fb",
+    "day": "2026-08-06",
+    "rows": 1321
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1786060801&end_ts=1786147200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:42.020004+00:00",
+    "received_at": "2026-10-29T04:07:42.238906+00:00",
+    "status": 200,
+    "bytes": 624214,
+    "sha256": "d30d69165d1683ba400db22a819897fb42a309146e996649ee32f44ef1ad744f",
+    "day": "2026-08-07",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1786147201&end_ts=1786233600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:42.253215+00:00",
+    "received_at": "2026-10-29T04:07:42.474445+00:00",
+    "status": 200,
+    "bytes": 622018,
+    "sha256": "fd5110edcc54e528c44c711a7c26b3ec0fa4935558f9396a9386728535d354b2",
+    "day": "2026-08-08",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1786233601&end_ts=1786320000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:42.490032+00:00",
+    "received_at": "2026-10-29T04:07:42.707104+00:00",
+    "status": 200,
+    "bytes": 623252,
+    "sha256": "3db84f5404b240d929429d535776b188fe7a4f531719d5ece361d5a791844d86",
+    "day": "2026-08-09",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1786320001&end_ts=1786406400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:42.720176+00:00",
+    "received_at": "2026-10-29T04:07:42.941486+00:00",
+    "status": 200,
+    "bytes": 626073,
+    "sha256": "c76c6e5e9c164e718c1968ff1e56aa6a13d914b053bc825c5a13fbefecea1ed5",
+    "day": "2026-08-10",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1786406401&end_ts=1786492800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:42.956663+00:00",
+    "received_at": "2026-10-29T04:07:43.173838+00:00",
+    "status": 200,
+    "bytes": 627395,
+    "sha256": "2f6f302bacf8b3e269a3614e751377c1f4b84de7a4c71d06f3e2b27da6682a76",
+    "day": "2026-08-11",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1786492801&end_ts=1786579200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:43.181240+00:00",
+    "received_at": "2026-10-29T04:07:43.406382+00:00",
+    "status": 200,
+    "bytes": 627493,
+    "sha256": "81f1096da52631d6e40799f9f4dead8854deaeffb94d3578387ee3ee48ce8db7",
+    "day": "2026-08-12",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1786579201&end_ts=1786665600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:43.189403+00:00",
+    "received_at": "2026-10-29T04:07:43.407233+00:00",
+    "status": 200,
+    "bytes": 575747,
+    "sha256": "dd84805ed8378a4ba5396d4009aee898783512ed8969c7750c39de7ea276dd71",
+    "day": "2026-08-13",
+    "rows": 1322
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1786665601&end_ts=1786752000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:43.505841+00:00",
+    "received_at": "2026-10-29T04:07:43.731953+00:00",
+    "status": 200,
+    "bytes": 627368,
+    "sha256": "5e1f93e5774e3bb9cdc329a23e064f05476210a4310dbe868eda9c0e9e65fb10",
+    "day": "2026-08-14",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1786752001&end_ts=1786838400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:43.505939+00:00",
+    "received_at": "2026-10-29T04:07:43.732109+00:00",
+    "status": 200,
+    "bytes": 624296,
+    "sha256": "6256dba53fc8402130bf97037327a9ca79268834888efa0477db809a7daf654b",
+    "day": "2026-08-15",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1786838401&end_ts=1786924800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:43.741469+00:00",
+    "received_at": "2026-10-29T04:07:43.958875+00:00",
+    "status": 200,
+    "bytes": 623713,
+    "sha256": "1eb1d264410a7e9ed197a1fc0b2c11a286ac6836c42c5c638ea5407187caa276",
+    "day": "2026-08-16",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1786924801&end_ts=1787011200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:43.748360+00:00",
+    "received_at": "2026-10-29T04:07:43.977055+00:00",
+    "status": 200,
+    "bytes": 627000,
+    "sha256": "e5664c338a48e1428829ea144a0d47c5f4e1bcf3ac72c9ab38352405987530f4",
+    "day": "2026-08-17",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1787011201&end_ts=1787097600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:43.976350+00:00",
+    "received_at": "2026-10-29T04:07:44.224050+00:00",
+    "status": 200,
+    "bytes": 626453,
+    "sha256": "e6cb0bedb4b0d56c0132838585d6e8051327449fcfa18f816775c75eedbbcf70",
+    "day": "2026-08-18",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1787097601&end_ts=1787184000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:43.988819+00:00",
+    "received_at": "2026-10-29T04:07:44.239339+00:00",
+    "status": 200,
+    "bytes": 626067,
+    "sha256": "eb9815bf71ccf4369613c0b4e8efdc0f2a8fb6a45c7d38fc99522f954a4784dc",
+    "day": "2026-08-19",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1787184001&end_ts=1787270400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:44.050543+00:00",
+    "received_at": "2026-10-29T04:07:44.285128+00:00",
+    "status": 200,
+    "bytes": 576322,
+    "sha256": "e3f2deb832fcb802b230744a505ef1931a705170e3d649bf3838516a779284f4",
+    "day": "2026-08-20",
+    "rows": 1323
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1787270401&end_ts=1787356800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:44.238203+00:00",
+    "received_at": "2026-10-29T04:07:44.482731+00:00",
+    "status": 200,
+    "bytes": 627762,
+    "sha256": "e4d8239a59a4e12704551cc3b9337a2fb8753dd78a3af5387a4740989971add0",
+    "day": "2026-08-21",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1787356801&end_ts=1787443200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:44.248547+00:00",
+    "received_at": "2026-10-29T04:07:44.468011+00:00",
+    "status": 200,
+    "bytes": 620941,
+    "sha256": "77b8ea3d7506573f8cf3e8b014beef8d3f6edeaf31f1da6ef305200538cd1eaf",
+    "day": "2026-08-22",
+    "rows": 1427
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1787443201&end_ts=1787529600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:44.291614+00:00",
+    "received_at": "2026-10-29T04:07:44.517842+00:00",
+    "status": 200,
+    "bytes": 626458,
+    "sha256": "0150c048bcdb2bef96909dd5837976e0db2027b623f19bb58c5e50b2687b9f98",
+    "day": "2026-08-23",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1787529601&end_ts=1787616000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:44.482873+00:00",
+    "received_at": "2026-10-29T04:07:44.716379+00:00",
+    "status": 200,
+    "bytes": 627210,
+    "sha256": "44f182957e3526b738b8c0ac622e00f3fcf519dc1a258eb12faa7ce7bb437eb5",
+    "day": "2026-08-24",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1787616001&end_ts=1787702400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:44.492722+00:00",
+    "received_at": "2026-10-29T04:07:44.716463+00:00",
+    "status": 200,
+    "bytes": 628003,
+    "sha256": "35c421d1913594db479edfeae3b627316aa7f5404ec47605e39fd0195646a727",
+    "day": "2026-08-25",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1787702401&end_ts=1787788800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:44.527245+00:00",
+    "received_at": "2026-10-29T04:07:44.745104+00:00",
+    "status": 200,
+    "bytes": 627610,
+    "sha256": "d0b803b00fdc4b5dbba7780f822a688636a03bea02eb1d94b24fc9fac2e63be8",
+    "day": "2026-08-26",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1787788801&end_ts=1787875200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:44.731907+00:00",
+    "received_at": "2026-10-29T04:07:44.953166+00:00",
+    "status": 200,
+    "bytes": 575300,
+    "sha256": "3c6f8d6252a6adb25b89fc3100c3aa9e0b6990c0c551e5ec6efd3e8ec6c0a9f4",
+    "day": "2026-08-27",
+    "rows": 1321
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1787875201&end_ts=1787961600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:45.820491+00:00",
+    "received_at": "2026-10-29T04:07:46.036521+00:00",
+    "status": 200,
+    "bytes": 628284,
+    "sha256": "f68b0535a447b606959c2a2379a0302d6266f463bbb530e468045e2dcf07a29c",
+    "day": "2026-08-28",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1787961601&end_ts=1788048000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:45.834154+00:00",
+    "received_at": "2026-10-29T04:07:46.054820+00:00",
+    "status": 200,
+    "bytes": 625498,
+    "sha256": "607b67b271efbf250c26d5c7e31f535c1b2f911f5b4c5c57a680ab4afcba4c4f",
+    "day": "2026-08-29",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1788048001&end_ts=1788134400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:44.964289+00:00",
+    "received_at": "2026-10-29T04:07:45.291103+00:00",
+    "status": 200,
+    "bytes": 626541,
+    "sha256": "b0e717898791f97ce71cbef218dd0331ac18460148e135ca7321eff81ebe8658",
+    "day": "2026-08-30",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1788134401&end_ts=1788220800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:45.307207+00:00",
+    "received_at": "2026-10-29T04:07:45.522333+00:00",
+    "status": 200,
+    "bytes": 628671,
+    "sha256": "8f97c90d69a5b3b21e99b01adf4654c805b842c327b3d3f2798e3fce13becff3",
+    "day": "2026-08-31",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1788220801&end_ts=1788307200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:45.538095+00:00",
+    "received_at": "2026-10-29T04:07:45.751499+00:00",
+    "status": 200,
+    "bytes": 628916,
+    "sha256": "9890c9c7c1dca01500c94a4486a7c690e398b0242b69f22af172a20b21aa91d6",
+    "day": "2026-09-01",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1788307201&end_ts=1788393600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:45.764524+00:00",
+    "received_at": "2026-10-29T04:07:45.982335+00:00",
+    "status": 200,
+    "bytes": 627964,
+    "sha256": "f5055788ad9af7009219683b0bfda52121e514cd3378c7512c4b52d0f4cdcdf5",
+    "day": "2026-09-02",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1788393601&end_ts=1788480000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:45.996109+00:00",
+    "received_at": "2026-10-29T04:07:46.210285+00:00",
+    "status": 200,
+    "bytes": 576412,
+    "sha256": "d6dfae3da65cf058af71aaec71bc7823476551d56e49897280c6f4fb5110bf0c",
+    "day": "2026-09-03",
+    "rows": 1322
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1788480001&end_ts=1788566400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:46.045332+00:00",
+    "received_at": "2026-10-29T04:07:46.416121+00:00",
+    "status": 200,
+    "bytes": 627470,
+    "sha256": "23b596918c7b5de095cf11829e5cd9ed7e3f294b14a6b3112a4ea23d3921fe79",
+    "day": "2026-09-04",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1788566401&end_ts=1788652800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:46.062620+00:00",
+    "received_at": "2026-10-29T04:07:46.283939+00:00",
+    "status": 200,
+    "bytes": 624678,
+    "sha256": "2c0c447b629d4d514092cb3b1d85e93e162bd87fab6b1e2713919131ac9aee96",
+    "day": "2026-09-05",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1788652801&end_ts=1788739200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:46.224140+00:00",
+    "received_at": "2026-10-29T04:07:46.448063+00:00",
+    "status": 200,
+    "bytes": 625364,
+    "sha256": "a3b8460aa2de6286d0ab6a6c94e6c363b95f8cb3394afc69f515cb3cd077cee6",
+    "day": "2026-09-06",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1788739201&end_ts=1788825600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:46.291627+00:00",
+    "received_at": "2026-10-29T04:07:46.514193+00:00",
+    "status": 200,
+    "bytes": 627714,
+    "sha256": "d3ccf9235a1c7113049c6ac7f6d2aa766bb21c575ffbd4978dbcc68f17d2df9b",
+    "day": "2026-09-07",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1788825601&end_ts=1788912000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:46.434863+00:00",
+    "received_at": "2026-10-29T04:07:46.663260+00:00",
+    "status": 200,
+    "bytes": 628862,
+    "sha256": "af5ca175d35598e1d5e28b1984ab85d254a1dc11ded268b0f792a6325cf087be",
+    "day": "2026-09-08",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1788912001&end_ts=1788998400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:46.456656+00:00",
+    "received_at": "2026-10-29T04:07:46.690330+00:00",
+    "status": 200,
+    "bytes": 628996,
+    "sha256": "3e4a7894bb9b8290b35d0b2a54f9f7840ec0aa721bac09f2f7427fb2887a65ab",
+    "day": "2026-09-09",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1788998401&end_ts=1789084800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:46.523419+00:00",
+    "received_at": "2026-10-29T04:07:46.766408+00:00",
+    "status": 200,
+    "bytes": 577238,
+    "sha256": "422c777ba1f9025abcfd4ee1e2affc72d941cf011656a4ec4a68dbfff2b3ad1f",
+    "day": "2026-09-10",
+    "rows": 1322
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1789084801&end_ts=1789171200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:46.677921+00:00",
+    "received_at": "2026-10-29T04:07:46.895186+00:00",
+    "status": 200,
+    "bytes": 629536,
+    "sha256": "e8c9556ed156c1d25b7c53878ac08384c33e9daf63573452553259560fc25056",
+    "day": "2026-09-11",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1789171201&end_ts=1789257600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:46.699221+00:00",
+    "received_at": "2026-10-29T04:07:46.919403+00:00",
+    "status": 200,
+    "bytes": 627148,
+    "sha256": "c720f31b4db988b6e8ff55361d18601b8269cc982bdfa49f262de3eac3ccf02b",
+    "day": "2026-09-12",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1789257601&end_ts=1789344000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:47.856966+00:00",
+    "received_at": "2026-10-29T04:07:48.080705+00:00",
+    "status": 200,
+    "bytes": 626619,
+    "sha256": "1450f392beb638e6b5023842b3ee05bcddc9f2ce68e095f7d2dbdb9a4cf3edc4",
+    "day": "2026-09-13",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1789344001&end_ts=1789430400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:46.903492+00:00",
+    "received_at": "2026-10-29T04:07:47.122217+00:00",
+    "status": 200,
+    "bytes": 629016,
+    "sha256": "a55ee8c32374c571b10107f744a28bd17e324f16a19433f61e96e12d808f6986",
+    "day": "2026-09-14",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1789430401&end_ts=1789516800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:46.927409+00:00",
+    "received_at": "2026-10-29T04:07:47.156465+00:00",
+    "status": 200,
+    "bytes": 629354,
+    "sha256": "e3dbad47169dea4c242f6cf65268a91ca37ce618f06f5a7a55a78e1baf2b8233",
+    "day": "2026-09-15",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1789516801&end_ts=1789603200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:47.136582+00:00",
+    "received_at": "2026-10-29T04:07:47.362593+00:00",
+    "status": 200,
+    "bytes": 629393,
+    "sha256": "248140f9f7cb7cc69764083fac54ea3a3634ac0433960cb2ef479eea335aa326",
+    "day": "2026-09-16",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1789603201&end_ts=1789689600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:47.167132+00:00",
+    "received_at": "2026-10-29T04:07:47.390321+00:00",
+    "status": 200,
+    "bytes": 577378,
+    "sha256": "57a35eb2edec63203025f47d53512751a51008f2364b9f277ad4d4135c1413ec",
+    "day": "2026-09-17",
+    "rows": 1322
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1789689601&end_ts=1789776000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:47.371568+00:00",
+    "received_at": "2026-10-29T04:07:47.588136+00:00",
+    "status": 200,
+    "bytes": 629007,
+    "sha256": "0fe2df48a82bcccb8ad393e8c95b1f8f7e9c82cc6989651ffe36a7c4ffb9f72b",
+    "day": "2026-09-18",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1789776001&end_ts=1789862400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:48.482790+00:00",
+    "received_at": "2026-10-29T04:07:48.699693+00:00",
+    "status": 200,
+    "bytes": 626342,
+    "sha256": "88fc600510d72709225163f8d75f1b4987ab480d4237fa52d8f0a5418799f4c7",
+    "day": "2026-09-19",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1789862401&end_ts=1789948800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:47.609746+00:00",
+    "received_at": "2026-10-29T04:07:47.826809+00:00",
+    "status": 200,
+    "bytes": 627028,
+    "sha256": "236419e893c165d719a7861107ee696254c70ecc27037135d9160e1ceebc32e3",
+    "day": "2026-09-20",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1789948801&end_ts=1790035200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:47.836432+00:00",
+    "received_at": "2026-10-29T04:07:48.052721+00:00",
+    "status": 200,
+    "bytes": 628477,
+    "sha256": "23a1f9e793efed58bf684e9f7dac222a4f4d1c70ad16f202bae9e6fd1472c0fa",
+    "day": "2026-09-21",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1790035201&end_ts=1790121600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:48.068478+00:00",
+    "received_at": "2026-10-29T04:07:48.287840+00:00",
+    "status": 200,
+    "bytes": 629183,
+    "sha256": "a1f2fe3929f0abb7d369533725c7d44b1a5b9b44938aa11223b6e63bdc1b6e74",
+    "day": "2026-09-22",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1790121601&end_ts=1790208000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:48.092824+00:00",
+    "received_at": "2026-10-29T04:07:48.313379+00:00",
+    "status": 200,
+    "bytes": 629033,
+    "sha256": "167ddd78f23034ce7a1ba92ca90ea8fb9dad317f4963c8cb658b9fc0beeb9931",
+    "day": "2026-09-23",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1790208001&end_ts=1790294400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:48.294194+00:00",
+    "received_at": "2026-10-29T04:07:48.517523+00:00",
+    "status": 200,
+    "bytes": 577214,
+    "sha256": "8ffa2b30148249b166cf052da47ad653d9dfa0227fa219fafbaa3a0909f7b586",
+    "day": "2026-09-24",
+    "rows": 1321
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1790294401&end_ts=1790380800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:48.319585+00:00",
+    "received_at": "2026-10-29T04:07:48.546957+00:00",
+    "status": 200,
+    "bytes": 628685,
+    "sha256": "d4186e94ec8c156f53fcb6aecacb65a7470c5feaba86bbee7a92ded592b15703",
+    "day": "2026-09-25",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1790380801&end_ts=1790467200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:48.531030+00:00",
+    "received_at": "2026-10-29T04:07:48.746362+00:00",
+    "status": 200,
+    "bytes": 625627,
+    "sha256": "6f4785857fd5e29d87ba6f30db0e2bb1d3589319e902dc04b5cea309abda234d",
+    "day": "2026-09-26",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1790467201&end_ts=1790553600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:49.641023+00:00",
+    "received_at": "2026-10-29T04:07:49.849556+00:00",
+    "status": 200,
+    "bytes": 627606,
+    "sha256": "1054ffdbf3dd22ac7034e8c08ef050d072869e32707ee5963c75f8968a311a0a",
+    "day": "2026-09-27",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1790553601&end_ts=1790640000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:48.712378+00:00",
+    "received_at": "2026-10-29T04:07:48.925361+00:00",
+    "status": 200,
+    "bytes": 629153,
+    "sha256": "e2d76c8dd77164e01a34d668195b6b5972b67a28c07beade625dd81f72af460d",
+    "day": "2026-09-28",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1790640001&end_ts=1790726400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:48.755820+00:00",
+    "received_at": "2026-10-29T04:07:48.971953+00:00",
+    "status": 200,
+    "bytes": 628964,
+    "sha256": "c1827dae199023fae4dfab8c284a2b1c83ee8ab27aa0b69b48907c383eff30b0",
+    "day": "2026-09-29",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1790726401&end_ts=1790812800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:48.939604+00:00",
+    "received_at": "2026-10-29T04:07:49.159349+00:00",
+    "status": 200,
+    "bytes": 628982,
+    "sha256": "2984c728e4d8dcd658e415bed9250c517372c331a827057cb8aa08a8a5149068",
+    "day": "2026-09-30",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1790812801&end_ts=1790899200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:48.982296+00:00",
+    "received_at": "2026-10-29T04:07:49.194512+00:00",
+    "status": 200,
+    "bytes": 577916,
+    "sha256": "dbefb757a2b6200f031f756965050bcf3f1b2c942f273aa58c474462e1e9d092",
+    "day": "2026-10-01",
+    "rows": 1324
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1790899201&end_ts=1790985600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:49.178029+00:00",
+    "received_at": "2026-10-29T04:07:49.397940+00:00",
+    "status": 200,
+    "bytes": 629057,
+    "sha256": "8f5b5584e2db0c1f03a6853eb814ef817e6dc48f77f7a44874696206e14b129c",
+    "day": "2026-10-02",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1790985601&end_ts=1791072000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:49.202021+00:00",
+    "received_at": "2026-10-29T04:07:49.415649+00:00",
+    "status": 200,
+    "bytes": 626669,
+    "sha256": "170919f649c13366d0ae6f008107d8abaf7e466dfaef9a7b881c6bc38b2637d4",
+    "day": "2026-10-03",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1791072001&end_ts=1791158400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:49.411871+00:00",
+    "received_at": "2026-10-29T04:07:49.623621+00:00",
+    "status": 200,
+    "bytes": 627133,
+    "sha256": "0ffefa88cc893ce65f3aa715172033e85806ae2e206dcb239da72bc0561bbbc5",
+    "day": "2026-10-04",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1791158401&end_ts=1791244800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:50.514930+00:00",
+    "received_at": "2026-10-29T04:07:50.732378+00:00",
+    "status": 200,
+    "bytes": 628997,
+    "sha256": "b6c17d0ebbf395d41c01c449e0bfdaeca2c44eed4b94c3f69894a18d7b385ecd",
+    "day": "2026-10-05",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1791244801&end_ts=1791331200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:49.629630+00:00",
+    "received_at": "2026-10-29T04:07:49.838334+00:00",
+    "status": 200,
+    "bytes": 628691,
+    "sha256": "46dde8a345e366743b19f01d203721f3983ec90bf15548035215fb4ab23293e1",
+    "day": "2026-10-06",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1791331201&end_ts=1791417600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:49.843431+00:00",
+    "received_at": "2026-10-29T04:07:50.053018+00:00",
+    "status": 200,
+    "bytes": 628804,
+    "sha256": "db053b43eddb0da660504f37cbaf06a2286eac230a7884740992688705222138",
+    "day": "2026-10-07",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1791417601&end_ts=1791504000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:49.854551+00:00",
+    "received_at": "2026-10-29T04:07:50.061338+00:00",
+    "status": 200,
+    "bytes": 576981,
+    "sha256": "be5e547085b0bcf890e03a755bd4e7b48e907e6c9005c74a030cd23648b24b5e",
+    "day": "2026-10-08",
+    "rows": 1322
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1791504001&end_ts=1791590400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:50.058857+00:00",
+    "received_at": "2026-10-29T04:07:50.272840+00:00",
+    "status": 200,
+    "bytes": 629091,
+    "sha256": "fcfde9ea224fa85b8018eafef13d503ae474987a0593b55df35a41f33185b5d5",
+    "day": "2026-10-09",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1791590401&end_ts=1791676800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:51.149066+00:00",
+    "received_at": "2026-10-29T04:07:51.364818+00:00",
+    "status": 200,
+    "bytes": 626757,
+    "sha256": "5148557cfc148955ac39c8e0de1d51f8099b6853c0342c5ec9933d2890ca322d",
+    "day": "2026-10-10",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1791676801&end_ts=1791763200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:50.282535+00:00",
+    "received_at": "2026-10-29T04:07:50.498775+00:00",
+    "status": 200,
+    "bytes": 626205,
+    "sha256": "e2b3369ce35158704b5f220b3cb2416360c2ce25559a0facbc400441061ccd6a",
+    "day": "2026-10-11",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1791763201&end_ts=1791849600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:50.515153+00:00",
+    "received_at": "2026-10-29T04:07:50.734881+00:00",
+    "status": 200,
+    "bytes": 628989,
+    "sha256": "bf7126974c85b991e9f5f71f09ef094eeec964b85bc92c8ea13f9cc8079bd0a2",
+    "day": "2026-10-12",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1791849601&end_ts=1791936000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:50.747241+00:00",
+    "received_at": "2026-10-29T04:07:50.979548+00:00",
+    "status": 200,
+    "bytes": 628874,
+    "sha256": "d7cceee15985c98f96b60df06d2e905513e5b74d8ab8e47dcd1d66e799b2a860",
+    "day": "2026-10-13",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1791936001&end_ts=1792022400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:50.767036+00:00",
+    "received_at": "2026-10-29T04:07:50.983616+00:00",
+    "status": 200,
+    "bytes": 629144,
+    "sha256": "0b25be865ba7d218e68299f1f7e1ab694ca55707c3fe4aea8aa51a198cd3d48d",
+    "day": "2026-10-14",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1792022401&end_ts=1792108800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:50.996903+00:00",
+    "received_at": "2026-10-29T04:07:51.214127+00:00",
+    "status": 200,
+    "bytes": 577057,
+    "sha256": "afc5a05e5bb25a9b01383e84e96ae2fc9ba342f7f6dc0195e00e3f5d6aa9f8a8",
+    "day": "2026-10-15",
+    "rows": 1322
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1792108801&end_ts=1792195200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:51.007155+00:00",
+    "received_at": "2026-10-29T04:07:51.229172+00:00",
+    "status": 200,
+    "bytes": 629033,
+    "sha256": "29497654e7588edcde90565044e53b0f0cbb70ae7e0bf3b662219d3cf3a64b36",
+    "day": "2026-10-16",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1792195201&end_ts=1792281600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:51.228372+00:00",
+    "received_at": "2026-10-29T04:07:51.463347+00:00",
+    "status": 200,
+    "bytes": 626492,
+    "sha256": "a3802a65f81a4bbb1483662b3f53a9585a3eeb7fa471b05f6c640de8a7db5e3a",
+    "day": "2026-10-17",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1792281601&end_ts=1792368000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:51.240863+00:00",
+    "received_at": "2026-10-29T04:07:51.463748+00:00",
+    "status": 200,
+    "bytes": 627571,
+    "sha256": "17f8c8ef60f7439dbe818c51217cbdbe01775ff5c59ad4b8d354e0ec37bd1c71",
+    "day": "2026-10-18",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1792368001&end_ts=1792454400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:51.379840+00:00",
+    "received_at": "2026-10-29T04:07:51.600559+00:00",
+    "status": 200,
+    "bytes": 628880,
+    "sha256": "fe7956a2e1eaf5b247efa01fb9b3ba60aad2103a4bda003e33d239582222df49",
+    "day": "2026-10-19",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1792454401&end_ts=1792540800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:51.479380+00:00",
+    "received_at": "2026-10-29T04:07:51.706224+00:00",
+    "status": 200,
+    "bytes": 629091,
+    "sha256": "3d5bac60fa93a8440ca7fbb9808a17286971de0ca8cd235ed3a4b489b5740058",
+    "day": "2026-10-20",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1792540801&end_ts=1792627200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:52.572874+00:00",
+    "received_at": "2026-10-29T04:07:52.786192+00:00",
+    "status": 200,
+    "bytes": 629118,
+    "sha256": "e7a9b863dbc120ac191caf3b4d242ac9fc34e4a3d0b2a609f72ab8ee1813b7bb",
+    "day": "2026-10-21",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1792627201&end_ts=1792713600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:51.615859+00:00",
+    "received_at": "2026-10-29T04:07:51.830694+00:00",
+    "status": 200,
+    "bytes": 576599,
+    "sha256": "f4556f614e031bafaf603c9e58003b249eeb66c8f544cdc28e3c5330ee60c914",
+    "day": "2026-10-22",
+    "rows": 1322
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1792713601&end_ts=1792800000&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:51.721342+00:00",
+    "received_at": "2026-10-29T04:07:51.936648+00:00",
+    "status": 200,
+    "bytes": 628506,
+    "sha256": "6f2128824694bf21e086adc4e342a0ce9b8a62c5bedd3d42c03cbc5fbfa2469e",
+    "day": "2026-10-23",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1792800001&end_ts=1792886400&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:51.845884+00:00",
+    "received_at": "2026-10-29T04:07:52.060180+00:00",
+    "status": 200,
+    "bytes": 627822,
+    "sha256": "ba334b73b092451aa8fdeac6295bcd7d6a566e347151191a383bd3ebb283b31c",
+    "day": "2026-10-24",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1792886401&end_ts=1792972800&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:51.952550+00:00",
+    "received_at": "2026-10-29T04:07:52.166802+00:00",
+    "status": 200,
+    "bytes": 627635,
+    "sha256": "18c02e2c7e23a1cbb1b59f8d7a5a82f7734c888ad01094a0b12df8c6846d904a",
+    "day": "2026-10-25",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1792972801&end_ts=1793059200&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:52.082799+00:00",
+    "received_at": "2026-10-29T04:07:52.296964+00:00",
+    "status": 200,
+    "bytes": 628993,
+    "sha256": "6456722522e1dd933fc7cc546dedfe42d0fc8d4101b7cd3d8b136a36484614bb",
+    "day": "2026-10-26",
+    "rows": 1440
+  },
+  {
+    "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP/candlesticks?start_ts=1793059201&end_ts=1793145600&period_interval=1&include_latest_before_start=false",
+    "requested_at": "2026-10-29T04:07:53.263585+00:00",
+    "received_at": "2026-10-29T04:07:53.487791+00:00",
+    "status": 200,
+    "bytes": 628889,
+    "sha256": "39a55d3fedafb7555d31d239dd93e03321d612a1a3bd458dfbe1ca21a17c3949",
+    "day": "2026-10-27",
+    "rows": 1440
+  }
+]

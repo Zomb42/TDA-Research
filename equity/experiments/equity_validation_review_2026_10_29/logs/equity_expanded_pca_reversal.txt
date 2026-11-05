@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "past_only_common_admission_and_chronology": true,
+    "all_daily_and_horizon_ledgers_reconciled": true,
+    "initial_gross_and_dollar_constraints": true,
+    "thirteen_dates_independently_reconstructed_with_covariance_eigenvectors_and_WLS_normal_equations": true,
+    "future_relative_projection_slope_identity": true,
+    "original30_all_overlap_dates_reproduce_frozen_strategy": true,
+    "all_daily_event_slope_and_paired_universe_intervals_reproduced": true,
+    "descriptive_PCA_independently_reproduced": true,
+    "prior_data_sources_and_results_unchanged": true
+  },
+  "max_ledger_error": 1.3183898417423734e-16,
+  "max_independent_position_error": 1.3600232051658168e-15,
+  "max_independent_cross_product_error": 1.6076029396572267e-12,
+  "historical_daily_return_reproduction_error": 3.0010716134398763e-16,
+  "historical_rows_checked": 4892,
+  "audit_source_sha256": "233862c88f193233e82936e4ecdf41c27805c6f58aca6cfd2cce5c6aa919e616"
+}

@@ -1,0 +1,12 @@
+notebook,code_cells,embedded_figures,matching_direct_sidecar_pngs,matching_any_project_sidecar_pngs,no_execution_errors,all_code_executed,sidecar_note
+equity_correlation_pca.ipynb,5,4,4,4,True,True,Inline-computed images need not match direct file sidecars
+equity_efa_vs_pca.ipynb,6,4,4,4,True,True,Inline-computed images need not match direct file sidecars
+equity_expanded_pca_reversal.ipynb,8,6,6,6,True,True,Inline-computed images need not match direct file sidecars
+equity_expanded_structure.ipynb,7,5,5,5,True,True,Inline-computed images need not match direct file sidecars
+equity_full_basket_states.ipynb,6,4,4,4,True,True,Inline-computed images need not match direct file sidecars
+equity_h0_peers.ipynb,6,5,5,5,True,True,Inline-computed images need not match direct file sidecars
+equity_h0_scale_robustness.ipynb,6,4,4,4,True,True,Inline-computed images need not match direct file sidecars
+equity_persistence_images.ipynb,6,4,4,4,True,True,Inline-computed images need not match direct file sidecars
+equity_persistence_regimes.ipynb,7,5,5,5,True,True,Inline-computed images need not match direct file sidecars
+equity_residual_backtest.ipynb,8,6,0,6,True,True,Inline-computed images need not match direct file sidecars
+equity_reversal_response.ipynb,5,3,3,3,True,True,Inline-computed images need not match direct file sidecars

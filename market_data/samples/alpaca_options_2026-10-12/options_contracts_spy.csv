@@ -1,0 +1,5 @@
+id,symbol,name,status,tradable,expiration_date,root_symbol,underlying_symbol,underlying_asset_id,type,style,strike_price,multiplier,size,open_interest,open_interest_date,close_price,close_price_date,ppind
+4f6eae41-3338-4abb-8831-4d577f7569ba,SPY261013C00774000,SPY Oct 13 2026 774 Call,active,True,2026-10-13,SPY,SPY,b28f4066-5c6d-479b-a2af-85dc1a8f16fb,call,american,774,100,100,2496,2026-10-08,5.61,2026-10-09,True
+9fca450d-b065-44e7-8521-1edc2e32af76,SPY261013C00775000,SPY Oct 13 2026 775 Call,active,True,2026-10-13,SPY,SPY,b28f4066-5c6d-479b-a2af-85dc1a8f16fb,call,american,775,100,100,3597,2026-10-08,4.65,2026-10-09,True
+28d9380e-5a49-4460-859b-361740a0309c,SPY261013C00776000,SPY Oct 13 2026 776 Call,active,True,2026-10-13,SPY,SPY,b28f4066-5c6d-479b-a2af-85dc1a8f16fb,call,american,776,100,100,3050,2026-10-08,3.9,2026-10-09,True
+2b746d3d-d430-4d90-9bbf-3c32b79e19ad,SPY261013C00777000,SPY Oct 13 2026 777 Call,active,True,2026-10-13,SPY,SPY,b28f4066-5c6d-479b-a2af-85dc1a8f16fb,call,american,777,100,100,2398,2026-10-08,3.23,2026-10-09,True

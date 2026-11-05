@@ -1,0 +1,50 @@
+{
+  "status": "exploratory on already examined history; no untouched holdout",
+  "models": [
+    "Manual6",
+    "Average6",
+    "PCA5"
+  ],
+  "horizons_sessions": [
+    1,
+    5,
+    20
+  ],
+  "base_lookback": 120,
+  "first_signal_index": 140,
+  "exposure_rank": 7,
+  "signal": "adjusted one-session close-to-close log return, residualized by frozen prior X and W",
+  "normalization": "signal residual / prior total daily sigma, floor 0.0001",
+  "weights": "inverse prior total variance; holdings proportional to minus W times residual, unit gross",
+  "entry": "next vendor daily-bar open; ideal fractional-dollar targets",
+  "exit": "close of entry session or fifth or twentieth session including entry session",
+  "return_prices": "all-adjusted open/close for every horizon; vendor total-return proxy, no action-level ledger",
+  "holding": "initial dollar sleeves buy and hold; no intermediate rebalance; exposures may drift",
+  "future_relative_return": "cumulative simple open-to-close stock return residualized cross-sectionally with formation X,W",
+  "slope": "pooled through-origin slope of future residual/sigma on signal residual/sigma; negative means reversal",
+  "signal_bin_edges_finite": [
+    -2,
+    -1,
+    -0.5,
+    0,
+    0.5,
+    1,
+    2
+  ],
+  "bin_edges": "left inclusive, right exclusive; outer bins unbounded",
+  "exclude_zero_signal": "abs(signal residual / sigma) <= 1e-10; includes constrained singleton stocks",
+  "stability": "Average6 stock-level mean Jaccard overlap of peer sets across 100,140,120-shifted-5 past-session fits",
+  "stability_high": ">=0.75; complementary lower group; no outcome-selected threshold",
+  "stability_manual": "fixed by construction, not an empirical stability test",
+  "stability_PCA": "not defined: no discrete peer assignment",
+  "date_sample": "same dates for all horizons; omit any 20-session outcome crossing 2024 boundary",
+  "split": "entry before 2024-01-01 development, otherwise evaluation",
+  "uncertainty": "1000 circular moving-block date resamples; block 60 sessions; all stocks together",
+  "intervals": "approximate 95% pointwise percentile; pooled ratios recomputed per resample; no multiplicity correction",
+  "bootstrap_repetitions": 1000,
+  "bootstrap_block_sessions": 60,
+  "seed": 2026102807,
+  "fees": "excluded entirely",
+  "parameter_selection_by_profit": false,
+  "outputs": "event responses, not daily returns of an overlapping-cohort trading strategy"
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "name": "deribit_btc_perpetual_2025-01-01",
+    "url": "https://datasets.tardis.dev/v1/deribit/incremental_book_L2/2025/01/01/BTC-PERPETUAL.csv.gz",
+    "method": "GET",
+    "requested_at": "2026-10-29T13:56:43.444847+00:00",
+    "requested_compressed_prefix_bytes": 524288,
+    "complete_daily_file_downloaded": false,
+    "native_exchange_message_replay_tested": false,
+    "http_status": 206,
+    "content_range": "bytes 0-524287/124189509",
+    "content_type": "text/csv",
+    "compressed_bytes_saved": 524288,
+    "prefix_sha256": "bf2f0f1369aa31fd48b73d3fe65b6ed5fd1398671b40947ad3397aee3f6b81b6",
+    "columns": [
+      "exchange",
+      "symbol",
+      "timestamp",
+      "local_timestamp",
+      "is_snapshot",
+      "side",
+      "price",
+      "amount"
+    ],
+    "complete_csv_rows_in_prefix": 66127,
+    "first_rows": [
+      {
+        "exchange": "deribit",
+        "symbol": "BTC-PERPETUAL",
+        "timestamp": "1735689600214000",
+        "local_timestamp": "1735689600225572",
+        "is_snapshot": "true",
+        "side": "ask",
+        "price": "93446",
+        "amount": "259000"
+      },
+      {
+        "exchange": "deribit",
+        "symbol": "BTC-PERPETUAL",
+        "timestamp": "1735689600214000",
+        "local_timestamp": "1735689600225572",
+        "is_snapshot": "true",
+        "side": "ask",
+        "price": "93446.5",
+        "amount": "44800"
+      },
+      {
+        "exchange": "deribit",
+        "symbol": "BTC-PERPETUAL",
+        "timestamp": "1735689600214000",
+        "local_timestamp": "1735689600225572",
+        "is_snapshot": "true",
+        "side": "ask",
+        "price": "93447",
+        "amount": "69770"
+      }
+    ],
+    "first_non_snapshot_rows": [
+      {
+        "exchange": "deribit",
+        "symbol": "BTC-PERPETUAL",
+        "timestamp": "1735689600219000",
+        "local_timestamp": "1735689600225809",
+        "is_snapshot": "false",
+        "side": "ask",
+        "price": "93652.5",
+        "amount": "1353770"
+      },
+      {
+        "exchange": "deribit",
+        "symbol": "BTC-PERPETUAL",
+        "timestamp": "1735689600219000",
+        "local_timestamp": "1735689600225809",
+        "is_snapshot": "false",
+        "side": "ask",
+        "price": "93698",
+        "amount": "0"
+      },
+      {
+        "exchange": "deribit",
+        "symbol": "BTC-PERPETUAL",
+        "timestamp": "1735689600224000",
+        "local_timestamp": "1735689600228250",
+        "is_snapshot": "false",
+        "side": "bid",
+        "price": "93379.5",
+        "amount": "22180"
+      }
+    ],
+    "snapshot_rows_in_prefix": 2939,
+    "update_rows_in_prefix": 63188,
+    "symbols": [
+      "BTC-PERPETUAL"
+    ],
+    "first_timestamp": "1735689600214000",
+    "last_timestamp": "1735689908114000"
+  },
+  {
+    "name": "bitmex_xbtusd_2025-01-01",
+    "url": "https://datasets.tardis.dev/v1/bitmex/incremental_book_L2/2025/01/01/XBTUSD.csv.gz",
+    "method": "GET",
+    "requested_at": "2026-10-29T13:56:43.445273+00:00",
+    "requested_compressed_prefix_bytes": 524288,
+    "complete_daily_file_downloaded": false,
+    "native_exchange_message_replay_tested": false,
+    "http_status": 206,
+    "content_range": "bytes 0-524287/186513150",
+    "content_type": "text/csv",
+    "compressed_bytes_saved": 524288,
+    "prefix_sha256": "45905acac2df53bdcd924b387ff64c20be32b2ffe7040d85d37fd88fbfeb7fa7",
+    "columns": [
+      "exchange",
+      "symbol",
+      "timestamp",
+      "local_timestamp",
+      "is_snapshot",
+      "side",
+      "price",
+      "amount"
+    ],
+    "complete_csv_rows_in_prefix": 65140,
+    "first_rows": [
+      {
+        "exchange": "bitmex",
+        "symbol": "XBTUSD",
+        "timestamp": "1735689600128000",
+        "local_timestamp": "1735689600212855",
+        "is_snapshot": "true",
+        "side": "ask",
+        "price": "3201030",
+        "amount": "900"
+      },
+      {
+        "exchange": "bitmex",
+        "symbol": "XBTUSD",
+        "timestamp": "1735689600128000",
+        "local_timestamp": "1735689600212855",
+        "is_snapshot": "true",
+        "side": "ask",
+        "price": "1000000",
+        "amount": "1000000"
+      },
+      {
+        "exchange": "bitmex",
+        "symbol": "XBTUSD",
+        "timestamp": "1735689600128000",
+        "local_timestamp": "1735689600212855",
+        "is_snapshot": "true",
+        "side": "ask",
+        "price": "950000",
+        "amount": "3000000"
+      }
+    ],
+    "first_non_snapshot_rows": [
+      {
+        "exchange": "bitmex",
+        "symbol": "XBTUSD",
+        "timestamp": "1735689600097000",
+        "local_timestamp": "1735689600223129",
+        "is_snapshot": "false",
+        "side": "bid",
+        "price": "93374.9",
+        "amount": "12700"
+      },
+      {
+        "exchange": "bitmex",
+        "symbol": "XBTUSD",
+        "timestamp": "1735689600097000",
+        "local_timestamp": "1735689600223130",
+        "is_snapshot": "false",
+        "side": "bid",
+        "price": "93374.9",
+        "amount": "25900"
+      },
+      {
+        "exchange": "bitmex",
+        "symbol": "XBTUSD",
+        "timestamp": "1735689600102000",
+        "local_timestamp": "1735689600223255",
+        "is_snapshot": "false",
+        "side": "ask",
+        "price": "93462.4",
+        "amount": "0"
+      }
+    ],
+    "snapshot_rows_in_prefix": 5627,
+    "update_rows_in_prefix": 59513,
+    "symbols": [
+      "XBTUSD"
+    ],
+    "first_timestamp": "1735689600128000",
+    "last_timestamp": "1735689753238000"
+  }
+]

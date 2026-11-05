@@ -1,0 +1,4129 @@
+{
+  "retrieved_at": "2026-10-29T01:15:46.567572+00:00",
+  "plan": {
+    "decision_date": "2026-10-28",
+    "purpose": "broader cross-sectional structural research; no automatic strategy or TDA retuning",
+    "universe_rule": "top 200 IVV equity holdings by published USD market value descending, ticker ascending ties; active tradable Alpaca us_equity; union original 30; SPY benchmark",
+    "holdings_source": "https://www.ishares.com/us/products/239726/ishares-core-s-p-500-etf/latest-holdings.csv",
+    "holdings_snapshot": "downloaded provider snapshot, recorded before price-history collection; must not postdate requested history end",
+    "mapping": "spaces in provider share-class tickers become dots; verify against Alpaca active asset master; no history-based replacements",
+    "share_classes": "distinct listed securities retained, including multiple classes of one issuer; not independent issuers",
+    "classification": "provider sector snapshot, not historical labels; legacy manual groups retained separately",
+    "requested_start": "2016-01-01",
+    "requested_end": "2026-10-27",
+    "symbol_asof": "2026-10-28",
+    "data": "SIP 1Day OHLCV, raw and all-adjusted, full pagination; same range as original panel",
+    "earlier_history_probe": "SPY raw SIP daily bars 2000-01-01 through 2015-12-31; records actual returned availability only",
+    "selection_uses_strategy_outcomes": false,
+    "missingness": "keep all selected symbols; calendar-aligned blanks; no forward fill, backfill or zero-return substitution; returns require adjacent observed sessions",
+    "audit": "unique symbol/date, positive finite ordered OHLC, calendar, missing leading/internal/trailing, compounding, prior-panel overlap changes",
+    "future_analysis": "freeze separate structural design before evaluating expanded-universe outcomes; consider 120-day shrinkage and declared longer-window baseline",
+    "limitations": [
+      "Current survivor/size selection; not a point-in-time historical investable universe.",
+      "Fund weight is a size selection proxy, not a measured liquidity guarantee.",
+      "Current sector labels and current asset tradability are not historical eligibility.",
+      "Adding names does not create independent time histories or restore untouched 2024+ data.",
+      "Adjusted returns are a vendor proxy, not an audited action-level total-return ledger.",
+      "A longer historical panel is not itself a test of long-run equilibrium mean reversion."
+    ],
+    "fees": "no performance or fee experiment in this collection"
+  },
+  "holdings_asof": "2026-10-27",
+  "equity_count": 200,
+  "benchmark": "SPY",
+  "sessions": 2720,
+  "first_session": "2016-01-04",
+  "last_session": "2026-10-27",
+  "adjustments": {
+    "raw": {
+      "pages": 53,
+      "total_bars": 526828,
+      "by_symbol": {
+        "AAPL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ABBV": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ABNB": {
+          "bars": 1476,
+          "first_date": "2020-12-10",
+          "last_date": "2026-10-27",
+          "missing_session_count": 1244,
+          "leading_missing": 1244,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ABT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ACN": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ADBE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ADI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ADP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AEP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AJG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ALL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AMAT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AMD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AMGN": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AMT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AMZN": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ANET": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AON": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "APD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "APH": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "APP": {
+          "bars": 1391,
+          "first_date": "2021-04-15",
+          "last_date": "2026-10-27",
+          "missing_session_count": 1329,
+          "leading_missing": 1329,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AVGO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AXP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BA": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BAC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BE": {
+          "bars": 2076,
+          "first_date": "2018-07-25",
+          "last_date": "2026-10-27",
+          "missing_session_count": 644,
+          "leading_missing": 644,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BKNG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BKR": {
+          "bars": 2342,
+          "first_date": "2017-07-05",
+          "last_date": "2026-10-27",
+          "missing_session_count": 378,
+          "leading_missing": 378,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BLK": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BMY": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BNY": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BRK.B": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BSX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "C": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CAT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CB": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CDNS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CEG": {
+          "bars": 1188,
+          "first_date": "2022-02-02",
+          "last_date": "2026-10-27",
+          "missing_session_count": 1532,
+          "leading_missing": 1532,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CMCSA": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CME": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CMI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "COF": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "COP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "COR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "COST": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CRM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CRWD": {
+          "bars": 1855,
+          "first_date": "2019-06-12",
+          "last_date": "2026-10-27",
+          "missing_session_count": 865,
+          "leading_missing": 865,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CSCO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CSX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CTAS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CVS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CVX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DASH": {
+          "bars": 1477,
+          "first_date": "2020-12-09",
+          "last_date": "2026-10-27",
+          "missing_session_count": 1243,
+          "leading_missing": 1243,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DDOG": {
+          "bars": 1786,
+          "first_date": "2019-09-19",
+          "last_date": "2026-10-27",
+          "missing_session_count": 934,
+          "leading_missing": 934,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DELL": {
+          "bars": 1968,
+          "first_date": "2018-12-28",
+          "last_date": "2026-10-27",
+          "missing_session_count": 752,
+          "leading_missing": 752,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DHR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DIS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DLR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DUK": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ECL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ELV": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "EMR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "EOG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "EQIX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ETN": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "FAST": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "FCX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "FDX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "FTNT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GEV": {
+          "bars": 646,
+          "first_date": "2024-04-02",
+          "last_date": "2026-10-27",
+          "missing_session_count": 2074,
+          "leading_missing": 2074,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GILD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GLW": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GOOG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GOOGL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "HCA": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "HD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "HLT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "HON": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "HOOD": {
+          "bars": 1318,
+          "first_date": "2021-07-29",
+          "last_date": "2026-10-27",
+          "missing_session_count": 1402,
+          "leading_missing": 1402,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "HPE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "HWM": {
+          "bars": 1652,
+          "first_date": "2020-04-01",
+          "last_date": "2026-10-27",
+          "missing_session_count": 1068,
+          "leading_missing": 1068,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "IBM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ICE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "INTC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "INTU": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ISRG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ITW": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "JCI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "JNJ": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "JPM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "KKR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "KLAC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "KMI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "KO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "LIN": {
+          "bars": 2007,
+          "first_date": "2018-10-31",
+          "last_date": "2026-10-27",
+          "missing_session_count": 713,
+          "leading_missing": 713,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "LITE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "LLY": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "LMT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "LOW": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "LRCX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MA": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MAR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MCD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MCK": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MCO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MDLZ": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MDT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "META": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MMM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MNST": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MPC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MPWR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MRK": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MRNA": {
+          "bars": 1982,
+          "first_date": "2018-12-07",
+          "last_date": "2026-10-27",
+          "missing_session_count": 738,
+          "leading_missing": 738,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MRSH": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MRVL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MSFT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MSI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MU": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NEE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NEM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NFLX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NOC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NOW": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NSC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NUE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NVDA": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NXPI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "OKE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ORCL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ORLY": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PANW": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PEP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PFE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PGR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PH": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PLD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PLTR": {
+          "bars": 1526,
+          "first_date": "2020-09-30",
+          "last_date": "2026-10-27",
+          "missing_session_count": 1194,
+          "leading_missing": 1194,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PNC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PSX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PWR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "QCOM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "RCL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "REGN": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ROST": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "RTX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SBUX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SCHW": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SHW": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SLB": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SNDK": {
+          "bars": 428,
+          "first_date": "2025-02-13",
+          "last_date": "2026-10-27",
+          "missing_session_count": 2292,
+          "leading_missing": 2292,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SNPS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SPG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SPGI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "STX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SYK": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "T": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TDG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TEL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TFC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TGT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TJX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TMO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TMUS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TRGP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TRV": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TSLA": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TXN": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "UBER": {
+          "bars": 1877,
+          "first_date": "2019-05-10",
+          "last_date": "2026-10-27",
+          "missing_session_count": 843,
+          "leading_missing": 843,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "UNH": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "UNP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "UPS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "URI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "USB": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "V": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "VLO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "VRT": {
+          "bars": 2073,
+          "first_date": "2018-07-30",
+          "last_date": "2026-10-27",
+          "missing_session_count": 647,
+          "leading_missing": 647,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "VRTX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "VZ": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "WDC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "WELL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "WFC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "WM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "WMB": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "WMT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "XOM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SPY": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        }
+      }
+    },
+    "all": {
+      "pages": 53,
+      "total_bars": 526828,
+      "by_symbol": {
+        "AAPL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ABBV": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ABNB": {
+          "bars": 1476,
+          "first_date": "2020-12-10",
+          "last_date": "2026-10-27",
+          "missing_session_count": 1244,
+          "leading_missing": 1244,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ABT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ACN": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ADBE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ADI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ADP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AEP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AJG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ALL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AMAT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AMD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AMGN": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AMT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AMZN": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ANET": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AON": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "APD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "APH": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "APP": {
+          "bars": 1391,
+          "first_date": "2021-04-15",
+          "last_date": "2026-10-27",
+          "missing_session_count": 1329,
+          "leading_missing": 1329,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AVGO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "AXP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BA": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BAC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BE": {
+          "bars": 2076,
+          "first_date": "2018-07-25",
+          "last_date": "2026-10-27",
+          "missing_session_count": 644,
+          "leading_missing": 644,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BKNG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BKR": {
+          "bars": 2342,
+          "first_date": "2017-07-05",
+          "last_date": "2026-10-27",
+          "missing_session_count": 378,
+          "leading_missing": 378,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BLK": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BMY": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BNY": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BRK.B": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BSX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "BX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "C": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CAT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CB": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CDNS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CEG": {
+          "bars": 1188,
+          "first_date": "2022-02-02",
+          "last_date": "2026-10-27",
+          "missing_session_count": 1532,
+          "leading_missing": 1532,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CMCSA": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CME": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CMI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "COF": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "COP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "COR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "COST": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CRM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CRWD": {
+          "bars": 1855,
+          "first_date": "2019-06-12",
+          "last_date": "2026-10-27",
+          "missing_session_count": 865,
+          "leading_missing": 865,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CSCO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CSX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CTAS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CVS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "CVX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DASH": {
+          "bars": 1477,
+          "first_date": "2020-12-09",
+          "last_date": "2026-10-27",
+          "missing_session_count": 1243,
+          "leading_missing": 1243,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DDOG": {
+          "bars": 1786,
+          "first_date": "2019-09-19",
+          "last_date": "2026-10-27",
+          "missing_session_count": 934,
+          "leading_missing": 934,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DELL": {
+          "bars": 1968,
+          "first_date": "2018-12-28",
+          "last_date": "2026-10-27",
+          "missing_session_count": 752,
+          "leading_missing": 752,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DHR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DIS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DLR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "DUK": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ECL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ELV": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "EMR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "EOG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "EQIX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ETN": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "FAST": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "FCX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "FDX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "FTNT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GEV": {
+          "bars": 646,
+          "first_date": "2024-04-02",
+          "last_date": "2026-10-27",
+          "missing_session_count": 2074,
+          "leading_missing": 2074,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GILD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GLW": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GOOG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GOOGL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "GS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "HCA": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "HD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "HLT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "HON": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "HOOD": {
+          "bars": 1318,
+          "first_date": "2021-07-29",
+          "last_date": "2026-10-27",
+          "missing_session_count": 1402,
+          "leading_missing": 1402,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "HPE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "HWM": {
+          "bars": 1652,
+          "first_date": "2020-04-01",
+          "last_date": "2026-10-27",
+          "missing_session_count": 1068,
+          "leading_missing": 1068,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "IBM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ICE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "INTC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "INTU": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ISRG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ITW": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "JCI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "JNJ": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "JPM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "KKR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "KLAC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "KMI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "KO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "LIN": {
+          "bars": 2007,
+          "first_date": "2018-10-31",
+          "last_date": "2026-10-27",
+          "missing_session_count": 713,
+          "leading_missing": 713,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "LITE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "LLY": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "LMT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "LOW": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "LRCX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MA": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MAR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MCD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MCK": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MCO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MDLZ": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MDT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "META": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MMM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MNST": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MPC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MPWR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MRK": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MRNA": {
+          "bars": 1982,
+          "first_date": "2018-12-07",
+          "last_date": "2026-10-27",
+          "missing_session_count": 738,
+          "leading_missing": 738,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MRSH": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MRVL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MSFT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MSI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "MU": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NEE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NEM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NFLX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NOC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NOW": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NSC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NUE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NVDA": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "NXPI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "OKE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ORCL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ORLY": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PANW": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PEP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PFE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PGR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PH": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PLD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PLTR": {
+          "bars": 1526,
+          "first_date": "2020-09-30",
+          "last_date": "2026-10-27",
+          "missing_session_count": 1194,
+          "leading_missing": 1194,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PNC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PSX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "PWR": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "QCOM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "RCL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "REGN": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "ROST": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "RTX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SBUX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SCHW": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SHW": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SLB": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SNDK": {
+          "bars": 428,
+          "first_date": "2025-02-13",
+          "last_date": "2026-10-27",
+          "missing_session_count": 2292,
+          "leading_missing": 2292,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SNPS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SPG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SPGI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "STX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SYK": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "T": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TDG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TEL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TFC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TGT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TJX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TMO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TMUS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TRGP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TRV": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TSLA": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "TXN": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "UBER": {
+          "bars": 1877,
+          "first_date": "2019-05-10",
+          "last_date": "2026-10-27",
+          "missing_session_count": 843,
+          "leading_missing": 843,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "UNH": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "UNP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "UPS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "URI": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "USB": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "V": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "VLO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "VRT": {
+          "bars": 2073,
+          "first_date": "2018-07-30",
+          "last_date": "2026-10-27",
+          "missing_session_count": 647,
+          "leading_missing": 647,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "VRTX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "VZ": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "WDC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "WELL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "WFC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "WM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "WMB": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "WMT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "XOM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        },
+        "SPY": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "leading_missing": 0,
+          "internal_missing": 0,
+          "trailing_missing": 0,
+          "internal_missing_dates": []
+        }
+      }
+    }
+  },
+  "earlier_SPY_probe_bars": 0,
+  "earlier_SPY_probe_next_page": false,
+  "earlier_probe_caveat": "SPY only, tested dates/feed/account; no global claim about all vendors or symbols",
+  "large_adjusted_return_flags": 72,
+  "legacy_overlap": {
+    "raw": {
+      "old_bars_checked": 84320,
+      "bars_with_changed_ohlc": 0,
+      "max_abs_ohlc_price_difference": 0.0
+    },
+    "all": {
+      "old_bars_checked": 84320,
+      "bars_with_changed_ohlc": 0,
+      "max_abs_ohlc_price_difference": 0.0
+    }
+  },
+  "original_dataset_sha256_before": {
+    "response_all_005.json": "88343146a1d1ea75d729c3eaa5ae1fd95d36326c037f2d27421fe5c6169e690b",
+    "response_all_009.json": "8ee1d10b11038488146a8e7f87b84ba1ee524b2a7c61218b549b68082500504a",
+    "response_raw_006.json": "1994977f53cc3fbbe5d84d65461dc0530f9658f9b29b4e0da976334d5bdcf719",
+    "response_all_008.json": "f0e537378bbf6c23a09dd87abfe015463524c0d5c7aff31189873f0d8908cd76",
+    "response_raw_007.json": "ad722404a88d1d6d5504aca4f327eeb684349ab097e989270859e48800751c8c",
+    "sha256.json": "920c9543b3325357a196d9c2dfd64fda48ee3152684e06c38b9d965375587ce1",
+    "response_all_004.json": "f2ed340ffb62ad765b11fdc082c843ae04b69cc70369388159f8312eb4fc6700",
+    "close_all.csv": "22e67d9eaea72f2abb5ae663924c26f2a72e69ded791bfd89a5365707ddedfa1",
+    "close_raw.csv": "166e4d49770bcea6931e4b302faa321c6af4f1e104ec1b183836599fb7ef5dbd",
+    "response_all_003.json": "351ef494672bcc10d817180f27805da72c9ece7297e245c6b0283d2154fa8138",
+    "response_all_002.json": "563c4bfe012298f149aa71d6bb4a0cb73592e346c23f8e4a497e6a7012072df9",
+    "response_raw_001.json": "0658494e4d308ba865cdefb29d35ca4511537c92b9c3092e8009ebf79d7b2f2b",
+    "response_raw_002.json": "3a19a077abfb4789805919378da5a67fde982404028548c5ec8b164656967697",
+    "README.md": "6b1ec98a244da8bc5b6b427d67743243f2f087c676ac1d18526957b124328243",
+    "response_all_001.json": "777f5660a6692e8e3ae6b93dcc2aba4f96d8079fb6451d4af3a5cbc063d20bb4",
+    "bars_raw.csv": "2778902ebecd22a866782d521b8182e3666aea8d5beecc04c4984395253003d0",
+    "returns_log.csv": "2f1b0d66d17db0faeeed7c30b3fafc4685e204e2d79bf25962a271dcdebe42e9",
+    "universe.csv": "bc0fa9f369a0b736089eb66e2e1f2a2ea6560cea08ea1b77e190f0eb23e36b19",
+    "manifest.json": "f7bee6ed93e46575e47b5362d1220463c1b99c02f7aee1c56ff0819d5b687862",
+    "response_raw_003.json": "b0a5d7261dee5c5e4044a462c620b1369b05ecd7defac28f10da40c721a07b97",
+    "bars_all.csv": "407ab09fe63c59cb8288c637d544ba278224817a666185f84ead356329e72a8a",
+    "response_raw_008.json": "8f9d8f6fd3a453c71ef36fd7f391bc4b5f0191a5bd1ac97bd6950f538aac4629",
+    "response_all_007.json": "3ab05d6f159f89d70a5958a04060313ce6301b03470197ae296d5521a6aa390c",
+    "returns_simple.csv": "7587b2461f9f2da20c4d306f092df7ec37a91ba4bb6e574e61bb9d877a86926f",
+    "calendar.json": "ca4e109faf7a8bb2c8ae93c772c98528112b36c434719cdf1c83926728af1671",
+    "response_raw_004.json": "9b0147f3c8d6a0251206bfc16f300b5937339ef60d7660216c204e8fd0ebb680",
+    "response_raw_005.json": "eccb638e7911ac00ba54be088f6b75ca55a7f66b703c3df1ff31000313d45b5e",
+    "response_raw_009.json": "5bde65b4c01fd1740ef241dea8b9267d2647a1ac18cea383819f7024524508a3",
+    "response_all_006.json": "9707a2b31e91af187a07da455a37d6926f0da6a3e4ee2cabf3ae1045aadc07ea"
+  },
+  "checks": {
+    "all_pages_consumed": true,
+    "unique_symbol_session": true,
+    "valid_ohlcv": true,
+    "calendar_alignment": true,
+    "no_forward_fill": true,
+    "adjacent_session_returns": true,
+    "contiguous_compounding": true,
+    "original_dataset_unchanged": true
+  },
+  "source_sha256": "40d0261e28bcca01ea3b33ad053e666e482e9f260b26ee37978702fef3bfdaec"
+}

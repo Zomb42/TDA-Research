@@ -1,0 +1,4167 @@
+{
+  "description": "Previously tracked payloads kept on disk, excluded from Git on 2026-11-04. Restore these exact bytes for archived experiments; rerunning downloads may yield revised data.",
+  "original_commit": "43d0e7dfd1609f47a39b790dd743d93fdc4fdb66",
+  "total_bytes": 945338333,
+  "files": [
+    {
+      "path": "equity/experiments/equity_efa_vs_pca/positions_and_loadings.npz",
+      "bytes": 39650168,
+      "sha256": "a8c961f2bb485c4cca171505cddefe7e6412f23a30cd8390ea834b6f41ccc759"
+    },
+    {
+      "path": "equity/experiments/equity_expanded_pca_reversal/daily_gross_returns.csv",
+      "bytes": 6729277,
+      "sha256": "e6df0bfbaf7aeffad3818cbf6a5796e6c471f50f80fdc991df004289fb1c1c3c"
+    },
+    {
+      "path": "equity/experiments/equity_expanded_pca_reversal/horizon_events.csv",
+      "bytes": 13132308,
+      "sha256": "3d507f503f1cc2527e32f8cf53e61d2f53bc555a9266f1fa7c38dce9f643a108"
+    },
+    {
+      "path": "equity/experiments/equity_expanded_pca_reversal/positions.npz",
+      "bytes": 38585358,
+      "sha256": "6af7d09c9a0977e23d4a407928b2a1180b5713efc6aea0ffc341e7c14a8066c5"
+    },
+    {
+      "path": "equity/experiments/equity_full_basket_states/coefficient_history.csv",
+      "bytes": 16129989,
+      "sha256": "585cb51082f981ac1ebb56b9c25910c8e27d1f9c10417c1cb112570dd3dc5e93"
+    },
+    {
+      "path": "equity/experiments/equity_h0_scale_robustness/size_matched_random_curves.npz",
+      "bytes": 13575422,
+      "sha256": "db7ec88b9367437bd6c07cc486c5a342175535659222accfd56dd43b00818f63"
+    },
+    {
+      "path": "equity/experiments/equity_residual_backtest/development_only/daily_positions.csv",
+      "bytes": 15618927,
+      "sha256": "fe18eebb251601f4d8afad5093427785cfebdf18e3a38c0093551d5e99f05a57"
+    },
+    {
+      "path": "equity/experiments/equity_residual_backtest/evaluated/daily_positions.csv",
+      "bytes": 21471128,
+      "sha256": "81c267f03d6c1e019121a1e7fa15667f1811b95e1d9200fc00182906423981f8"
+    },
+    {
+      "path": "equity/experiments/equity_reversal_response/stock_events.csv.gz",
+      "bytes": 23006824,
+      "sha256": "087a130c5349f1a3bf58f8f0956f8ba9553092c8b8ef8d7d5e0c8d0fd7aecc20"
+    },
+    {
+      "path": "liquidity/experiments/btc_liquidity_features/binance_depth_baselines.parquet",
+      "bytes": 23172929,
+      "sha256": "57f8803dd13bc492798c7c02fdeae61a1a3a8cd100813fe6a24bc45933621125"
+    },
+    {
+      "path": "liquidity/experiments/btc_liquidity_features/kalshi_quote_baselines_1m.parquet",
+      "bytes": 6792299,
+      "sha256": "b6c9913bb3a270a5ac83938f34a8a1c727d556aace79a4cf25e0526bb70517e8"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/bars_5m.parquet",
+      "bytes": 24759149,
+      "sha256": "8ce81ed892fbfb7a2cd879635f261bdd6fdd7e3f4e7ebb63d551156d815b48ca"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/depth_bands.parquet",
+      "bytes": 15033485,
+      "sha256": "0e38a5752a0a77f12918a6c0d0d5fd253ec3bb0bbb51553309a6dbbbfce6846b"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-01.zip",
+      "bytes": 408813,
+      "sha256": "b04981f250c65b97b7fc1b4b699401c0f54b46e98c2f2e30bb14a387a45e9a82"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-01.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "3d15904d05ad91b21d4a7dcaf414e5ba5739015d3350a91b013153a8fbe5f5ee"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-01.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "9bdd258202acffb885f3b4562ea0b6ae44ba7d31f95e34b4600cbe7958fd103c"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-01.zip.meta.json",
+      "bytes": 331,
+      "sha256": "0ea5a190afd2242167a008b16267c57c55aef4c8c64ca12984ac1ad466045154"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-02.zip",
+      "bytes": 382051,
+      "sha256": "1f55bd1995df1173ca96d430b485b721554aca5eaa4d7c644ab4afd695990c2f"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-02.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "36ea5ba702472443abbba3db66c1ae72510368f75e2dd65ae54a3c58415fb593"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-02.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "4bdd586f361b829c5f225805cf5ea5bdf45287a3066f89b974d0bce73947f1a1"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-02.zip.meta.json",
+      "bytes": 331,
+      "sha256": "62adfa587243ba15e3748914c4b0f522190f4712ba6c11abaf215e18b75f9b05"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-03.zip",
+      "bytes": 417900,
+      "sha256": "e58017be4762e3b93511dc5ca255c1ddf7c1c4ccbbbb1c313b174e033e2b891e"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-03.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "9436d51548879e98ecb639810b6604a7685a04fe130b30b0ad2a95f9c9dd8d18"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-03.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "e3a8a1c20f5f09dd153b2462e03c0ae865813e98cde878c1dbaefa9ee5071d5f"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-03.zip.meta.json",
+      "bytes": 331,
+      "sha256": "4727e4b48683bd7523c39e2430c70a8a5f9f61d962231a605f49981c18de769d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-04.zip",
+      "bytes": 400905,
+      "sha256": "ea177b76e07782ae13e2a26f4a262296e89b3ffd549947c3d6d8bd0c07e3fc2b"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-04.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "dfccbbde80d7f4700d1c8033e8fcce2ddfe4df64bb5771eef4415699290d214c"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-04.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "d4e5a0d25594beb1475640fbc3b357c989120786d4cf735bc499e86858543c56"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-04.zip.meta.json",
+      "bytes": 331,
+      "sha256": "429a73fa962ec86f3d127818a4a2d0e3534d3b78e9d4e26bd37d5640fe855a24"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-05.zip",
+      "bytes": 408532,
+      "sha256": "219ce6bc8e85a9fa9088eda56a92f5c56361751dd8301dff5ed9fc1232b5c1a2"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-05.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "919413d70c287716c8e5747211dd6a5ca2c233b83c87fef07bde27f1c9bdfef7"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-05.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "5aa807bc9e3cedeee38a2044dd48fb5dec9c9b39911a7e21dc43516bec478e84"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-05.zip.meta.json",
+      "bytes": 331,
+      "sha256": "0344ef5b4f0212b299c42275aceb4a667e6749581fe31f48c199a697cce63e96"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-06.zip",
+      "bytes": 388086,
+      "sha256": "f49fdf9f3add26ba70f301cac7d9d3b2e0211eeaaf99f32fa1c92730deae6e8d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-06.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "5cff5f5d49ef4b7fb248a9709facba9fbdffd36ffbfe342bb60f12dc536be7a0"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-06.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "6f0efe85616761240fbd48db31abae8dfbe9ed80f582d41008c089312b69a4a0"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-06.zip.meta.json",
+      "bytes": 331,
+      "sha256": "4e1176ce14faaa5dd3479a94626f7355f5c004d133dec39687f45063adf0b89e"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-07.zip",
+      "bytes": 411437,
+      "sha256": "657f79d55b809ca18f242e950c916bbbe93c3d09697f0e330ba26b5a6a75a4e6"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-07.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "52a76c9e939bfdd0ba439c2365e8e22f06072955ce3418a52c27dee6715a6344"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-07.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "43ed255730d8320d962304a9328102fb2c7dea5c61e70b07b1d1bc7dfd41ebed"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-07.zip.meta.json",
+      "bytes": 331,
+      "sha256": "c130fcecda40909cbb3effffd19dc2d00c40f65db800e35fd8b59d14bef02b5c"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-08.zip",
+      "bytes": 411986,
+      "sha256": "5804758756c980445eb6bbba96f10bd98bb7da471b6041bc31337cb0c7236a16"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-08.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "818780f5aec697897bbc5640bd36a27c7178b8c5ce81a410a64da6acc729393d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-08.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "2e311e56c7396ad7b9443b8674699f17dbe7f0bf9a562009e0283bdba07c9377"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-08.zip.meta.json",
+      "bytes": 331,
+      "sha256": "99e4e37c62df7952dbcd0289c0f55fca7382cdd3670c92f7a10be18437c92ee4"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-09.zip",
+      "bytes": 394632,
+      "sha256": "15ffdcf3d23f9fb6743c54d9d783cdc20373aaf8f60fd949a85653e7bee29170"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-09.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "960bf007512dceaff5848fcfc6b1df4f093497c8a38ff75c5e90a35dcbbc5350"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-09.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "a496c123fcea6836c3e4b8de2f7f9832def853e5b6516b836eb2bd7e38ff712d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-09.zip.meta.json",
+      "bytes": 331,
+      "sha256": "e0379d8a635614ba58a5a6d59480282dc84776872a12a2d6c38117575f3ac049"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-10.zip",
+      "bytes": 405740,
+      "sha256": "024d574aec22d830443dfe557c12137d24423c18b228e2c10045851cd056434d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-10.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "214f34a5d04740af5352107e3ab35f45b991b6c9982d8e60c81a7d140a58d2a1"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-10.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "7ced322eb1dc1bdc8aba856413d99a093ed0bf86e062f7f630d9769c431ea0d8"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-10.zip.meta.json",
+      "bytes": 331,
+      "sha256": "9eb7cfc503cd4db4d12a55d76eda264adaa2540016d8dba9c48c7636d32b7a6c"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-11.zip",
+      "bytes": 402529,
+      "sha256": "bf2ff598c07f5f78a4265c376b3a8f3277e39b42d66bf79610b8b3199a34fa45"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-11.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "27ce242c423be162ced0863708fbb165461f64317bfacd4c11e0825bdf48caaa"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-11.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "8f04a0fe07ddedc3373de9dfe99497d73b3b928eacf30eddd74965dbedfb216c"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-11.zip.meta.json",
+      "bytes": 331,
+      "sha256": "adea7ccf2bab8f0cd5ff2ae91affb610b054907097256c73e79abafd327e5423"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-12.zip",
+      "bytes": 414182,
+      "sha256": "261ced4d4a389f680ae730c53ba82b42f97f656b630352713e2d7fd738f57b8c"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-12.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "7d16109680fc9dba169391a282ef44a46fa5697eb9946cf275593e544a54bd15"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-12.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "53294f1851475c3d700efb105d8679ce838e89a747f4ccb2638eed10661fc2ea"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2024-12.zip.meta.json",
+      "bytes": 331,
+      "sha256": "084c5b7a15cf64ae07e0427ae89ca3a8e3c241fd9ca099e11da7e6f9a591f3a0"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-01.zip",
+      "bytes": 412755,
+      "sha256": "0c99422d64fa3cc58564cf77969fc5a96d6f44783c79ecfcf94b103753bf7570"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-01.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "3451cadbf80e61819d7e86ca1ae43b9d12d97c34ac6e5abf83ed58b3bd4194f0"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-01.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "26f0474a35891bfa2e975fe53813e5e35b8a48bb952028ea9f6361faa94ae660"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-01.zip.meta.json",
+      "bytes": 331,
+      "sha256": "cd551f28be9653ef09bc3b9cdc2d8a719454a64f5552ddd7912ca87656436deb"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-02.zip",
+      "bytes": 370482,
+      "sha256": "fdd6fb92b75bae5c02dd583b5be44ca6673d1807ce4b0c08160d3c5cf7677a46"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-02.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "f5d77fe51537188378eab327ce4a81482fd3844534f987d48ab46b76ae3b02ba"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-02.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "5e4c8202533d45bd86464f82380cbd5f2e12e60e1e141e26612786e7df96a3f2"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-02.zip.meta.json",
+      "bytes": 331,
+      "sha256": "e1e3242e66455b50968325f93ddab1b6a40480491c537a50c4b1c7d0beafdb3b"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-03.zip",
+      "bytes": 412650,
+      "sha256": "46f83773b9cec38a09be429727a5a300ccca6d11c8e8ca5fa9545fad6eda131f"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-03.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "03a8c6b263a29e625a42c35fa2f63cf5da6125c6d732346b202595a40f0973f3"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-03.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "45e1d933f634ec67bb91fb7b74bde1c1900899107aed45f7f67974954f9908de"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-03.zip.meta.json",
+      "bytes": 331,
+      "sha256": "254bfc312a321054e0eb590a622f6228a44c3d5504d615d82dfc50edc9f37317"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-04.zip",
+      "bytes": 397231,
+      "sha256": "9eda69fd858e9ced7e72cfbb75bffe34458763c37c8ee73910e572b4baba21ed"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-04.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "5d85d3106ce19949d73235e5716d8628938ad2178c135dc358738159dbead20a"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-04.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "71878699aff73e01478e58e5f10d8a96eda2080147d91c9955878fdb6ab10915"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-04.zip.meta.json",
+      "bytes": 331,
+      "sha256": "7194936ca9cc2460946f4222b6f059cf4e2183e56457b4725014ded219f59c8d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-05.zip",
+      "bytes": 410658,
+      "sha256": "073da284f178e72777abbfbcf79faa99fcf77bd69c4a678938abbf6cd7d14f5b"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-05.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "f5cc75b8d04622df3aa7188b7cc999605951e2d3a418ecf9c1303854ede45a4d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-05.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "a8ac61d26497c0373402efe01cc4018b6ad93bdfb74c8ed835697f1d90d16895"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-05.zip.meta.json",
+      "bytes": 331,
+      "sha256": "090353ff4d861963cd3f99db470d89e59273899ae8a8c939f7aeec9ad85e999a"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-06.zip",
+      "bytes": 393987,
+      "sha256": "da39c04e24a90c87406b9030e1aaf376655ad59d4bc0496f38e4162a9babf514"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-06.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "066fe426b3775122fe716b4c54c5f3eb89ec4cfb8f0e0694b419167d08f338df"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-06.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "8d5bf72bce2ae60e60df378bc08250148af50b7a52f9df23d9c55a43b09b7b74"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-06.zip.meta.json",
+      "bytes": 331,
+      "sha256": "e196f10da9cccb1e99cac32ea7c943333ceb0d095c054e117a32d9678df12609"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-07.zip",
+      "bytes": 405712,
+      "sha256": "2cea4750d51d9c064d674ec8d0d8d1f39448960284272fdc74698562c873bf0f"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-07.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "d2d0e1ea595e2d7546684f300c91e805edb19dfe7f1021776bc13542a42255fd"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-07.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "62a79304f85e2affedb0869ea44a48cd4a9db1dbe0e85f5f2589d56913904c27"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-07.zip.meta.json",
+      "bytes": 331,
+      "sha256": "201a356b25dde84fadb8b75ee356b6469a6dd2b07752b9e081ed71264f3ed451"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-08.zip",
+      "bytes": 405889,
+      "sha256": "7f78f6f88ae1946f8bd8312a37d1d74b24e24d6b13bc37d2909ad7c8c0c7e9ae"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-08.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "af8b7449b8cb05b2e870411402bc817e6f1dd6ee3215beadbcdec8e01108fd81"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-08.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "805ccb035fae3366b908057a62127aee16dbe743c13ab0e61acaff58388d401a"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-08.zip.meta.json",
+      "bytes": 331,
+      "sha256": "0dc073b7577dadf0b487a697d19f7bad90155bc7710ba34106f5471cdda2587d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-09.zip",
+      "bytes": 388679,
+      "sha256": "dbfb8bc2f9343107c7a702acd6919d77060a8f7ea4b25359c71e5fc018a85209"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-09.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "62fd0638bed8ef6851fd9a19cae5e8987f3ddacce375f4ffd19a1e2e642aa11b"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-09.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "0a06176832ca846744266cd2eb6a7c2a7396e4932d2dc79161db2f5e2773299d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-09.zip.meta.json",
+      "bytes": 331,
+      "sha256": "55d1e4d382b6c4149099a1dfcd07d43285f0e2913fcbba7176ee6b6f109e6651"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-10.zip",
+      "bytes": 412617,
+      "sha256": "fab262ca4318f8f65164ae33a020458439adc6f7bc2e59bbfce1886118d05a48"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-10.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "2ecef87c010b946f3031c6f4d96f517849e9c7b637074528c2b6cadff62a0077"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-10.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "a7d7950105ff3ca6fceebd149dc259350f80f00a09aa75ad4e9d0e4d902b6cdc"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-10.zip.meta.json",
+      "bytes": 331,
+      "sha256": "a225d6867868efae70ab86027328dc29a9698223f84956bb188f4dffe4bb869c"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-11.zip",
+      "bytes": 398908,
+      "sha256": "2759d4be0fe68cc2be3d4d91940fcd95abc69f0c31f25d0b6cb5e0629c625d2d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-11.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "395d40867c8c6fb6c56d176d8a20d0d86cb6a822dbc859f913901be6e5591f35"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-11.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "960b9b5d6443648cb5567bc21ab7cc55c1d6d4fbe3e3b61b8e9b36faab5d95d7"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-11.zip.meta.json",
+      "bytes": 331,
+      "sha256": "fa959c4d2deb6836744b2468841fc12531e29f544355eb680acf79bf490218a2"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-12.zip",
+      "bytes": 404647,
+      "sha256": "0e923a3d2ac4f6711d8c841220f4e5d2e479c1bdb40b41515eb250e16808304f"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-12.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "cdd61783278c5db12a20947adb8197741d8003182a639eab6ffe0a973d2ac204"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-12.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "8d10798798d706e09b314cce4a25d67a98da104f69c0398990ab64e87c718c94"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2025-12.zip.meta.json",
+      "bytes": 331,
+      "sha256": "435a24a68544cc6f34c95828f8746fa81f1fc3f7483d410451d02efe572cc8b2"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-01.zip",
+      "bytes": 402596,
+      "sha256": "c092f3b26036f203bb5b11c28958574aa8501315ed26dd0f8c017051b9fb3abf"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-01.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "a99e67b3726d0e3ee94c3915e0ed72158fd8781a5dfdbb52274249f81b4bd5f1"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-01.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "41e303e25dd214efeecf50fea3dc3762c6294f17e8d9cb755b742cee50e49a6b"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-01.zip.meta.json",
+      "bytes": 331,
+      "sha256": "7c7d27d3b296ed162d06b9a948194f4dc13ba17317cf37340bed11820d82db43"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-02.zip",
+      "bytes": 374045,
+      "sha256": "8be83befce2cd9bf0959c872d91108debd03e1b51a451bac3a56b8ddca196bb4"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-02.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "dceabf9a21b0f237e29a552e2e2460b713a28c5bb2e2b95873d8377e0e6587da"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-02.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "58bb15e5f35d69ce7424b41b91a8832c2b3c228d569edcba48c1dd71a94c8ee8"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-02.zip.meta.json",
+      "bytes": 331,
+      "sha256": "69c70b3fbec8bec8954c68b8d128fa1586f92ffc45b97c53eabc9b4f01ef9261"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-03.zip",
+      "bytes": 411027,
+      "sha256": "0302ccef9b3e5e38c35bc8667a1e890138c9136e89145688220eea99b748200e"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-03.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "9282c11d6fa4728f4c12fca2f66cb12c727ee8fa84336efd85f1cf8991801df7"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-03.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "867f492dabe40416ec151b1fa395d92590c3eae4a3a1dc4770f6b852f3342da1"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-03.zip.meta.json",
+      "bytes": 331,
+      "sha256": "4c90af35552a4aa547e2cb31d6aa8bf6b34e9cbdd79e8f4df864c15bb1255804"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-04.zip",
+      "bytes": 391115,
+      "sha256": "e2934467bdb6a000124948f4c8fef176e2066520a6b2e5a0522450fed51396f7"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-04.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "a6a71f430944ea9204ac56525b011e0ec66c848f6920c1dd2a236b920f538db8"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-04.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "34456c0c15be6f5687aa486d1abec0ba734a1e847883ac262cc90ff681f7d68d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-04.zip.meta.json",
+      "bytes": 331,
+      "sha256": "3ade9147ebfb715552cecdf53053b631a361ce2d0dcf524d53cba625a2434562"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-05.zip",
+      "bytes": 400649,
+      "sha256": "b1a73378796bb62084c32ca5865903beeaf87d521d950d5e7776343f682dea93"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-05.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "9c514a933fddad8a24d9113aac40eac1bcd28cdf30092c6148355601f6a36b93"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-05.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "535d73161ff4237573863b72a2388375181273421113b708e73126842b555e5e"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-05.zip.meta.json",
+      "bytes": 331,
+      "sha256": "0ba92fc4cd6e5192704577bef5b83621b030a491ace2202abfa05921106236db"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-06.zip",
+      "bytes": 395606,
+      "sha256": "782c555963c852ca768335de21d5743147e5d50bff449600f8fceb9ebe5273de"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-06.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "2cb5bedb7ade58cc02a89894ec9168c2d10ba3c6206f09592b0195c0de2a0d71"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-06.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "eba2d0918e8642dbee8bca155131e1d13a4f59d6afa83d2161573a0f5bae1b49"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-06.zip.meta.json",
+      "bytes": 331,
+      "sha256": "0702431a7def12a0c44e1b6ca9627e1c623ecf32a09e73f5624bbc9acc7e2428"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-07.zip",
+      "bytes": 400503,
+      "sha256": "ec750f7aa69c8f842fa1464a90ad4aa92452cfa767df9e8d70dc484e466c8fc3"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-07.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "7296971d2b5d659b8f1459487b660b237636d46900dc31dfa33363c59b289507"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-07.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "64be616fb17b2e42e23f140099d884907d1ff820e05ab720326f2b21c86fb293"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-07.zip.meta.json",
+      "bytes": 331,
+      "sha256": "a08a3ce710f16a873bd415b086e7a869b1839be390abb2fb240a57957e94b62d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-08.zip",
+      "bytes": 397158,
+      "sha256": "14fd408e5d2902665c66b701e861b173568b66399e3fa462b94c766d209567d1"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-08.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "dfb20eb03fe89efc7cd22cf7b47a093e8765a8575a63767d4f4b6dac3fa96122"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-08.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "1cfb116c299258d1ff7e910d3ad36f0bbd7a36c0b92254c781d2f4b1bfa85387"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-08.zip.meta.json",
+      "bytes": 331,
+      "sha256": "0c610ddccfeeab337c459c6c8f9e4f4e31ffc898118dc11b4290ee121f73bce1"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-09.zip",
+      "bytes": 389713,
+      "sha256": "3a2d163a2bd28ca614fa0840a92ecbcde0d9c4962b278dd619d5bf81a9918e26"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-09.zip.CHECKSUM",
+      "bytes": 89,
+      "sha256": "d193616659a0e7d98ed113f7469c3dbee296d1c3ba48ba6024993b5f64df4c6d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-09.zip.CHECKSUM.meta.json",
+      "bytes": 336,
+      "sha256": "0c8699522ce123259a4fddb18fd80a22e0103141ebfb31cd13e458129de317ce"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-09.zip.meta.json",
+      "bytes": 331,
+      "sha256": "6149983efc9d3554626e5f6192ec0136c231a8979bd0efbcb6a6ccd9283586b0"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-01.zip",
+      "bytes": 13773,
+      "sha256": "10cd0734819af381d7cd032c84ba4a9a080a57bba1f97e8e71d45a16f27b067e"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-01.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "684be13388dea631957e8685b2afda5e0b0be566f0c3c38ae57dd33960a88961"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-01.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "d12f6c1a1dd14c7ba2cf12cee2ca0c5b7af21987a62d2b63d965a198e3b55d18"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-01.zip.meta.json",
+      "bytes": 331,
+      "sha256": "329607592289ad08b26e12539481b2eb4fa24e08a90f9fd37521a8990a7820e2"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-02.zip",
+      "bytes": 14036,
+      "sha256": "2a492563746eba6c3689b90c00a081bfce3ceab86a06493e80f22c4d55e8c7ea"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-02.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "08a44ce37d64a18ebe83ee1b7eb5e1307314134c4b9b509227dddea5ba0bf3e1"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-02.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "50a59c363759aea2f21c943ff219438c5af93d0a6472703edf5a8da422b65650"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-02.zip.meta.json",
+      "bytes": 331,
+      "sha256": "4184110632c12e7a67bf7da1c03824c3d64f6e0fc6421cc35abe8fd2d89b40f3"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-03.zip",
+      "bytes": 12836,
+      "sha256": "fccefc7f641f37118ba60b6890590da2600db284383815e157ae51f9d743f630"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-03.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "587f18de328c365d168e0b509904ed0aa05781549ecfcdec61c571cd09b03641"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-03.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "c59c85054ec6ef89e2175236a0e1615498aeb6e7b3c2fafe7014f36591d85980"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-03.zip.meta.json",
+      "bytes": 331,
+      "sha256": "7033bcda73c310ead6b5c5f48e3ccb7fd7d999ab4ae755e7e6ba10e5aff7561e"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-04.zip",
+      "bytes": 13035,
+      "sha256": "c97345f772ec5dd965c0d87c2b32c17a7652ba3820a8eaa99371f83c79f2e487"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-04.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "155a6fb207a32a7be2f048bd1905082c1757096e270ac66d69aeedbb9fb581dc"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-04.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "dd47115a7fca38df618e0cfcf2ad9ce3c1892ca65f1ec4cb51a97389fff966bd"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-04.zip.meta.json",
+      "bytes": 331,
+      "sha256": "d953f393f683f07d73fd986fc90cc652a1a428be59e8f4be190989e98b1bc6d2"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-05.zip",
+      "bytes": 13863,
+      "sha256": "53154ab4fc649a2fe3bf13357fea7b3d2aede3ce47fff2f5dcbc4f6c7c1c1294"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-05.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "577c9caec9cce33f0c6eb21c609e71db6ec306e853888602468a0baaeaf8acdd"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-05.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "5f4b65b698ab2ded56c0667b739be541614e22ce9d760b2d95bfa0ecfae89288"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-05.zip.meta.json",
+      "bytes": 331,
+      "sha256": "14b30e214a02a064d9ccfd54be32508c0c331b7f307f9b52eb7b0e9de76f0266"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-06.zip",
+      "bytes": 13652,
+      "sha256": "dea89e33c0ea6df7b9ccb3ff6e0a087cc2c8ebcde55b3bde4c41694399899117"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-06.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "95d3f425bb778d28d0c56dd5733a6f900d0a85f29f3d3abcb18d162afcb60f66"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-06.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "4ecfe460781622e49882da54766559c3f3f00a99940a90b27f9529b27d5dc929"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-06.zip.meta.json",
+      "bytes": 331,
+      "sha256": "c8bd126372e18806e3daf383acc6f8e656a40b79ef65240cff42b531c8c433ee"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-07.zip",
+      "bytes": 13783,
+      "sha256": "2d622f67e9a9d5eba0449c01b79191877a6e4494bc4f7206c5f59d4b917858b0"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-07.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "c3c4f94d5ec5e6e27ee17084393f2a6afa33ca284c3ea3b447e522cc9c1f835a"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-07.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "b5a2a1be784af32653d7465ea1840408afcc658c6ade5cb73997c2db81806a13"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-07.zip.meta.json",
+      "bytes": 331,
+      "sha256": "537e29d939b15afd920e395ef8097e0f2d70f351dd084dff0058c413e8e3c391"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-08.zip",
+      "bytes": 13926,
+      "sha256": "9963f007248198e8dc3d975e7d1bfe80eff702eb130babf0efc2dfe3ea8859fe"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-08.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "25b2e666ed3c1e995bede8cb7fc587e0814e14cd2b596f10ff12d62a99b0dd12"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-08.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "8f0eb79fa1da99af3f83cf88f7bac89107c6d0507d30b05a07de8990a1629911"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-08.zip.meta.json",
+      "bytes": 331,
+      "sha256": "ffa9a9ce65c49a57db5c919c8765d77441d34cd00a15bb76c1d802fd879fd8bc"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-09.zip",
+      "bytes": 13561,
+      "sha256": "011749606208b211ef7efb61d45d093bfa6a0d7e6f46b71b6f75f8a420ceec58"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-09.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "54953b4a26e48bf529f8397c4c7b30a81c12b9f39f970f8f58c3c1f0d27a646f"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-09.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "66a4f5dbbacecf649c10c8c0b2ab021d6c4570278a0ab135f665e2d07aa61892"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-09.zip.meta.json",
+      "bytes": 331,
+      "sha256": "828fcc18c56682c8487c0e2b32a7d2a9d733f20d8a1c151932beaf720c7b2365"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-10.zip",
+      "bytes": 12785,
+      "sha256": "872803cf56b398c7a999758fe59c865e3c749bda74ea896b958d98010fffe56b"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-10.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "b75aae881f79b494830ae8f0911cf3dd5820a8b337b0908c41c1ec7fd5ba55ff"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-10.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "79b73b73eb7b76130d2bffb3d268366d2f1a45d6bf7e77236ec5774d8ce7baba"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-10.zip.meta.json",
+      "bytes": 331,
+      "sha256": "0a7dcfcbe4d1cba301ef77f6e0734c6eb9f5c3bde1366b0d8a067e079547d44d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-11.zip",
+      "bytes": 12967,
+      "sha256": "7c279f1a78a64171d8a61f6328146d5239f0d516339a87231c610cd5a3caf4a0"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-11.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "3a3cdb116aa28c03ca739d107015c9206fd7ed22362f745727ba0194a46658ac"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-11.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "98f60f3bd9c246f8c1a69f038c803d3c363f629c8399f6bf87eaaddf5f448cd4"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-11.zip.meta.json",
+      "bytes": 331,
+      "sha256": "e82ac038b0f006c193d05bfccac9fb594dedaad976ede3658dd508dcb4df56ee"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-12.zip",
+      "bytes": 13753,
+      "sha256": "4994f82eb9bb04c54e2f32ce249c462ea28e41a2de8bad330e6564779501bfe9"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-12.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "4e8f9882ae05d16f01081a116efd792a4a4d4b42dd101775dacc6012d322dbdb"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-12.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "e48640a5a80585c80fed0b76afeab98f9aed266ccc60894a1904835f763db74d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-12.zip.meta.json",
+      "bytes": 331,
+      "sha256": "fe3ad56027bfa91641325ac5991c10e9bc112e2699b60d3b03773edd91b67c78"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-13.zip",
+      "bytes": 13759,
+      "sha256": "25177351a6b096b98eaa77f42e362203de224be94881350a951bfffa059faed6"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-13.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "1d3654af44cb29526b48841c148e8dbc4c511e0cdc14d8bfe1911db94f50f37c"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-13.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "666df5d4ef54453554642d8d959f3730c04d7065c88a75ba1d8cd8714b1355e9"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-13.zip.meta.json",
+      "bytes": 331,
+      "sha256": "86ef0ee0a5206c698c21aa0e528407857a2a8b7930b85b799a247946efa65046"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-14.zip",
+      "bytes": 13795,
+      "sha256": "21879fa478777d0b68252321d6b2b609160404340126b93640e4d641bc2119ce"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-14.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "b96689551d2fb69280afaf3ee767db10f734ea08d4324faa2d943b62015a06c6"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-14.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "f387a6283d7256783d09bdafd45bad250928207ecc0a14c8e818f10da3afa1a1"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-14.zip.meta.json",
+      "bytes": 331,
+      "sha256": "5feb66186a04b907ab9a676288b33bab4b84f3ab0797fdd2d5062d267e621976"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-15.zip",
+      "bytes": 13947,
+      "sha256": "def03b137860740b184bb113fce1149e3a1e77f70fcd2153a3715bef787b2b65"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-15.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "726734b4bcac8f57929adc6a99b8716d75633e357d61edf42248f2ac30a5f4cb"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-15.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "3e77b826c6a6ad827059327e13afbd99f8b0f3ff958a1ca4c36d2580d9e1d11e"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-15.zip.meta.json",
+      "bytes": 331,
+      "sha256": "c66532e5e921dc6b1ad9618d43aa2ae7df411e81a831f75f73274981b461fcb3"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-16.zip",
+      "bytes": 13623,
+      "sha256": "507f9d8d3b6c33ea4ce581d1b48a5faf07761ff5af221721dd646e59a3f08d48"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-16.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "3264b74a273669bd4aa538e904c96dcde7777930a08dbd6a0b261255ee92b1e6"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-16.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "5936a5824c3cc8d204cf29e86c87c1aeeb88a2b257cbd47af3429cd27d0c05ea"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-16.zip.meta.json",
+      "bytes": 331,
+      "sha256": "54bf02bf11cec47c5d1d00da48e0e05f09470e4371f99512a24a0f9f7d8c4524"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-17.zip",
+      "bytes": 12879,
+      "sha256": "a5bc6c7950653285287b9f8d56dae0285650173dbd57bbe3b7e88e74e3680246"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-17.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "098c16e44f5a023b7ab385b9e5296ba2248833122ce87dc72e793b00c8b58c71"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-17.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "cb7e9f670d71166dd18300a9d4eb38f725dd8485b608247d9bc4933e6639aea0"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-17.zip.meta.json",
+      "bytes": 331,
+      "sha256": "1cdcf665b8c12f969fe30e124cbf5f5bee7f8a05a3db5b3db0d6f3583ba8fbff"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-18.zip",
+      "bytes": 13487,
+      "sha256": "19f09a3f566064d165d69f3020542f376acc7c765c6d7deb2248914388aa3d8f"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-18.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "fb97cd57cfb2280666cb8e202b9f72078748ee1bd39c1991b84088160b5d8731"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-18.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "32d96e7c94f8dee984eb10a8c88f83a70a2858a4a392a79c379be1b09e5f1b8e"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-18.zip.meta.json",
+      "bytes": 331,
+      "sha256": "0273f4cd939867b7313ce3160f531a6ef0c7d58fbbdfe862eb802b3859b350d9"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-19.zip",
+      "bytes": 13665,
+      "sha256": "4339c1eed677cef74b128d2e3d67f554fa07c61323a0fc9d1614d80be5ab9617"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-19.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "67e7c6e2a2eb53cffcb531a914e8258501f9075607816f918bfed4a725534232"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-19.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "28e02b342ab0d3414c461fbd3f18a6990bf53e3fa287f4626e48cf18ed0fe8aa"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-19.zip.meta.json",
+      "bytes": 331,
+      "sha256": "25fffa9e09d0c6701e1af23df445d42d2575bc6f599f86ac21385909673f59c3"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-20.zip",
+      "bytes": 13743,
+      "sha256": "e0104e94f5a1110707fe8e19e96a6be8aa593b2294538bdfe10f7d1f886cb3ea"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-20.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "52eceddbae24703d1fa2f737c7f297e72f8f21ac8029f671e7b7d7ad909c9d0a"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-20.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "a59c67c92682dd1fe7af325f672d30595bcd491e4f8decc7fab116afd4c0d90f"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-20.zip.meta.json",
+      "bytes": 331,
+      "sha256": "72a1009902db18797a62cdc10bf52eb41dcfd853db99c885d835ed4ce55c29bd"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-21.zip",
+      "bytes": 13741,
+      "sha256": "ea557930877523ed41707fc62aa5a15c18322698c48deb61f113e2f226b14b79"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-21.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "7be97e3635c0dceb4fbe56c2874dabce38f148af037163ad52221e854a112696"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-21.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "36b76ef17bcdbb6a8d740ee71220f4b4e9187aeee60cfa473cc05fb1c5a61789"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-21.zip.meta.json",
+      "bytes": 331,
+      "sha256": "abfdcc74b9efb3b6b0404f3bfc00b569fb73b2d69a3e804013b44941e0297b26"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-22.zip",
+      "bytes": 13845,
+      "sha256": "87409b05d9b93fefff23576e07270820ff613fecb7fec1561ad04643cc612e9c"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-22.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "cc3371bcc9badc00a9824f2816af4784a017c82bc311abef86a20bd84e388d41"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-22.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "349e818d613524be8a3ee49a37dd244030bd1520bd312d8899ccb7334c21a0a3"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-22.zip.meta.json",
+      "bytes": 331,
+      "sha256": "d73bfd73c9df1b4e8d6622de41e4c52f84c295ca76750644c68fb6e63d487715"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-23.zip",
+      "bytes": 13558,
+      "sha256": "8a1a49e027a179ec006477f60bf1da85d9b4785e4f1806f3689efbeb01878f08"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-23.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "9e7268aea9847638ff66de9a868f3f5c7f6c8ad28b529b35a29d63e3227e861e"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-23.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "74cd53d324ce2e1164a3d15c04efd2beeca6e9b84eae2bf9f784e4a61d57c8c6"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-23.zip.meta.json",
+      "bytes": 331,
+      "sha256": "c02d90d4ec3efaab9a3cf626fbb9851cf7038d8314d93d856de74b193c323e8a"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-24.zip",
+      "bytes": 13417,
+      "sha256": "875b4b2efd36194444b554c5957a88aaf967f18ad8d6d2e7797078ed67c3e064"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-24.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "7ef874420340d12c050fc25f632050b02f8a862ab8e527a182239492e42af272"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-24.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "8128d3021b621553fd67627623c0ed8b3332bb160afeb458932aa99918af8ded"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-24.zip.meta.json",
+      "bytes": 331,
+      "sha256": "63a822c822d5d109cb33d10b9b1fbd22454d784819aac266b0ab02fefc999c03"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-25.zip",
+      "bytes": 13254,
+      "sha256": "2eb1a04d93ecfb92a18658871e7dd8bc658242d12dcac54ce6c47ca1e16b85d7"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-25.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "2d6dd334ef0fcabb2f3c3f9013f690895a300c59cbf9230fb0e20453dda03410"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-25.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "f5be04615fdbac185a132a377e4879d90fb96dada55504e30413809dd710de8e"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-25.zip.meta.json",
+      "bytes": 331,
+      "sha256": "9d0ca363f0664eaafb44055a3c9b7594cb24ad9ade22a804034f279c44e9a4c4"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-26.zip",
+      "bytes": 13731,
+      "sha256": "70544058425c3ff4afde16564a2e58afec5878207f449fe4b6da52bf2a1919a7"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-26.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "dc96bad655b2b1bc5e3cb6022a2bea29cb2cef4d7c95c8b01562d02f6d956e4f"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-26.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "2d3c4e62b3803c19caca18f2fb5aa889223212e9494958169bba8564bd22ad60"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-26.zip.meta.json",
+      "bytes": 331,
+      "sha256": "30c8100de07e3dc502aac265e90c6baae20053e234c39082d03194727c8fa583"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-27.zip",
+      "bytes": 13564,
+      "sha256": "5503c4250fe080ac846238c8491e615caa2ec203bda3cb6759ffc997d08db930"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-27.zip.CHECKSUM",
+      "bytes": 92,
+      "sha256": "7a1b158f62ac1bb05f374a09e94bed8569be2d1102dcecadd3c199cae02de4ad"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-27.zip.CHECKSUM.meta.json",
+      "bytes": 337,
+      "sha256": "66abac462d4f27d51ea72a527ff94c70d831ae0012b06f7aa19a49c00e02a157"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/bars/BTCUSDT-5m-2026-10-27.zip.meta.json",
+      "bytes": 331,
+      "sha256": "492de674c913521c39a49bac4629b3d393a96985dd7d315a623f1ef82e4d55ce"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-01.zip",
+      "bytes": 463389,
+      "sha256": "fa37c9f66c96a95cf3081c5812d8e1d8fdbb0fc0df1c05989fd973492eaebd48"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-01.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "6c95d31ff64f531f133d15ef9d3277707ed51e338aa141c0ce504db5aec53677"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-01.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "475f3f104aa1db446f02f2a7727d48be0a63a93fab56bfe4de5aac816df67359"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-01.zip.meta.json",
+      "bytes": 339,
+      "sha256": "183e6272914a08005e2a71c25ed4f28afb0380515e90c09201ca5eeb85abf4d1"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-02.zip",
+      "bytes": 465125,
+      "sha256": "ed6ec89d74be91e9e1786b7be4da8227b495cb51da39b943123d124cf63017c8"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-02.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "e43605b356a0a850953492e4c3f7354dde1085e4e885b2cb6712a8a5f626d5f3"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-02.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "34948f5ef94fe93f6c3061559ac651cca25b7aae59391f5cee74cc2b651e59f7"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-02.zip.meta.json",
+      "bytes": 339,
+      "sha256": "ca9da73263e6e71cdcc24889089a936186fe9b423df1aefef9f0f97bae562100"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-03.zip",
+      "bytes": 462611,
+      "sha256": "207c2f18cbdb8a98cacc0b144201b6e035808208676fa6a2ea61d57d4b4b05be"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-03.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "5655989c7402ebf563a7bf2e6e9f833aaa6a446638974bd52f13edfb30446f9e"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-03.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "39b8112e2805fbdcfe956b2a51fcaaa7a431b36c6debc886293f54102fd58570"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-03.zip.meta.json",
+      "bytes": 339,
+      "sha256": "3d7a4b3105e24d190fc0301e37024c4e44335fdf888ec85853b18a72dc7adf15"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-04.zip",
+      "bytes": 459377,
+      "sha256": "c19ed958e0665001c48c3bcaec7db4f9c6514a9d96d0ba57fee2dcccb46f0cc9"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-04.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "4f12b9124954452c9948cdcb307a292407fb18c04970dfe7f9adb80977022cf0"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-04.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "d676776a3f2c35f0d11bb7f018a34a37a38ba33df77be1c5793138fcef353637"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-04.zip.meta.json",
+      "bytes": 339,
+      "sha256": "77325c245a1ac7cd5a2cebe78763ca23de68d8c2e60684473f768dcd848ba2e6"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-05.zip",
+      "bytes": 459397,
+      "sha256": "cf00daae7254f3497aa495df65d7ac7d587b86ac3823cd306783f81aabd52cb7"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-05.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "789e30555f5638fd226325c1ff43eb6d2246492081564fba2130192a25b01ef0"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-05.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "f2d8042b7f95c053fb7cb4c4187fedd7de0b7f17c2447ad7f1149111bf40ff88"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-05.zip.meta.json",
+      "bytes": 339,
+      "sha256": "a30996021eac914cdc89a12b12692abbabe2633d79fc625d8efcf22c46f832bd"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-06.zip",
+      "bytes": 464693,
+      "sha256": "8ba1488d0ec975c8615755935b0ea31b14e24a7f1b38bf713f86e19b6b62794c"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-06.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "31521e78a2a7fd9d21768a9da2a6f9cb5ab435856c39da4f146a6b98c27025df"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-06.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "d07126276abbe669c17f42cf0d8234ef72898d3b718933b175f4fc4c4ffe60d7"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-06.zip.meta.json",
+      "bytes": 339,
+      "sha256": "f6541395c402d48ad88d6b40585bd2eba8afddb024cd5eeaac7332e1d092e4e1"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-07.zip",
+      "bytes": 455398,
+      "sha256": "03bddbc88a1d892ab0461d3b5408120ac30c555c80db33d05b981dac33dad930"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-07.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "cfb6b6d70f1b723f1a256c565eced7e923938cec32e7b50f12c2e7ebe6e4cdfb"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-07.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "f8c8dcc81f00d10259bb9bb51eb2ceef1842990c77a5d8c706544b8dc8a4d892"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-07.zip.meta.json",
+      "bytes": 339,
+      "sha256": "e85565f1d8228b5ff06a1632a3c6d8be378ed8fe9386b8923b25a5c8daafe75d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-08.zip",
+      "bytes": 468079,
+      "sha256": "6bb41e01d676cac9840b8f856c89df14da8bddbe605cf6bdff5364bfeaa1c057"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-08.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "cb34a3c3555aa7d95efb2dc904aa36214ba6337702715793c6fea7b4c60eb0d4"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-08.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "1ed786a39be4fcffe09e0e7e7db880c0a8b411e06ffd11f4b4277f486078223c"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-08.zip.meta.json",
+      "bytes": 339,
+      "sha256": "1b0c1bfe555e4a7b064cfa8eb9afde8c9622c7f84cba41ccfda625d49ff34d59"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-09.zip",
+      "bytes": 467044,
+      "sha256": "512aeec68cc560c110ec1852d8aab68a7a5f11b01c6e37c313ea7faca3fa5315"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-09.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "4085584e732322aba9b6548dd3ef322755a148f57e1fe8762d42d5bbaba372f1"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-09.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "b53a071f01614cf4af874c12b83771a88f9e2786da0fc67bb0fea3ec398de378"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-09.zip.meta.json",
+      "bytes": 339,
+      "sha256": "3dfa40ec737a1c7023fd7427b228816e0965f4f5735b1dd7177bbdf2c763e2fe"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-10.zip",
+      "bytes": 466394,
+      "sha256": "4221780f9a0a605f690fd951e72b34bd4bba80a82bf69000e48642e6b7fc2625"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-10.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "5fbfb718a6b426af1e42e0ec18963691b6d3b8ca69cf04556b682bf9d67e069c"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-10.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "0312e9a02c9427eff3332d618b8a70f8aae20ab6be4c783cd863789900ac7685"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-10.zip.meta.json",
+      "bytes": 339,
+      "sha256": "ab9243676993b96846eba15f117c167b09d4f3b9c5f2db9b32451eca3b4bfb43"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-11.zip",
+      "bytes": 461138,
+      "sha256": "9e6b5c68380646004d092e2c53c334b88452461c3b6f5586ebda0d54da757416"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-11.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "f93d3f1d4954428b1dc98624071cb368d42f1046a92f28c0bf16836222ba0548"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-11.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "9a500512bc108e175720672060d56785bfdb28a21d0244e43ae6d3cedbb4b759"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-11.zip.meta.json",
+      "bytes": 339,
+      "sha256": "8cf7a949b53fe1190dfe9cc419638b5eb87db6deade71cb3989adf6967d832e9"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-12.zip",
+      "bytes": 460797,
+      "sha256": "f7d93f5c8f0385acc188fcc175fdce3457b347e177d4e72809d23f3adc6695bf"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-12.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "3e22b684119c7d798c3fb882f3f30c9fbda305f0a3fc893bc3f024102d41cc3e"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-12.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "7e9e11e1aa438e1efd11b747bafdac5aebf5db0f5d3731201d2ae08c8819f82e"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-12.zip.meta.json",
+      "bytes": 339,
+      "sha256": "987d016c46e7ffb835b90adec8a3c0c568b1c3bc85a56e3db51cc40c8828298b"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-13.zip",
+      "bytes": 469182,
+      "sha256": "0bbc418a7be521bfb097fe0aede4e8f43148a87ba406cf4ff3f642178f6b766f"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-13.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "27f2c812c5adfa10ed7797fd2a1b74f0121d1bab90b74438c2b65c13b30032d0"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-13.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "b7e7da839052ec57e13421d25fcc5aefed7965e95869b125990a7352c403e1aa"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-13.zip.meta.json",
+      "bytes": 339,
+      "sha256": "594a73d98c913d9c4109175207945430bfc03d856125f607fb674646d3ed7fe1"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-14.zip",
+      "bytes": 462946,
+      "sha256": "f21cb9146386ca9f09ff1f4fadc3203eec6aa368670a96416f1372088b17774a"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-14.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "f2cc83c456ab2729df206996517a8bcb7a987c0d14b6bae805326c5aa39a8555"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-14.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "a7fea8407d6d4d87bcab94802cffc0762d3bfa0cbd18ef19e5820413186d854a"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-14.zip.meta.json",
+      "bytes": 339,
+      "sha256": "7393940a2acfc514caf2d780398b2e13f7cac8d40090fa7905588a13e3956c7b"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-15.zip",
+      "bytes": 463833,
+      "sha256": "0cfcda8340633023a8d61020eb561da3a4f40e35facb02901cff8902e47e737c"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-15.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "89d16efc86004bed88c82ffb3d606c1437faa4935d9330104b77b4e69a27d6ea"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-15.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "8a1e834a77af5924e43fd1628fc6d832c840e0da2606d6f88719abcc810d429f"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-15.zip.meta.json",
+      "bytes": 339,
+      "sha256": "61bdf3a3c90ec71f07fbb2dee01a5d693801befc28a4d079103de76124f4e7ed"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-16.zip",
+      "bytes": 462557,
+      "sha256": "ca4ddcc0b9301a220a8ab67b8f5b9e4902a38d17f111838372b9754249ee24cf"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-16.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "f002748ba8db9f3d182b8669b71c85ef545d3b27795bf00eafecc056c1737b9d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-16.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "2ce245bd936c954b88540533d04ed6284a0d54a42a82cb2683322557bef11237"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-16.zip.meta.json",
+      "bytes": 339,
+      "sha256": "db64c2a2cc3257e1223bb4bbb69913c0291bc231d8df1587a8d1817b38bd8c4f"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-17.zip",
+      "bytes": 463533,
+      "sha256": "4561a884046ce27cc553df3b7ca522e849ccf5dfbbb57089e5eae6faed6c00a8"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-17.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "175d2c99a545c7aedfb55d9dc7219d381364bd0c84b33169f569c6ae19e50858"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-17.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "14823abc4a201c60859b3d20eb3a16257c9d8592c94cafc52c03e0a9213cc220"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-17.zip.meta.json",
+      "bytes": 339,
+      "sha256": "238d6ea1dd025604bc4ed7ea43f5bd36167209063fbea33e26b10de5a247a78a"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-18.zip",
+      "bytes": 462953,
+      "sha256": "f355a50ae0d8439f8c6741ee2c173fd6bc2a013576770e4002509bc00cccc6a6"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-18.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "573b413a0f0d3351a0e0ec84fb4819d73db00aea66c03dcff0332b05bd74caa6"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-18.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "17e4b6c45d7e411febe49161e8bc706cba06084f1e1e91488512fc735d241e00"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-18.zip.meta.json",
+      "bytes": 339,
+      "sha256": "9ed1852cb4d1b709fdc30f7b8411a0c95b0965337ceed76aa15a8be007009e88"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-19.zip",
+      "bytes": 464639,
+      "sha256": "e46d64298d02f4db602421c3fe85aea7cfbbecb706e69834c8b4652b41c6d024"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-19.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "ee8b9e154b6352d98fa12585c2a4e0304480c601bf5acd8ebcf9d4ecba7ccab1"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-19.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "0cc0457293bd05c7a162ae88d8946258368c042a3f22a17c02fd1f283def858c"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-19.zip.meta.json",
+      "bytes": 339,
+      "sha256": "5f3b4a05acf857a7389e860a05be9e2ac7c50011866054741324bfa4bdf6d48f"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-20.zip",
+      "bytes": 465738,
+      "sha256": "47e2f48446eb3cacd04685e42450a1570ea685e1ca836f0ed4553338827397d5"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-20.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "c26a7bfb184441f76db6911826b9312ab2123622b3d5857efca10ba75a7379b3"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-20.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "73b6480f64544e4c5aa718b16862f24f54f5a61927b9fbfe6e76577443eb7d36"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-20.zip.meta.json",
+      "bytes": 339,
+      "sha256": "60e8bf0d20f2f3ede26ba9c0515689e2e57ed295219202d0cac8bec8f486b65a"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-21.zip",
+      "bytes": 464966,
+      "sha256": "a3dfb1738c2c2229ab9e108a0a7849ce01f962d8ac182f0f29d14c9467a6ccde"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-21.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "4d9522fbfe3f3ac116254b75ced09f5509aea1285e7b0a018f33084ed39a6acc"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-21.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "c26e6f450878c04930efbea68d3ee803f3ed11c82948bbf418a3a39c88f52e2e"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-21.zip.meta.json",
+      "bytes": 339,
+      "sha256": "2e957a30ff2ba30def7311422ffc9b8de396456ab323de43fb99c53bef459fb5"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-22.zip",
+      "bytes": 462629,
+      "sha256": "7ce32b4b883cbea36baa73cf4451a2473a6e08456efdaa13062b5daba4c42965"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-22.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "52c68a9d5b7e09cc4e528f83abb122c433c0fba9bcd978d0d4ab5196dcbaf72a"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-22.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "576311a4f9ef7d61e3d3d8c02c6a153e2f10064aa40b888a4ac9995698fa5e0d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-22.zip.meta.json",
+      "bytes": 339,
+      "sha256": "64d62d5998fcbb401f4259c778cff791ccd7d863d38fd44397782f8813082f08"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-23.zip",
+      "bytes": 467784,
+      "sha256": "488d8a5c034fe3beecb66d2e1b21f9ee96ce5579f49f44bab9c8034f75ce5218"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-23.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "5826e9ed7430f519db9ac00eb2ca0e1dfe59febbbd2570d1a91af9b7d9f39154"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-23.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "581c3409341daec6fc5484f0cde8889f79bd743a736ddd5aa1fac51c9c5f4a04"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-23.zip.meta.json",
+      "bytes": 339,
+      "sha256": "66595d720dbc6d578d54717024101ab5899f6ae1e56436e9d7fe194548d11260"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-24.zip",
+      "bytes": 465806,
+      "sha256": "99c15c76bea6c178d0af0abf07510d0080a63a3e97ec4012e0e626844291ba07"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-24.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "ecf3f294a5d99a2c969d40df2130417f010424da50f63f502cf4c8b2740ed557"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-24.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "ccd998b361b4f3dc290900b0d43574eca2d1c18b0ab36698e7f3e63bf4862cae"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-24.zip.meta.json",
+      "bytes": 339,
+      "sha256": "b7c04be6162394ee55fc932d2bf5eede1a04103dc465a224ed52a793203d55cf"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-25.zip",
+      "bytes": 461194,
+      "sha256": "a82e836ba4b3a7b4a25233867011605200aa07932cc39758d11b6e093bbbbea5"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-25.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "64bba104469aad9d5c18095dd93095c9f1360be13327bae239c624c8c8e062b9"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-25.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "2985848626f4d728a5e5888480e9244b21f16e367c707ea3d289313ef990ebec"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-25.zip.meta.json",
+      "bytes": 339,
+      "sha256": "fcc8899429a205bc664700a136062f0112141eae74db5ba6589853058d9cf17b"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-26.zip",
+      "bytes": 459450,
+      "sha256": "b38217d98aa0402131f108c2d2a652e4fe02dbbace2d5f1afd9f41ef131b0916"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-26.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "2474dc1854979eabdaa6e15e7fc14b7953a38f842d80ee39657ec2020910a85d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-26.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "c61d394748634a01c59118ec219afbc95dd0eae320c8e04cfdebabea9fedc739"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-26.zip.meta.json",
+      "bytes": 339,
+      "sha256": "44c69ce2ffb202fc5d4ef82c810fc212c209e469e94190a315efbb4c9020135c"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-27.zip",
+      "bytes": 466608,
+      "sha256": "b8a3716e68a8e742a013e12d380372d648473e454471e267f6ef0030ef797084"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-27.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "366b111fdfbb713ebca7dd2cb8bbdbdcccdf75e0039ed3f085fec0b64c49d11d"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-27.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "b1a5bf658142e3fb8a80e6522822e0d4151a5a4a9a596b3e611b553558e1d191"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-27.zip.meta.json",
+      "bytes": 339,
+      "sha256": "82a855e64a469dbc6003bdd0ccb0d485d13b9d348aab7fe387514c785f089f4b"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-28.zip",
+      "bytes": 463590,
+      "sha256": "b0f32948181d0cd3c1edef96fed98772edda381a1e43a10d6025f08e27100485"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-28.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "8bb862d3aaf03689abf2aa00de6d535c8f501a424893126d525db810251f376e"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-28.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "08bdce5208ab0a5afda03234704df1246163947a72caf93288515b67abeaf8ba"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-28.zip.meta.json",
+      "bytes": 339,
+      "sha256": "b0d57c1f21aec44df3223cc8f07c5b82f41405f9c9dd4726dc6b5f6bce9901af"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-29.zip",
+      "bytes": 463916,
+      "sha256": "38f421622a3bc2f63fee5986a775898242a4de4e92578a66f4c0c905f208b7fb"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-29.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "2deccde3d96a1363d794ccff4194d91f228e7b6ce51228ad482f2d47e2acdc86"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-29.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "ce58fe9bd8c5843b8835c7d3ec9ee5a8ea7fafeea0176b687b0b542aeb6376c4"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-29.zip.meta.json",
+      "bytes": 339,
+      "sha256": "fa6d0908f619c351d092b6047ef8908e2a2b8c3848c6566c9f7c2a8d3d4b3fa7"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-30.zip",
+      "bytes": 464022,
+      "sha256": "6403dbdab32a18a3d5b6ee0ede4dcf740bdf3d3f9d44d081ab11e16f848c7b3a"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-30.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "6552271fd788149c5a6a0d31cc297836955f4c5831072240101cd9cb2bda7cd8"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-30.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "4401f08ed0f7619a8a68d4f08f9739d48bc800216e9c2485897661417d013436"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-30.zip.meta.json",
+      "bytes": 339,
+      "sha256": "0a4c0963266c84a0dcda5ce434cbc1dcb46517630798eb9fbd4a7bcd275de328"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-31.zip",
+      "bytes": 464302,
+      "sha256": "760c46a9f2c9e88d4066becf351c1da1ac260ce22884cc2731586bb14b7e767f"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-31.zip.CHECKSUM",
+      "bytes": 99,
+      "sha256": "18202511ee6c24837aed499084c219790f1c10dfccd3c6b9f75e1a0fb2c08182"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-31.zip.CHECKSUM.meta.json",
+      "bytes": 344,
+      "sha256": "338ac95930eaf1393e754b6eda3629db734cc2226227994bd56aa0aa2857fa48"
+    },
+    {
+      "path": "market_data/datasets/btc_binance_2024_2026-10-27/raw/depth/BTCUSDT-bookDepth-2025-01-31.zip.meta.json",
+      "bytes": 339,
+      "sha256": "fc9bd41ead3daa1842908b534fee34eeb131b1d7aafd880b78f8db70998962e7"
+    },
+    {
+      "path": "market_data/datasets/btc_deribit_2025-01-01/book_checkpoints.jsonl.gz",
+      "bytes": 18699287,
+      "sha256": "29d4d3f33eacf5a0787db87c410798e231922976e8de35a8a74b012ce063e8dd"
+    },
+    {
+      "path": "market_data/datasets/btc_deribit_2025-01-01/raw/incremental_book_L2.csv.gz",
+      "bytes": 124189509,
+      "sha256": "84e87870442c91df5f1a8860474c64c37a40ad6012f2c462cc6e6cb24997ff85"
+    },
+    {
+      "path": "market_data/datasets/btc_deribit_2025-01-01/raw/incremental_book_L2.csv.gz.meta.json",
+      "bytes": 544,
+      "sha256": "0841b89fdc9a52d9f8f93ed1d5ed83906d1c63ad019bcfe0555119c6fce856d1"
+    },
+    {
+      "path": "market_data/datasets/btc_deribit_2025-01-01/raw/trades.csv.gz",
+      "bytes": 557911,
+      "sha256": "7b9095f13de03142da932f54917a06bc6d8d40beb151e2eaa1c2b6cb667ca6fc"
+    },
+    {
+      "path": "market_data/datasets/btc_deribit_2025-01-01/raw/trades.csv.gz.meta.json",
+      "bytes": 512,
+      "sha256": "6d9dbee96d8350875955914f4505b1b13ab8580d74ecd924685f1b90778eadce"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/candles_1m.parquet",
+      "bytes": 25024563,
+      "sha256": "77cf1e44d4f265d0150c159d2f99b79b62371ad228a69db4eaef5082d1c69341"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-01_1m.json",
+      "bytes": 40,
+      "sha256": "8a3118d114bae6ef0b4f24492a5491b1b40c8be86e9dffc995910a3fc6b21a03"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-01_1m.json.meta.json",
+      "bytes": 407,
+      "sha256": "e450fcae5342feb2e07f54dcb9cbaaaf705690afca60f7f5f5969652e51aea2e"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-02_1m.json",
+      "bytes": 40,
+      "sha256": "8a3118d114bae6ef0b4f24492a5491b1b40c8be86e9dffc995910a3fc6b21a03"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-02_1m.json.meta.json",
+      "bytes": 407,
+      "sha256": "fc48eaac055d1ae0349b1b848692d441bcf84a86ec86380b7b15275fa2ea00f3"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-03_1m.json",
+      "bytes": 249358,
+      "sha256": "aa14ca50245a49fd90907de0ca893066e13c36b9aac3e133578b04b2391b665c"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-03_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "348bc741ed7cec589514f34f00af8d3e4f43f0393d3f3c927c2532ddec472826"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-04_1m.json",
+      "bytes": 563120,
+      "sha256": "7c0ff397d476abe83b4527749a2c682a701a7901aa7bb63270e3089dc5687538"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-04_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "f097975e0ed14c1dc3d49cd20566f6c4f11d35fde17755be36b4641aca1ee8d8"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-05_1m.json",
+      "bytes": 621406,
+      "sha256": "075582d976fc12524f7fb68d7198c9f76714ea6dfa69051a919a8dbf1d46c810"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-05_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "bfc315bab1fd9cb92b0954daf7d012f973ee2a6f4c02978d51bd803f2b90328f"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-06_1m.json",
+      "bytes": 612143,
+      "sha256": "2433697d17742225622a42b7591bfb7de45cf876350bb1ecb171399f480213b5"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-06_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "ddba34f619ffc947f2bf7a1653cd4ab03cf4f0cad5d330cb3bdf062ca4fa872a"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-07_1m.json",
+      "bytes": 622619,
+      "sha256": "63c42af8d68272e22de0cbbfd4ca21a345b6dc331f80053af5cf9bf9bea8823f"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-07_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "e1c119aacee8dce1a4469146f02683315d7ebd8d695dd1dafd45129efd2b6eaa"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-08_1m.json",
+      "bytes": 622292,
+      "sha256": "0e01588ca95301dde4c493d8cbbfb3ba3ddc35f27a5237dfefc09e7df4b8eaff"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-08_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "9b742464943dfac28affee3d626f2cce6e6819d945724860e7e386480363a9b7"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-09_1m.json",
+      "bytes": 624397,
+      "sha256": "fa44107c63a41a7e4ea926aec080190c2c9b937e240ed18c96d9dce6a5629c9f"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-09_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "ad0e12922065325a0046ce5da9841122d0d771dc28d1c0d4f8b6da3b14b1c11e"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-10_1m.json",
+      "bytes": 624046,
+      "sha256": "77374f9259289817f35f02d3a9005d9bab73b73022afaec49b782de2ca2880ed"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-10_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "0c8414b18a9420902ecaca670abca32052e6f463ae50c18e435cc0c917f4b672"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-11_1m.json",
+      "bytes": 573145,
+      "sha256": "11622078429103c3e2d9269216d854af9a8f8eaa882daba09e19e2baa5d88a71"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-11_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "0e7327c3c39034e71312d877b68db54a4a5252f7e1da913b9252e7705f805e2c"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-12_1m.json",
+      "bytes": 624424,
+      "sha256": "eb54fa8000a968ec4ad55dbe216e36fe04ca49875fb2db15abb0b974393e3886"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-12_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "e30d160d642d285332f8af72cd361ed158b7a42ba546965efa0898f0fa09278f"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-13_1m.json",
+      "bytes": 624086,
+      "sha256": "974f4b0e414969ed196cce5c074e6897681eaca0c8616583a524d2325537c914"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-13_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "be99f1aa0e75912ff793c3b374ddd64e25852cb765cfbb8543064a51345ffbbc"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-14_1m.json",
+      "bytes": 624235,
+      "sha256": "c5fc35ef29d7bb49c79653aabd15c8986e1ed3351a941381c63df502d7901338"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-14_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "3f79be22302ae3b10cf16e5852f8077a84e5ab445d7c9b88735b22817d8355c6"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-15_1m.json",
+      "bytes": 625178,
+      "sha256": "663bf44c83161bf7022dfcc80fcd2413d69e9ee02f73c3e60930e7a86b1766ef"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-15_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "dd763016687a0dc0199b04213b5bd513d719705308d14701ef50b6b975395df5"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-16_1m.json",
+      "bytes": 625675,
+      "sha256": "3920f2af9bbc7ed7980820b82ed88d1e704b86185cf3935508a9147669cfeec5"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-16_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "cb289086a8368a0794cb4519d6aaf0311fbd8cd6cd4d24bcba8925d12b2af0a5"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-17_1m.json",
+      "bytes": 625060,
+      "sha256": "1a491cd4aa42a1028930f17ace31b5b407062928d91e4815681260193a5b5702"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-17_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "b7c5089d763a083416a88dd678cf4791ca4bcc33593163c02a726b6b6685cb06"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-18_1m.json",
+      "bytes": 574408,
+      "sha256": "4eb71e2c4d0f8e0db470b1313bd9865a28f5709675e72af35930ebb2fbc09a51"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-18_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "c8dbe4d8d33306b611a9b37d3896bf21e916590e0ec043d0c2bc399ecf92acb7"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-19_1m.json",
+      "bytes": 625124,
+      "sha256": "c2e91986f06ae918a26a5106545501e673028c715f123bc7ae150c9de257e3cc"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-19_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "122dfeee625766179472d968afb160017f1f8cd38613331f7e5be3dbf8f7448b"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-20_1m.json",
+      "bytes": 624063,
+      "sha256": "799e07ac384f926a16d7808ffecb48d34d3b305e0677f58d7fa3b75058dc1ed5"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-20_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "5cc01b4a78b053022f3fbaf9457ccf1630039b7853dee515852993c7c2a1805f"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-21_1m.json",
+      "bytes": 623714,
+      "sha256": "03a82f968fe16a7733a83d0faf81f9243555cf2f6ebb73e90363da99679bfc90"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-21_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "44725dba7b9e51b99130a9398b2d7945de53d2911fceb4ca93c8f463a26df59b"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-22_1m.json",
+      "bytes": 624225,
+      "sha256": "92fce7512c741d26d4000c4fd1d14281b0a4b730033d4f31cc67287727152af2"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-22_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "925549ad8c22edfc6e21d15745721dac57f4f4972935ffea0a7a50d6a9a79d08"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-23_1m.json",
+      "bytes": 624770,
+      "sha256": "08dd153b89aa9e12f17038c62c9a99e0a4e7a76273bbeaf0e27970a80a4103b9"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-23_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "5628a16186f25df5b05c8a6b851701225b6f44985b3a1abec002c8814e4d9948"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-24_1m.json",
+      "bytes": 623928,
+      "sha256": "6a52ae0e283bc3d8fdfead5052494f0e5965391b18be6ef39fb5263ac8ca75ba"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-24_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "49d4a1d387df8bc4189da2ae181f306c9083c2658704e6cf21342f6555b443be"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-25_1m.json",
+      "bytes": 569302,
+      "sha256": "acb48e49822e5132610dfe3c1251246fad970c434a17442463d083fcc980e38a"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-25_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "9ba5c85ef15770ece467722a2433d1701ab8e026e7b396302fcd3d25f79f2136"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-26_1m.json",
+      "bytes": 623074,
+      "sha256": "2d387dfd8482bc10caf7feacb1bb7e76721466e002c579946753f01241d10351"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-26_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "d7c1d3db62124e95c00ce4dc3de3b895f59699ffd6ee8aafe29135df24580e10"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-27_1m.json",
+      "bytes": 624329,
+      "sha256": "d0893c007866d0e2848ce989db6e667eeefaa328c4d75fd965f716f570e80243"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-27_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "30f1f8aefb022ea264dd27c2589c3be595f63d887b9654ec8629991512512fa6"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-28_1m.json",
+      "bytes": 624218,
+      "sha256": "5199f3c7be0c6d9c389c55e891e8489e442211b2c2a23a3b2233dc689707ef92"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-28_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "0ec2aa86c3793c3246b0884f83f7194a19bf38eadf7b6a67c8b0602386ea4a5e"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-29_1m.json",
+      "bytes": 618931,
+      "sha256": "e4d6d5d09cd36bce54d7ae8863631c04b13585c813a7436103f3f577ef01994f"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-29_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "1d10b6d1435c1a337ec7b30211d626ad1d5e602cbe59700675f09cfa4ca8ed0c"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-30_1m.json",
+      "bytes": 624136,
+      "sha256": "130c9991eaea92056a7beaf662dba0ec988d239c1e12509ef83a0847e69c28a5"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-06-30_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "8157507c372dab89a3ba70bea47599f451b49356bc1d1892576df9d52719b2e9"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-01_1m.json",
+      "bytes": 624413,
+      "sha256": "fbfaf64c69125f45f54e3299e618985ef0c668e69d01a15776438b6e99414620"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-01_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "883bc70a6b77c3cc926df2cb9763ab95b74a7b3184023fae9067b206709a8eea"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-02_1m.json",
+      "bytes": 572349,
+      "sha256": "16a43b9c9c9f967400345975a8943205c65c50605b2b224973052ea777ed476c"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-02_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "0f7ecc3cc13cf7e764d525ecb07039bd572169be2617265f5c88b5febef24e5d"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-03_1m.json",
+      "bytes": 623482,
+      "sha256": "fafcc25aa9bd10a772e472942b0a10204434722d0b7ba8a1de358c3265652041"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-03_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "a95ad347b743cf5506d3d85e05a23f2e52a8c74911665de9851ffacaa12a6018"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-04_1m.json",
+      "bytes": 622363,
+      "sha256": "d1a8ff50b5aa90634e77de3e54e26ca06ed977df08394f26931f8c7b660efecc"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-04_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "4092577d3bd1e11e07b088b0e66a4e69e4a71600d83689c56d66cda7930b23b4"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-05_1m.json",
+      "bytes": 621933,
+      "sha256": "1a9f4c1bbbf7f7babe999f818ef3d5158bcc0cb2c33bc752f40bc9ef942c1994"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-05_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "62e2de2b790b21bd5b4a75b2e5c9023fb16879aa84601e1483e2e5a8ff7c713a"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-06_1m.json",
+      "bytes": 622795,
+      "sha256": "80549292f17c46e5aa1896df7b15ef242e862fd91b989ddcfd6a3c1d6dfc1e69"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-06_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "351cf50eb3fa3e7880b88bdfc82362ec817d5131cccd006816be7b3cf9f760d5"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-07_1m.json",
+      "bytes": 622632,
+      "sha256": "872c104f6a9109fa8fd0626c4c10642676146638ebd97435673c2034dc44ffb7"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-07_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "3919b22c4d5eb30e81e949a5f90e197102a70496e4301f578f18b8c2e3d983ee"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-08_1m.json",
+      "bytes": 622926,
+      "sha256": "f24eb4ab265c33ec2784baedf54f82973f99c2c0f3b3e030a8f7282d9f4bb5c2"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-08_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "37edb5159a9297798fc65eda07dca1596d6d435eb823f4f01e1aa7310c14785e"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-09_1m.json",
+      "bytes": 571033,
+      "sha256": "ec6e91b08b83f957aeaf7ee0a302995466446a1c0e880d30f773fd4399d3d93b"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-09_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "ccbd61c93c545829fe968a9a86486662edbc7081f143c40a97469cc4ddd9436d"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-10_1m.json",
+      "bytes": 623161,
+      "sha256": "619d0dc201033a48509d246bb23c2ccd2b196c8e488f95de62ed715930667ba9"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-10_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "996338c2d8fd929389c76ed8d89fa38ab0247e98a14c02dbf19823743bb7016d"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-11_1m.json",
+      "bytes": 621690,
+      "sha256": "4911fc3fffc71aae1805617cd40451dae904e9cee7fc01e087ca7c535bf84acf"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-11_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "4cff5bc67ecfd4d32287e2dfa8b1c4b3a9940732884189ef4b2c6b18e80dc864"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-12_1m.json",
+      "bytes": 621967,
+      "sha256": "a256c40c4bd91b4b125121052285ddf600447ae4b9d62a7cafd7ec8f80764b3f"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-12_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "609afabc48def7703d2f01a8c405965d6f188c0b29a36923bdcc641a5dae5429"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-13_1m.json",
+      "bytes": 625420,
+      "sha256": "e23324c7e2cb89b1b046c22ea4e589e6e1b6a5d27ee92dfa1c089b6fa953954a"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-13_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "ea05b79af3df0226d49e0bf39324ca17c62787abebd49ed101fdf72ce15e930a"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-14_1m.json",
+      "bytes": 625143,
+      "sha256": "a93bc74eeb705d76d8590862b1cee210883b5482785376f09c75973bda2c6ae6"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-14_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "ba1874310927c66a73d6ff8137797ec96318b0a4f633e9e5b58e6807a336122e"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-15_1m.json",
+      "bytes": 624820,
+      "sha256": "1e4082bc069052a327d32682c16ad89e75d0f8733d2ec0745a3cdccdcdac483a"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-15_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "b9f38e9e5acd75fd92e3fc178bb7fe8c12d05f86735d2b26310adf2477504613"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-16_1m.json",
+      "bytes": 571406,
+      "sha256": "a7d27a03ce5f528a0ae0328ba446b3e3a61514b2f806c3d63603f8462f7671df"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-16_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "623c03ec1055e457bf4f612a92843e6a2ee383139e540bdad2710241ef6897e0"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-17_1m.json",
+      "bytes": 623069,
+      "sha256": "8d91e5e5509fe55a305e9e4da90501e91ca8279cd21612bccafc28f42d1f1ba2"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-17_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "e4e60cf6f85ab594054885832a21b877559c2712a2498f6d9882e5db6f863128"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-18_1m.json",
+      "bytes": 621057,
+      "sha256": "5637041e0451a10c74c791780bd93d6e2ceb5cf4374cb6d07748bf23b46250d7"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-18_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "3b0953de0a7586f1744d61c2039dc9e066dd66634ec5c6060f78150f733fb5d8"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-19_1m.json",
+      "bytes": 621850,
+      "sha256": "8e24537a7ce2a075cd50a981d61551a330f0d3adb86157cd581976abf7787dfe"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-19_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "eda1945aa0009a21bc9919f3f6a87379b09aba2aae5489342b74afce198b3dd5"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-20_1m.json",
+      "bytes": 624230,
+      "sha256": "3af3409cc84254bacc2a00bf31f4f809e9c10ae685fad37e36bef6c99dc73d04"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-20_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "96d117bf13d5a962be42d79520fc736f939ec1cabfa48eca0e73a4201783f411"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-21_1m.json",
+      "bytes": 623413,
+      "sha256": "75a55ec3ecf68ed20d00a152901a6e6e23cf380800c9e2b3cfa0524dc078752c"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-21_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "aa77ba64be7866c617fd22570d671c748ed072c44c7682c354c6ee4c760e87e6"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-22_1m.json",
+      "bytes": 622205,
+      "sha256": "9393e6dde8f081db71c4cff6eb20fc57b14921a80a98c7e9e8c3b184837031e5"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-22_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "9c16fa97eb5dc3ae09934edc47076994c54adf03ed849c56d8bc9c8d58e95814"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-23_1m.json",
+      "bytes": 571986,
+      "sha256": "b74aa6ca5f643dbd74ab35097047dfaf47e678b19c4a5e733d662db91112dbc5"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-23_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "dd70c18ee4f353ed6861c4c3ea4dff89c4e1d44613e4d931abd136a204141073"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-24_1m.json",
+      "bytes": 623511,
+      "sha256": "5311d7ad5c190f3e020ebe61a055652eb0fe1b0863704e65db924b5763136b1e"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-24_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "6c7e088f5c3b7e918c7147f7c672897bf175ef5f8f81b6ece61b2fa13a12fecc"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-25_1m.json",
+      "bytes": 622102,
+      "sha256": "3c54d7edf17a00df1591bd6ce56ff389cd11c418ac89966e1ee704f04ef4ac43"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-25_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "715e0a8dcb5953e4b13643b4b069684c1816953df4c625196c23845b1ed4aa05"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-26_1m.json",
+      "bytes": 621937,
+      "sha256": "de4d46fa8770d54dc43400e63fdcef6a588da062c2de55195c416896277600c1"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-26_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "5537d5157cb74a8565df0926909e44744f484deab640381498f67605f79c1007"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-27_1m.json",
+      "bytes": 623339,
+      "sha256": "d54e6b2308357c20c6db53da21f1a91d59090e808915002374a7bfb98083b2ae"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-27_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "5420e127f17f9436813899d00c8fe620036888255bff7cd161117942e7c53bd6"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-28_1m.json",
+      "bytes": 623798,
+      "sha256": "92a989f9d4c68092d3112c3e43601e412b0506942f7e16446757c39806e45a96"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-28_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "711bddf59e1fcaa5c3878c68d28086c03d320f9c934295e1d5a1434aba5d8e64"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-29_1m.json",
+      "bytes": 624643,
+      "sha256": "cf3e353e73fa9cd6282c61303444671d8033bb31c9a8631ae2f107b7e10c98b8"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-29_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "b2b900acde72a6aa3ac790b587f9a20a04ff56384fcc77425bee36d8560686fc"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-30_1m.json",
+      "bytes": 571543,
+      "sha256": "ee9f5fb417b60ad60f850b40a7a4459953e25b0f48cd57398dba0fcd67f06188"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-30_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "de23f52a4592c9b270e6c84e228029009802921982c0f9975d470d7427854120"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-31_1m.json",
+      "bytes": 623965,
+      "sha256": "412cd06c68d15122e105f69c22c5855adb006c86d2f19e38e2006a45891a6bd4"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-07-31_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "4311527319e42b4e57f6c9026c4275f45ad19cc9eef566455065d876ee7ea1f7"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-01_1m.json",
+      "bytes": 622207,
+      "sha256": "fb35a00bc5651a0746ce819aa4b99f43696a852698598106c17b7e9d2c59ecf2"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-01_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "c172ba02130dfded6a18d73eb2195323480e0ff1989b4ab3f83766c071649191"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-02_1m.json",
+      "bytes": 623682,
+      "sha256": "c846005f94153c8e3557201d91e5e742eac93fcfe3417d53facc15ee79afc8db"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-02_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "e70bbe0abbb44dfb6ba60fa5fd985403defdd8d1e4f1fbfc26d98ea64cacfd4d"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-03_1m.json",
+      "bytes": 624437,
+      "sha256": "6a8800fc5df9fe5fdda73f8d00144286d88dbdc7068ec799b44abba87e010d72"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-03_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "d1d12b517019ee5eddff46273257ae229f481a30a662ec1e9b1108144e1809c9"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-04_1m.json",
+      "bytes": 624580,
+      "sha256": "6eed732e6ad11383041881711737faf2c7e129715db392675328a432dccad54e"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-04_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "98e130e52da4c8af758e751dac3851c2389dddf90276f30ea26a9e3271016712"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-05_1m.json",
+      "bytes": 625249,
+      "sha256": "e500b63057b837c5e4a708e042a00c1ce568905c2d501c80a71b2bba5c41f324"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-05_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "7c83b9e1cc24d6db0ea3f9976e82df168cd3829ee0d60dd3a4f17b6dd3287999"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-06_1m.json",
+      "bytes": 572659,
+      "sha256": "283cbf91730a5d17d8c356e8516f57282d7f0facb4a31335d2229abf41ac32fb"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-06_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "e2c54c44fd15e473074ed4e33f5197a9862f03a57fc02e709928031c274c78b7"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-07_1m.json",
+      "bytes": 624214,
+      "sha256": "d30d69165d1683ba400db22a819897fb42a309146e996649ee32f44ef1ad744f"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-07_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "2785035b4afeab1dbd32a6ee28e6e821bec0223daf23345c4091f925a73f23b3"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-08_1m.json",
+      "bytes": 622018,
+      "sha256": "fd5110edcc54e528c44c711a7c26b3ec0fa4935558f9396a9386728535d354b2"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-08_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "18297fd2cdf59f10181bc623f51adc3222260980e1f66c28f83844cad567d44b"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-09_1m.json",
+      "bytes": 623252,
+      "sha256": "3db84f5404b240d929429d535776b188fe7a4f531719d5ece361d5a791844d86"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-09_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "68b094ec46a758814aac58dd47cbd989ec0a2b6ed7867d51d877f7c0b9d215ef"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-10_1m.json",
+      "bytes": 626073,
+      "sha256": "c76c6e5e9c164e718c1968ff1e56aa6a13d914b053bc825c5a13fbefecea1ed5"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-10_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "024bda5094a2d7510705023680542e70b8b34663c426ded13a99e1eec52c088e"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-11_1m.json",
+      "bytes": 627395,
+      "sha256": "2f6f302bacf8b3e269a3614e751377c1f4b84de7a4c71d06f3e2b27da6682a76"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-11_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "4ced62fcd0375614f022ab6d93a76ee8bcb7e947035996a9fa498ffe824c9653"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-12_1m.json",
+      "bytes": 627493,
+      "sha256": "81f1096da52631d6e40799f9f4dead8854deaeffb94d3578387ee3ee48ce8db7"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-12_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "06c9fe813fc7a9f175d39967d2ff904d54936129189bbd45831da6e019633161"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-13_1m.json",
+      "bytes": 575747,
+      "sha256": "dd84805ed8378a4ba5396d4009aee898783512ed8969c7750c39de7ea276dd71"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-13_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "db1abd119dff70fb56a4c04fe6d8d9a61864faf89cedf29f1f4ab42f3febb2a2"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-14_1m.json",
+      "bytes": 627368,
+      "sha256": "5e1f93e5774e3bb9cdc329a23e064f05476210a4310dbe868eda9c0e9e65fb10"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-14_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "8c90afac7f0603ed5f22a65d6534b07da95001fc02c7203fac91bf57b8d131ac"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-15_1m.json",
+      "bytes": 624296,
+      "sha256": "6256dba53fc8402130bf97037327a9ca79268834888efa0477db809a7daf654b"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-15_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "e76941f1399686659cd8499c614f1bd619eee3c7a21249e66171c29246acda86"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-16_1m.json",
+      "bytes": 623713,
+      "sha256": "1eb1d264410a7e9ed197a1fc0b2c11a286ac6836c42c5c638ea5407187caa276"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-16_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "ae6d80bfdb89190d5f72c73bd8757fe063a3593f8142116c8fe72ae9fd712a85"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-17_1m.json",
+      "bytes": 627000,
+      "sha256": "e5664c338a48e1428829ea144a0d47c5f4e1bcf3ac72c9ab38352405987530f4"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-17_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "3779e83d7c05d627aa291296f9d1215881b41d3492d94e71455a69eb5f385d38"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-18_1m.json",
+      "bytes": 626453,
+      "sha256": "e6cb0bedb4b0d56c0132838585d6e8051327449fcfa18f816775c75eedbbcf70"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-18_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "9bd6be91e81c2400b22be22583c29abc9b5313525963a51fa4a58c86d8d6fa12"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-19_1m.json",
+      "bytes": 626067,
+      "sha256": "eb9815bf71ccf4369613c0b4e8efdc0f2a8fb6a45c7d38fc99522f954a4784dc"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-19_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "79515e09d0664d5706887f0fff497aeb201a6410e14cb24ab78c58d842c2e142"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-20_1m.json",
+      "bytes": 576322,
+      "sha256": "e3f2deb832fcb802b230744a505ef1931a705170e3d649bf3838516a779284f4"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-20_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "9d265e23b58c4b9c1a4577128c9776087ce1a7ecfb40e28e0062aa59e5808be9"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-21_1m.json",
+      "bytes": 627762,
+      "sha256": "e4d8239a59a4e12704551cc3b9337a2fb8753dd78a3af5387a4740989971add0"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-21_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "ac07d66a29feba962d8969a621b8816e019dfed23b9609c928810e82a18c55b0"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-22_1m.json",
+      "bytes": 620941,
+      "sha256": "77b8ea3d7506573f8cf3e8b014beef8d3f6edeaf31f1da6ef305200538cd1eaf"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-22_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "6ddc970679ca1de9fe92bc88ec1fb086a061658610ae69af5b5ac9f07b22de26"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-23_1m.json",
+      "bytes": 626458,
+      "sha256": "0150c048bcdb2bef96909dd5837976e0db2027b623f19bb58c5e50b2687b9f98"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-23_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "2c84558b02ebc161350ba20a1ef3b251103056a4f94bb71a4df153f9e9343aa0"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-24_1m.json",
+      "bytes": 627210,
+      "sha256": "44f182957e3526b738b8c0ac622e00f3fcf519dc1a258eb12faa7ce7bb437eb5"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-24_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "ed70fbda7c530b03b762794bf721e06cdb56110133394da64ab2b9ca5a8f7dc1"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-25_1m.json",
+      "bytes": 628003,
+      "sha256": "35c421d1913594db479edfeae3b627316aa7f5404ec47605e39fd0195646a727"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-25_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "dcb2ba33a684b6111ce82da6632d2ca5a89816bde574c0cad2a87c288cdbd901"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-26_1m.json",
+      "bytes": 627610,
+      "sha256": "d0b803b00fdc4b5dbba7780f822a688636a03bea02eb1d94b24fc9fac2e63be8"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-26_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "ce5418e622adc565263220098a773c2082ab43c9255087331479862aa03ed84f"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-27_1m.json",
+      "bytes": 575300,
+      "sha256": "3c6f8d6252a6adb25b89fc3100c3aa9e0b6990c0c551e5ec6efd3e8ec6c0a9f4"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-27_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "130117cbbf8c09a6608cbfc3b4a8a796f5a907150350160524fab14ad1535b21"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-28_1m.json",
+      "bytes": 628284,
+      "sha256": "f68b0535a447b606959c2a2379a0302d6266f463bbb530e468045e2dcf07a29c"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-28_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "f8b703123a910a063602cc82f56ce590fa6b9f2acc1b353ec337100d41bdc38a"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-29_1m.json",
+      "bytes": 625498,
+      "sha256": "607b67b271efbf250c26d5c7e31f535c1b2f911f5b4c5c57a680ab4afcba4c4f"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-29_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "c628b0619d4e88c953d7112f842eb5b7024b53405864bfadc5a05bef29765462"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-30_1m.json",
+      "bytes": 626541,
+      "sha256": "b0e717898791f97ce71cbef218dd0331ac18460148e135ca7321eff81ebe8658"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-30_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "fb6d27f49aee7920925972fc6aba89065e7447ad54a266c5819ce89442a073fe"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-31_1m.json",
+      "bytes": 628671,
+      "sha256": "8f97c90d69a5b3b21e99b01adf4654c805b842c327b3d3f2798e3fce13becff3"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-08-31_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "22611297142f646291cb704240a0c8aa21293ea393e94110589dc6ce6e801d14"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-01_1m.json",
+      "bytes": 628916,
+      "sha256": "9890c9c7c1dca01500c94a4486a7c690e398b0242b69f22af172a20b21aa91d6"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-01_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "54d9fe0d7e586332b421b499dd0445be80b94f2f7a54b3a10026d1813fc5f168"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-02_1m.json",
+      "bytes": 627964,
+      "sha256": "f5055788ad9af7009219683b0bfda52121e514cd3378c7512c4b52d0f4cdcdf5"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-02_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "86dc3d4ea16334f397a7dd0c29b9224bddd37c032e97b78a9d039fb8184f27fb"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-03_1m.json",
+      "bytes": 576412,
+      "sha256": "d6dfae3da65cf058af71aaec71bc7823476551d56e49897280c6f4fb5110bf0c"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-03_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "6c715189212b6a02bde76ed64794eb3c5ec987cbb461eb0bc3f86b1869b99e13"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-04_1m.json",
+      "bytes": 627470,
+      "sha256": "23b596918c7b5de095cf11829e5cd9ed7e3f294b14a6b3112a4ea23d3921fe79"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-04_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "e5ed5ccbd599806fd054743d2ac7983ef54ffa1d3d76491aadf0a4895b7ac3d2"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-05_1m.json",
+      "bytes": 624678,
+      "sha256": "2c0c447b629d4d514092cb3b1d85e93e162bd87fab6b1e2713919131ac9aee96"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-05_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "29d30c80fead7f3d5ae2cab3e510718e97a1011825aaaae269822540b86f1fd6"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-06_1m.json",
+      "bytes": 625364,
+      "sha256": "a3b8460aa2de6286d0ab6a6c94e6c363b95f8cb3394afc69f515cb3cd077cee6"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-06_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "93b8f84c5d5f7b4640fa4dd13871ed176e5702449f5fd3ff66ec3874bb81475a"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-07_1m.json",
+      "bytes": 627714,
+      "sha256": "d3ccf9235a1c7113049c6ac7f6d2aa766bb21c575ffbd4978dbcc68f17d2df9b"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-07_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "3765e399d84bc5bf819b0baac3f35fc1fad00bf53bb2701c9020e3f4bd61121b"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-08_1m.json",
+      "bytes": 628862,
+      "sha256": "af5ca175d35598e1d5e28b1984ab85d254a1dc11ded268b0f792a6325cf087be"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-08_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "5a8b0be3935fc478b9df0116f8b5e86e526253e4022a5c89f2be32939e70f0cc"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-09_1m.json",
+      "bytes": 628996,
+      "sha256": "3e4a7894bb9b8290b35d0b2a54f9f7840ec0aa721bac09f2f7427fb2887a65ab"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-09_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "e35fde2ac9e746cfe47cd2de07dd9ccf7ee6676eb8716ee03218052644da107d"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-10_1m.json",
+      "bytes": 577238,
+      "sha256": "422c777ba1f9025abcfd4ee1e2affc72d941cf011656a4ec4a68dbfff2b3ad1f"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-10_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "401fbc1981ce4a3ad9a9ef50ff64aedf7139fad2e5696a15be66ddafe44b8407"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-11_1m.json",
+      "bytes": 629536,
+      "sha256": "e8c9556ed156c1d25b7c53878ac08384c33e9daf63573452553259560fc25056"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-11_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "225ed74dbc6001fb16f8cd0265e73a728833547d9331d8f163666fda757693e0"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-12_1m.json",
+      "bytes": 627148,
+      "sha256": "c720f31b4db988b6e8ff55361d18601b8269cc982bdfa49f262de3eac3ccf02b"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-12_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "99a85f4eff3d006f417da176b0c1c0571d2348abf1340eb05ae4d33e73bd5342"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-13_1m.json",
+      "bytes": 626619,
+      "sha256": "1450f392beb638e6b5023842b3ee05bcddc9f2ce68e095f7d2dbdb9a4cf3edc4"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-13_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "9c94efef47441d4fe38fd9582d5617d532052c90ff019075d39701acb81cc80d"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-14_1m.json",
+      "bytes": 629016,
+      "sha256": "a55ee8c32374c571b10107f744a28bd17e324f16a19433f61e96e12d808f6986"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-14_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "dc86c4f4b371d8cf4e6ab66322b8bc363f29faee10d3c79c81edfae77dc9b130"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-15_1m.json",
+      "bytes": 629354,
+      "sha256": "e3dbad47169dea4c242f6cf65268a91ca37ce618f06f5a7a55a78e1baf2b8233"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-15_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "fc43af6c7e6129d568af401e387f8a435999e25d08b6b621fc6ded589c382d8f"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-16_1m.json",
+      "bytes": 629393,
+      "sha256": "248140f9f7cb7cc69764083fac54ea3a3634ac0433960cb2ef479eea335aa326"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-16_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "7348cdcd75fb003636fc14d3668969f0ad192144085ed080feed831b61db73f9"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-17_1m.json",
+      "bytes": 577378,
+      "sha256": "57a35eb2edec63203025f47d53512751a51008f2364b9f277ad4d4135c1413ec"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-17_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "b832e21b279bb39535c17514346fce4d753f661e72e2c2660df2467355e15cb1"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-18_1m.json",
+      "bytes": 629007,
+      "sha256": "0fe2df48a82bcccb8ad393e8c95b1f8f7e9c82cc6989651ffe36a7c4ffb9f72b"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-18_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "f0badd1aff7641770230e0a01882a07655b7fdadbd769993954995c3cefc9516"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-19_1m.json",
+      "bytes": 626342,
+      "sha256": "88fc600510d72709225163f8d75f1b4987ab480d4237fa52d8f0a5418799f4c7"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-19_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "2ba1cf93e3cc42cfbf31a4f7319e93710ee5fa7191eda2a01f8c1f1a908840db"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-20_1m.json",
+      "bytes": 627028,
+      "sha256": "236419e893c165d719a7861107ee696254c70ecc27037135d9160e1ceebc32e3"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-20_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "fab3e0114a1afe7ee86a5d4dc568e93352a2ce31726564c4c09b4f728f2703a3"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-21_1m.json",
+      "bytes": 628477,
+      "sha256": "23a1f9e793efed58bf684e9f7dac222a4f4d1c70ad16f202bae9e6fd1472c0fa"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-21_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "188d291f30bf4c0246d68b1a08fa4ab36ebb124dfe180c82151c193518a76104"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-22_1m.json",
+      "bytes": 629183,
+      "sha256": "a1f2fe3929f0abb7d369533725c7d44b1a5b9b44938aa11223b6e63bdc1b6e74"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-22_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "d0ab5457f5ca6c1bcdef28b4cbb093a0d2b218783460a266a686f48f09a0363c"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-23_1m.json",
+      "bytes": 629033,
+      "sha256": "167ddd78f23034ce7a1ba92ca90ea8fb9dad317f4963c8cb658b9fc0beeb9931"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-23_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "c3aef7ea8921595cb2f5dd2e6c8241ad2a1c25ae690039bcca0f6bb11e125eec"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-24_1m.json",
+      "bytes": 577214,
+      "sha256": "8ffa2b30148249b166cf052da47ad653d9dfa0227fa219fafbaa3a0909f7b586"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-24_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "303772745a5f3e5405f843d02b506e18a79b2e7ddd79a815b4d593057c7b9e1c"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-25_1m.json",
+      "bytes": 628685,
+      "sha256": "d4186e94ec8c156f53fcb6aecacb65a7470c5feaba86bbee7a92ded592b15703"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-25_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "32ba3fe5e7175754351717cab1cc45b9da6cb7cbbff3c790ef34ea95f1b16678"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-26_1m.json",
+      "bytes": 625627,
+      "sha256": "6f4785857fd5e29d87ba6f30db0e2bb1d3589319e902dc04b5cea309abda234d"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-26_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "cf85740fddcaca522bdeeba8a1b729d589872a271b30cdb4bb34504634000170"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-27_1m.json",
+      "bytes": 627606,
+      "sha256": "1054ffdbf3dd22ac7034e8c08ef050d072869e32707ee5963c75f8968a311a0a"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-27_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "9878235143b5680ea0cd02e989761e8d1db27695ea0ee6753d43fe52e2832dd0"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-28_1m.json",
+      "bytes": 629153,
+      "sha256": "e2d76c8dd77164e01a34d668195b6b5972b67a28c07beade625dd81f72af460d"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-28_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "beaaa11581d349adddeb1f04479f180a266349ab954774bca4cbd8799a193da7"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-29_1m.json",
+      "bytes": 628964,
+      "sha256": "c1827dae199023fae4dfab8c284a2b1c83ee8ab27aa0b69b48907c383eff30b0"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-29_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "cbe312ee5591673023dbd395201545c1c73a5b47f1fe6a509e0e81fc505ebb13"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-30_1m.json",
+      "bytes": 628982,
+      "sha256": "2984c728e4d8dcd658e415bed9250c517372c331a827057cb8aa08a8a5149068"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-09-30_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "3d7da71dec4aa2adfaeefd8b4e6a59dbbe751ecba1cb58b8fe20034ccb4e42b9"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-01_1m.json",
+      "bytes": 577916,
+      "sha256": "dbefb757a2b6200f031f756965050bcf3f1b2c942f273aa58c474462e1e9d092"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-01_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "e4f8d6377803e2ceeb5bf3ed924013cd2e29e98268c83942596483a9e7f03a44"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-02_1m.json",
+      "bytes": 629057,
+      "sha256": "8f5b5584e2db0c1f03a6853eb814ef817e6dc48f77f7a44874696206e14b129c"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-02_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "fe089f1ebf3effb6a3736896d987cced8f45517b60daf5d7d2abf5d0714d9a9f"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-03_1m.json",
+      "bytes": 626669,
+      "sha256": "170919f649c13366d0ae6f008107d8abaf7e466dfaef9a7b881c6bc38b2637d4"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-03_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "517a3866cb2cbcef9604229f2ed181101a084640b06a2bbcfa9dddf5b02a3a10"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-04_1m.json",
+      "bytes": 627133,
+      "sha256": "0ffefa88cc893ce65f3aa715172033e85806ae2e206dcb239da72bc0561bbbc5"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-04_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "406f4dafc11d1257906ba6a24323389437192a610034d76eeef1fe4bd95f2a1b"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-05_1m.json",
+      "bytes": 628997,
+      "sha256": "b6c17d0ebbf395d41c01c449e0bfdaeca2c44eed4b94c3f69894a18d7b385ecd"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-05_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "ba5c6c6d421277aa84935b6b496e782e8a3c8a0c5f3a388c4eaa2ae382cfd43a"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-06_1m.json",
+      "bytes": 628691,
+      "sha256": "46dde8a345e366743b19f01d203721f3983ec90bf15548035215fb4ab23293e1"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-06_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "426f0e435c35550e6aa5a44d26635d6d53cf6dac9e71b6ae8431648aa8c18473"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-07_1m.json",
+      "bytes": 628804,
+      "sha256": "db053b43eddb0da660504f37cbaf06a2286eac230a7884740992688705222138"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-07_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "99ebcb03d1670e22b211d8211ca3150b54ee259efa270e806297dc147af62cc0"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-08_1m.json",
+      "bytes": 576981,
+      "sha256": "be5e547085b0bcf890e03a755bd4e7b48e907e6c9005c74a030cd23648b24b5e"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-08_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "cc6c24d48f8ebd9ace8c45b821dcd312c3786e416b89c8d99ab3fdf67eb2b088"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-09_1m.json",
+      "bytes": 629091,
+      "sha256": "fcfde9ea224fa85b8018eafef13d503ae474987a0593b55df35a41f33185b5d5"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-09_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "64d15460daf4d00ef6fa54e81e18c63f3d4cb681215718c9405b5ebf691a3891"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-10_1m.json",
+      "bytes": 626757,
+      "sha256": "5148557cfc148955ac39c8e0de1d51f8099b6853c0342c5ec9933d2890ca322d"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-10_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "9dfdb3cd92edf72ff29487946a8631d4ab9bd59cc472898628e073c5d20f98b1"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-11_1m.json",
+      "bytes": 626205,
+      "sha256": "e2b3369ce35158704b5f220b3cb2416360c2ce25559a0facbc400441061ccd6a"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-11_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "9697cf4201b0ea5b9bc43d8f6aae081913ce459e5f200a76bef7cfec0e6c5b29"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-12_1m.json",
+      "bytes": 628989,
+      "sha256": "bf7126974c85b991e9f5f71f09ef094eeec964b85bc92c8ea13f9cc8079bd0a2"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-12_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "ab622ee19c93343afc10104187016e195b5eb64f8fd651beab53d1cecccebd9c"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-13_1m.json",
+      "bytes": 628874,
+      "sha256": "d7cceee15985c98f96b60df06d2e905513e5b74d8ab8e47dcd1d66e799b2a860"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-13_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "db6d8d2b3091ea730817653e5d60bd62fbacd523c50d096c6a770d787de0fe1d"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-14_1m.json",
+      "bytes": 629144,
+      "sha256": "0b25be865ba7d218e68299f1f7e1ab694ca55707c3fe4aea8aa51a198cd3d48d"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-14_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "11b48b66578e6dcf8b5c249ced6706a096608e324a0eac3db70c8216fe7661da"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-15_1m.json",
+      "bytes": 577057,
+      "sha256": "afc5a05e5bb25a9b01383e84e96ae2fc9ba342f7f6dc0195e00e3f5d6aa9f8a8"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-15_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "b003574c1314dd508afbccf0b6d970fb4bd7d02723ed1adb61380165077bd3b6"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-16_1m.json",
+      "bytes": 629033,
+      "sha256": "29497654e7588edcde90565044e53b0f0cbb70ae7e0bf3b662219d3cf3a64b36"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-16_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "7914f4bcd237d558293224d92d3f58473666013a486e621ef502fd219fb18ef9"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-17_1m.json",
+      "bytes": 626492,
+      "sha256": "a3802a65f81a4bbb1483662b3f53a9585a3eeb7fa471b05f6c640de8a7db5e3a"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-17_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "0572aca70d5b95f3cdb52f45bc151f6deb1dd23098586fdea51c8d5d7e695c1e"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-18_1m.json",
+      "bytes": 627571,
+      "sha256": "17f8c8ef60f7439dbe818c51217cbdbe01775ff5c59ad4b8d354e0ec37bd1c71"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-18_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "862250def76750d35e57792e416ab57ffef1a233f90cdf5559bcb6b3497f6f8c"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-19_1m.json",
+      "bytes": 628880,
+      "sha256": "fe7956a2e1eaf5b247efa01fb9b3ba60aad2103a4bda003e33d239582222df49"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-19_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "62711f23c5db1d1050508bd56b24dd436d18da1ec52b38f8a6056d2344ba4452"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-20_1m.json",
+      "bytes": 629091,
+      "sha256": "3d5bac60fa93a8440ca7fbb9808a17286971de0ca8cd235ed3a4b489b5740058"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-20_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "f8f27cb1d575ab08c18a91fefb6223ebab12e2f8ce81dbe836e2577c8f75d9a1"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-21_1m.json",
+      "bytes": 629118,
+      "sha256": "e7a9b863dbc120ac191caf3b4d242ac9fc34e4a3d0b2a609f72ab8ee1813b7bb"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-21_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "b77823b60592a949af2ea066ee7570f943a414afcc6cd2287e748cecd59f5df1"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-22_1m.json",
+      "bytes": 576599,
+      "sha256": "f4556f614e031bafaf603c9e58003b249eeb66c8f544cdc28e3c5330ee60c914"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-22_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "badc6f76ab4fb3d2d7c59101d6739310845fa504a25db6f2ee8591c0f078a24f"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-23_1m.json",
+      "bytes": 628506,
+      "sha256": "6f2128824694bf21e086adc4e342a0ce9b8a62c5bedd3d42c03cbc5fbfa2469e"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-23_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "a237eb9a5ad861e148a23e62c673179006b2fc0f8d5426cccaf80dd049320089"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-24_1m.json",
+      "bytes": 627822,
+      "sha256": "ba334b73b092451aa8fdeac6295bcd7d6a566e347151191a383bd3ebb283b31c"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-24_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "6ac917b0669961ca5c19c39ee6aa39f20a599c65d6713e37e56190a84b76b22b"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-25_1m.json",
+      "bytes": 627635,
+      "sha256": "18c02e2c7e23a1cbb1b59f8d7a5a82f7734c888ad01094a0b12df8c6846d904a"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-25_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "01ab5324dad590e29b925d140d89e4a01b5084bb95a5bcff5adb9b3181f19ba9"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-26_1m.json",
+      "bytes": 628993,
+      "sha256": "6456722522e1dd933fc7cc546dedfe42d0fc8d4101b7cd3d8b136a36484614bb"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-26_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "05db0fa10e621180527076771f4b700da35740a016cc461487d6cb30ac58b56e"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-27_1m.json",
+      "bytes": 628889,
+      "sha256": "39a55d3fedafb7555d31d239dd93e03321d612a1a3bd458dfbe1ca21a17c3949"
+    },
+    {
+      "path": "market_data/datasets/btc_kalshi_2026-06_2026-10-27/raw/candles_2026-10-27_1m.json.meta.json",
+      "bytes": 411,
+      "sha256": "56ad9d4267bde0a5394f831e6ff31b0219ee8ff0ed8f34f9085040385c14c118"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/bars_all.csv",
+      "bytes": 7078566,
+      "sha256": "407ab09fe63c59cb8288c637d544ba278224817a666185f84ead356329e72a8a"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/bars_raw.csv",
+      "bytes": 7463768,
+      "sha256": "2778902ebecd22a866782d521b8182e3666aea8d5beecc04c4984395253003d0"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/close_all.csv",
+      "bytes": 569806,
+      "sha256": "22e67d9eaea72f2abb5ae663924c26f2a72e69ded791bfd89a5365707ddedfa1"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/close_raw.csv",
+      "bytes": 579345,
+      "sha256": "166e4d49770bcea6931e4b302faa321c6af4f1e104ec1b183836599fb7ef5dbd"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_all_001.json",
+      "bytes": 2006014,
+      "sha256": "777f5660a6692e8e3ae6b93dcc2aba4f96d8079fb6451d4af3a5cbc063d20bb4"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_all_002.json",
+      "bytes": 1984944,
+      "sha256": "563c4bfe012298f149aa71d6bb4a0cb73592e346c23f8e4a497e6a7012072df9"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_all_003.json",
+      "bytes": 1989236,
+      "sha256": "351ef494672bcc10d817180f27805da72c9ece7297e245c6b0283d2154fa8138"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_all_004.json",
+      "bytes": 1993578,
+      "sha256": "f2ed340ffb62ad765b11fdc082c843ae04b69cc70369388159f8312eb4fc6700"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_all_005.json",
+      "bytes": 1982532,
+      "sha256": "88343146a1d1ea75d729c3eaa5ae1fd95d36326c037f2d27421fe5c6169e690b"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_all_006.json",
+      "bytes": 1989427,
+      "sha256": "9707a2b31e91af187a07da455a37d6926f0da6a3e4ee2cabf3ae1045aadc07ea"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_all_007.json",
+      "bytes": 1980119,
+      "sha256": "3ab05d6f159f89d70a5958a04060313ce6301b03470197ae296d5521a6aa390c"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_all_008.json",
+      "bytes": 1994523,
+      "sha256": "f0e537378bbf6c23a09dd87abfe015463524c0d5c7aff31189873f0d8908cd76"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_all_009.json",
+      "bytes": 856385,
+      "sha256": "8ee1d10b11038488146a8e7f87b84ba1ee524b2a7c61218b549b68082500504a"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_raw_001.json",
+      "bytes": 2041650,
+      "sha256": "0658494e4d308ba865cdefb29d35ca4511537c92b9c3092e8009ebf79d7b2f2b"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_raw_002.json",
+      "bytes": 2027590,
+      "sha256": "3a19a077abfb4789805919378da5a67fde982404028548c5ec8b164656967697"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_raw_003.json",
+      "bytes": 2036252,
+      "sha256": "b0a5d7261dee5c5e4044a462c620b1369b05ecd7defac28f10da40c721a07b97"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_raw_004.json",
+      "bytes": 2039381,
+      "sha256": "9b0147f3c8d6a0251206bfc16f300b5937339ef60d7660216c204e8fd0ebb680"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_raw_005.json",
+      "bytes": 2028949,
+      "sha256": "eccb638e7911ac00ba54be088f6b75ca55a7f66b703c3df1ff31000313d45b5e"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_raw_006.json",
+      "bytes": 2037703,
+      "sha256": "1994977f53cc3fbbe5d84d65461dc0530f9658f9b29b4e0da976334d5bdcf719"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_raw_007.json",
+      "bytes": 2026848,
+      "sha256": "ad722404a88d1d6d5504aca4f327eeb684349ab097e989270859e48800751c8c"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_raw_008.json",
+      "bytes": 2043682,
+      "sha256": "8f9d8f6fd3a453c71ef36fd7f391bc4b5f0191a5bd1ac97bd6950f538aac4629"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/response_raw_009.json",
+      "bytes": 879905,
+      "sha256": "5bde65b4c01fd1740ef241dea8b9267d2647a1ac18cea383819f7024524508a3"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/returns_log.csv",
+      "bytes": 1835269,
+      "sha256": "2f1b0d66d17db0faeeed7c30b3fafc4685e204e2d79bf25962a271dcdebe42e9"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_30_2016_2026-10-27/returns_simple.csv",
+      "bytes": 1835007,
+      "sha256": "7587b2461f9f2da20c4d306f092df7ec37a91ba4bb6e574e61bb9d877a86926f"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/bars_all.csv",
+      "bytes": 44098808,
+      "sha256": "ae0886190f55ea04648e8de3a1291b85898b6d08a752a89a844c7ab2c2f0ce11"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/bars_raw.csv",
+      "bytes": 46322773,
+      "sha256": "29f088cee3ffd064017f4aad7e4e9968a18830eae2497e601f824b2ba90465fe"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/close_all.csv",
+      "bytes": 3406548,
+      "sha256": "fa8f8546acadb0c2a49f4d08b14cff32893df97f92a5111ebd40ecc57639b6d8"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/close_raw.csv",
+      "bytes": 3455417,
+      "sha256": "9acb5394ccac11e1d93b601b335093265c914c82af95383646236cae91d0ea2d"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/requests.jsonl",
+      "bytes": 128272,
+      "sha256": "f5f10a89a63a1392150e78741eda7b0ce42449d1c17e53d8b92e5d1a87c8e00e"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_001.json.gz",
+      "bytes": 278687,
+      "sha256": "13c93f888537749cc3f56b13b17bc42ece2dcecab3bb666f2b88057741bec0e6"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_002.json.gz",
+      "bytes": 287925,
+      "sha256": "0c0a1adca2eca470c030be2e6cc97f9253739aefa684524d516f55051b623dba"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_003.json.gz",
+      "bytes": 263543,
+      "sha256": "a1e2a396dc68ce6c1ce37e2100674ba7d9856432ada2d58cdebbe79fe55be8d5"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_004.json.gz",
+      "bytes": 288064,
+      "sha256": "6bf56866b38807bfb044d8e8466c1a0e6bffc4483244cef08e5481920fddddd4"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_005.json.gz",
+      "bytes": 276361,
+      "sha256": "a9a0446673f7e71926c8ec326f9a81a0443a21d68daceb2f67c83f6ca752941c"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_006.json.gz",
+      "bytes": 270459,
+      "sha256": "b02690fe8e16c2cfe6933781f83ce36c0a627aeab5b655b87d773c3aacc12341"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_007.json.gz",
+      "bytes": 279246,
+      "sha256": "89a8120641492e1e312b8abe2682c666d392beccb09abb719c48a98c8153b3c5"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_008.json.gz",
+      "bytes": 264042,
+      "sha256": "626839a5c82ef668f7a08fd24605dff7da5ca93bf0057968f3882a944b970358"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_009.json.gz",
+      "bytes": 283613,
+      "sha256": "8c1eecad3d5a6a02f4522bf99cae09f04ad75cb60606b170ec742a66ee242d57"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_010.json.gz",
+      "bytes": 284929,
+      "sha256": "98a2a18910900c961d693fe347c774410793f232a20b93122ac444e5496ea88d"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_011.json.gz",
+      "bytes": 261335,
+      "sha256": "00be842df5cb2e6bdda49417be2a5fecf030f4b7103c676ff767012b4443b8df"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_012.json.gz",
+      "bytes": 271382,
+      "sha256": "665d278416c4eb32d1ed7bbda93b6e53627597caba28f1a3df0b03a0562b56ec"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_013.json.gz",
+      "bytes": 277631,
+      "sha256": "89d42f7f748ab4ed3f67199c3f61806577c8af385abc4f5513a97196ec30b9c6"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_014.json.gz",
+      "bytes": 258662,
+      "sha256": "a92d247946456ecbaee570d5aef357dc200fecff4127fe5df43d4aba7380ce91"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_015.json.gz",
+      "bytes": 285799,
+      "sha256": "a14269f9b7e400180e28ef3493ca6f75f3a5e4ac480190076dcc4e78a071ac08"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_016.json.gz",
+      "bytes": 273150,
+      "sha256": "42be99f93631d6ce2da26c7ee7e4de0112700673a2200d8027032ee30b8adf14"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_017.json.gz",
+      "bytes": 266434,
+      "sha256": "313c614fde953c6e48bff74fddeb6fc6ae01a8191254b61591f98ee58baca0bf"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_018.json.gz",
+      "bytes": 272449,
+      "sha256": "1261e1cc1496c5eec4c5bf29fc4d3bf43424e5f21b72f7931e61c48eb0c077a1"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_019.json.gz",
+      "bytes": 266818,
+      "sha256": "c674af5fc236c587c97ea19d8c46372d2c7f6833d02559b54994ef50e6dc9626"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_020.json.gz",
+      "bytes": 268100,
+      "sha256": "dea078fb171eca7bbe0a5c7b555a596451d83b768c475f7f3363c24943ab336f"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_021.json.gz",
+      "bytes": 269741,
+      "sha256": "b580fb15109997dfccb93f9e506ead45bd609fbe73859e41f3926eedd56a5c93"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_022.json.gz",
+      "bytes": 279597,
+      "sha256": "24aeb91fd0a9456aa6a43895c0d4a223773185dd2edbcc8a35ae7ff8f421575e"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_023.json.gz",
+      "bytes": 266534,
+      "sha256": "398b78eede77418d836e9c8429755b8fc5adda95d2f08127b2c640ee302e211b"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_024.json.gz",
+      "bytes": 274654,
+      "sha256": "6530314d90f0596da27ff9162b5e871d9191b8ee14a4d5af125a02f25e4ec548"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_025.json.gz",
+      "bytes": 272136,
+      "sha256": "959bd8aea2a4c76af8b783800fea121fb8b2b3641cf75f1e167bb549bbb7fb21"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_026.json.gz",
+      "bytes": 262124,
+      "sha256": "3541e06b6d56c535c6c891724d09d153bdfb34389d3f7157f307e52b20bc14fc"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_027.json.gz",
+      "bytes": 268886,
+      "sha256": "01b33122be6c517116287ca9be28b72e777c1990bac9af460f7033d0ddac0c6e"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_028.json.gz",
+      "bytes": 277353,
+      "sha256": "a77d9937904425b3b79579ba998e76b5f8dcb2ab1d07c981c667928e300d7974"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_029.json.gz",
+      "bytes": 278450,
+      "sha256": "df9593b69a84a112c43b5a7f29e152970ecb02f5d131b842203291218dc63c22"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_030.json.gz",
+      "bytes": 267333,
+      "sha256": "65698a49ffc95af8f146c5016ce9ba909a0c6d7cb496f26ab502c6eaa5ac9c56"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_031.json.gz",
+      "bytes": 260027,
+      "sha256": "fcf3a403efc913ce885b46e672d3920249945f2b750cc1084a37a9d9ad8bb42f"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_032.json.gz",
+      "bytes": 281756,
+      "sha256": "caedd6d0be71d55ee2ac7460b8607272f2fd10de626877f216aa0d3043ed9ed9"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_033.json.gz",
+      "bytes": 273981,
+      "sha256": "157fa2c57ef9ec61c9aad5b5b894458646bc5b9314364b3ed171461ab3f4dbc0"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_034.json.gz",
+      "bytes": 267887,
+      "sha256": "29d106217e88392a1da765e5875e3bac4bd31b5d9c6ac15b1b0c2a4cb0dd5500"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_035.json.gz",
+      "bytes": 273287,
+      "sha256": "bb28599592c1d5fb57b1ae2faa57e8325e8703e7401c20534eb62e4d46515146"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_036.json.gz",
+      "bytes": 275024,
+      "sha256": "e7e630dd215578e958e712149b1962202e1facad22d8b498d15157ca9061b77b"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_037.json.gz",
+      "bytes": 258764,
+      "sha256": "cfc3fbc01779d7a15f9ab9b1023677c296b6bb67d5d94c084968cdf5a3786831"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_038.json.gz",
+      "bytes": 262820,
+      "sha256": "528ac02cf6c76625bfba5815da983ecb27026770decedac8c7e618b3fa78bcd8"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_039.json.gz",
+      "bytes": 275646,
+      "sha256": "13aac2e0e472dfb306e97e71e20217101fe110d410ccad87de18917a8fc44422"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_040.json.gz",
+      "bytes": 267102,
+      "sha256": "35fc7668c51c5d2c69f007d4c52a042c5b4c181c08b175f4cf99f6d685782cdf"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_041.json.gz",
+      "bytes": 279315,
+      "sha256": "bbb84f14a27567ee658337c44a11b8b451f4ea35d64cd9e08cbf77beff3510cd"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_042.json.gz",
+      "bytes": 267800,
+      "sha256": "717b92a78353d6d3f44232fb62a672fac7081b94c6651ccb40f8394cbf626e05"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_043.json.gz",
+      "bytes": 277751,
+      "sha256": "e41c1c41dc4dd10177d30ab0eea3f8f801a5bb62ce608f551f5d752ec497bbe3"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_044.json.gz",
+      "bytes": 278578,
+      "sha256": "67f9c9541a2113bb1d1cca8e2da32e61cd34fb2e3539574a3ca5b643f9c83031"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_045.json.gz",
+      "bytes": 275339,
+      "sha256": "66fdd70cfe155453b6b7a832ac6fe3e677d3e09ad598c12f596e1b82bd69d7ce"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_046.json.gz",
+      "bytes": 268195,
+      "sha256": "d3c86182548124bec806b4ccd033ec27194bb7cc43100756d6148339dfaf9004"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_047.json.gz",
+      "bytes": 268887,
+      "sha256": "f7b318e8f95b6139e62aed86e601a7055a43bb015c1c8b64d6b4ea1f92a59479"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_048.json.gz",
+      "bytes": 273399,
+      "sha256": "b9547d69c5f4fb631c6d9b84040ef7938a9a4a48472fce00ca34aeca5847c8f0"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_049.json.gz",
+      "bytes": 279921,
+      "sha256": "89864c73a260735a553c957eb0d27b0eca31e8948fcda46b037d8fca38727d16"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_050.json.gz",
+      "bytes": 280244,
+      "sha256": "bd20ecef2a20abcc03f055b27a5008afdbd8432f91d8dcc08f3100a36ae29a28"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_051.json.gz",
+      "bytes": 262695,
+      "sha256": "99e95b8826843da96fa4eaa09af6e23b1efdea0ec49949b117dcf1c327dcfd25"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_052.json.gz",
+      "bytes": 258327,
+      "sha256": "d2d252e46aa1146574dd6e94dd840c6777d819f41e862cd0ba7c545d0306e09a"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_all_053.json.gz",
+      "bytes": 181190,
+      "sha256": "3238e1b5588e80e56c6552f53a47d5b7ceeeb918c9ded7a1c4080897f2f1c9a9"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_001.json.gz",
+      "bytes": 307256,
+      "sha256": "15cc0c1f52513d446729cfe0df9b19c2b35e7ececc3b042e7db8bc6207882de1"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_002.json.gz",
+      "bytes": 309787,
+      "sha256": "1df0da73075f47eed2cfa398c3973f1e96fdc2a08d4e4ddc6340ed4fa65b437e"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_003.json.gz",
+      "bytes": 293880,
+      "sha256": "13b4c0827c82dd6f2ddb2888b37fe3584ab876fae0d2361038a372130d47af1c"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_004.json.gz",
+      "bytes": 311831,
+      "sha256": "414eb2229f62370cded0a16f2830b8bbecf5c3b277e7c8f9fbad579ffeb0c907"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_005.json.gz",
+      "bytes": 313586,
+      "sha256": "9e06212097b6a629b5ee40b3fc1210817b537ed279eba533be628b7a890150cf"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_006.json.gz",
+      "bytes": 309632,
+      "sha256": "7e5e40d0e31ac766a8ec123293ec1da5785edec43c2248031ffb9d10c105d28b"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_007.json.gz",
+      "bytes": 309723,
+      "sha256": "572a51a46cc9acf83db6be52490f0764a14952b562c3f62d9b433721f0cbf66b"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_008.json.gz",
+      "bytes": 297841,
+      "sha256": "9b341dca45e416e9ed56a0fcc4ec4c927b364eaae860d9fb0fffcda3be8d36c7"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_009.json.gz",
+      "bytes": 297911,
+      "sha256": "2b69d47c0eb65f5f923b57d37b2215f8aaf2e1fe40d544dbdd2eff434e8a20f1"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_010.json.gz",
+      "bytes": 306186,
+      "sha256": "874abde20f012f1a57b21016e30bfea6cd6aa5fb1bbd270897bc11efbfc1854c"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_011.json.gz",
+      "bytes": 294371,
+      "sha256": "7fac8401f6a936304f03556194a4db6a5fff6e67d1cf7f6310128888215af02d"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_012.json.gz",
+      "bytes": 301766,
+      "sha256": "a9502baa6e956433d31fd2cd315d050123a7a64839756d07f2db26eb9df1ac60"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_013.json.gz",
+      "bytes": 311147,
+      "sha256": "90fad04aabf99d00a91f8e579c4a7fec865dc153a3df133a9634cd75493a3d79"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_014.json.gz",
+      "bytes": 297617,
+      "sha256": "cc3da9d27385cb590cb9ef7bf32d80c65dbcce2de353ae2bfe3379ccc062fdec"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_015.json.gz",
+      "bytes": 307114,
+      "sha256": "010be1b85486d4ab25eb7bf6138f5139dc01adf53a2fd9e1e1337f16f1ac025e"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_016.json.gz",
+      "bytes": 303730,
+      "sha256": "ceb2609704b172b1f7f3e6e80acf70873d7ff66edaf7c822959eb08e108abdfe"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_017.json.gz",
+      "bytes": 296882,
+      "sha256": "0829288da47c6188715076c72001a3631833ba788bdf390ee2e0fb3b52a92a44"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_018.json.gz",
+      "bytes": 304120,
+      "sha256": "eafc6316a8d52e840d460324dc154c1286b4cc0282c1306530d2c29f1c7dd007"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_019.json.gz",
+      "bytes": 298661,
+      "sha256": "2143283e8a0cd531975032c56a6f3146b07863a9de45cf58fa215fc4a76a498e"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_020.json.gz",
+      "bytes": 297176,
+      "sha256": "2e359b90ca6423b7eca47fa0f8c3280d3ea150dfaab2ecba8836bdc553b7403e"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_021.json.gz",
+      "bytes": 315498,
+      "sha256": "1dff14b7b129c39a23cad8e58c369d0d370f28eef1714c125a8a128105df6486"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_022.json.gz",
+      "bytes": 308523,
+      "sha256": "d03b6cb457988d5a7ae7374e947d9ad98a0e73fe480a3d57bfb1527010675162"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_023.json.gz",
+      "bytes": 293733,
+      "sha256": "d6973cfe211555a5165ab2d1f13e9856f9a67bf4d7675a934ee290a017257ee7"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_024.json.gz",
+      "bytes": 304562,
+      "sha256": "b9a7d89d88c6fc3485ef1e886fa09968eb60adffd7b24e01ba478ea50e5d8081"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_025.json.gz",
+      "bytes": 300923,
+      "sha256": "731346acf19bc9a705136a7374d798f6be2ea99a639790a237d10fcc9afd2426"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_026.json.gz",
+      "bytes": 299991,
+      "sha256": "fb1d832cfae2cd423667a907f30c980567da963325272c5aa147e1cf3f9a5b41"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_027.json.gz",
+      "bytes": 291440,
+      "sha256": "f3a512e0587535211013a523acc1d5ac2b9d9f7d6af6aa1d34183f8be84be4f1"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_028.json.gz",
+      "bytes": 314338,
+      "sha256": "2adee1e3da1fdbc642090724da46d097f25121b74c844fe9806d1d5a72be4335"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_029.json.gz",
+      "bytes": 307513,
+      "sha256": "881b565df041bf9e5701bc4c88af4b9e639def525ce490a2701c6036f6438fd6"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_030.json.gz",
+      "bytes": 298060,
+      "sha256": "472cbb71a4ea8de5a6959d6ce5ce8143127f06c712d7ac5e735ad9212f8da6bf"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_031.json.gz",
+      "bytes": 299451,
+      "sha256": "452ad38b332b4c4aad31fdad1b219cc0787234aed5f07fd5b43ba3850a99f971"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_032.json.gz",
+      "bytes": 306485,
+      "sha256": "5207c90de8914d35326caa1b6ffa0e9efa20d0bf8a09a0b6e85825ff7cf5b147"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_033.json.gz",
+      "bytes": 303484,
+      "sha256": "dea52598aaa3f6d39fde3714f727628024c43d188f91d5cb05b1d1949005d65c"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_034.json.gz",
+      "bytes": 301747,
+      "sha256": "854b4607d744a782f0fee610ac739a5435f1b30833bff8c71f153f494fa0a67a"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_035.json.gz",
+      "bytes": 316506,
+      "sha256": "d6da10e2856e04a0537e66b38b0e983a94c10663bc82eb2195a6920df10f06ac"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_036.json.gz",
+      "bytes": 311455,
+      "sha256": "a0d29f4efb393201aba6eb5c3d50fa4994948d2734a54935a517082f20ff629a"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_037.json.gz",
+      "bytes": 302744,
+      "sha256": "38d92d4bed1aa4f35c5f53b107fed3e0c5b3a61c6b3ea071f8788631c6a1febe"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_038.json.gz",
+      "bytes": 296152,
+      "sha256": "3fb609ccf317cddc97d5d3b84df237d3d3cd7c0913a2ff401a65e7a97df96633"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_039.json.gz",
+      "bytes": 301724,
+      "sha256": "be2c6445e9809609e86d50556e39fb0e32e64d9926e6093802b4a9379f549952"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_040.json.gz",
+      "bytes": 298536,
+      "sha256": "51d54d992882b951852dbaaa19c423f07736c6d3200d03544a4d2059728bef88"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_041.json.gz",
+      "bytes": 308669,
+      "sha256": "f3277402d306cad0331b0983e4fe58a1893c7dbc1d19ead36097ad3a10b08a98"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_042.json.gz",
+      "bytes": 298643,
+      "sha256": "6e880f16cf4af6526d394a7e9919ded1d9b3b8e2c9c0cd47bc8d2bb3816720e3"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_043.json.gz",
+      "bytes": 300249,
+      "sha256": "f4f8be54175a470ef69ec160f5d1517c762af5c8be037407a29fbdaae404c433"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_044.json.gz",
+      "bytes": 309574,
+      "sha256": "5e76763492bcf311da76dc43ce86264fdf0bd73d5686892c4cb592d769356461"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_045.json.gz",
+      "bytes": 305243,
+      "sha256": "166d97c22967bb51775c74b5cd1c4887306a5e83bf360ba04ec768c15ca4255e"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_046.json.gz",
+      "bytes": 300071,
+      "sha256": "66d473398c77378391b216e3fc8b21154b14c63879ad6336e66df060f92dedfb"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_047.json.gz",
+      "bytes": 304092,
+      "sha256": "0ec66e85a3992aeaeb9a14409362ae9617a10e6f153705a68c181bff4b1187f7"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_048.json.gz",
+      "bytes": 302193,
+      "sha256": "166881fa58a00cfdc11fb5e594cfb6a081554343c5389784f1f875d177766905"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_049.json.gz",
+      "bytes": 306825,
+      "sha256": "2e16fc66ac6bec3ac08aa06e4473095ecec18e86bac7b03380a57735c1211905"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_050.json.gz",
+      "bytes": 303736,
+      "sha256": "e0cef22c5480701fd2623d05f13fcb640491b33ed102021a76b73b3ff109335c"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_051.json.gz",
+      "bytes": 294156,
+      "sha256": "a33db8fba5573494c045726d2cc1a2540e679817ac3a6aae1bbc3af73e4e0777"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_052.json.gz",
+      "bytes": 292421,
+      "sha256": "c992357c9b7324b310cc1aec58e4d9b85e11ad2faae9209e56f9a4fc901dcbbb"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/response_raw_053.json.gz",
+      "bytes": 203678,
+      "sha256": "10b57b534fd3f0b643577493b450db4794f0a03d01f3ce26548bec46dc35606e"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/returns_log.csv",
+      "bytes": 11293302,
+      "sha256": "c779b4ea9c20213459f49aa8d7f327cc2876d5e23140a650c236382b0c413a2a"
+    },
+    {
+      "path": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/returns_simple.csv",
+      "bytes": 11292324,
+      "sha256": "feffdc5b4a017b1241e6a8e7028718f472d1599e068168ab1e06af5f27e7b3b0"
+    },
+    {
+      "path": "market_data/datasets/hft_kalshi_archive_inventory/files.jsonl",
+      "bytes": 152354,
+      "sha256": "7c1b0dd09af6e9bb141cddcdd9455c24cb528b34f2d62ab2cb076b77f4630019"
+    },
+    {
+      "path": "market_data/samples/alpaca_2026-10-12/crypto_us_stream.jsonl",
+      "bytes": 28514,
+      "sha256": "edc86a2a91bb1b61784b86f0b1ffebb16f0abb3666d091b6de44181f8a501b57"
+    },
+    {
+      "path": "market_data/samples/alpaca_2026-10-12/stock_iex_stream.jsonl",
+      "bytes": 7365,
+      "sha256": "76d33da26c2ba2e554365458b5a200c44b35f93b011847943ec45a8b0fc69e77"
+    },
+    {
+      "path": "market_data/samples/coinbase_depth_2026-10-29/public_stream.jsonl.gz",
+      "bytes": 594854,
+      "sha256": "e300669ac798d6894dfddfe20b7297bd851e10bd30cc1b6db82dfa00dfa2c216"
+    },
+    {
+      "path": "market_data/samples/external_historical_books_2026-10-29/bitmex_xbtusd_2025-01-01.prefix.csv",
+      "bytes": 4552843,
+      "sha256": "284c693e6d4b66075bc434f969e3a61129c48c3dfc3558e3e71fa738630ef305"
+    },
+    {
+      "path": "market_data/samples/external_historical_books_2026-10-29/bitmex_xbtusd_2025-01-01.prefix.gz.part",
+      "bytes": 524288,
+      "sha256": "45905acac2df53bdcd924b387ff64c20be32b2ffe7040d85d37fd88fbfeb7fa7"
+    },
+    {
+      "path": "market_data/samples/external_historical_books_2026-10-29/deribit_btc_perpetual_2025-01-01.prefix.csv",
+      "bytes": 5138397,
+      "sha256": "b38a62d4c44f7cd260a50801d7dcbbadc8c3ed7454ac3a172987e11286c336ee"
+    },
+    {
+      "path": "market_data/samples/external_historical_books_2026-10-29/deribit_btc_perpetual_2025-01-01.prefix.gz.part",
+      "bytes": 524288,
+      "sha256": "bf2f0f1369aa31fd48b73d3fe65b6ed5fd1398671b40947ad3397aee3f6b81b6"
+    },
+    {
+      "path": "market_data/samples/kalshi_btc_depth_2026-10-29/snapshots.jsonl",
+      "bytes": 395748,
+      "sha256": "15f468fd4da6fcc098912820995a9ef82e8f4037a70bdf5d6563eb2d88e8c6dc"
+    },
+    {
+      "path": "market_data/samples/kalshi_btc_depth_2026-10-29_session02/snapshots.jsonl",
+      "bytes": 23703675,
+      "sha256": "04eed751e0a3cb383a0863d12f01063a977e1a7b2c2d72e881e527b25bba36f6"
+    },
+    {
+      "path": "market_data/samples/kalshi_btc_stream_2026-10-29_probe/checkpoints.jsonl",
+      "bytes": 108493,
+      "sha256": "7604b7f4dfa3f6e63596fcb7a03bc850d04d8915436e6c752cf2945f377d8c3d"
+    },
+    {
+      "path": "market_data/samples/kalshi_btc_stream_2026-10-29_probe/messages.jsonl",
+      "bytes": 6714497,
+      "sha256": "75fd7d95b7039f04ee9cd5ec31d682768aabf95a4619e4967c5a5d5ce047f848"
+    },
+    {
+      "path": "market_data/samples/kalshi_btc_stream_2026-10-29_session01/checkpoints.jsonl",
+      "bytes": 3935073,
+      "sha256": "c72fda2fab9052990cc54b0f95772dc856f85e85d06df0119529202fbe3bd2a0"
+    },
+    {
+      "path": "market_data/samples/kalshi_btc_stream_2026-10-29_session01/messages.jsonl",
+      "bytes": 150606476,
+      "sha256": "b4488e3b242e94fb1a07f98afcf67e7d42c47f0f624ffd26b02b5f3d5f439187"
+    }
+  ]
+}

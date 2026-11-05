@@ -1,0 +1,500 @@
+{
+  "started_at": "2026-10-12T20:02:28.802464+00:00",
+  "read_only": true,
+  "history_sampling": "One page, at most 1000 records per request; check has_more_pages.",
+  "results": [
+    {
+      "name": "paper_clock",
+      "method": "GET",
+      "url": "https://paper-api.alpaca.markets/v2/clock",
+      "received_at": "2026-10-12T20:02:28.804335+00:00",
+      "http_status": 200,
+      "has_more_pages": false
+    },
+    {
+      "name": "asset_aapl",
+      "method": "GET",
+      "url": "https://paper-api.alpaca.markets/v2/assets/AAPL",
+      "received_at": "2026-10-12T20:02:28.946847+00:00",
+      "http_status": 200,
+      "has_more_pages": false
+    },
+    {
+      "name": "asset_spy",
+      "method": "GET",
+      "url": "https://paper-api.alpaca.markets/v2/assets/SPY",
+      "received_at": "2026-10-12T20:02:29.038734+00:00",
+      "http_status": 200,
+      "has_more_pages": false
+    },
+    {
+      "name": "calendar",
+      "method": "GET",
+      "url": "https://paper-api.alpaca.markets/v2/calendar?start=2026-09-28&end=2026-10-12",
+      "received_at": "2026-10-12T20:02:29.133718+00:00",
+      "http_status": 200
+    },
+    {
+      "name": "stock_iex_aapl_trades",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v2/stocks/trades?symbols=AAPL&feed=iex&start=2026-10-12T13%3A30%3A00%2B00%3A00&end=2026-10-12T13%3A35%3A00%2B00%3A00&limit=1000&sort=asc",
+      "received_at": "2026-10-12T20:02:29.238045+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "AAPL": 980
+      },
+      "fields": [
+        "c",
+        "i",
+        "p",
+        "s",
+        "symbol",
+        "t",
+        "x",
+        "z"
+      ],
+      "first_timestamp": "2026-10-12T13:30:00.098938003Z",
+      "last_timestamp": "2026-10-12T13:34:59.634111088Z",
+      "has_more_pages": false
+    },
+    {
+      "name": "stock_iex_aapl_quotes",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v2/stocks/quotes?symbols=AAPL&feed=iex&start=2026-10-12T13%3A30%3A00%2B00%3A00&end=2026-10-12T13%3A35%3A00%2B00%3A00&limit=1000&sort=asc",
+      "received_at": "2026-10-12T20:02:29.437023+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "AAPL": 1000
+      },
+      "fields": [
+        "ap",
+        "as",
+        "ax",
+        "bp",
+        "bs",
+        "bx",
+        "c",
+        "symbol",
+        "t",
+        "z"
+      ],
+      "first_timestamp": "2026-10-12T13:30:00.001236979Z",
+      "last_timestamp": "2026-10-12T13:30:08.749522317Z",
+      "has_more_pages": true
+    },
+    {
+      "name": "stock_iex_spy_trades",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v2/stocks/trades?symbols=SPY&feed=iex&start=2026-10-12T13%3A30%3A00%2B00%3A00&end=2026-10-12T13%3A35%3A00%2B00%3A00&limit=1000&sort=asc",
+      "received_at": "2026-10-12T20:02:29.689128+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "SPY": 455
+      },
+      "fields": [
+        "c",
+        "i",
+        "p",
+        "s",
+        "symbol",
+        "t",
+        "x",
+        "z"
+      ],
+      "first_timestamp": "2026-10-12T13:30:00.2003076Z",
+      "last_timestamp": "2026-10-12T13:34:59.228410242Z",
+      "has_more_pages": false
+    },
+    {
+      "name": "stock_iex_spy_quotes",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v2/stocks/quotes?symbols=SPY&feed=iex&start=2026-10-12T13%3A30%3A00%2B00%3A00&end=2026-10-12T13%3A35%3A00%2B00%3A00&limit=1000&sort=asc",
+      "received_at": "2026-10-12T20:02:29.864293+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "SPY": 1000
+      },
+      "fields": [
+        "ap",
+        "as",
+        "ax",
+        "bp",
+        "bs",
+        "bx",
+        "c",
+        "symbol",
+        "t",
+        "z"
+      ],
+      "first_timestamp": "2026-10-12T13:30:00.010152772Z",
+      "last_timestamp": "2026-10-12T13:30:02.015170666Z",
+      "has_more_pages": true
+    },
+    {
+      "name": "stock_iex_bars",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v2/stocks/bars?symbols=AAPL%2CSPY&feed=iex&start=2026-10-12T13%3A30%3A00%2B00%3A00&end=2026-10-12T13%3A35%3A00%2B00%3A00&timeframe=1Min&limit=1000&adjustment=raw",
+      "received_at": "2026-10-12T20:02:30.165208+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "AAPL": 6,
+        "SPY": 6
+      },
+      "fields": [
+        "c",
+        "h",
+        "l",
+        "n",
+        "o",
+        "symbol",
+        "t",
+        "v",
+        "vw"
+      ],
+      "first_timestamp": "2026-10-12T13:30:00Z",
+      "last_timestamp": "2026-10-12T13:35:00Z",
+      "has_more_pages": false
+    },
+    {
+      "name": "stock_sip_aapl_trades",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v2/stocks/trades?symbols=AAPL&feed=sip&start=2026-10-12T13%3A30%3A00%2B00%3A00&end=2026-10-12T13%3A35%3A00%2B00%3A00&limit=1000&sort=asc",
+      "received_at": "2026-10-12T20:02:30.271091+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "AAPL": 1000
+      },
+      "fields": [
+        "c",
+        "i",
+        "p",
+        "s",
+        "symbol",
+        "t",
+        "x",
+        "z"
+      ],
+      "first_timestamp": "2026-10-12T13:30:00.000154905Z",
+      "last_timestamp": "2026-10-12T13:30:01.284578013Z",
+      "has_more_pages": true
+    },
+    {
+      "name": "stock_sip_aapl_quotes",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v2/stocks/quotes?symbols=AAPL&feed=sip&start=2026-10-12T13%3A30%3A00%2B00%3A00&end=2026-10-12T13%3A35%3A00%2B00%3A00&limit=1000&sort=asc",
+      "received_at": "2026-10-12T20:02:30.543202+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "AAPL": 1000
+      },
+      "fields": [
+        "ap",
+        "as",
+        "ax",
+        "bp",
+        "bs",
+        "bx",
+        "c",
+        "symbol",
+        "t",
+        "z"
+      ],
+      "first_timestamp": "2026-10-12T13:30:00.007813649Z",
+      "last_timestamp": "2026-10-12T13:30:02.202874738Z",
+      "has_more_pages": true
+    },
+    {
+      "name": "stock_sip_spy_trades",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v2/stocks/trades?symbols=SPY&feed=sip&start=2026-10-12T13%3A30%3A00%2B00%3A00&end=2026-10-12T13%3A35%3A00%2B00%3A00&limit=1000&sort=asc",
+      "received_at": "2026-10-12T20:02:30.807757+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "SPY": 1000
+      },
+      "fields": [
+        "c",
+        "i",
+        "p",
+        "s",
+        "symbol",
+        "t",
+        "x",
+        "z"
+      ],
+      "first_timestamp": "2026-10-12T13:30:00.001400551Z",
+      "last_timestamp": "2026-10-12T13:30:00.71583485Z",
+      "has_more_pages": true
+    },
+    {
+      "name": "stock_sip_spy_quotes",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v2/stocks/quotes?symbols=SPY&feed=sip&start=2026-10-12T13%3A30%3A00%2B00%3A00&end=2026-10-12T13%3A35%3A00%2B00%3A00&limit=1000&sort=asc",
+      "received_at": "2026-10-12T20:02:31.004033+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "SPY": 1000
+      },
+      "fields": [
+        "ap",
+        "as",
+        "ax",
+        "bp",
+        "bs",
+        "bx",
+        "c",
+        "symbol",
+        "t",
+        "z"
+      ],
+      "first_timestamp": "2026-10-12T13:30:00.001121494Z",
+      "last_timestamp": "2026-10-12T13:30:01.078759608Z",
+      "has_more_pages": true
+    },
+    {
+      "name": "stock_sip_bars",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v2/stocks/bars?symbols=AAPL%2CSPY&feed=sip&start=2026-10-12T13%3A30%3A00%2B00%3A00&end=2026-10-12T13%3A35%3A00%2B00%3A00&timeframe=1Min&limit=1000&adjustment=raw",
+      "received_at": "2026-10-12T20:02:31.239945+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "SPY": 6,
+        "AAPL": 6
+      },
+      "fields": [
+        "c",
+        "h",
+        "l",
+        "n",
+        "o",
+        "symbol",
+        "t",
+        "v",
+        "vw"
+      ],
+      "first_timestamp": "2026-10-12T13:30:00Z",
+      "last_timestamp": "2026-10-12T13:35:00Z",
+      "has_more_pages": false
+    },
+    {
+      "name": "stock_latest_iex_trades",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v2/stocks/trades/latest?symbols=AAPL%2CSPY&feed=iex",
+      "received_at": "2026-10-12T20:02:31.799728+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "AAPL": 1,
+        "SPY": 1
+      },
+      "fields": [
+        "c",
+        "i",
+        "p",
+        "s",
+        "symbol",
+        "t",
+        "x",
+        "z"
+      ],
+      "first_timestamp": "2026-10-12T19:59:57.307205784Z",
+      "last_timestamp": "2026-10-12T20:02:24.793072471Z",
+      "has_more_pages": false
+    },
+    {
+      "name": "stock_latest_iex_quotes",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v2/stocks/quotes/latest?symbols=AAPL%2CSPY&feed=iex",
+      "received_at": "2026-10-12T20:02:31.911697+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "SPY": 1,
+        "AAPL": 1
+      },
+      "fields": [
+        "ap",
+        "as",
+        "ax",
+        "bp",
+        "bs",
+        "bx",
+        "c",
+        "symbol",
+        "t",
+        "z"
+      ],
+      "first_timestamp": "2026-10-12T20:00:02.686833279Z",
+      "last_timestamp": "2026-10-12T20:02:25.713748072Z",
+      "has_more_pages": false
+    },
+    {
+      "name": "stock_latest_sip_trades",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v2/stocks/trades/latest?symbols=AAPL%2CSPY&feed=sip",
+      "received_at": "2026-10-12T20:02:32.022705+00:00",
+      "http_status": 403,
+      "error": {
+        "message": "subscription does not permit querying recent SIP data"
+      }
+    },
+    {
+      "name": "stock_latest_sip_quotes",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v2/stocks/quotes/latest?symbols=AAPL%2CSPY&feed=sip",
+      "received_at": "2026-10-12T20:02:32.126427+00:00",
+      "http_status": 403,
+      "error": {
+        "message": "subscription does not permit querying recent SIP data"
+      }
+    },
+    {
+      "name": "crypto_us_latest_orderbooks",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v1beta3/crypto/us/latest/orderbooks?symbols=BTC%2FUSD%2CETH%2FUSD",
+      "received_at": "2026-10-12T20:02:32.218281+00:00",
+      "http_status": 200,
+      "has_more_pages": false,
+      "depth_by_symbol": {
+        "ETH/USD": {
+          "bids": 50,
+          "asks": 100,
+          "timestamp": "2026-10-12T20:02:29.371594604Z"
+        },
+        "BTC/USD": {
+          "bids": 91,
+          "asks": 100,
+          "timestamp": "2026-10-12T20:02:29.03276274Z"
+        }
+      }
+    },
+    {
+      "name": "crypto_us_trades",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v1beta3/crypto/us/trades?symbols=BTC%2FUSD%2CETH%2FUSD&start=2026-10-12T19%3A57%3A24.007569%2B00%3A00&end=2026-10-12T20%3A02%3A24.007569%2B00%3A00&limit=1000&sort=asc",
+      "received_at": "2026-10-12T20:02:32.338891+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "BTC/USD": 4,
+        "ETH/USD": 3
+      },
+      "fields": [
+        "i",
+        "p",
+        "s",
+        "symbol",
+        "t",
+        "tks"
+      ],
+      "first_timestamp": "2026-10-12T19:59:50.794483128Z",
+      "last_timestamp": "2026-10-12T20:00:42.146172132Z",
+      "has_more_pages": false
+    },
+    {
+      "name": "crypto_us_quotes",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v1beta3/crypto/us/quotes?symbols=BTC%2FUSD%2CETH%2FUSD&start=2026-10-12T19%3A57%3A24.007569%2B00%3A00&end=2026-10-12T20%3A02%3A24.007569%2B00%3A00&limit=1000&sort=asc",
+      "received_at": "2026-10-12T20:02:32.773415+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "BTC/USD": 380,
+        "ETH/USD": 286
+      },
+      "fields": [
+        "ap",
+        "as",
+        "bp",
+        "bs",
+        "symbol",
+        "t"
+      ],
+      "first_timestamp": "2026-10-12T19:57:25.377892406Z",
+      "last_timestamp": "2026-10-12T20:02:21.222803513Z",
+      "has_more_pages": false
+    },
+    {
+      "name": "stock_iex_stream",
+      "url": "wss://stream.data.alpaca.markets/v2/iex",
+      "started_at": "2026-10-12T20:02:32.990011+00:00",
+      "requested_seconds": 15,
+      "subscription": {
+        "trades": [
+          "AAPL",
+          "SPY"
+        ],
+        "quotes": [
+          "AAPL",
+          "SPY"
+        ]
+      },
+      "counts": {
+        "subscription": 1,
+        "q": 34
+      },
+      "authenticated": true,
+      "event_cap_reached": false,
+      "reset_symbols": [],
+      "reconstructed_depth_rows": 0,
+      "final_depth_by_symbol": {},
+      "max_depth_by_symbol": {},
+      "finished_at": "2026-10-12T20:02:48.170870+00:00"
+    },
+    {
+      "name": "crypto_us_stream",
+      "url": "wss://stream.data.alpaca.markets/v1beta3/crypto/us",
+      "started_at": "2026-10-12T20:02:32.990124+00:00",
+      "requested_seconds": 15,
+      "subscription": {
+        "trades": [
+          "BTC/USD",
+          "ETH/USD"
+        ],
+        "quotes": [
+          "BTC/USD",
+          "ETH/USD"
+        ],
+        "orderbooks": [
+          "BTC/USD",
+          "ETH/USD"
+        ]
+      },
+      "counts": {
+        "subscription": 1,
+        "o": 58,
+        "q": 28
+      },
+      "authenticated": true,
+      "event_cap_reached": false,
+      "reset_symbols": [
+        "BTC/USD",
+        "ETH/USD"
+      ],
+      "reconstructed_depth_rows": 58,
+      "final_depth_by_symbol": {
+        "BTC/USD": {
+          "bids": 91,
+          "asks": 129
+        },
+        "ETH/USD": {
+          "bids": 50,
+          "asks": 140
+        }
+      },
+      "max_depth_by_symbol": {
+        "BTC/USD": {
+          "bids": 91,
+          "asks": 129
+        },
+        "ETH/USD": {
+          "bids": 50,
+          "asks": 140
+        }
+      },
+      "finished_at": "2026-10-12T20:02:48.171059+00:00"
+    }
+  ],
+  "server_timestamp": "2026-10-12T16:02:29.007569437-04:00",
+  "stock_history_window": {
+    "start": "2026-10-12T13:30:00+00:00",
+    "end": "2026-10-12T13:35:00+00:00"
+  },
+  "finished_at": "2026-10-12T20:02:48.171512+00:00"
+}

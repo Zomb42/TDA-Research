@@ -1,0 +1,235 @@
+{
+  "started_at": "2026-10-12T20:12:15.119018+00:00",
+  "read_only": true,
+  "history_sampling": "One page, at most 1000 records per request; check has_more_pages.",
+  "results": [
+    {
+      "name": "paper_clock",
+      "method": "GET",
+      "url": "https://paper-api.alpaca.markets/v2/clock",
+      "received_at": "2026-10-12T20:12:15.119473+00:00",
+      "http_status": 200,
+      "has_more_pages": false
+    },
+    {
+      "name": "options_underlying_latest_trades",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v2/stocks/trades/latest?symbols=AAPL%2CSPY&feed=iex",
+      "received_at": "2026-10-12T20:12:15.249396+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "SPY": 1,
+        "AAPL": 1
+      },
+      "fields": [
+        "c",
+        "i",
+        "p",
+        "s",
+        "symbol",
+        "t",
+        "x",
+        "z"
+      ],
+      "first_timestamp": "2026-10-12T19:59:57.307205784Z",
+      "last_timestamp": "2026-10-12T20:11:47.997594475Z",
+      "has_more_pages": false
+    },
+    {
+      "name": "options_contracts_aapl",
+      "method": "GET",
+      "url": "https://paper-api.alpaca.markets/v2/options/contracts?underlying_symbols=AAPL&type=call&status=active&expiration_date_gte=2026-10-13&expiration_date_lte=2026-10-19&limit=4&strike_price_gte=336.05&strike_price_lte=346.05",
+      "received_at": "2026-10-12T20:12:15.365798+00:00",
+      "http_status": 200,
+      "has_more_pages": true,
+      "contract_count": 4
+    },
+    {
+      "name": "options_contracts_spy",
+      "method": "GET",
+      "url": "https://paper-api.alpaca.markets/v2/options/contracts?underlying_symbols=SPY&type=call&status=active&expiration_date_gte=2026-10-13&expiration_date_lte=2026-10-19&limit=4&strike_price_gte=773.1&strike_price_lte=783.1",
+      "received_at": "2026-10-12T20:12:15.466175+00:00",
+      "http_status": 200,
+      "has_more_pages": true,
+      "contract_count": 4
+    },
+    {
+      "name": "options_latest_indicative_trades",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v1beta1/options/trades/latest?symbols=AAPL261014C00337500%2CAAPL261014C00340000%2CAAPL261014C00342500%2CAAPL261014C00345000%2CSPY261013C00774000%2CSPY261013C00775000%2CSPY261013C00776000%2CSPY261013C00777000&feed=indicative",
+      "received_at": "2026-10-12T20:12:15.563896+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "SPY261013C00774000": 1,
+        "SPY261013C00775000": 1,
+        "SPY261013C00776000": 1,
+        "SPY261013C00777000": 1,
+        "AAPL261014C00337500": 1,
+        "AAPL261014C00340000": 1,
+        "AAPL261014C00342500": 1,
+        "AAPL261014C00345000": 1
+      },
+      "fields": [
+        "c",
+        "p",
+        "s",
+        "symbol",
+        "t",
+        "x"
+      ],
+      "first_timestamp": "2026-10-12T19:56:24.950288698Z",
+      "last_timestamp": "2026-10-12T19:57:15.412555896Z",
+      "has_more_pages": false
+    },
+    {
+      "name": "options_latest_indicative_quotes",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v1beta1/options/quotes/latest?symbols=AAPL261014C00337500%2CAAPL261014C00340000%2CAAPL261014C00342500%2CAAPL261014C00345000%2CSPY261013C00774000%2CSPY261013C00775000%2CSPY261013C00776000%2CSPY261013C00777000&feed=indicative",
+      "received_at": "2026-10-12T20:12:15.663425+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "SPY261013C00774000": 1,
+        "SPY261013C00775000": 1,
+        "SPY261013C00776000": 1,
+        "SPY261013C00777000": 1,
+        "AAPL261014C00337500": 1,
+        "AAPL261014C00340000": 1,
+        "AAPL261014C00342500": 1,
+        "AAPL261014C00345000": 1
+      },
+      "fields": [
+        "ap",
+        "as",
+        "ax",
+        "bp",
+        "bs",
+        "bx",
+        "c",
+        "symbol",
+        "t"
+      ],
+      "first_timestamp": "2026-10-12T19:59:59.74999358Z",
+      "last_timestamp": "2026-10-12T20:12:15.078919506Z",
+      "has_more_pages": false
+    },
+    {
+      "name": "options_indicative_snapshots",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v1beta1/options/snapshots?symbols=AAPL261014C00337500%2CAAPL261014C00340000%2CAAPL261014C00342500%2CAAPL261014C00345000%2CSPY261013C00774000%2CSPY261013C00775000%2CSPY261013C00776000%2CSPY261013C00777000&feed=indicative",
+      "received_at": "2026-10-12T20:12:15.787659+00:00",
+      "http_status": 200,
+      "has_more_pages": false,
+      "snapshot_count": 8,
+      "snapshot_fields": [
+        "dailyBar",
+        "greeks",
+        "impliedVolatility",
+        "latestQuote",
+        "latestTrade",
+        "minuteBar",
+        "prevDailyBar"
+      ]
+    },
+    {
+      "name": "options_latest_opra_trades",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v1beta1/options/trades/latest?symbols=AAPL261014C00337500%2CAAPL261014C00340000%2CAAPL261014C00342500%2CAAPL261014C00345000%2CSPY261013C00774000%2CSPY261013C00775000%2CSPY261013C00776000%2CSPY261013C00777000&feed=opra",
+      "received_at": "2026-10-12T20:12:15.919023+00:00",
+      "http_status": 403,
+      "error": {
+        "message": "OPRA agreement is not signed"
+      }
+    },
+    {
+      "name": "options_latest_opra_quotes",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v1beta1/options/quotes/latest?symbols=AAPL261014C00337500%2CAAPL261014C00340000%2CAAPL261014C00342500%2CAAPL261014C00345000%2CSPY261013C00774000%2CSPY261013C00775000%2CSPY261013C00776000%2CSPY261013C00777000&feed=opra",
+      "received_at": "2026-10-12T20:12:16.014325+00:00",
+      "http_status": 403,
+      "error": {
+        "message": "OPRA agreement is not signed"
+      }
+    },
+    {
+      "name": "options_opra_snapshots",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v1beta1/options/snapshots?symbols=AAPL261014C00337500%2CAAPL261014C00340000%2CAAPL261014C00342500%2CAAPL261014C00345000%2CSPY261013C00774000%2CSPY261013C00775000%2CSPY261013C00776000%2CSPY261013C00777000&feed=opra",
+      "received_at": "2026-10-12T20:12:16.114837+00:00",
+      "http_status": 403,
+      "error": {
+        "message": "OPRA agreement is not signed"
+      }
+    },
+    {
+      "name": "options_historical_trades",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v1beta1/options/trades?symbols=AAPL261014C00337500%2CAAPL261014C00340000%2CAAPL261014C00342500%2CAAPL261014C00345000%2CSPY261013C00774000%2CSPY261013C00775000%2CSPY261013C00776000%2CSPY261013C00777000&start=2026-10-12T13%3A30%3A00%2B00%3A00&end=2026-10-12T13%3A35%3A00%2B00%3A00&limit=1000&sort=asc",
+      "received_at": "2026-10-12T20:12:16.229421+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "AAPL261014C00337500": 71,
+        "AAPL261014C00340000": 357,
+        "AAPL261014C00342500": 420,
+        "AAPL261014C00345000": 152
+      },
+      "fields": [
+        "c",
+        "p",
+        "s",
+        "symbol",
+        "t",
+        "x"
+      ],
+      "first_timestamp": "2026-10-12T13:30:00.577609908Z",
+      "last_timestamp": "2026-10-12T13:34:58.182425529Z",
+      "has_more_pages": true
+    },
+    {
+      "name": "options_historical_bars",
+      "method": "GET",
+      "url": "https://data.alpaca.markets/v1beta1/options/bars?symbols=AAPL261014C00337500%2CAAPL261014C00340000%2CAAPL261014C00342500%2CAAPL261014C00345000%2CSPY261013C00774000%2CSPY261013C00775000%2CSPY261013C00776000%2CSPY261013C00777000&start=2026-10-12T13%3A30%3A00%2B00%3A00&end=2026-10-12T13%3A35%3A00%2B00%3A00&timeframe=1Min&limit=1000",
+      "received_at": "2026-10-12T20:12:16.416177+00:00",
+      "http_status": 200,
+      "records_by_symbol": {
+        "SPY261013C00774000": 5,
+        "SPY261013C00775000": 5,
+        "SPY261013C00776000": 6,
+        "AAPL261014C00337500": 6,
+        "SPY261013C00777000": 6,
+        "AAPL261014C00340000": 6,
+        "AAPL261014C00342500": 6,
+        "AAPL261014C00345000": 6
+      },
+      "fields": [
+        "c",
+        "h",
+        "l",
+        "n",
+        "o",
+        "symbol",
+        "t",
+        "v",
+        "vw"
+      ],
+      "first_timestamp": "2026-10-12T13:30:00Z",
+      "last_timestamp": "2026-10-12T13:35:00Z",
+      "has_more_pages": false
+    }
+  ],
+  "server_timestamp": "2026-10-12T16:12:15.31797133-04:00",
+  "selected_option_symbols": [
+    "AAPL261014C00337500",
+    "AAPL261014C00340000",
+    "AAPL261014C00342500",
+    "AAPL261014C00345000",
+    "SPY261013C00774000",
+    "SPY261013C00775000",
+    "SPY261013C00776000",
+    "SPY261013C00777000"
+  ],
+  "options_history_window": {
+    "start": "2026-10-12T13:30:00+00:00",
+    "end": "2026-10-12T13:35:00+00:00"
+  },
+  "finished_at": "2026-10-12T20:12:16.525037+00:00"
+}

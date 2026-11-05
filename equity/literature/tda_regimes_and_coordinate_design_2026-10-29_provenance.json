@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-29",
+  "type": "focused literature/method review; no new backtest or data download",
+  "local_links_checked": 98,
+  "sequential_log_entries": 13,
+  "protected_experiment_inputs_unchanged": true,
+  "source_urls": [
+    "https://arxiv.org/html/1703.04385",
+    "https://arxiv.org/html/1701.06081",
+    "https://arxiv.org/html/1809.00695",
+    "https://www.researchgate.net/publication/337857521_The_Better_Turbulence_Index_Forecasting_Adverse_Financial_Markets_Regimes_with_Persistent_Homology",
+    "https://link.springer.com/article/10.1007/s11408-020-00377-x",
+    "https://mpra.ub.uni-muenchen.de/129341/1/MPRA_paper_129341.pdf",
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5922083"
+  ],
+  "coverage_measurement": {
+    "source": "equity/experiments/equity_persistence_regimes/state_features_and_targets.csv",
+    "source_sha256": "af546edf7f8774418053c45120764edcecb74bc514e52bcbebec1266a54dfbd8",
+    "period": "formation_date >= 2024-01-01",
+    "anchors": 142,
+    "median": 0.27631586194947777,
+    "minimum": 0.2331140057363157,
+    "maximum": 0.3402625266207713,
+    "object": "fixed-reference standardized SPY-residual rolling120 PCA top3 variance share"
+  },
+  "review_sha256": "1db2ee88cd688782592e008962c90e5ea2e175baf0f7134d6a537776fe790fca",
+  "subsequent_status_update": "Full-basket day-state experiment completed; original four-ETF proposal remains unrun."
+}

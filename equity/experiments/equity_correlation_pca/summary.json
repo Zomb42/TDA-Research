@@ -1,0 +1,121 @@
+{
+  "development_start": "2016-01-05",
+  "development_end": "2023-12-29",
+  "return_observations": 2011,
+  "equities": 30,
+  "held_out_from": "2024-01-01",
+  "windows_sessions": [
+    60,
+    120
+  ],
+  "pca_variance_share": [
+    0.4359140518735049,
+    0.10911499829428924,
+    0.06276202954360538,
+    0.044542938664954485,
+    0.03841377737983833,
+    0.026851615285987836,
+    0.0256762684653398,
+    0.021349290152250372,
+    0.019977629036527726,
+    0.019663370952156176,
+    0.01848600522053884,
+    0.01746588534244953,
+    0.016037268865235113,
+    0.014457592604110996,
+    0.013956701276360494,
+    0.013317402522186154,
+    0.012230281222507359,
+    0.011124416438924247,
+    0.00985699540021854,
+    0.009324420541243753,
+    0.008708064554727772,
+    0.008195606979241894,
+    0.007287569179417599,
+    0.007132103733551305,
+    0.006534695201368515,
+    0.005844235919287976,
+    0.0044554812409993505,
+    0.004270105330277721,
+    0.004161018539553607,
+    0.002888180239344984
+  ],
+  "pc1_spy_correlation": 0.9275479767051642,
+  "components_for_50pct": 2,
+  "components_for_80pct": 10,
+  "latest_rolling": [
+    {
+      "date": "2023-12-29T00:00:00.000",
+      "window": 60,
+      "average_correlation": 0.2297260917,
+      "within_group_correlation": 0.5105019903,
+      "between_group_correlation": 0.184801948,
+      "peer_correlation_gap": 0.3257000424,
+      "pc1_variance_share": 0.2943586898,
+      "top3_variance_share": 0.5149081742,
+      "effective_dimension": 7.7311439779,
+      "pc1_spy_correlation": 0.789206122,
+      "market_removed_average_correlation": 0.0504891474,
+      "market_removed_peer_gap": 0.3835474797,
+      "market_removed_pc1_share": 0.2300315624
+    },
+    {
+      "date": "2023-12-29T00:00:00.000",
+      "window": 120,
+      "average_correlation": 0.2152898073,
+      "within_group_correlation": 0.4869016302,
+      "between_group_correlation": 0.1718319156,
+      "peer_correlation_gap": 0.3150697146,
+      "pc1_variance_share": 0.2672857702,
+      "top3_variance_share": 0.4838170201,
+      "effective_dimension": 8.9368063095,
+      "pc1_spy_correlation": 0.7819630646,
+      "market_removed_average_correlation": 0.0507872855,
+      "market_removed_peer_gap": 0.3573388461,
+      "market_removed_pc1_share": 0.209447883
+    }
+  ],
+  "snapshots": [
+    {
+      "end_date": "2019-12-31",
+      "start_date": "2019-07-12",
+      "sessions": 120,
+      "average_correlation": 0.38850740886054713,
+      "within_group_correlation": 0.578455848507873,
+      "between_group_correlation": 0.3581156585169749,
+      "pc1_variance_share": 0.44293525145364027,
+      "market_removed_within": 0.32668284533051967,
+      "market_removed_between": -0.01277579913064127
+    },
+    {
+      "end_date": "2020-03-31",
+      "start_date": "2019-10-09",
+      "sessions": 120,
+      "average_correlation": 0.678095396700613,
+      "within_group_correlation": 0.7886803667258814,
+      "between_group_correlation": 0.66040180149657,
+      "pc1_variance_share": 0.6950673260310704,
+      "market_removed_within": 0.37892871450202814,
+      "market_removed_between": 0.013980965687271998
+    },
+    {
+      "end_date": "2023-12-29",
+      "start_date": "2023-07-12",
+      "sessions": 120,
+      "average_correlation": 0.2152898072888436,
+      "within_group_correlation": 0.48690163021004645,
+      "between_group_correlation": 0.17183191562145114,
+      "pc1_variance_share": 0.26728577015233645,
+      "market_removed_within": 0.3588380148640939,
+      "market_removed_between": 0.0014991687618939788
+    }
+  ],
+  "method": "Pearson correlations and sample-correlation PCA of daily log returns; SPY residuals use same-window OLS with intercept.",
+  "checks": {
+    "input_no_missing": true,
+    "held_out_excluded": true,
+    "pca_reconstruction_and_trace": true,
+    "residual_market_orthogonality": true
+  },
+  "source_file_sha256": "2f1b0d66d17db0faeeed7c30b3fafc4685e204e2d79bf25962a271dcdebe42e9"
+}

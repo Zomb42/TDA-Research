@@ -1,0 +1,15 @@
+{
+  "original_source_and_download_hashes_preserved": true,
+  "relocated_data_path_matches_original": true,
+  "PCA5_returns_match_prior_sensitivity_run": true,
+  "H0_single_saved_partitions_identical": true,
+  "all_models_rank_seven": true,
+  "prior_fit_signal_entry_dates_valid": true,
+  "three_prefix_only_recomputations_match": true,
+  "future_blocks_nonoverlapping_and_twenty_sessions": true,
+  "all_primary_local_document_links_resolve": true,
+  "notebook_roots_resolve_from_project_topic_workspace": true,
+  "executed_pilot_cells": 6,
+  "embedded_figures": 5,
+  "shared_ParaView_assets_in_original_locations": true
+}

@@ -1,0 +1,8 @@
+{
+  "synthetic_not_financial_data": true,
+  "unordered_observations_equal": true,
+  "ordinary_H0_equal": true,
+  "lag_transition_H0_equal": false,
+  "alternating_lag1_correlation": -1.0,
+  "blocked_lag1_correlation": 0.8999999999999997
+}

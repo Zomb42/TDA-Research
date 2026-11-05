@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "all_original30_daily_holdings_and_returns_reconstructed": true,
+    "all_five_PC_sensitivity_return_series_reconstructed": true,
+    "all_H0_peer_pilot_returns_reconstructed": true,
+    "selected_daily_peer_labels_reconstructed": true,
+    "all_30_cuts_for_127_structural_anchors_reconstructed": true,
+    "original_PCA_variance_and_SPY_correlation_recomputed": true,
+    "all_legacy_gross_performance_and_HAC_intervals_recomputed": true
+  },
+  "original_daily_dates": 2598,
+  "label_checks": 18,
+  "structural_anchors": 127,
+  "max_holding_error": 6.4254157550180935e-15,
+  "max_return_error": 7.778608486497252e-16,
+  "max_metric_error": 9.059419880941277e-14,
+  "max_gap_error": 1.27675647831893e-15
+}

@@ -1,0 +1,620 @@
+{
+  "synthetic_only": true,
+  "construction": "Closed-square cubical superlevel sets of displayed depth D; equivalent to sublevel sets of -D.",
+  "axes": "Rows are abstract price bins; columns are successive past observation times.",
+  "adjacency": "Closed squares share corners: 8-neighbor components.",
+  "limitations": [
+    "No market data or prediction experiment.",
+    "No general persistence pairing or merge-tree algorithm is implemented.",
+    "Betti curves do not specify merger ancestry.",
+    "Depth-threshold persistence is not duration in seconds.",
+    "Ordinary turnover, duration, and gap statistics can also distinguish these examples.",
+    "Only enclosure is detected by H1; boundary-connected gaps need not produce holes."
+  ],
+  "matched_summaries": {
+    "stable_vs_fragmented": {
+      "same_current_snapshot": true,
+      "same_total_depth_at_every_time": true,
+      "same_whole_window_depth_histogram": true,
+      "same_first_price_moment_at_every_time": true
+    },
+    "enclosed_vs_open": {
+      "same_current_snapshot": true,
+      "same_total_depth_at_every_time": true,
+      "same_whole_window_depth_histogram": true,
+      "same_first_price_moment_at_every_time": false
+    }
+  },
+  "fields": {
+    "stable_bands": {
+      "array_price_by_time": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "superlevel_threshold_curve": [
+        {
+          "depth_threshold": 9.0,
+          "beta_0": 0,
+          "beta_1": 0,
+          "euler_characteristic": 0,
+          "vertices": 0,
+          "edges": 0,
+          "squares": 0
+        },
+        {
+          "depth_threshold": 8.0,
+          "beta_0": 2,
+          "beta_1": 0,
+          "euler_characteristic": 2,
+          "vertices": 40,
+          "edges": 56,
+          "squares": 18
+        },
+        {
+          "depth_threshold": 1.0,
+          "beta_0": 1,
+          "beta_1": 0,
+          "euler_characteristic": 1,
+          "vertices": 130,
+          "edges": 237,
+          "squares": 108
+        },
+        {
+          "depth_threshold": 0.0,
+          "beta_0": 1,
+          "beta_1": 0,
+          "euler_characteristic": 1,
+          "vertices": 130,
+          "edges": 237,
+          "squares": 108
+        }
+      ],
+      "time_reversal_has_identical_curve": true
+    },
+    "fragmented_patches": {
+      "array_price_by_time": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          8,
+          1,
+          8,
+          1,
+          8,
+          1,
+          8,
+          1,
+          8
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          8,
+          1,
+          8,
+          1,
+          8,
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          8,
+          1,
+          8,
+          1,
+          8,
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          8,
+          1,
+          8,
+          1,
+          8,
+          1,
+          8,
+          1,
+          8
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "superlevel_threshold_curve": [
+        {
+          "depth_threshold": 9.0,
+          "beta_0": 0,
+          "beta_1": 0,
+          "euler_characteristic": 0,
+          "vertices": 0,
+          "edges": 0,
+          "squares": 0
+        },
+        {
+          "depth_threshold": 8.0,
+          "beta_0": 14,
+          "beta_1": 0,
+          "euler_characteristic": 14,
+          "vertices": 64,
+          "edges": 68,
+          "squares": 18
+        },
+        {
+          "depth_threshold": 1.0,
+          "beta_0": 1,
+          "beta_1": 0,
+          "euler_characteristic": 1,
+          "vertices": 130,
+          "edges": 237,
+          "squares": 108
+        },
+        {
+          "depth_threshold": 0.0,
+          "beta_0": 1,
+          "beta_1": 0,
+          "euler_characteristic": 1,
+          "vertices": 130,
+          "edges": 237,
+          "squares": 108
+        }
+      ],
+      "time_reversal_has_identical_curve": true
+    },
+    "enclosed_pocket": {
+      "array_price_by_time": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          1
+        ],
+        [
+          1,
+          8,
+          1,
+          1,
+          1,
+          1,
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          8,
+          1,
+          1,
+          1,
+          1,
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          8,
+          1,
+          1,
+          1,
+          1,
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "superlevel_threshold_curve": [
+        {
+          "depth_threshold": 9.0,
+          "beta_0": 0,
+          "beta_1": 0,
+          "euler_characteristic": 0,
+          "vertices": 0,
+          "edges": 0,
+          "squares": 0
+        },
+        {
+          "depth_threshold": 8.0,
+          "beta_0": 1,
+          "beta_1": 1,
+          "euler_characteristic": 0,
+          "vertices": 40,
+          "edges": 60,
+          "squares": 20
+        },
+        {
+          "depth_threshold": 1.0,
+          "beta_0": 1,
+          "beta_1": 0,
+          "euler_characteristic": 1,
+          "vertices": 80,
+          "edges": 142,
+          "squares": 63
+        },
+        {
+          "depth_threshold": 0.0,
+          "beta_0": 1,
+          "beta_1": 0,
+          "euler_characteristic": 1,
+          "vertices": 80,
+          "edges": 142,
+          "squares": 63
+        }
+      ],
+      "time_reversal_has_identical_curve": true
+    },
+    "open_gap": {
+      "array_price_by_time": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          8,
+          8,
+          8,
+          1,
+          8,
+          8,
+          8,
+          1
+        ],
+        [
+          1,
+          8,
+          1,
+          1,
+          1,
+          1,
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          8,
+          1,
+          1,
+          1,
+          1,
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          8,
+          1,
+          1,
+          1,
+          1,
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          8,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "superlevel_threshold_curve": [
+        {
+          "depth_threshold": 9.0,
+          "beta_0": 0,
+          "beta_1": 0,
+          "euler_characteristic": 0,
+          "vertices": 0,
+          "edges": 0,
+          "squares": 0
+        },
+        {
+          "depth_threshold": 8.0,
+          "beta_0": 1,
+          "beta_1": 0,
+          "euler_characteristic": 1,
+          "vertices": 42,
+          "edges": 61,
+          "squares": 20
+        },
+        {
+          "depth_threshold": 1.0,
+          "beta_0": 1,
+          "beta_1": 0,
+          "euler_characteristic": 1,
+          "vertices": 80,
+          "edges": 142,
+          "squares": 63
+        },
+        {
+          "depth_threshold": 0.0,
+          "beta_0": 1,
+          "beta_1": 0,
+          "euler_characteristic": 1,
+          "vertices": 80,
+          "edges": 142,
+          "squares": 63
+        }
+      ],
+      "time_reversal_has_identical_curve": true
+    }
+  }
+}

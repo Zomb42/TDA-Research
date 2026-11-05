@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "six_executed_cells_four_figures_no_errors_or_warnings": true,
+    "notebook_matches_builder": true,
+    "all_four_figures_visually_checked": true,
+    "all_source_and_protected_input_hashes_match": true,
+    "all_2446_EFA_fits_converged": true,
+    "primary_daily_and_secondary_simultaneous_intervals_span_zero": true,
+    "standalone_daily_event_and_slope_intervals_span_zero": true,
+    "fifteen_sequential_log_entries": true,
+    "local_links_resolve": true
+  },
+  "local_links_checked": 160,
+  "notebook_cells": 12,
+  "daily_formations": 2446,
+  "independent_EFA_refits": 13,
+  "primary_later_difference_bps": 0.0651680551497774
+}

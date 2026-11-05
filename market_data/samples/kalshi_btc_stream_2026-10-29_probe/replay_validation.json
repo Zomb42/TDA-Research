@@ -1,0 +1,8 @@
+{
+  "checkpoints_replayed_exactly": 18,
+  "all_message_counts_match_manifest": true,
+  "sequence_gaps": 0,
+  "raw_journal_sha256": "75fd7d95b7039f04ee9cd5ec31d682768aabf95a4619e4967c5a5d5ce047f848",
+  "orders_submitted": 0,
+  "order_action_network_code_present": false
+}

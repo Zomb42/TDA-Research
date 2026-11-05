@@ -1,0 +1,48 @@
+# Local credentials and environments
+.env
+.env.*
+!.env.example
+!.env.template
+*.local.json
+*.pem
+*.key
+.venv/
+venv/
+.conda/
+
+# Python and editor/OS caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+._*
+
+# Downloaded histories and raw recordings stay on the local machine.
+# Keep source code, dataset documentation, manifests, and audit summaries.
+/market_data/**/raw/
+/market_data/**/response_*.json
+/market_data/**/response_*.json.gz
+/market_data/**/*.parquet
+/market_data/**/*.jsonl
+/market_data/**/*.jsonl.gz
+/market_data/**/*.prefix.*
+/market_data/**/*.part
+/market_data/**/bars_*.csv
+/market_data/**/close_*.csv
+/market_data/**/returns_*.csv
+
+# Large generated experiment artifacts are listed below by exact path.
+/equity/experiments/equity_efa_vs_pca/positions_and_loadings.npz
+/equity/experiments/equity_expanded_pca_reversal/daily_gross_returns.csv
+/equity/experiments/equity_expanded_pca_reversal/horizon_events.csv
+/equity/experiments/equity_expanded_pca_reversal/positions.npz
+/equity/experiments/equity_full_basket_states/coefficient_history.csv
+/equity/experiments/equity_h0_scale_robustness/size_matched_random_curves.npz
+/equity/experiments/equity_residual_backtest/development_only/daily_positions.csv
+/equity/experiments/equity_residual_backtest/evaluated/daily_positions.csv
+/equity/experiments/equity_reversal_response/stock_events.csv.gz
+/liquidity/experiments/btc_liquidity_features/binance_depth_baselines.parquet
+/liquidity/experiments/btc_liquidity_features/kalshi_quote_baselines_1m.parquet

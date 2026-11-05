@@ -1,0 +1,73 @@
+{
+  "moved": [
+    {
+      "from": "EQUITY_INTUITION.md",
+      "to": "equity/EQUITY_INTUITION.md"
+    },
+    {
+      "from": "EQUITY_NEXT_STEPS.md",
+      "to": "equity/EQUITY_NEXT_STEPS.md"
+    },
+    {
+      "from": "equity_correlation_pca.ipynb",
+      "to": "equity/equity_correlation_pca.ipynb"
+    },
+    {
+      "from": "equity_residual_backtest.ipynb",
+      "to": "equity/equity_residual_backtest.ipynb"
+    },
+    {
+      "from": "experiments/equity_correlation_pca",
+      "to": "equity/experiments/equity_correlation_pca"
+    },
+    {
+      "from": "experiments/equity_correlation_pca.py",
+      "to": "equity/experiments/equity_correlation_pca.py"
+    },
+    {
+      "from": "experiments/equity_gross_report.py",
+      "to": "equity/experiments/equity_gross_report.py"
+    },
+    {
+      "from": "experiments/equity_residual_backtest",
+      "to": "equity/experiments/equity_residual_backtest"
+    },
+    {
+      "from": "experiments/equity_residual_backtest.py",
+      "to": "equity/experiments/equity_residual_backtest.py"
+    },
+    {
+      "from": "experiments/equity_residual_diagnostics",
+      "to": "equity/experiments/equity_residual_diagnostics"
+    },
+    {
+      "from": "experiments/equity_residual_diagnostics.py",
+      "to": "equity/experiments/equity_residual_diagnostics.py"
+    },
+    {
+      "from": "experiments/depth_topology_demo.json",
+      "to": "liquidity/experiments/depth_topology_demo.json"
+    },
+    {
+      "from": "experiments/depth_topology_demo.png",
+      "to": "liquidity/experiments/depth_topology_demo.png"
+    },
+    {
+      "from": "experiments/depth_topology_demo.py",
+      "to": "liquidity/experiments/depth_topology_demo.py"
+    },
+    {
+      "from": "literature/residual_mean_reversion_151_2026-10-28.md",
+      "to": "equity/literature/residual_mean_reversion_151_2026-10-28.md"
+    }
+  ],
+  "compatibility": "Old notebooks, scripts and results have symlink aliases. They are not duplicate copies.",
+  "shared": "market_data, general literature, learning notebooks, TTK runtime and launchers remain shared at project root.",
+  "equity_data_alias": "equity/market_data -> ../market_data; credentials were neither copied nor inspected.",
+  "frozen_source_hashes_preserved": {
+    "experiments/equity_residual_backtest.py": "749bed2490f838060445e6371c2dcf4283be21fc47997b66451cefa0a2785c19",
+    "experiments/equity_gross_report.py": "4a65c67385d838301ad26ff2d18764e369f1b20925207974099c6fa3ef205a29",
+    "experiments/equity_correlation_pca.py": "cb7276b01b9bdee6dd57d7e9f6888fdfabb98688fef910d7e55ca6d5f1469693",
+    "experiments/equity_residual_diagnostics.py": "6d540ad051131893881dab35c60f1a30cf68b34df54c3890dc2f435a5487ed60"
+  }
+}

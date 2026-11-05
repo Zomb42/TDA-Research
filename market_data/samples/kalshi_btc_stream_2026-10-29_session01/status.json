@@ -1,0 +1,34 @@
+{
+  "pid": 7304,
+  "state": "access_or_connection_failed",
+  "started_at": "2026-10-29T04:48:55.006121+00:00",
+  "planned_seconds": 3600,
+  "max_bytes": 536870912,
+  "ticker": "KXBTCPERP",
+  "endpoint": "wss://external-api-margin-ws.kalshi.com/trade-api/ws/v2/margin",
+  "allowed_channels": [
+    "orderbook_delta",
+    "trade"
+  ],
+  "order_actions_available": false,
+  "bytes_written": 150606476,
+  "connections": 5,
+  "sequence_gaps": 0,
+  "reconstruction_errors": 0,
+  "connection_errors": 5,
+  "checkpoints": 668,
+  "authenticated_connection_established": true,
+  "first_snapshot_received_at": "2026-10-29T04:48:55.165860+00:00",
+  "updated_at": "2026-10-29T07:03:25.931240+00:00",
+  "elapsed_seconds": 3471.562725,
+  "message_counts": {
+    "subscribed": 10,
+    "orderbook_snapshot": 5,
+    "orderbook_delta": 585633,
+    "trade": 5437
+  },
+  "last_connection_error": {
+    "error_type": "ConnectionResetError",
+    "http_status": null
+  }
+}

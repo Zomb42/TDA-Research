@@ -1,0 +1,22 @@
+{
+  "source": "/Users/derickshi/Documents/Classes/Junior-Spring/HFT/Kalshi-Orderbook-Predictor/collector/rawdata/KXBTC15M-26APR231100-00.csv",
+  "instrument": "BTC 15-minute binary event contract",
+  "snapshots": 1,
+  "deltas": 118271,
+  "samples": 172,
+  "sample_seconds": 5,
+  "display_price_bin_dollars": 0.001,
+  "sample_start_utc": "2026-04-23T14:45:05+00:00",
+  "sample_end_utc": "2026-04-23T14:59:20+00:00",
+  "selected_book_time_utc": "2026-04-23T14:52:15+00:00",
+  "exact_yes_levels": 97,
+  "exact_no_levels": 53,
+  "total_depth_preserved_in_every_display_column": true,
+  "book_timestamp_regressions": 0,
+  "limitations": [
+    "Single binary contract session; price is event-contract probability price, not USD per BTC.",
+    "Five-second sampling and $0.001 bins are display choices; exact selected book is saved separately.",
+    "Timing uses recorded exchange timestamps because original local receipt times are unavailable.",
+    "An empty initial snapshot is valid; zero displayed quantity is not missing data in the replayed book."
+  ]
+}

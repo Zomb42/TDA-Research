@@ -1,0 +1,38 @@
+{
+  "checks": {
+    "all_anchor_memberships_use_only_prior_272_returns": true,
+    "formation_and_target_chronology_and_nonoverlap": true,
+    "original_30_present_at_every_anchor": true,
+    "all_cut_balance_endpoints_and_monotonicity": true,
+    "all_nonroot_branches_recorded": true,
+    "branch_threshold_flags_counts_unions_and_overlap_reproduce": true,
+    "eleven_sampled_anchors_reconstructed_with_independent_distance_and_clustering": true,
+    "single_linkage_cuts_equal_threshold_connected_components": true,
+    "common_future_target_and_sector_scores_reproduce": true,
+    "first_anchor_all_250_size_matched_random_scores_reproduced": true,
+    "first_anchor_all_history_and_window_perturbation_ARIs_and_branch_recoveries_reproduced": true,
+    "summary_and_paired_means_and_null_cell_ordering_reproduce": true,
+    "all_method_sector_and_paired_pointwise_and_simultaneous_bootstrap_intervals_reproduced": true,
+    "protected_inputs_and_prior_experiments_unchanged": true
+  },
+  "sampled_anchor_ids": [
+    0,
+    12,
+    24,
+    36,
+    48,
+    60,
+    72,
+    84,
+    96,
+    108,
+    120
+  ],
+  "max_independent_gap_error": 1.1171619185290638e-14,
+  "anchor_counts": {
+    "development": 86,
+    "later": 35
+  },
+  "input_source_sha256": "62c30cf3faa98c4fd8a3e68f988108af1dfcedbb142e025eeed1ba8de790dff8",
+  "audit_source_sha256": "ff98cd15b4e480c65b7e6a625ad235cffb7ca73a54a1b5f2aaf460049c379994"
+}

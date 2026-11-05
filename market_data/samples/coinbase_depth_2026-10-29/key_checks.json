@@ -1,0 +1,28 @@
+[
+  {
+    "source_file": "secrets/cdp_api_key.json",
+    "field_names": [
+      "id",
+      "privateKey"
+    ],
+    "format": "Ed25519 seed+public",
+    "network_tested": false,
+    "reason": "Coinbase App documentation requires ECDSA; no algorithm guessing or key modification performed"
+  },
+  {
+    "source_file": "collector/misc/cdp_api_key.json",
+    "field_names": [
+      "name",
+      "privateKey"
+    ],
+    "format": "ECPrivateKey",
+    "curve": "secp256r1",
+    "network_tested": true,
+    "http_status": 200,
+    "permissions": {
+      "can_view": true,
+      "can_trade": false,
+      "can_transfer": false
+    }
+  }
+]

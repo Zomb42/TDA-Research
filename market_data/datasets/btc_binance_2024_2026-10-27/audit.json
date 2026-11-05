@@ -1,0 +1,37 @@
+{
+  "rows": 296928,
+  "expected_rows": 296928,
+  "duplicates": 0,
+  "missing_bars": 0,
+  "extra_bars": 0,
+  "invalid_ohlc": 0,
+  "invalid_durations": 0,
+  "missing_first_20": [],
+  "negative_volume": 0,
+  "invalid_taker_volume": 0,
+  "depth": {
+    "rows": 892200,
+    "snapshots": 89220,
+    "percentage_bands": [
+      -5.0,
+      -4.0,
+      -3.0,
+      -2.0,
+      -1.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0
+    ],
+    "duplicates": 0,
+    "incomplete_snapshots": 0,
+    "negative_depth": 0,
+    "nonmonotone_cumulative_notional": 0,
+    "cadence_seconds_p50": 30.0,
+    "cadence_seconds_max": 930.0,
+    "intervals_over_60s": 2,
+    "first_timestamp": "2025-01-01 00:00:07+00:00",
+    "last_timestamp": "2025-01-31 23:59:31+00:00"
+  }
+}

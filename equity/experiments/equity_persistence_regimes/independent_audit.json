@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "reference_membership_formed_at_first_past_window": true,
+    "all_features_targets_and_trailing_strategy_chronology_checked": true,
+    "nine_feature_windows_reconstructed_from_covariance_eigenvectors": true,
+    "H0_summaries_match_MST_and_essential_intervals_excluded": true,
+    "all_saved_diagram_summaries_reconciled": true,
+    "all_training_memberships_use_only_completed_prior_labels": true,
+    "all_forecasts_scalers_and_coefficients_match_independent_sklearn_ridge": true,
+    "uncompleted_future_label_perturbations_do_not_change_predictions": true,
+    "all_daily_gates_and_zero_flat_days_reproduce": true,
+    "all_forecast_and_gate_intervals_and_paired_simultaneous_bands_reproduce": true,
+    "all_sign_calibration_counts_means_and_conditional_intervals_reproduce": true,
+    "prior_inputs_and_results_unchanged": true
+  },
+  "max_independent_feature_error": 8.43769498715119e-15,
+  "max_independent_forecast_error_bps": 4.263256414560601e-14,
+  "forecast_rows_checked": 379,
+  "daily_calendar_rows_checked": 1891,
+  "source_sha256": "6fb5ff430f0b875b6775975bff5e6b0ae0c43c6b96a361cc44aca758c27bce1b",
+  "audit_source_sha256": "4f9148c771e35e8a1a690c07ce66a7acc495737c584bc7c949c5a3212d2661c2"
+}

@@ -1,0 +1,7 @@
+object,transformation,normalized_H1_W1,scale_ratio
+raw,day_permutation,0.0,1.0
+raw,stock_permutation,0.0,0.9999999999999998
+raw,returns_times3,0.0,3.0
+residual,day_permutation,0.0,1.0
+residual,stock_permutation,0.0,0.9999999999999998
+residual,returns_times3,0.0,1.0000000000000002

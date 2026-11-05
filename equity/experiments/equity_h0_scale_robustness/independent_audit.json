@@ -1,0 +1,15 @@
+{
+  "source_and_original_data_hashes_preserved": true,
+  "original_frozen_backtest_summary_and_source_preserved": true,
+  "all_127_anchor_dates_causal_and_future_blocks_nonoverlapping": true,
+  "all_30_cuts_and_28_nonroot_branches_recorded_per_tree": true,
+  "balance_curves_monotonic_and_degenerate_gaps_missing": true,
+  "base_single_linkage_threshold_partitions_checked": true,
+  "base_tied_adjacent_merge_heights": 0,
+  "past_only_candidate_flags_reproduce": true,
+  "first_anchor_random_labels_and_future_curves_reproduce": true,
+  "exact_random_cluster_sizes_preserved_in_checked_replicates": true,
+  "executed_notebook_cells": 6,
+  "embedded_figures": 4,
+  "local_links_resolve": true
+}

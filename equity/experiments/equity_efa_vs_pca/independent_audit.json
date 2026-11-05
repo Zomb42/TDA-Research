@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "all_daily_admission_and_training_dates_causal": true,
+    "all_raw_scaled_loadings_and_WLS_positions_reconstructed": true,
+    "all_EFA_training_loglikelihoods_match_Gaussian_model": true,
+    "selected_EFA_refits_match_saved_covariance": true,
+    "independent_EM_step_likelihood_nondecrease": true,
+    "all_raw_and_adjusted_return_ledgers_reconcile": true,
+    "all_future_residual_correlations_and_rotation_invariant_stabilities_match": true,
+    "all_metrics_and_paired_bootstrap_intervals_reproduced": true,
+    "protected_prior_artifacts_unchanged": true
+  },
+  "daily_formations_checked": 2446,
+  "independent_EFA_refits": 13,
+  "max_position_error": 2.1415161310933684e-15,
+  "max_EFA_loglikelihood_error": 3.0398950912058353e-08,
+  "max_EFA_refit_covariance_error": 1.1435297153639112e-14,
+  "maximum_additional_EM_step_loglike_gain": 0.00047619102042517625,
+  "max_ledger_error": 1.0234868508263162e-16,
+  "max_structural_error": 4.121147867408581e-13,
+  "max_metric_error": 7.260858581048524e-14,
+  "audit_source_sha256": "b75b31b263c864b2b79a2c3cf53fe084c25becac738e345b03a8fe63bf0fe6eb"
+}

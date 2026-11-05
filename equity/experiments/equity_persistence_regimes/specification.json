@@ -1,0 +1,63 @@
+{
+  "decision_date": "2026-10-29",
+  "status": "exploratory on already examined dates and current-survivor universe",
+  "fixed_strategy": "expanded200, 120-session SPY_PCA3, raw next-bar open to close, unit gross, flat nightly, pre-fee",
+  "strategy_source": "equity_expanded_pca_reversal",
+  "recompute_strategy": false,
+  "reference_stocks": "freeze names with 272 complete prior returns at first formation; no later additions or future-completeness filter",
+  "first_formation_index": 272,
+  "feature_fit_sessions": 120,
+  "forecast_stride_sessions": 5,
+  "decision_time": "after anchor close t; feature histories end t-1; trailing strategy outcomes and completed training labels may end t",
+  "forecast_target": "mean gross bps/day of next twenty actual daily strategy trades, not twenty-day frozen initial positions",
+  "target_sessions": 20,
+  "gate_holding_sessions": 5,
+  "latest_partial_targets": "predict and trade available days without scoring incomplete twenty-session labels",
+  "history_object": "fit SPY residuals on fixed reference stocks; standardize each stock, retain top three residual PCs",
+  "lag_object": "119 points (whitened factor scores at s, scores at s-1)/sqrt(2), six coordinates",
+  "stock_object": "fixed reference-stock points in top-three eigenvalue-weighted correlation loading coordinates",
+  "scaling": "each cloud's pair distances divided by its own positive median; both raw median distances included in all simple models",
+  "persistence": "complete Vietoris-Rips H0/H1 with ripser; infinite H0 excluded from finite summaries, separately counted",
+  "basic_features": [
+    "SPY_vol20",
+    "residual_mean_corr",
+    "residual_pc1_share",
+    "residual_pc3_share",
+    "factor_lag1_acf_mean",
+    "factor_dominant_power_share_mean",
+    "strategy_trailing20_bps",
+    "strategy_stock_count",
+    "lag_cloud_median_distance",
+    "loading_cloud_median_distance"
+  ],
+  "stock_features": [
+    "stock_H0_q90",
+    "stock_H1_max_lifetime",
+    "stock_H1_total_squared_lifetime"
+  ],
+  "lag_features": [
+    "lag_H0_q90",
+    "lag_H1_max_lifetime",
+    "lag_H1_total_squared_lifetime"
+  ],
+  "minimum_completed_training_labels": 104,
+  "training": "expanding prior anchors only; training target end <= decision date; no own/future label; no validation-selected settings",
+  "ridge": "unpenalized intercept; training-only mean/std; objective average squared bps error + 1*sum(beta^2); fixed lambda=1, equivalent sklearn alpha=n",
+  "forecast_models": [
+    "HistoryMean",
+    "Simple",
+    "SimplePlusStockPD",
+    "SimplePlusLagPD"
+  ],
+  "gate_rule": "predicted next20 daily mean > 0 => unit-gross original daily strategy for next five sessions, else flat",
+  "calendar": "all eligible post-warmup trading days, flat days recorded as zero; five-session allocations do not overlap",
+  "mean_baseline": "HistoryMean uses completed historical target mean; AlwaysOn supplies raw strategy and shares its forecast diagnostic with HistoryMean",
+  "period_split": "entry before 2024-01-01 development, otherwise later; forecast labels crossing boundary excluded only from period forecast scoring",
+  "online_later_training": "completed later labels enter expanding training as time passes; not a fixed 2023-trained model or untouched holdout",
+  "uncertainty": "1000 circular block resamples, 60 daily executions for P&L and 12 five-session forecast anchors for loss; conditional on saved causal forecasts, not a model-refit bootstrap",
+  "primary_comparisons": "each PD augmentation minus Simple, paired; approximate simultaneous 95% bands across two augmentations per period, separately for forecast loss and gate mean",
+  "secondary": "all model metrics, sign calibration, active fraction, and pointwise intervals; no winning state, threshold or feature selected",
+  "controls": "first prior-history window only: common row shuffle, time reversal, uniform return scaling; target outcomes not involved",
+  "fees": "excluded entirely",
+  "seed": 2026102931
+}

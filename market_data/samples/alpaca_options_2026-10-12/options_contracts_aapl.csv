@@ -1,0 +1,5 @@
+id,symbol,name,status,tradable,expiration_date,root_symbol,underlying_symbol,underlying_asset_id,type,style,strike_price,multiplier,size,open_interest,open_interest_date,close_price,close_price_date,ppind
+73824a4c-3755-4e28-b51e-624eb5046ffd,AAPL261014C00337500,AAPL Oct 14 2026 337.5 Call,active,True,2026-10-14,AAPL,AAPL,b0b6dd9d-8b9b-48a9-ba46-b9d54906e415,call,american,337.5,100,100,601,2026-10-08,2.87,2026-10-09,True
+0b39aa75-5316-42c5-8ae6-dc1c6cb8b227,AAPL261014C00340000,AAPL Oct 14 2026 340 Call,active,True,2026-10-14,AAPL,AAPL,b0b6dd9d-8b9b-48a9-ba46-b9d54906e415,call,american,340,100,100,3014,2026-10-08,1.81,2026-10-09,True
+5a8c7abb-6e10-4965-b48f-b3fd6e98ffba,AAPL261014C00342500,AAPL Oct 14 2026 342.5 Call,active,True,2026-10-14,AAPL,AAPL,b0b6dd9d-8b9b-48a9-ba46-b9d54906e415,call,american,342.5,100,100,453,2026-10-08,1.09,2026-10-09,True
+ab4c3594-2b45-465d-bb81-63f9d5aa9a00,AAPL261014C00345000,AAPL Oct 14 2026 345 Call,active,True,2026-10-14,AAPL,AAPL,b0b6dd9d-8b9b-48a9-ba46-b9d54906e415,call,american,345,100,100,2048,2026-10-08,0.66,2026-10-09,True

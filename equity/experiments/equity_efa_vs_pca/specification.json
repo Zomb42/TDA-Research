@@ -1,0 +1,23 @@
+{
+  "decision_date": "2026-10-29",
+  "status": "exploratory comparison on previously examined history/current-survivor candidate universe",
+  "hypothesis": "explicit heterogeneous unique variances may estimate shared factors better than PCA; whether the resulting residuals reverse is a separate test",
+  "universe": "same expanded200 candidates and daily admission: 272 complete prior contiguous log returns, no future availability filter",
+  "fit": "120 prior observations ending t-1; stockwise intercept+SPY fit; demean/standardize residuals with sample SD floor0.0001",
+  "PCA": "top3 right singular vectors of the standardized residual matrix",
+  "EFA": "sklearn FactorAnalysis, three factors, lapack SVD, no rotation, tol0.001, max_iter1000, default all-ones unique variance initialization, no warm start or outcome-based model selection",
+  "raw_exposures": "residual_sigma[:,None] times PCA vectors or EFA loading matrix; add ones and past SPY beta; rank5",
+  "signal": "same one-day vendor-adjusted close-close log return at t",
+  "portfolio": "same cross-sectional WLS and holdings -W*residual / sum(abs(W*residual)); W=inverse prior total-return variance, sigma floor0.0001; no caps",
+  "not_changed": "do not replace portfolio W by EFA unique variances or use posterior factor scores as a different trading signal",
+  "execution": "next vendor raw daily-bar open to same-day raw close, ideal fractional dollars, unit gross, flat nightly, no gate",
+  "primary": "paired EFA3 minus PCA3 daily gross mean, 1000 circular60-day bootstrap, approximate95 interval separately per period",
+  "horizon_secondary": "same common complete20 dates as previous study; frozen initial sleeves, cumulative all-adjusted next-open to 1/5/20-close; mean profit and e'W R/e'W e response slope",
+  "structural_secondary": "every20 formation dates with complete next20 returns and no split crossing; future WLS residual mean absolute pair correlation using past-fixed exposures/W, and raw loading-subspace overlap with previous diagnostic block on common stocks",
+  "structure_interpretation": "future common-return coefficients are ex-post decompositions only, never used in trading; raw subspace overlap = ||Qprev'Qcurrent||F^2/3, rotation-invariant, not economic-factor identification",
+  "uncertainty_secondary": "60-day blocks for overlapping daily horizon events; three diagnostic-block draws for structural summaries; simultaneous two-metric structural bands, three-horizon bands separately for event means/slopes; no correction across project history",
+  "periods": "entry before2024 development, otherwise later; later already examined, not untouched holdout",
+  "checks": "full saved PCA holdings/returns/events reconciliation; EFA convergence/likelihood/uniqueness logs; rotation/column-scale invariance; independent WLS and EM likelihood audit",
+  "fees": "excluded entirely",
+  "seed": 2026102961
+}

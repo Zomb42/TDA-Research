@@ -1,0 +1,189 @@
+{
+  "configuration": {
+    "decision_date": "2026-10-28",
+    "status": "exploratory cross-sectional generalization, no fresh time holdout",
+    "input_dataset": "equity_daily_expanded_2016_2026-10-27",
+    "input_equities": 200,
+    "benchmark": "SPY",
+    "eligibility": "272 contiguous finite prior adjusted daily log returns ending t-1; no future eligibility filter or history filling",
+    "common_membership": "same eligible stocks at each anchor for both windows, methods, all cuts and sector baseline",
+    "windows": [
+      120,
+      252
+    ],
+    "scored_group_counts": [
+      6,
+      11,
+      20,
+      40
+    ],
+    "all_cuts": "balance only at K=1..N; no outcome-based cut selection",
+    "geometry": "sample correlation distance sqrt(2*(1-rho)) of separately fitted prior-window SPY residuals",
+    "regularization": "none: distance geometry needs no inverse covariance; longer window and perturbations measure sensitivity",
+    "future_target": "20 future daily log returns after anchor, residualized with the common frozen 252-session SPY fit; same target for both windows and sector reference",
+    "first_signal_index": 272,
+    "anchor_stride": 20,
+    "future_sessions": 20,
+    "boundary": "2024-01-01; exclude future blocks crossing boundary",
+    "history_perturbations": {
+      "120": [
+        100,
+        140
+      ],
+      "252": [
+        232,
+        272
+      ],
+      "older_shift_sessions": 5
+    },
+    "bootstrap_history_repetitions": 40,
+    "bootstrap_history_block_sessions": 5,
+    "random_label_repetitions": 250,
+    "random_labels": "common random relabelings within anchor, preserving every partition's exact group sizes",
+    "stable_local_branches": {
+      "min_size": 3,
+      "max_size": 8,
+      "bootstrap_exact_recovery_min": 0.75,
+      "window_exact_recovery_min": 0.6666666666666666
+    },
+    "branch_recovery": "same exact stock set anywhere in perturbed tree, not restricted to scored K",
+    "uncertainty": "1000 circular bootstrap resamples of six consecutive anchors; approximate pointwise and simultaneous bands",
+    "simultaneous_family": "eight scored (window,K) cells per method and period; paired H0-minus-average same eight cells; sector comparisons analogous; not all research choices",
+    "sector_baseline": "October 27, 2026 provider snapshot; eleven groups when all sectors represented; no empirical membership-stability claim",
+    "seed": 2026102821,
+    "anchor_bootstrap_repetitions": 1000,
+    "anchor_bootstrap_block": 6,
+    "fees": "no performance or fee calculations",
+    "strategy_changes": false,
+    "outcome_selected_settings": false
+  },
+  "checks": {
+    "ARI_matches_sklearn": true,
+    "correlation_distance_equals_normalized_return_geometry": true,
+    "identity_correlation_shrinkage_preserves_single_linkage_cuts": true,
+    "eligibility_uses_past_only": true,
+    "common_past_eligible_membership_across_windows": true,
+    "no_future_missingness_member_selection": true,
+    "common_frozen_future_target": true,
+    "sector_count_eleven_every_anchor": true,
+    "all_scored_cuts_have_requested_group_count": true,
+    "all_source_inputs_and_prior_experiments_unchanged": true
+  },
+  "anchors_by_period": {
+    "development": 86,
+    "later": 35
+  },
+  "eligible_stock_range": [
+    182,
+    200
+  ],
+  "future_blocks": 121,
+  "branch_overlap_totals": [
+    {
+      "period": "development",
+      "window": 120,
+      "stable_H0_occurrences": 658,
+      "also_in_average": 654,
+      "also_stable_in_average": 601
+    },
+    {
+      "period": "development",
+      "window": 252,
+      "stable_H0_occurrences": 1107,
+      "also_in_average": 1085,
+      "also_stable_in_average": 991
+    },
+    {
+      "period": "later",
+      "window": 120,
+      "stable_H0_occurrences": 358,
+      "also_in_average": 354,
+      "also_stable_in_average": 327
+    },
+    {
+      "period": "later",
+      "window": 252,
+      "stable_H0_occurrences": 496,
+      "also_in_average": 486,
+      "also_stable_in_average": 436
+    }
+  ],
+  "stable_branch_means": [
+    {
+      "period": "development",
+      "window": 120,
+      "method": "Average",
+      "local_branches": 76.1279069767,
+      "stable_local_branches": 9.8255813953,
+      "stocks_in_stable_branch_union": 30.4186046512
+    },
+    {
+      "period": "development",
+      "window": 120,
+      "method": "Single_H0",
+      "local_branches": 48.9418604651,
+      "stable_local_branches": 7.6511627907,
+      "stocks_in_stable_branch_union": 23.8488372093
+    },
+    {
+      "period": "development",
+      "window": 252,
+      "method": "Average",
+      "local_branches": 75.2325581395,
+      "stable_local_branches": 16.7325581395,
+      "stocks_in_stable_branch_union": 51.0581395349
+    },
+    {
+      "period": "development",
+      "window": 252,
+      "method": "Single_H0",
+      "local_branches": 50.6627906977,
+      "stable_local_branches": 12.8720930233,
+      "stocks_in_stable_branch_union": 39.7325581395
+    },
+    {
+      "period": "later",
+      "window": 120,
+      "method": "Average",
+      "local_branches": 81.2,
+      "stable_local_branches": 11.6571428571,
+      "stocks_in_stable_branch_union": 35.4
+    },
+    {
+      "period": "later",
+      "window": 120,
+      "method": "Single_H0",
+      "local_branches": 48.8,
+      "stable_local_branches": 10.2285714286,
+      "stocks_in_stable_branch_union": 30.2857142857
+    },
+    {
+      "period": "later",
+      "window": 252,
+      "method": "Average",
+      "local_branches": 79.4857142857,
+      "stable_local_branches": 18.0857142857,
+      "stocks_in_stable_branch_union": 52.7714285714
+    },
+    {
+      "period": "later",
+      "window": 252,
+      "method": "Single_H0",
+      "local_branches": 49.5714285714,
+      "stable_local_branches": 14.1714285714,
+      "stocks_in_stable_branch_union": 40.5428571429
+    }
+  ],
+  "source_sha256": "62c30cf3faa98c4fd8a3e68f988108af1dfcedbb142e025eeed1ba8de790dff8",
+  "protected_sha256": {
+    "market_data/datasets/equity_daily_expanded_2016_2026-10-27/returns_log.csv": "c779b4ea9c20213459f49aa8d7f327cc2876d5e23140a650c236382b0c413a2a",
+    "market_data/datasets/equity_daily_expanded_2016_2026-10-27/universe.csv": "48b808035b20fde59881882b67f5091678651bf7efffbb79cb9c5a535c0e4729",
+    "market_data/datasets/equity_daily_expanded_2016_2026-10-27/manifest.json": "afe95d027ebe43b72f6579c23c1d753d17615ebbf42eac8789d4c713764626ff",
+    "experiments/equity_h0_scale_robustness.py": "776611aa62c2f9b5798c2d9ded45a572cc86d233b9c7c3c07a7e411373527333",
+    "experiments/equity_h0_scale_robustness/summary.json": "7d42242aa3184677c62911192f44363e0292b157163ae1545704a64d1d0139e3",
+    "experiments/equity_reversal_response.py": "4c8a266a0bfafd3957713d69492e4ce89f245589d62ed77c0c4fa9f6015131db",
+    "experiments/equity_reversal_response/summary.json": "ab798a73eca573a0cedf85e2fdef5c14fc4365f7933c9ea4a343afcd7fb6a72d",
+    "experiments/equity_residual_backtest.py": "749bed2490f838060445e6371c2dcf4283be21fc47997b66451cefa0a2785c19",
+    "experiments/equity_residual_backtest/evaluated/summary.json": "08718da1d66bf33265ea0348fa055c21afab7f2ac96887fd99e48841647df7aa"
+  }
+}

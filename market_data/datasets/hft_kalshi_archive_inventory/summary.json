@@ -1,0 +1,28 @@
+{
+  "files": 176,
+  "unique_filenames": 176,
+  "bytes": 3514863228,
+  "message_counts": {
+    "subscribed": 427,
+    "orderbook_snapshot": 415,
+    "orderbook_delta": 13534604,
+    "trade": 822336,
+    "fill": 191
+  },
+  "replay_passed_files": 176,
+  "replay_flagged_files": 0,
+  "sequence_gaps": 0,
+  "negative_quantity_updates": 0,
+  "valid_applied_deltas": 13534604,
+  "first_event_time": "2026-04-20T04:15:00+00:00",
+  "last_event_time": "2026-04-23T22:22:48.835000+00:00",
+  "source_instrument": "Kalshi BTC 15-minute binary event contracts; not BTC perpetuals",
+  "originals_modified": false,
+  "private_fill_payloads_exported": false,
+  "elapsed_seconds": 72.95091229099853,
+  "limitations": [
+    "Sequence continuity does not independently prove complete exchange capture.",
+    "A negative quantity invalidates replay until a later snapshot; it is never silently clamped.",
+    "No local receipt timestamps were found in the sampled raw envelopes; event time is not network latency."
+  ]
+}

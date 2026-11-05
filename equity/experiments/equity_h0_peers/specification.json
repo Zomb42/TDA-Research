@@ -1,0 +1,27 @@
+{
+  "status": "exploratory after original evaluation was examined",
+  "lookback": 120,
+  "clusters": 6,
+  "residual_pcs": 5,
+  "geometry": "sample correlation distance of prior SPY-regression residuals",
+  "distance": "sqrt(2*(1-rho)); stock vertices, dates are coordinates",
+  "signal": "one-day adjusted close-to-close log return",
+  "holding": "next vendor daily-bar raw open to close; ideal dollar fills",
+  "weights": "inverse prior total-return variance; daily sigma floor 0.0001",
+  "gross_target": 1.0,
+  "fees": "excluded entirely",
+  "models": [
+    "Manual6",
+    "Average6",
+    "Single6",
+    "H0_6",
+    "PCA5"
+  ],
+  "future_structure": "20 non-overlapping future-return blocks; fixed prior SPY betas; omit boundary-crossing blocks",
+  "snapshot_fit_ends": [
+    "2019-12-31",
+    "2020-03-31",
+    "2023-12-29"
+  ],
+  "no_parameter_search": true
+}

@@ -1,0 +1,36 @@
+{
+  "checks": {
+    "synthetic_reversal_negative_slope_positive_gross": true,
+    "synthetic_continuation_positive_slope_negative_gross": true,
+    "future_projection_preserves_neutral_portfolio_pnl": true,
+    "peer_stability_label_invariant": true,
+    "horizon_includes_entry_session": true,
+    "formation_inputs_precede_signal_and_entry": true,
+    "same_dates_for_all_models_and_horizons": true,
+    "full_twenty_session_targets_do_not_cross_split": true,
+    "seven_independent_exposures_every_formation": true,
+    "interval_resampling_keeps_all_stocks_together": true,
+    "original_sources_and_data_unchanged": true,
+    "raw_one_session_reproduces_prior_pilot": true
+  },
+  "max_initial_scaled_exposure_error": 3.595507842806293e-14,
+  "max_pnl_projection_identity_error": 1.4302795059428774e-15,
+  "max_raw_one_session_pilot_error": 9.996344030316351e-17,
+  "max_adjusted_minus_raw_one_session_event_return": 0.0001080226417774265,
+  "protected_sha256": {
+    "experiments/equity_residual_backtest.py": "749bed2490f838060445e6371c2dcf4283be21fc47997b66451cefa0a2785c19",
+    "experiments/equity_h0_peers.py": "a76e5a2bffe7730d20c76d351eacf8490bf297259ccea72997e3fcba2216d7ef",
+    "experiments/equity_h0_scale_robustness.py": "776611aa62c2f9b5798c2d9ded45a572cc86d233b9c7c3c07a7e411373527333",
+    "experiments/equity_residual_backtest/evaluated/summary.json": "08718da1d66bf33265ea0348fa055c21afab7f2ac96887fd99e48841647df7aa",
+    "market_data/datasets/equity_daily_30_2016_2026-10-27/returns_log.csv": "2f1b0d66d17db0faeeed7c30b3fafc4685e204e2d79bf25962a271dcdebe42e9",
+    "market_data/datasets/equity_daily_30_2016_2026-10-27/bars_all.csv": "407ab09fe63c59cb8288c637d544ba278224817a666185f84ead356329e72a8a",
+    "market_data/datasets/equity_daily_30_2016_2026-10-27/bars_raw.csv": "2778902ebecd22a866782d521b8182e3666aea8d5beecc04c4984395253003d0"
+  },
+  "source_sha256": "4c8a266a0bfafd3957713d69492e4ce89f245589d62ed77c0c4fa9f6015131db",
+  "formation_dates": 2540,
+  "stock_events": 685800,
+  "dates_by_period": {
+    "development": 1851,
+    "evaluation": 689
+  }
+}

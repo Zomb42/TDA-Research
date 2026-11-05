@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-29T15:46:43.798915+00:00",
+  "orders_submitted": 0,
+  "paid_services_used": false,
+  "key_checks": [
+    {
+      "source_file": "secrets/cdp_api_key.json",
+      "field_names": [
+        "id",
+        "privateKey"
+      ],
+      "format": "Ed25519 seed+public",
+      "network_tested": false,
+      "reason": "Coinbase App documentation requires ECDSA; no algorithm guessing or key modification performed"
+    },
+    {
+      "source_file": "collector/misc/cdp_api_key.json",
+      "field_names": [
+        "name",
+        "privateKey"
+      ],
+      "format": "ECPrivateKey",
+      "curve": "secp256r1",
+      "network_tested": true,
+      "http_status": 200,
+      "permissions": {
+        "can_view": true,
+        "can_trade": false,
+        "can_transfer": false
+      }
+    }
+  ],
+  "current_snapshot": {
+    "url": "https://api.exchange.coinbase.com/products/BTC-USD/book?level=2",
+    "http_status": 200,
+    "uncompressed_bytes": 1069725,
+    "compressed_bytes": 286141,
+    "bid_levels": 20252,
+    "ask_levels": 20632,
+    "exchange_time": "2026-10-29T15:46:42.839816986Z",
+    "authentication_used": false
+  }
+}

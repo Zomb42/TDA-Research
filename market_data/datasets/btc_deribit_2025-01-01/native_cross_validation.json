@@ -1,0 +1,9 @@
+{
+  "native_book_messages_validated": 8653,
+  "first_full_day_checkpoint_matches_native_book_exactly": true,
+  "native_trade_records_matched_exactly_to_daily_csv": 28,
+  "native_amount_per_contract_values": [
+    "10"
+  ],
+  "scope": "Native one-minute book replay and trade reconciliation only; does not independently prove full-day sequence continuity."
+}

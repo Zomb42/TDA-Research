@@ -1,0 +1,8 @@
+{
+  "url": "https://external-api.kalshi.com/trade-api/v2/margin/markets/KXBTCPERP",
+  "requested_at": "2026-10-29T04:07:34.439785+00:00",
+  "received_at": "2026-10-29T04:07:34.562378+00:00",
+  "status": 200,
+  "bytes": 1264,
+  "sha256": "5ceb805813ef0ddcc25d5d0a545b710d8f69ad76141830f814be59550af038e9"
+}

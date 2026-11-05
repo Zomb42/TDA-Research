@@ -1,0 +1,13 @@
+{
+  "local_document_links_resolve": true,
+  "executed_code_cells": 8,
+  "embedded_figures": 6,
+  "error_outputs": 0,
+  "six_figures_visually_checked": true,
+  "independent_audit_passes": true,
+  "snapshot_covariance_and_H0_reconstruction_pass": true,
+  "max_snapshot_distance_reconstruction_error": 6.394884621840902e-14,
+  "synthetic_temporal_order_control_passes": true,
+  "protected_inputs_and_results_unchanged": true,
+  "regime_profit_filter_fitted": false
+}

@@ -1,0 +1,1 @@
+../equity/literature/residual_mean_reversion_151_2026-10-28.md

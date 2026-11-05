@@ -1,0 +1,25 @@
+{
+  "source_sha256": "e300669ac798d6894dfddfe20b7297bd851e10bd30cc1b6db82dfa00dfa2c216",
+  "sequenced_messages": 1030,
+  "connection_sequence_discontinuities": 0,
+  "sequence_scope": "All subscribed channels on this captured connection, not L2 alone",
+  "snapshots": 1,
+  "replacement_level_updates": 37687,
+  "negative_quantities": 0,
+  "crossed_books_after_l2_event": 0,
+  "initial_best_quote": {
+    "bid": "81794.8",
+    "ask": "81794.81"
+  },
+  "final_best_quote": {
+    "bid": "81755.44",
+    "ask": "81755.45"
+  },
+  "final_bid_levels": 20248,
+  "final_ask_levels": 20632,
+  "steady_gzip_bytes": 278908,
+  "estimated_gzip_mb_per_hour": 16.558621802114562,
+  "estimated_gzip_gb_per_day": 0.39740692325074944,
+  "storage_scope": "Raw receipt envelopes for L2, public trades, subscriptions and heartbeats; initial L2 snapshot excluded",
+  "limitation": "Short local replay, not an independently reconciled historical archive or a long-run traffic forecast"
+}

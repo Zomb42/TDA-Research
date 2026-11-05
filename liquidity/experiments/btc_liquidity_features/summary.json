@@ -1,0 +1,25 @@
+{
+  "binance_historical_feature_rows": 89220,
+  "kalshi_quote_feature_rows": 208328,
+  "live_grid": {
+    "successful_snapshots": 60,
+    "failed_snapshots": 0,
+    "grid_shape": [
+      65,
+      60
+    ],
+    "finite_h0_branches": 115,
+    "essential_h0_branches": 1,
+    "max_finite_h0_lifetime": 8.848443244714456,
+    "independent_threshold_count_checks": 31,
+    "interpretation": "Observed-grid component contrast, not duration, order identity, or predictive evidence."
+  },
+  "synthetic_h0_controls_passed": true,
+  "construction": "Vertex superlevel H0, four neighbors; fixed absolute price bins, receipt-time columns.",
+  "limitations": [
+    "Binance depth is cumulative at +/-1% to +/-5%, not a near-quote L2 ladder.",
+    "Kalshi candle bid/ask OHLC values do not reconstruct past intraminute spreads or depth.",
+    "Live REST polling misses changes between requests and has no event timestamps.",
+    "This small real grid establishes plumbing and feature meaning only."
+  ]
+}

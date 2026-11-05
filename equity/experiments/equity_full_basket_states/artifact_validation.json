@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "notebook_six_executed_cells_four_figures_no_errors_or_warnings": true,
+    "notebook_matches_builder": true,
+    "all_four_figures_visually_checked": true,
+    "source_and_independent_audit_hashes_match": true,
+    "protected_original_data_results_and_notebooks_unchanged": true,
+    "all_primary_and_secondary_simultaneous_bands_span_zero": true,
+    "all_daily_mean_intervals_span_zero": true,
+    "fourteen_sequential_log_entries": true,
+    "local_document_links_resolve": true
+  },
+  "links_checked": 133,
+  "notebook_cells": 12,
+  "forecast_dates": 379,
+  "audited_target_model_fits": 4548
+}

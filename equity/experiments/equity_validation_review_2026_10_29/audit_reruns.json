@@ -1,0 +1,56 @@
+{
+  "audits": [
+    {
+      "audit": "equity_expanded_pca_reversal",
+      "returncode": 0,
+      "seconds": 31.60869879200618,
+      "log": "equity/experiments/equity_validation_review_2026_10_29/logs/equity_expanded_pca_reversal.txt"
+    },
+    {
+      "audit": "equity_persistence_regimes",
+      "returncode": 0,
+      "seconds": 6.263770375000604,
+      "log": "equity/experiments/equity_validation_review_2026_10_29/logs/equity_persistence_regimes.txt"
+    },
+    {
+      "audit": "equity_persistence_images",
+      "returncode": 0,
+      "seconds": 5.994201542001974,
+      "log": "equity/experiments/equity_validation_review_2026_10_29/logs/equity_persistence_images.txt"
+    },
+    {
+      "audit": "equity_full_basket_states",
+      "returncode": 0,
+      "seconds": 22.56289058299444,
+      "log": "equity/experiments/equity_validation_review_2026_10_29/logs/equity_full_basket_states.txt"
+    },
+    {
+      "audit": "equity_efa_vs_pca",
+      "returncode": 0,
+      "seconds": 6.809922542001004,
+      "log": "equity/experiments/equity_validation_review_2026_10_29/logs/equity_efa_vs_pca.txt"
+    },
+    {
+      "audit": "equity_expanded_structure",
+      "returncode": 0,
+      "seconds": 4.681135416998586,
+      "log": "equity/experiments/equity_validation_review_2026_10_29/logs/equity_expanded_structure.txt"
+    },
+    {
+      "audit": "equity_reversal_response",
+      "returncode": 0,
+      "seconds": 10.639619749999838,
+      "log": "equity/experiments/equity_validation_review_2026_10_29/logs/equity_reversal_response.txt"
+    },
+    {
+      "audit": "equity_data",
+      "returncode": 0,
+      "seconds": 92.61621145900426,
+      "log": "equity/experiments/equity_validation_review_2026_10_29/logs/equity_data.txt"
+    }
+  ],
+  "all_passed": true,
+  "original_files_checked": 476,
+  "changed_original_files": [],
+  "source_sha256": "291878cd4bbd415b6d5b6ceeeaaedf4c1fde39504a9ba081880c8a57d3c30520"
+}

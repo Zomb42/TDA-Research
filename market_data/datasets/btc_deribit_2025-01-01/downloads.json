@@ -1,0 +1,28 @@
+[
+  {
+    "url": "https://datasets.tardis.dev/v1/deribit/incremental_book_L2/2025/01/01/BTC-PERPETUAL.csv.gz",
+    "kind": "incremental_book_L2",
+    "requested_at": "2026-10-29T15:01:21.631632+00:00",
+    "http_status": 200,
+    "advertised_bytes": "124189509",
+    "advertised_md5": "\"8bb7fe10467a111849627514d7e6b4cd\"",
+    "received_at": "2026-10-29T15:01:25.237828+00:00",
+    "bytes": 124189509,
+    "sha256": "84e87870442c91df5f1a8860474c64c37a40ad6012f2c462cc6e6cb24997ff85",
+    "md5": "8bb7fe10467a111849627514d7e6b4cd",
+    "published_md5_verified": true
+  },
+  {
+    "url": "https://datasets.tardis.dev/v1/deribit/trades/2025/01/01/BTC-PERPETUAL.csv.gz",
+    "kind": "trades",
+    "requested_at": "2026-10-29T15:01:21.631929+00:00",
+    "http_status": 200,
+    "advertised_bytes": "557911",
+    "advertised_md5": "\"ed8eb432c227e32fc17c5e5b0157e06c\"",
+    "received_at": "2026-10-29T15:01:22.319926+00:00",
+    "bytes": 557911,
+    "sha256": "7b9095f13de03142da932f54917a06bc6d8d40beb151e2eaa1c2b6cb667ca6fc",
+    "md5": "ed8eb432c227e32fc17c5e5b0157e06c",
+    "published_md5_verified": true
+  }
+]

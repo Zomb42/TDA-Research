@@ -1,0 +1,42 @@
+{
+  "purpose": "Historical one-date algebra check only; not a backtest, performance claim, or current trade recommendation.",
+  "signal_date": "2023-12-29",
+  "training_start": "2023-07-11",
+  "training_end": "2023-12-28",
+  "training_observations": 120,
+  "signal_interval": "previous adjusted close to signal-date adjusted close",
+  "weights": "inverse total-return variance over training observations",
+  "models": {
+    "SPY_only": {
+      "gross_abs_weight": 1.0,
+      "net_dollar_weight": 6.765421556309548e-17,
+      "SPY_beta_exposure_per_unit_gross": 1.9910611203002493e-17,
+      "max_abs_scaled_constraint_error": 9.540979117872439e-17,
+      "raw_residual_holdings_max_constraint_error": 0.18722189865804303,
+      "constraint_count": 2
+    },
+    "PCA3_only": {
+      "gross_abs_weight": 1.0,
+      "net_dollar_weight": 6.245004513516506e-17,
+      "SPY_beta_exposure_per_unit_gross": 0.0073300707221416695,
+      "max_abs_scaled_constraint_error": 3.544283504359068e-16,
+      "raw_residual_holdings_max_constraint_error": 0.08389865298572334,
+      "constraint_count": 4
+    },
+    "SPY_plus_3_residual_PCs": {
+      "gross_abs_weight": 1.0000000000000002,
+      "net_dollar_weight": 1.0998146837692957e-15,
+      "SPY_beta_exposure_per_unit_gross": 9.964271085575188e-16,
+      "max_abs_scaled_constraint_error": 1.0998146837692957e-15,
+      "raw_residual_holdings_max_constraint_error": 0.17256920374041868,
+      "constraint_count": 5
+    }
+  },
+  "full_30_PC_basis_residual_norm": 1.862371013566553e-17,
+  "checks": {
+    "training_strictly_before_signal": true,
+    "gross_and_neutrality": true,
+    "all_30_PCs_exhaust_signal": true
+  },
+  "reproduction": "Derivation in literature/residual_mean_reversion_151_2026-10-28.md; this is a frozen illustrative calculation."
+}

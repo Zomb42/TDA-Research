@@ -1,0 +1,824 @@
+{
+  "retrieved_at": "2026-10-28T05:22:33.002519+00:00",
+  "requested_start": "2016-01-01",
+  "requested_end": "2026-10-27",
+  "symbol_asof": "2026-10-28",
+  "feed": "sip",
+  "timeframe": "1Day",
+  "equity_count": 30,
+  "benchmark": "SPY",
+  "sessions": 2720,
+  "first_session": "2016-01-04",
+  "last_session": "2026-10-27",
+  "adjustments": {
+    "raw": {
+      "pages": 9,
+      "total_bars": 84320,
+      "by_symbol": {
+        "AAPL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "MSFT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "NVDA": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "AMD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "ORCL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "JPM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "BAC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "C": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "GS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "MS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "JNJ": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "PFE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "MRK": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "ABBV": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "AMGN": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "XOM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "CVX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "COP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "EOG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "SLB": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "WMT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "COST": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "PG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "KO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "PEP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "CAT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "DE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "HON": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "UPS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "UNP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "SPY": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        }
+      }
+    },
+    "all": {
+      "pages": 9,
+      "total_bars": 84320,
+      "by_symbol": {
+        "AAPL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "MSFT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "NVDA": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "AMD": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "ORCL": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "JPM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "BAC": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "C": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "GS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "MS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "JNJ": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "PFE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "MRK": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "ABBV": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "AMGN": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "XOM": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "CVX": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "COP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "EOG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "SLB": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "WMT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "COST": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "PG": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "KO": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "PEP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "CAT": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "DE": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "HON": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "UPS": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "UNP": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        },
+        "SPY": {
+          "bars": 2720,
+          "first_date": "2016-01-04",
+          "last_date": "2026-10-27",
+          "missing_session_count": 0,
+          "missing_sessions": []
+        }
+      }
+    }
+  },
+  "absolute_adjusted_returns_above_25pct": [
+    {
+      "symbol": "AMD",
+      "date": "2016-04-22",
+      "return": 0.5229007633587786
+    },
+    {
+      "symbol": "NVDA",
+      "date": "2016-11-11",
+      "return": 0.2976548406494286
+    },
+    {
+      "symbol": "EOG",
+      "date": "2020-03-09",
+      "return": -0.32024390243902434
+    },
+    {
+      "symbol": "SLB",
+      "date": "2020-03-09",
+      "return": -0.2743105950653121
+    },
+    {
+      "symbol": "COP",
+      "date": "2020-03-24",
+      "return": 0.2516726711271231
+    },
+    {
+      "symbol": "ORCL",
+      "date": "2025-09-10",
+      "return": 0.3595241098078781
+    }
+  ],
+  "checks": {
+    "pagination_exhausted": true,
+    "unique_symbol_session": true,
+    "positive_finite_ohlc": true,
+    "ohlc_ordering": true,
+    "calendar_alignment": true,
+    "return_compounding": true
+  },
+  "limitations": [
+    "Fixed basket chosen on retrieval date, with survivorship/selection bias; not a point-in-time universe.",
+    "Research groups are coarse manual labels, not historical classification records.",
+    "All-adjusted closes use vendor split/dividend/spin-off adjustments as retrieved; not an audited total-return index.",
+    "Daily bars use vendor aggregation; regular-session-only closing-auction prices are not independently established.",
+    "First return is missing. No price or return forward-fill. Returns are decimal fractions.",
+    "An observed daily close cannot be assumed executable after observing that close."
+  ],
+  "requests": [
+    {
+      "endpoint": "/v2/calendar",
+      "params": {
+        "start": "2016-01-01",
+        "end": "2026-10-27"
+      },
+      "received_at": "2026-10-28T05:22:25.103006+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "raw",
+        "limit": 10000,
+        "sort": "asc"
+      },
+      "received_at": "2026-10-28T05:22:25.479689+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "raw",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "QU1HTnxEfDE2ODI0ODE2MDAwMDAwMDAwMDA="
+      },
+      "received_at": "2026-10-28T05:22:25.847269+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "raw",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "Q09TVHxEfDE1NzE5NzYwMDAwMDAwMDAwMDA="
+      },
+      "received_at": "2026-10-28T05:22:26.218418+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "raw",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "RU9HfER8MTQ2MTgxNjAwMDAwMDAwMDAwMA=="
+      },
+      "received_at": "2026-10-28T05:22:26.608250+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "raw",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "Sk5KfER8MTY5MjU5MDQwMDAwMDAwMDAwMA=="
+      },
+      "received_at": "2026-10-28T05:22:26.972573+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "raw",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "TVNGVHxEfDE1ODIyNjEyMDAwMDAwMDAwMDA="
+      },
+      "received_at": "2026-10-28T05:22:27.484249+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "raw",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "UEVQfER8MTQ3MTgzODQwMDAwMDAwMDAwMA=="
+      },
+      "received_at": "2026-10-28T05:22:27.895518+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "raw",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "U0xCfER8MTcwMjQ0MzYwMDAwMDAwMDAwMA=="
+      },
+      "received_at": "2026-10-28T05:22:28.316998+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "raw",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "V01UfER8MTU5MjI4MDAwMDAwMDAwMDAwMA=="
+      },
+      "received_at": "2026-10-28T05:22:28.605331+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "all",
+        "limit": 10000,
+        "sort": "asc"
+      },
+      "received_at": "2026-10-28T05:22:29.417717+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "all",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "QU1HTnxEfDE2ODI0ODE2MDAwMDAwMDAwMDA="
+      },
+      "received_at": "2026-10-28T05:22:29.791078+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "all",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "Q09TVHxEfDE1NzE5NzYwMDAwMDAwMDAwMDA="
+      },
+      "received_at": "2026-10-28T05:22:30.159224+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "all",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "RU9HfER8MTQ2MTgxNjAwMDAwMDAwMDAwMA=="
+      },
+      "received_at": "2026-10-28T05:22:30.536587+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "all",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "Sk5KfER8MTY5MjU5MDQwMDAwMDAwMDAwMA=="
+      },
+      "received_at": "2026-10-28T05:22:30.918820+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "all",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "TVNGVHxEfDE1ODIyNjEyMDAwMDAwMDAwMDA="
+      },
+      "received_at": "2026-10-28T05:22:31.274443+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "all",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "UEVQfER8MTQ3MTgzODQwMDAwMDAwMDAwMA=="
+      },
+      "received_at": "2026-10-28T05:22:31.668627+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "all",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "U0xCfER8MTcwMjQ0MzYwMDAwMDAwMDAwMA=="
+      },
+      "received_at": "2026-10-28T05:22:32.046613+00:00",
+      "http_status": 200
+    },
+    {
+      "endpoint": "/v2/stocks/bars",
+      "params": {
+        "symbols": "AAPL,MSFT,NVDA,AMD,ORCL,JPM,BAC,C,GS,MS,JNJ,PFE,MRK,ABBV,AMGN,XOM,CVX,COP,EOG,SLB,WMT,COST,PG,KO,PEP,CAT,DE,HON,UPS,UNP,SPY",
+        "timeframe": "1Day",
+        "start": "2016-01-01T00:00:00-05:00",
+        "end": "2026-10-27T23:59:59-04:00",
+        "asof": "2026-10-28",
+        "feed": "sip",
+        "adjustment": "all",
+        "limit": 10000,
+        "sort": "asc",
+        "page_token": "V01UfER8MTU5MjI4MDAwMDAwMDAwMDAwMA=="
+      },
+      "received_at": "2026-10-28T05:22:32.344019+00:00",
+      "http_status": 200
+    }
+  ]
+}

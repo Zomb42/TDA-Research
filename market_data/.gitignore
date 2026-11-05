@@ -1,0 +1,4 @@
+.alpaca-paper.local.json
+.env
+.env.*
+__pycache__/
