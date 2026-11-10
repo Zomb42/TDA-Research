@@ -1,0 +1,26 @@
+{
+  "python_executable": "/Users/derickshi/anaconda3/envs/tda/bin/python",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "2.2.3",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.0"
+  },
+  "source_sha256": {
+    "liquidity/experiments/btc_archive_initial_2026_11_05.py": "1656542bf8607b22679b453e4c8c4beea75567c92b499ddbd6b194f73b70ae9c",
+    "liquidity/experiments/btc_reeb_graphs_2026_11_05.py": "4a6840b2b1a8f0efeea2c5218c3591bd8542c1dcc1c3f4302b141b320c15da36",
+    "liquidity/experiments/btc_reeb_report_2026_11_05.py": "6e7c8f8c93c17ad04c36ea22050f6b0180b1f487b254342ac4e8def50d339f88"
+  },
+  "native_ttk_binary": "/Users/derickshi/ttk-binary/ttk/bin/ttkReebGraphCmd",
+  "native_ttk_sha256": "170b68a1deb8767ea6afcf5104ccebff68bc37ecb914fbcecad27e682da725e7",
+  "native_threads": 1,
+  "all_project_python_in_tda": true,
+  "collector_interrupted": false,
+  "frozen_validation_sha256": "1b2a86ffb6a79d664270b5323c9848a745814ef3a018173ba7e5b682da482b1e",
+  "figures_visually_inspected": [
+    "01_market_overview.png",
+    "02_liquidity_reeb_overlay.png",
+    "03_reeb_controls.png",
+    "04_coordinate_checks.png"
+  ]
+}

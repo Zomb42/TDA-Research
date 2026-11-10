@@ -1,0 +1,96 @@
+{
+  "prepared": "2026-11-05",
+  "note": "Unchanged copies of saved experiment figures; this briefing does not recompute experiment results.",
+  "figures": [
+    {
+      "figure": "figures/01_baseline_profit.png",
+      "source": "../equity/experiments/equity_efa_overall_profit/overall_profit_and_drawdown.png",
+      "sha256": "c91b99359e25adce4d6276105932a1718ad0a068aa793c2022a2b28aa2f03ba8",
+      "pixels": [
+        2160,
+        1350
+      ]
+    },
+    {
+      "figure": "figures/02_aligned_gate_profit.png",
+      "source": "../equity/experiments/equity_validation_review_2026_10_29/01_common_calendar_profit.png",
+      "sha256": "a4467185fe8e9ed9795109b9ba39ec2dcaeacdca38e6a304bee62b7f8da71330",
+      "pixels": [
+        2550,
+        1530
+      ]
+    },
+    {
+      "figure": "figures/03_peer_coherence.png",
+      "source": "../equity/experiments/equity_expanded_structure/03_future_coherence.png",
+      "sha256": "943808b52a54ba751c4677dddadd1feb786a92e6654c1bd4ad1ad29654af9472",
+      "pixels": [
+        2080,
+        1440
+      ]
+    },
+    {
+      "figure": "figures/04_tda_beyond_vix.png",
+      "source": "../equity/experiments/tda_vix_matched/01_matched_forecast_errors.png",
+      "sha256": "f1e1c15b4f8e79c419295580c1d5374eccf5032ec05ff99e3326633f9d0406d6",
+      "pixels": [
+        2258,
+        1458
+      ]
+    },
+    {
+      "figure": "figures/05_holdings_uncertainty.png",
+      "source": "../equity/experiments/tda_relationship_exposure/02_incremental_uncertainty.png",
+      "sha256": "802900a420bd5fc3c41ddf362ef15b63a768eeca0c6a1310f82fad2a32406199",
+      "pixels": [
+        2240,
+        1120
+      ]
+    },
+    {
+      "figure": "figures/06_btc_real_features.png",
+      "source": "../btc/experiments/initial_features/real_features.png",
+      "sha256": "a26159b6ee54f819f5111a7bfc9d984ded3991aea8a7609f1da033216c29dff8",
+      "pixels": [
+        1800,
+        1350
+      ]
+    },
+    {
+      "figure": "figures/07_btc_controls.png",
+      "source": "../btc/experiments/initial_features/controls.png",
+      "sha256": "4a7941736dbd3237f80ec4d4a04384c7ea96f0d2acc9516052dd0e6c868c05ec",
+      "pixels": [
+        1800,
+        1350
+      ]
+    },
+    {
+      "figure": "figures/08_liquidity_reeb.png",
+      "source": "../liquidity/experiments/btc_archive_initial_2026_11_05/02_liquidity_reeb_overlay.png",
+      "sha256": "9cf5664abdd346b7c3282c7ea858998ed29a5989a8261c841618fbe9e39f4277",
+      "pixels": [
+        2210,
+        1530
+      ]
+    },
+    {
+      "figure": "figures/09_liquidity_coordinate_checks.png",
+      "source": "../liquidity/experiments/btc_archive_initial_2026_11_05/04_coordinate_checks.png",
+      "sha256": "000d20c267b39d7b50d0854903d23aec86d47f5f42f06dd6d50399d28da9431f",
+      "pixels": [
+        2250,
+        1350
+      ]
+    },
+    {
+      "figure": "figures/10_btc_prediction_errors.png",
+      "source": "../btc/experiments/kalshi_perp_return_prediction_2026_11_05/01_forecast_errors.png",
+      "sha256": "f2e17d1868d7495e9e63dab14a9e8cb5a4b7d890f5299930764930e6e46f1568",
+      "pixels": [
+        1920,
+        720
+      ]
+    }
+  ]
+}

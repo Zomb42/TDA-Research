@@ -1,0 +1,195 @@
+{
+  "case": {
+    "name": "control_one_band",
+    "input": "control_one_band.npz",
+    "control": true
+  },
+  "raw_topology": {
+    "nodes": 2,
+    "arcs": 1,
+    "components": 1,
+    "cycles": 0
+  },
+  "domain_topology": {
+    "components": 1,
+    "holes": 0,
+    "vertices": 215,
+    "edges": 514,
+    "triangles": 300,
+    "euler_characteristic": 1
+  },
+  "display_graph": {
+    "nodes": [
+      {
+        "id": 0,
+        "time": 0.0,
+        "price": 3.0,
+        "members": [
+          0
+        ],
+        "in_degree": 0,
+        "out_degree": 1,
+        "event": "start"
+      },
+      {
+        "id": 1,
+        "time": 30.0,
+        "price": 5.5,
+        "members": [
+          1
+        ],
+        "in_degree": 1,
+        "out_degree": 0,
+        "event": "end"
+      }
+    ],
+    "arcs": [
+      {
+        "source": 0,
+        "target": 1,
+        "path": [
+          [
+            0.0,
+            3.0
+          ],
+          [
+            0.5,
+            4.0
+          ],
+          [
+            1.1428571428571428,
+            4.0
+          ],
+          [
+            2.142857142857143,
+            4.0
+          ],
+          [
+            3.142857142857143,
+            4.0
+          ],
+          [
+            4.142857142857143,
+            4.0
+          ],
+          [
+            5.142857142857143,
+            4.0
+          ],
+          [
+            6.142857142857143,
+            4.0
+          ],
+          [
+            7.142857142857143,
+            4.0
+          ],
+          [
+            8.142857142857142,
+            4.0
+          ],
+          [
+            9.142857142857142,
+            4.0
+          ],
+          [
+            10.142857142857142,
+            4.0
+          ],
+          [
+            11.142857142857142,
+            4.0
+          ],
+          [
+            12.142857142857142,
+            4.0
+          ],
+          [
+            13.142857142857142,
+            4.0
+          ],
+          [
+            14.142857142857142,
+            4.0
+          ],
+          [
+            15.142857142857142,
+            4.0
+          ],
+          [
+            16.142857142857142,
+            4.0
+          ],
+          [
+            17.142857142857142,
+            4.0
+          ],
+          [
+            18.142857142857142,
+            4.0
+          ],
+          [
+            19.142857142857142,
+            4.0
+          ],
+          [
+            20.142857142857142,
+            4.0
+          ],
+          [
+            21.142857142857142,
+            4.0
+          ],
+          [
+            22.142857142857142,
+            4.0
+          ],
+          [
+            23.142857142857142,
+            4.0
+          ],
+          [
+            24.142857142857142,
+            4.0
+          ],
+          [
+            25.142857142857142,
+            4.0
+          ],
+          [
+            26.142857142857142,
+            4.0
+          ],
+          [
+            27.142857142857142,
+            4.0
+          ],
+          [
+            28.142857142857142,
+            4.0
+          ],
+          [
+            29.142857142857142,
+            4.0
+          ],
+          [
+            30.0,
+            5.5
+          ]
+        ],
+        "raw_arc_ids": [
+          0
+        ]
+      }
+    ],
+    "topology": {
+      "nodes": 2,
+      "arcs": 1,
+      "components": 1,
+      "cycles": 0
+    }
+  },
+  "graph_method": "Native ttkReebGraphCmd, time scalar on clipped PL superlevel density domain",
+  "display_reduction": "Contract zero-time arcs and suppress directed 1-in/1-out nodes; parallel arcs retained",
+  "path_layout": "Mean source-segmentation vertex coordinates within time bins; not order trajectories"
+}

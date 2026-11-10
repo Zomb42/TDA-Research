@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "checks": {
+    "all_message_counts_match_manifest": true,
+    "all_checkpoints_match_exact_decimal_replay": true,
+    "book_gap_count_matches_manifest": true,
+    "book_error_count_matches_manifest": true,
+    "trade_gap_count_matches_manifest": true,
+    "all_requested_channels_acknowledged": true,
+    "no_unexpected_channel_types": true,
+    "capture_has_snapshot_and_deltas_and_trades": true,
+    "journal_sha256_matches_manifest": true,
+    "checkpoint_sha256_matches_manifest": true
+  },
+  "message_counts": {
+    "subscribed": 3,
+    "orderbook_snapshot": 1,
+    "orderbook_delta": 114753,
+    "ticker": 599,
+    "trade": 1327
+  },
+  "control_counts": {
+    "connected": 1
+  },
+  "checkpoints_replayed_exactly": 119,
+  "book_sequence_gaps": 0,
+  "book_reconstruction_errors": 0,
+  "trade_sequence_gaps": 0,
+  "duplicate_trade_ids": 0,
+  "max_price_levels": {
+    "bid": 160,
+    "ask": 110
+  },
+  "receipt_start_utc": "2026-11-05T00:22:29.943391+00:00",
+  "receipt_end_utc": "2026-11-05T00:32:29.429509+00:00",
+  "exchange_timestamp_bounds": {
+    "orderbook_delta": {
+      "min_ts_ms": 1793838149970,
+      "max_ts_ms": 1793838749455
+    },
+    "ticker": {
+      "min_ts_ms": 1793838150838,
+      "max_ts_ms": 1793838748876
+    },
+    "trade": {
+      "min_ts_ms": 1793838152637,
+      "max_ts_ms": 1793838749321
+    }
+  },
+  "capture_state": "completed",
+  "gap_windows": [],
+  "stored_journal_bytes": 39105403,
+  "stored_checkpoint_bytes": 664809,
+  "journal_sha256": "30180b6b082dec40e5c2f878339a2dc44e054171f8c48a5959b1246e8ea213dd",
+  "checkpoint_sha256": "96c64d8fa0a41bef29e01334edb8373ba2549262ed9a7c9d4a7fb997f1acee13",
+  "scope": "Internal capture/replay integrity; aggregated public L2, not exchange-wide L3 completeness"
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "strategy_source_matches_frozen_provenance": true,
+  "daily_feature_rows_independently_checked": 2446,
+  "forecast_rows_independently_refitted": 23304,
+  "hac_regressions_checked": 48,
+  "conditional_rows_checked": 48,
+  "input_output_hashes_checked": 19,
+  "checks": [
+    "full equity-calendar lag alignment",
+    "all frozen PCA/EFA returns unchanged",
+    "independent source-based feature reconstruction",
+    "conditional statistics",
+    "all OLS/HAC fits versus statsmodels",
+    "every expanding forecast versus raw-feature statsmodels OLS",
+    "training ends before execution",
+    "all paired forecast losses",
+    "manifest hashes"
+  ]
+}

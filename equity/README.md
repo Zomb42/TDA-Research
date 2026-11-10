@@ -11,6 +11,13 @@ Current position: repeatable peers exist; the expanded daily strategy has positi
 | The full research story and intuitive explanations | **[Equity research log](EQUITY_RESEARCH_LOG.md)** |
 | Consistent performance/risk comparisons and validation evidence | **[Validated comparison ledger](EQUITY_VALIDATION.md)** |
 | A brief report-ready account of progress and TDA's potential role | [Progress report](EQUITY_PROGRESS_REPORT.md) |
+| How the frozen factor-neutral strategy's returns and risk compare with VIX | [Factor/VIX comparison and forecast check](experiments/factor_reversal_vix/README.md) |
+| Whether trading only at prior VIX20–30 improves that strategy | [Fixed-band policy, capital, concentration and nonlinear check](experiments/factor_vix_20_30/README.md) |
+| How historical studies used landscapes/networks for regimes and where VIX fits | [Updated primary-source review, illustrations and cached context](literature/tda_regimes_vix_2026-11-04/README.md) |
+| Whether existing TDA adds mean/risk forecasts beyond ordinary controls and VIX | [Executed matched comparison and independent audit](experiments/tda_vix_matched/README.md) |
+| Other concrete TDA roles beyond global regime summaries | [Local shocks, relationship failures, state paths and portfolio construction](literature/tda_alternative_uses_2026-11-05.md) |
+| Whether today's local residual-shock topology improves next-session stock forecasts | [Executed shock merge-tree comparison and audit](experiments/tda_residual_shock/README.md) |
+| Whether changing labeled stock relationships identify risk in actual portfolio holdings | [Executed hierarchy-exposure comparison against covariance and average linkage](experiments/tda_relationship_exposure/README.md) |
 | The current decision and open choices | [Current next steps](EQUITY_NEXT_STEPS.md) |
 | The original correlation/PCA explanation in more detail | [PCA intuition](EQUITY_INTUITION.md) |
 | An actual Microsoft factor equation, coefficients and worked interpretation | [Microsoft PCA example](MSFT_PCA_EXAMPLE.md) |

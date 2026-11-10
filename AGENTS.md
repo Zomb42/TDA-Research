@@ -2,6 +2,22 @@
 
 Read `START_HERE.md` for project context. User instructions in the conversation take precedence.
 
+## Python environment — user, November 4, 2026
+
+Use the existing **`tda` Conda environment** for this project, including research, data recording, checks, and notebooks. Activate with `conda activate tda`, or use `conda run --no-capture-output -n tda python ...`. On this Mac the interpreter is `/Users/derickshi/anaconda3/envs/tda/bin/python`. Do not use the base environment or create a replacement environment by default.
+
+## New live collection — user, November 4, 2026
+
+**Latest instruction, November 5: stop and finalize.** The user explicitly requested stopping both feeds. Run `2026-11-05T03-36-49Z` stopped gracefully on November 5 at 11:15:26 p.m. Indianapolis (November 6, 04:15:26 UTC). Both feeds are stopped, the recorder PID no longer exists, the final manifest is saved, and no partial segment remains. `btc/ACTIVE_CAPTURE.json` is retained as a pointer to the completed run, not authorization to restart it. Preserve all archived data and the STOP marker. All 52 closed files passed hash, gzip and row-count validation; all 11,467 checkpoints and 25 carried hour-boundary books matched exact-decimal replay. The archive contains 21,694,928 book updates, 165,084 trade messages and 130,962 regular Coinbase samples, totaling 725.14 MiB compressed. Interruptions are retained. See `btc/experiments/btc_archive_final_2026_11_05/README.md`. A new capture requires a new user request. This supersedes the older continuous-collection instruction below.
+
+**Latest authorization: continuous collection is now requested.** The user accepted the perp-focused scope and explicitly says to start both the Kalshi BTC perp and lightweight Coinbase BTC-USD reference now, using existing keys, compression, and roughly hourly files. The earlier ten-minute duration applies only to the completed example. The active run is recorded in `btc/ACTIVE_CAPTURE.json`; inspect the referenced `status.json` for fresh live state. Use `record_btc_archive.py` in `tda`; it retains all delivered public perp L2/trade/ticker events, samples the Coinbase reference at 2 Hz with trade aggregates, and rotates gzip files at UTC hours without reconnecting. It runs until stopped, capped at 20 GiB of compressed data or a 10 GiB free-disk floor. No automatic login/boot service is installed. Do not start a duplicate recorder; inspect the active run first. Market-data-only/no-fee restrictions remain.
+
+**Storage preference, latest clarification:** keep the initial ten-minute sample **uncompressed and readable**, including `data_preview.json`. The user now prefers **lossless compression for future capture**; use `--gzip`, retain all book events, and keep raw files ignored by Git. Compression is a storage choice, not permission to sample/drop book updates or restart/extend collection.
+
+**Comparison request, latest November 4 clarification:** the user explicitly asks for measured price-level counts, storage rates, and liquidity comparisons against the existing HFT Coinbase BTC files and 15-minute event contracts. This bounded descriptive comparison is authorized. Keep products/units distinct, note April versus November dates, and do not infer Coinbase full depth from its ticker-only best quotes. The user is considering a perp-focused BTC/liquidity study with a lightweight broader-BTC reference; recommendations are not a chosen prediction target or authorization for another capture.
+
+The user now explicitly requests new BTC-perp collection for feature engineering and liquidity, using the old HFT C++ recorder as an implementation reference. **The initial run is ten minutes only.** Kalshi BTC perps remain the intended instrument. Retain the no-fee/no-order restrictions; capture public book updates/trades and preserve sequence/connection gaps. Distinguish aggregated L2 from individual-order L3 data. Do not install a permanent service or silently extend this run. Historical backfill remains a separate question.
+
 ## BTC/liquidity scope correction — user, October 29, 2026
 
 - **Coinbase follow-up:** the user also requested Coinbase historical-depth documentation, their existing key context and data-volume assessment. This is exploration within the no-fee constraint, not a commitment to switch venues or start indefinite collection. See `btc/COINBASE_HISTORICAL_API.md` for the checked distinction between free live depth and unestablished free historical replay. Preserve the user's historical-data question.

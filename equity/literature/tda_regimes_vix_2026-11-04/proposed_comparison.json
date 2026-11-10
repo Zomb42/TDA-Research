@@ -1,0 +1,38 @@
+{
+  "status": "EXECUTED separately November 5, 2026; initial review itself fitted no forecasts or policy",
+  "purpose": "Measure whether existing TDA state features add useful strategy-risk or mean information after VIX enters the ordinary baseline",
+  "history_status": "Previously examined current-survivor data; chronological rerun remains exploratory; VIX20to30 selected after inspecting historical outcomes",
+  "strategy": "Frozen expanded200 SPY+PCA3 daily residual reversal; same raw next-open-to-close ledger, unit gross, flat nightly, gross/pre-fee",
+  "reuse_source": "equity/experiments/equity_full_basket_states",
+  "reuse": "All original 120day182coordinate raw/residual diagrams, five-session diagram changes, 33 ordinary controls, forecast dates, completed-label memberships, fixed ridge lambda1, and all four pre-existing augmentations",
+  "vix_additions": [
+    "log_VIX_close_before_first_execution",
+    "completed_VIX_log_change_before_first_execution",
+    "indicator20_le_VIX_lt30_before_first_execution"
+  ],
+  "information_timing": "Join VIX by the previous completed equity session before target_start/first_execution, which equals formation_date in the checked490-row panel. Retain original history_end/topology_feature_end separately; do not relabel cached topology as newer. No forward fill",
+  "models": [
+    "HistoricalMean",
+    "OriginalControls33",
+    "OriginalControls33_plus_VIX3",
+    "ControlsVIX_plus_RawLevel",
+    "ControlsVIX_plus_RawChange",
+    "ControlsVIX_plus_ResidualLevel",
+    "ControlsVIX_plus_ResidualChange"
+  ],
+  "primary_target": "Original log(next20-session portfolio RMS in bps), primary paired squared log-error augmentation minus ControlsVIX",
+  "secondary_target": "Original next20-session portfolio mean gross return in bps, primary paired mean-forecast error augmentation minus ControlsVIX",
+  "training": "Original expanding fits and only labels completed before decision; original training-only feature scaling; do not tune penalty, windows, homology degree, band boundaries or feature set using new point ranks",
+  "uncertainty": "Reuse paired anchor resampling and simultaneous four-TDA-addition intervals within each period/target, with original dependence-aware blocks; retain examined-history and episode-count limits",
+  "policy": "No gate follows from a risk forecast by assumption. Any separately evaluated policy must preserve full-calendar P&L, capital/gross exposure, raw-price timing, and constant reduced-exposure controls",
+  "secondary_description": "Describe state differences within fixedVIX20to30 only as exploratory; do not choose profitable whole-history clusters or a revised boundary",
+  "not_in_this_comparison": "No recomputed topology, landscape resolution/layer search, new graph family, new learner, leverage or economic-mechanism claims",
+  "initial_status": "PROPOSED, NOT EXECUTED: no additional forecasts, trading gates, or performance claims in this review",
+  "execution_record": {
+    "date": "2026-11-05",
+    "report": "equity/experiments/tda_vix_matched/README.md",
+    "specification": "equity/experiments/tda_vix_matched/specification.json",
+    "audit": "equity/experiments/tda_vix_matched/audit.json",
+    "no_new_trading_policy": true
+  }
+}

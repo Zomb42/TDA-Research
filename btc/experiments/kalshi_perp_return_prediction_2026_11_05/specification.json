@@ -1,0 +1,239 @@
+{
+  "written_before_outcome_extraction": true,
+  "created_at": "2026-11-05T16:24:24.314972+00:00",
+  "status": "Exploratory first chronological prediction pilot on short already-described archive; no untouched multi-day holdout",
+  "inputs": [
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T03-00-00Z.jsonl.gz",
+      "sha256": "d52da48a33bb709cb4e6cfe7dd05a59a780e96fe7de9f2e03e862ff607f877ca",
+      "rows": 232067,
+      "closed_at": "2026-11-05T04:00:00.009451+00:00",
+      "source": "kalshi_perp"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T03-00-00Z.jsonl.gz",
+      "sha256": "b6c752b0e606e339856829e5f1589493e437b2c18cea62968d8fce042ac7a7c3",
+      "rows": 2781,
+      "closed_at": "2026-11-05T04:00:00.378887+00:00",
+      "source": "coinbase_reference"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T04-00-00Z.jsonl.gz",
+      "sha256": "86858e1ca889f076b58c51e5d82e5f8bc99341f68e817b5c5e4c775a182a9c84",
+      "rows": 623808,
+      "closed_at": "2026-11-05T05:00:00.004684+00:00",
+      "source": "kalshi_perp"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T04-00-00Z.jsonl.gz",
+      "sha256": "fe435d034cd325de6b940d2e4f0d9877a4179f42e66dbfe16863c4f3e6ad8535",
+      "rows": 7200,
+      "closed_at": "2026-11-05T05:00:00.320463+00:00",
+      "source": "coinbase_reference"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T05-00-00Z.jsonl.gz",
+      "sha256": "2a61651e4d56d0ea371ad4fbea892a669d9aa4496887c953d70b458ebe5317de",
+      "rows": 721622,
+      "closed_at": "2026-11-05T06:00:00.018294+00:00",
+      "source": "kalshi_perp"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T05-00-00Z.jsonl.gz",
+      "sha256": "3e9070f70b8817be21d52902671bb2e2977c7e12298355353d5208e0557661fb",
+      "rows": 7201,
+      "closed_at": "2026-11-05T06:00:00.285071+00:00",
+      "source": "coinbase_reference"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T06-00-00Z.jsonl.gz",
+      "sha256": "d66ec58739df9e2a288fa2a5531e877b5afa896f7aee53d3354cefaba4e34740",
+      "rows": 511180,
+      "closed_at": "2026-11-05T07:00:00.001608+00:00",
+      "source": "kalshi_perp"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T06-00-00Z.jsonl.gz",
+      "sha256": "f2ac9a17ed7dd33f81a5501a958a9f32d3462abb67073bed7012d8a224bfd9a2",
+      "rows": 7201,
+      "closed_at": "2026-11-05T07:00:00.291411+00:00",
+      "source": "coinbase_reference"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T07-00-00Z.jsonl.gz",
+      "sha256": "f0cc8a51517560b7aaa61bd189003e0810071ce5c7b4d905af0abcce03a3d6ca",
+      "rows": 580192,
+      "closed_at": "2026-11-05T08:00:00.090203+00:00",
+      "source": "kalshi_perp"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T07-00-00Z.jsonl.gz",
+      "sha256": "dc8b2ad45604eac02e662cbc705a7ce4b911468a855063349722143006043838",
+      "rows": 7201,
+      "closed_at": "2026-11-05T08:00:00.311218+00:00",
+      "source": "coinbase_reference"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T08-00-00Z.jsonl.gz",
+      "sha256": "85f048b566f81d265965203425e36a046726405a70430cb9c70014e52db30db9",
+      "rows": 33535,
+      "closed_at": "2026-11-05T09:00:00.802864+00:00",
+      "source": "kalshi_perp"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T08-00-00Z.jsonl.gz",
+      "sha256": "4ea9074a354871cc786d3cdaa30177c90f5485a5782de2d5a910cae297d937cc",
+      "rows": 7201,
+      "closed_at": "2026-11-05T09:00:00.338622+00:00",
+      "source": "coinbase_reference"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T09-00-00Z.jsonl.gz",
+      "sha256": "523487f0892edcab1aa358e5cdf0e521fede8bee025e303753829b634803ce80",
+      "rows": 3597,
+      "closed_at": "2026-11-05T10:00:00.797846+00:00",
+      "source": "kalshi_perp"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T09-00-00Z.jsonl.gz",
+      "sha256": "c998c26d3b16e61e76fcb2f3b3f3551ef14186dec825461be2bbd1a4b79242c8",
+      "rows": 7201,
+      "closed_at": "2026-11-05T10:00:00.293695+00:00",
+      "source": "coinbase_reference"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T10-00-00Z.jsonl.gz",
+      "sha256": "ed951b0ed7aa1b4a2fd147ad445e476777513edf6f5f835c0d387a1091641ddf",
+      "rows": 377035,
+      "closed_at": "2026-11-05T11:00:00.135006+00:00",
+      "source": "kalshi_perp"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T10-00-00Z.jsonl.gz",
+      "sha256": "9ab220fbd6515cf8d2de4a3fa03388416b52b47dda2312e516969e971972020a",
+      "rows": 7200,
+      "closed_at": "2026-11-05T11:00:00.155139+00:00",
+      "source": "coinbase_reference"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T11-00-00Z.jsonl.gz",
+      "sha256": "264f5ef9c169a7f53188a6547bd2601c1f087b100c405de782e7c30f8e770360",
+      "rows": 433067,
+      "closed_at": "2026-11-05T12:00:00.012005+00:00",
+      "source": "kalshi_perp"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T11-00-00Z.jsonl.gz",
+      "sha256": "b95b3fe6bf2583f374a1cf4b4ce215fe4ba2c5d3a01d909ddcf7c783316319d0",
+      "rows": 7201,
+      "closed_at": "2026-11-05T12:00:00.189976+00:00",
+      "source": "coinbase_reference"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T12-00-00Z.jsonl.gz",
+      "sha256": "bb0c21185acdf70b6dd3bdff47b16a99f38ac7cd3e061d773421f4b6932c72e6",
+      "rows": 1081687,
+      "closed_at": "2026-11-05T13:00:00.002888+00:00",
+      "source": "kalshi_perp"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T12-00-00Z.jsonl.gz",
+      "sha256": "a6ab21c577ff3304f32c95724a91fc9f6c75b3a428ed1248c39c2a1ac25950c5",
+      "rows": 7201,
+      "closed_at": "2026-11-05T13:00:00.189885+00:00",
+      "source": "coinbase_reference"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T13-00-00Z.jsonl.gz",
+      "sha256": "1049baf270968a6aed2eea3c29598f5104efda1ed80f76963be2c63e625d76c5",
+      "rows": 902727,
+      "closed_at": "2026-11-05T14:00:00.012488+00:00",
+      "source": "kalshi_perp"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T13-00-00Z.jsonl.gz",
+      "sha256": "d4ae0cc937b94edc1f4b508806ce192b4e021794c45cc2fe6fcadb0c74ca75cc",
+      "rows": 7201,
+      "closed_at": "2026-11-05T14:00:00.152169+00:00",
+      "source": "coinbase_reference"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T14-00-00Z.jsonl.gz",
+      "sha256": "90c8fa03d40fc72b79f1e251337b2f060445d0420d8fc3427968d844d334ac92",
+      "rows": 2131422,
+      "closed_at": "2026-11-05T15:00:00.007004+00:00",
+      "source": "kalshi_perp"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T14-00-00Z.jsonl.gz",
+      "sha256": "0617e2cf6dca82cd8c8fcc8a0513bfb264609e226d3973d8382e19020b469ecf",
+      "rows": 6201,
+      "closed_at": "2026-11-05T15:00:00.423658+00:00",
+      "source": "coinbase_reference"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T15-00-00Z.jsonl.gz",
+      "sha256": "5831aa1368d30fc45dab5e8698ec51cd7d76dac5e282cae739ad0ce9ab09f312",
+      "rows": 3252465,
+      "closed_at": "2026-11-05T16:00:00.002763+00:00",
+      "source": "kalshi_perp"
+    },
+    {
+      "path": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T15-00-00Z.jsonl.gz",
+      "sha256": "e60ea97499ec8e6c9ae0cb4ec6dcd1a18dc9316fd43245b5687ddf6a6cab3d2c",
+      "rows": 6404,
+      "closed_at": "2026-11-05T16:00:00.530790+00:00",
+      "source": "coinbase_reference"
+    }
+  ],
+  "excluded_inputs": "All live partial files and non-common closed hours; later files never added to this run",
+  "metadata": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_market.json",
+  "metadata_sha256": "47e321bbf7dd51c40f91b6d7be79579c99cfc87950cf71ee649e5b4698a237f1",
+  "target": "10000*log(Kalshi as-of midpoint at t+60 seconds / as-of midpoint at t); signed bps primary, absolute bps secondary; quote movement not execution P&L",
+  "grid": "5-second UTC grid using latest historical book checkpoint <= grid time, age <=7.5 seconds; Coinbase latest sample <=time age<=1 second and total quote age<=2 seconds",
+  "decisions": "UTC minute boundaries, one 60-second nonoverlapping label per minute; past 600 seconds=120 five-second returns plus one starting quote",
+  "exclusion": "All 133 five-second grid points spanning feature and label must have valid uncrossed perp/spot quotes and constant source-specific connection epoch; no returns bridged across missing data; reject explicit source gaps/invalid intervals",
+  "ordinary_features": [
+    "ret5_bps",
+    "ret30_bps",
+    "ret60_bps",
+    "ret600_bps",
+    "std600_bps",
+    "acf1",
+    "spectral_max_share",
+    "spectral_entropy",
+    "spread_bps",
+    "depth10_imbalance",
+    "taker_bid_minus_ask60",
+    "log_trade_usd60",
+    "log_trade_count60",
+    "spot_ret60_bps",
+    "basis_bps"
+  ],
+  "ordinary_interactions": [
+    "ret60_bps*std600_bps",
+    "ret60_bps*acf1",
+    "ret60_bps*spectral_max_share"
+  ],
+  "topology": "Past-window centered population-standardized five-second returns; 3D delay coordinates at 0,10,20 seconds;116 points, no subsampling; Euclidean Rips H0/H1, infinite bars excluded",
+  "tda_features": [
+    "h0_death_q90",
+    "h1_max_lifetime",
+    "h1_sum_squared_lifetime"
+  ],
+  "tda_interactions": "Each of three TDA summaries multiplied by ret60_bps; primary augmented model includes levels+these interactions",
+  "models": [
+    "Zero",
+    "HistoryMean",
+    "Ordinary18",
+    "OrdinaryPlusTDA21",
+    "OrdinaryPlusTDAInteractions24"
+  ],
+  "model_role": "Primary increment:24-input versus18-input model;21-input model is fixed ablation, not candidate selection",
+  "fit": "Expanding ridge; first180 completed eligible labels required; refit every30 eligible decision rows; training-only population standardization; intercept unpenalized; average squared bps error +1*sum(beta^2), sklearn alpha=n_train; same fits separately for signed/absolute targets; no hyperparameter search",
+  "metrics": "Paired MSE primary; MAE secondary; signed forecast correlation and direction accuracy descriptive; historical mean and zero references; no gate, trading returns, annualization, or cost scenarios",
+  "uncertainty": "2000 circular block bootstrap draws of60 consecutive calendar minute slots across scored interval, keeping missing scored slots missing; identical resampled slots for all models/targets; pointwise95 intervals plus max-standardized simultaneous95 intervals across2 TDA additions x2 targets; conditional on predictions without refits; seed2026110507",
+  "trade_sign": "Reported taker_side bid=+1 ask=-1 for signed notional fraction; field-coded imbalance, no inferred cancellation attribution; side semantics not needed for fit equivalence under sign reversal",
+  "validation": "All input hashes, gzip CRC and per-file total rows; all labels/memberships chronological; independent closed-form ridge reconstruction and bootstrap; selected raw checkpoint replay; sign/scale/constant/prefix geometry checks",
+  "preservation": "No recorder, credentials, prior experiments, equity outputs or source data changed"
+}

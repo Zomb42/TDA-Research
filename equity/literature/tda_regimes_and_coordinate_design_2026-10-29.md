@@ -1,5 +1,7 @@
 # TDA regimes: what the points and dimensions should represent
 
+**November4 follow-up:** the [updated regime/VIX review](tda_regimes_vix_2026-11-04/README.md) incorporates the completed full-basket study, recent VIX results, landscape equivalences, additional source checks, and an unexecuted comparison using cached TDA after adding VIX controls. The original review-stage proposal below is preserved as historical context.
+
 Focused review, October 29, 2026. This is a method comparison and proposed next question, **not a new backtest**. It supplements the [earlier literature review](../../literature/financial_tda_review_2026-10-12.md) and interprets the completed [scalar regime](../experiments/equity_persistence_regimes/README.md) and [image](../experiments/equity_persistence_images/README.md) experiments.
 
 **Subsequent execution:** the user chose days with the full basket's returns rather than a four-index replication. The [120-day × 182-coordinate experiment](../experiments/equity_full_basket_states/README.md) is complete, with raw/residual and current/change variants and separate risk/mean targets. Its modest favorable later risk point errors remain uncertain; mean/gate improvements are unestablished. The four-ETF proposal below is retained as review-stage context, not a pending task or a claim of execution.

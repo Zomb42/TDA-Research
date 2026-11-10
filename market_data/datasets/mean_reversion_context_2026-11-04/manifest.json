@@ -1,0 +1,27 @@
+{
+  "retrieved_at": "2026-11-05T00:32:40.460185+00:00",
+  "requests": [
+    {
+      "url": "https://data.alpaca.markets/v2/stocks/bars?symbols=QQQ&timeframe=1Day&start=2016-01-01T00%3A00%3A00-05%3A00&end=2026-10-27T23%3A59%3A59-04%3A00&asof=2026-10-28&feed=sip&adjustment=all&limit=10000&sort=asc",
+      "received_at": "2026-11-05T00:32:39.833109+00:00"
+    },
+    {
+      "url": "https://data.alpaca.markets/v2/stocks/bars?symbols=QQQ&timeframe=1Day&start=2016-01-01T00%3A00%3A00-05%3A00&end=2026-10-27T23%3A59%3A59-04%3A00&asof=2026-10-28&feed=sip&adjustment=raw&limit=10000&sort=asc",
+      "received_at": "2026-11-05T00:32:40.200804+00:00"
+    }
+  ],
+  "vix_url": "https://cdn-api.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
+  "vix_rows": 9308,
+  "vix_first": "1990-01-02",
+  "vix_last": "2026-11-03",
+  "qqq_sessions": 2720,
+  "calendar_matches_existing_panel": true,
+  "history_end": "2026-10-27",
+  "purpose": "Exploratory index mean-reversion and lagged VIX context",
+  "sha256": {
+    "vix_daily.csv": "cbe8e28f2950eb7baa0ff5d54fa1b5b0514b1b3b7bc93daa803c97ae2abe1969",
+    "vix_source.csv": "e5d1e436c05c0e346387984c9750daf5d8da140ba6e34bca79d81b326510a62b",
+    "bars_raw.csv": "164fac7d5fcd5b023fe0432936fb5e0f64d191c8156f13aeb66f8ff9d2344113",
+    "bars_all.csv": "979a67d1e890270b13ddc3bb589b388ea8b005c47c97522e0e515ea04a3b715d"
+  }
+}

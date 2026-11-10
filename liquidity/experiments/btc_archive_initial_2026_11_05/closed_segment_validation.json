@@ -1,0 +1,118 @@
+{
+  "frozen_files": [
+    "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T03-00-00Z.jsonl.gz",
+    "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T04-00-00Z.jsonl.gz",
+    "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T05-00-00Z.jsonl.gz",
+    "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T03-00-00Z.jsonl.gz",
+    "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T04-00-00Z.jsonl.gz",
+    "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T05-00-00Z.jsonl.gz"
+  ],
+  "results": [
+    {
+      "file": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T03-00-00Z.jsonl.gz",
+      "live_partial": false,
+      "limited_prefix": false,
+      "rows_checked": 232067,
+      "counts": {
+        "segment_start": 1,
+        "connected": 1,
+        "subscribed": 3,
+        "orderbook_snapshot": 1,
+        "book_checkpoint": 275,
+        "orderbook_delta": 227984,
+        "trade": 2413,
+        "ticker": 1389
+      },
+      "checkpoints_matched": 275,
+      "passed": true,
+      "final_hash_verified": true
+    },
+    {
+      "file": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T04-00-00Z.jsonl.gz",
+      "live_partial": false,
+      "limited_prefix": false,
+      "rows_checked": 623808,
+      "counts": {
+        "segment_start": 1,
+        "orderbook_delta": 613272,
+        "trade": 6221,
+        "ticker": 3600,
+        "book_checkpoint": 714
+      },
+      "checkpoints_matched": 714,
+      "passed": true,
+      "final_hash_verified": true
+    },
+    {
+      "file": "market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T05-00-00Z.jsonl.gz",
+      "live_partial": false,
+      "limited_prefix": false,
+      "rows_checked": 721622,
+      "counts": {
+        "segment_start": 1,
+        "orderbook_delta": 711073,
+        "trade": 6234,
+        "ticker": 3600,
+        "book_checkpoint": 714
+      },
+      "checkpoints_matched": 714,
+      "passed": true,
+      "final_hash_verified": true
+    },
+    {
+      "file": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T03-00-00Z.jsonl.gz",
+      "live_partial": false,
+      "limited_prefix": false,
+      "rows_checked": 2781,
+      "counts": {
+        "segment_start": 1,
+        "connected": 1,
+        "reference_sample": 2779
+      },
+      "checkpoints_matched": 0,
+      "passed": true,
+      "final_hash_verified": true
+    },
+    {
+      "file": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T04-00-00Z.jsonl.gz",
+      "live_partial": false,
+      "limited_prefix": false,
+      "rows_checked": 7200,
+      "counts": {
+        "segment_start": 1,
+        "reference_sample": 7196,
+        "gap_start": 1,
+        "connected": 1,
+        "gap_end": 1
+      },
+      "checkpoints_matched": 0,
+      "passed": true,
+      "final_hash_verified": true
+    },
+    {
+      "file": "market_data/recordings/2026-11-05T03-36-49Z/coinbase_reference/2026-11-05T05-00-00Z.jsonl.gz",
+      "live_partial": false,
+      "limited_prefix": false,
+      "rows_checked": 7201,
+      "counts": {
+        "segment_start": 1,
+        "reference_sample": 7200
+      },
+      "checkpoints_matched": 0,
+      "passed": true,
+      "final_hash_verified": true
+    }
+  ],
+  "hour_seams": [
+    {
+      "next_file": "2026-11-05T04-00-00Z.jsonl.gz",
+      "sequence": 227985,
+      "exact_book_matches": true
+    },
+    {
+      "next_file": "2026-11-05T05-00-00Z.jsonl.gz",
+      "sequence": 841257,
+      "exact_book_matches": true
+    }
+  ]
+}

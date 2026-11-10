@@ -1,5 +1,7 @@
 # TDA learning and local setup
 
+**Use the existing `tda` Conda environment for this project** (user instruction, November 4, 2026): `conda activate tda`. Select its kernel in notebooks. Without shell activation, use `conda run --no-capture-output -n tda python ...`. On this Mac the interpreter is `/Users/derickshi/anaconda3/envs/tda/bin/python`; the separate ParaView/TTK launchers below manage their own bundled runtime.
+
 For the current research plan, read [START_HERE.md](START_HERE.md). This guide contains setup and tutorial reference material, not additional project requirements.
 
 Use [scikit_tda_tutorial.ipynb](scikit_tda_tutorial.ipynb) for the introductory constructions and explanations; [playground.ipynb](playground.ipynb) for synthetic experiments; and [topology_toolkit_intro.ipynb](topology_toolkit_intro.ipynb) for scalar fields, merge trees, Morse–Smale segmentation, and TTK. The playground's sports profiles are fictional geometry exercises, not a research direction.

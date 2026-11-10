@@ -1,0 +1,19 @@
+{
+  "decision_date": "2026-11-05",
+  "written_before_new_forecasts": true,
+  "authorization": "User explicitly requested execution of the previously documented matched comparison",
+  "status": "Exploratory comparison on already examined history; the20to30 indicator was selected after earlier outcome inspection",
+  "strategy": "Frozen expanded200 SPY_PCA3 residual reversal, next raw open-to-close, unit gross, flat nightly; no holdings or return changes",
+  "source_experiment": "equity/experiments/equity_full_basket_states",
+  "inputs": "Original490 cached state/target rows, original379 prediction dates, exact saved completed-label training memberships, saved490-row entry-available VIX alignment",
+  "models": "HistoryMean; Controls33; ControlsVIX36; then ControlsVIX plus each original RawLevel3, RawChange3, ResidualLevel3, ResidualChange2 augmentation. Report every model, no selecting a winner",
+  "vix": "log previous-equity-session VIX close, completed previous-session log VIX change, fixed indicator20<=VIX<30. Last equity session before target_start is formation_date. Preserve older cached topology history_end",
+  "targets": {"risk": "Original log(next20-session strategy RMS in bps)", "mean": "Original next20-session mean strategy gross return in bps"},
+  "fit": "Original expanding ridge: training-only feature means and population SD; SD floor1e-10 replaced by1; unpenalized intercept; mean squared error plus lambda1 squared standardized coefficients, equivalently sklearn alpha=n. Minimum104 completed labels, exact old memberships",
+  "scoring": "Exact original development/later samples:233 and138 complete non-cross-boundary labels.379 forecasts also include4 split-crossing and4 latest incomplete targets, neither scored. Same dates for every model",
+  "primary": "Paired risk log-squared error of each TDA+VIX model minus ControlsVIX; simultaneous four-addition95 bands within each period",
+  "secondary": "Same comparison for mean-return MSE; VIX-minus-Controls baseline increment for each target; joint TDA+VIX-minus-original-Controls reported as a separate four-model family",
+  "uncertainty": "Reuse original1000 circular block draws, block12 forecast anchors, original seed2026102951 plus period index. Max-standardized bootstrap deviation simultaneous bands for four TDA additions; VIX single comparison uses pointwise percentile95. Conditional on saved forecasts, not model refits. No correction across periods, targets, families or past project experiments",
+  "checks": "Independently reconstruct VIX timing from sources, completed labels from frozen PCA returns, original membership and HistoryMean/Controls forecasts; independently refit all new forecasts with sklearn Ridge; recompute paired losses and resampling intervals; hash protected original inputs",
+  "reporting": "Forecast accuracy only. Risk forecast is logRMS, not a risk-reduction policy or return estimate. No new trading gate, sizing, threshold search, topology computation, stock selection, data download or costs. Gross/pre-fee strategy inputs remain unchanged"
+}

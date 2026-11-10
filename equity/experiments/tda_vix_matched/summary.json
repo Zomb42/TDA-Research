@@ -1,0 +1,37 @@
+{
+  "predictions": 379,
+  "fits": 5306,
+  "feature_rows": 490,
+  "first_prediction": "2019-04-18",
+  "last_prediction": "2026-10-26",
+  "max_archived_forecast_difference": 1.3855583347321954e-13,
+  "score_counts": {
+    "development": 233,
+    "later": 138
+  },
+  "original_strategy_unchanged": true,
+  "no_new_gate": true,
+  "protected_sha256": {
+    "equity/experiments/equity_full_basket_states/specification.json": "09ef552dd4cb35a554a069d9c40235050e6b669c802678d9bea82f037ac616d5",
+    "equity/experiments/equity_full_basket_states/state_features_and_targets.csv": "a0848d052171246fac4fb68358e07f2fe0268a4fcf1bf4f49b9a359da266d785",
+    "equity/experiments/equity_full_basket_states/walk_forward_predictions.csv": "3f1787033946955f1b3e685b2d2f4b83a285610f36626c2096fbf9c8bfb48c72",
+    "equity/experiments/equity_full_basket_states/training_membership.csv.gz": "b6974965576b90521f586eb46b8772c7f6dd4e72b353b295b71736356682766d",
+    "equity/experiments/equity_full_basket_states/forecast_metrics.csv": "6ad8c562da0b34b0d3275ce9bec3abc847564d21b8991854aef7e54363e84690",
+    "equity/literature/tda_regimes_vix_2026-11-04/cached_tda_vix_context.csv": "720a1f7846346f4a4620cea1370432fe023a0092713dcb82fc4c49839455cbb1",
+    "equity/experiments/equity_efa_vs_pca/daily_gross_returns.csv": "c2c9065cc452a078f92fc0e9ef82b57cddc3eae4da08e378db145c117ae46094"
+  },
+  "output_sha256": {
+    "equity/experiments/tda_vix_matched/fit_diagnostics.csv": "98c9639e162f1ed4cac9ee8088301fe6f1d5a7ced454b25453cb6eb526408acb",
+    "equity/experiments/tda_vix_matched/forecast_metrics.csv": "9fa1b5bbf37d5b4288f854ec93bf98be194d146f7772a612857eb997184d709f",
+    "equity/experiments/tda_vix_matched/paired_comparisons.csv": "61df29d8851f1c3a91f19466270c2ef11c55650ece878540a2362fa6a3221b98",
+    "equity/experiments/tda_vix_matched/scored_losses.csv": "ba9c4730097e73b1aaf40fc8bdba2fb6bee19cc217f05c97249b6e88017cfc12",
+    "equity/experiments/tda_vix_matched/state_features_with_vix.csv": "d946b859079291b15e863211c2a76bc9f1ebe5eec6bf2c8720d6bd5b15e84e4b",
+    "equity/experiments/tda_vix_matched/walk_forward_predictions.csv": "aa7512ad42d7ad272d08c1e16a10cddaa89f0dab9f00476e6cc92fb23b383395",
+    "equity/experiments/tda_vix_matched/01_matched_forecast_errors.png": "f1e1c15b4f8e79c419295580c1d5374eccf5032ec05ff99e3326633f9d0406d6",
+    "equity/experiments/tda_vix_matched/02_incremental_uncertainty.png": "fb6dc9238f0fd89ff05777af682d859e7a0372066a08ed670eb61202ec70dbc4",
+    "equity/experiments/tda_vix_matched/03_baseline_predictions.png": "926bfa85e3b9572ba5e7626f94f0a0ed33a1eb9959a637206ab2bebd4ad9c80a",
+    "equity/experiments/tda_vix_matched/executed_configuration.json": "d65a7b8ec8dfc31929a36d14d6e3b1a3a9277972b16baea5f27d268c2a402bbf",
+    "equity/experiments/tda_vix_matched/specification.json": "f3c29967c465b33bd7808e0b70c0b728c5f2d2bec210c320282a5374967f7e5c",
+    "equity/experiments/tda_vix_matched.py": "bd9956f65ba3bf7047af40bc44f78b4eebb24d9f9c5bb7cc4e7aaaa6b65de526"
+  }
+}

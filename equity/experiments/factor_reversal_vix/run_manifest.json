@@ -1,0 +1,31 @@
+{
+  "bootstrap_draws": 2000,
+  "seed": 2026110407,
+  "source_strategy_unchanged": true,
+  "days": 2446,
+  "start": "2017-02-03",
+  "end": "2026-10-27",
+  "forecast_start": "2019-02-06",
+  "forecast_end": "2026-10-27",
+  "sha256": {
+    "equity/experiments/equity_efa_vs_pca/daily_gross_returns.csv": "c2c9065cc452a078f92fc0e9ef82b57cddc3eae4da08e378db145c117ae46094",
+    "market_data/datasets/mean_reversion_context_2026-11-04/vix_daily.csv": "cbe8e28f2950eb7baa0ff5d54fa1b5b0514b1b3b7bc93daa803c97ae2abe1969",
+    "market_data/datasets/equity_daily_expanded_2016_2026-10-27/close_all.csv": "fa8f8546acadb0c2a49f4d08b14cff32893df97f92a5111ebd40ecc57639b6d8",
+    "equity/experiments/factor_reversal_vix.py": "bd82a0b0f4331f90c1ca7ab0bf02543b7c12393a75444e204e21114867d097ec",
+    "equity/experiments/factor_reversal_vix/specification.json": "8b3390a812980b440dbfecbfe20a49649aeee8c9f178a1881ee027c245e16e8f",
+    "equity/experiments/factor_reversal_vix/aligned_daily_panel.csv": "074b19e557e471e58b6a9de7a0e5bdbb139c5c33092ce5adaf1cd8ecec9c74b4",
+    "equity/experiments/factor_reversal_vix/annual_context.csv": "9c58070275971e56a5ff7e520be96fe428feacf67d3de34f9e5d989dd1df0805",
+    "equity/experiments/factor_reversal_vix/conditional_returns.csv": "a012e06d4a2a0d22e1da9f2384bd414f288133264defbb8e5ea2c4bf9c3fae46",
+    "equity/experiments/factor_reversal_vix/correlations.csv": "5daee28820eb0f5dd93fdf27e6f646bd27509c66cdffb8a8a38f1130214f1993",
+    "equity/experiments/factor_reversal_vix/forecast_comparisons.csv": "76422447c14eaa73f75e3140496ce2aa3e513997d4114d551d832f7ff1a4867d",
+    "equity/experiments/factor_reversal_vix/forecast_metrics.csv": "2dd73f4de681635a18eed948b27f9bd9ae3bab509c8ae6635f31785fd0c93bec",
+    "equity/experiments/factor_reversal_vix/forecast_predictions.csv": "16f2ab7336af2e29d9581834a9fb7f797f7eea7707d5e845e43a45cba4a9f303",
+    "equity/experiments/factor_reversal_vix/high_low_contrast.csv": "a101f6c9b897b017ee8eb60ad9764925a5886040176421a09cc851d645b304de",
+    "equity/experiments/factor_reversal_vix/high_vix_days.csv": "a991d32204f54e64c95a47d3d69945ebc56133d05d741b0c5074c1f5cf56583e",
+    "equity/experiments/factor_reversal_vix/regressions_hac.csv": "37c58e3d0e81298b7208a79ebf02749359ac40952e5c8da5654999eeec427cd7",
+    "equity/experiments/factor_reversal_vix/01_returns_and_vix.png": "8b8995dade0f22463370a29625d3ce92185112c4bd1ac6e0a4ecc32b2ca84c6f",
+    "equity/experiments/factor_reversal_vix/02_lagged_vix_bins.png": "29d40b7e980b2e2997f054c50c8513e8fffee4f9b5d664f5729721dc311adebf",
+    "equity/experiments/factor_reversal_vix/03_vix_change_scatter.png": "5b1cf10b3ea8b1d7fdf43f6f90be2ec5d9ee792b518bc1489e77be51f3ca93f8",
+    "equity/experiments/factor_reversal_vix/04_forecast_comparison.png": "38f4da68b1e328c0215c143111e227a701f55df16857361bb0a81cf980adb49f"
+  }
+}

@@ -35,7 +35,7 @@ The 279 stale absolute audit links now use relative paths. The fourteen existing
 
 ## Working from a fresh clone
 
-1. Read [the tutorial/setup guide](TUTORIAL_GUIDE.md). The ParaView launcher uses separately installed packages under `~/ttk-binary`; those packages are not bundled here. Recorded BTC package versions are in [btc/environment_versions.json](btc/environment_versions.json); these are provenance, not a complete project lockfile.
+1. Use the existing **`tda` Conda environment** (user instruction, November 4): `conda activate tda`, then read [the tutorial/setup guide](TUTORIAL_GUIDE.md). The ParaView launcher uses separately installed packages under `~/ttk-binary`; those packages are not bundled here. Recorded BTC package versions are in [btc/environment_versions.json](btc/environment_versions.json); these are provenance, not a complete project lockfile.
 2. Restore the omitted files at the paths in `LOCAL_DATA_MANIFEST.json` from a private copy when exact historical reproduction is required. Match their SHA-256 hashes. The external backup bundle also contains the original tracked payloads.
 3. For newly obtained data, follow the corresponding dataset README and existing collectors in `market_data/`. Do not assume a new download reproduces frozen inputs: provider revisions, access, and market coverage can change. Restore credentials privately; never commit them.
 4. Restore large generated artifacts from the private copy or follow their experiment's documented procedure. Reruns should use a new output location and preserve frozen reports and their provenance.
@@ -54,4 +54,4 @@ The size check examines the staged index and all blobs reachable from `HEAD`, us
 
 ## Further useful cleanup
 
-The most useful next step is a reproducible Python environment covering all three studies, validated against the existing smoke checks. The current package-version records and setup notes do not provide a complete installable environment. Notebook builders also retain the old folder name in some workspace-root discovery candidates, and the audit mirror builder creates absolute symlinks on rerun. Those source changes should be made with an explicit provenance update; frozen research scripts were preserved during this cleanup.
+Use the existing `tda` environment rather than creating a replacement. A useful future improvement is exporting and checking a reproducible dependency manifest for that environment; the current package-version records do not provide a complete installable lockfile. Notebook builders also retain the old folder name in some workspace-root discovery candidates, and the audit mirror builder creates absolute symlinks on rerun. Those source changes should be made with an explicit provenance update; frozen research scripts were preserved during this cleanup.

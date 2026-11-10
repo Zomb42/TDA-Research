@@ -1,0 +1,449 @@
+{
+  "perp": {
+    "instrument": "KXBTCPERP",
+    "start_utc": "2026-11-05T00:22:29.323021+00:00",
+    "contract_btc": 0.0001,
+    "levels_after_each_book_message": {
+      "bid": {
+        "n": 114754,
+        "min": 117.0,
+        "p10": 140.0,
+        "median": 149.0,
+        "p90": 154.0,
+        "max": 160.0
+      },
+      "ask": {
+        "n": 114754,
+        "min": 70.0,
+        "p10": 88.0,
+        "median": 95.0,
+        "p90": 102.0,
+        "max": 110.0
+      },
+      "combined": {
+        "n": 114754,
+        "min": 190.0,
+        "p10": 231.0,
+        "median": 245.0,
+        "p90": 252.0,
+        "max": 260.0
+      }
+    },
+    "unique_occupied_prices": {
+      "bid": 473,
+      "ask": 405
+    },
+    "unique_occupied_prices_combined": 716,
+    "lowest_observed_quote_usd_btc": 56000.0,
+    "highest_observed_quote_usd_btc": 91000.0,
+    "quote_tick_usd_btc": 1.0,
+    "checkpoint_metrics": {
+      "ask_btc": {
+        "n": 119,
+        "min": 72.5104,
+        "p10": 166.07677999999999,
+        "median": 171.7566,
+        "p90": 173.49696,
+        "max": 174.6719
+      },
+      "ask_levels": {
+        "n": 119,
+        "min": 78.0,
+        "p10": 93.0,
+        "median": 98.0,
+        "p90": 104.0,
+        "max": 108.0
+      },
+      "ask_notional_usd": {
+        "n": 119,
+        "min": 5864384.2171,
+        "p10": 13422620.55682,
+        "median": 13884735.4056,
+        "p90": 14016808.21604,
+        "max": 14104378.4033
+      },
+      "ask_within_100bps_usd": {
+        "n": 119,
+        "min": 5708098.292,
+        "p10": 13261592.30112,
+        "median": 13724821.0764,
+        "p90": 13859938.792580001,
+        "max": 13948093.1415
+      },
+      "ask_within_10bps_usd": {
+        "n": 119,
+        "min": 843961.9946,
+        "p10": 3167160.96388,
+        "median": 3660274.5818,
+        "p90": 3739946.58416,
+        "max": 3796535.4662
+      },
+      "ask_within_25bps_usd": {
+        "n": 119,
+        "min": 5602206.8351,
+        "p10": 12087209.36836,
+        "median": 13622465.1612,
+        "p90": 13715295.72464,
+        "max": 13728748.9596
+      },
+      "ask_within_50bps_usd": {
+        "n": 119,
+        "min": 5698199.9682,
+        "p10": 13251693.97732,
+        "median": 13714922.7526,
+        "p90": 13845021.17782,
+        "max": 13913360.2177
+      },
+      "bid_btc": {
+        "n": 119,
+        "min": 80.6698,
+        "p10": 171.29526,
+        "median": 178.227,
+        "p90": 179.62367999999998,
+        "max": 180.5238
+      },
+      "bid_levels": {
+        "n": 119,
+        "min": 132.0,
+        "p10": 145.0,
+        "median": 151.0,
+        "p90": 156.0,
+        "max": 158.0
+      },
+      "bid_notional_usd": {
+        "n": 119,
+        "min": 6450794.5855,
+        "p10": 13746846.42588,
+        "median": 14312128.4292,
+        "p90": 14423693.66454,
+        "max": 14499889.7747
+      },
+      "bid_within_100bps_usd": {
+        "n": 119,
+        "min": 5933040.2313,
+        "p10": 13230395.52434,
+        "median": 13794449.0461,
+        "p90": 13921317.939340001,
+        "max": 13982363.497
+      },
+      "bid_within_10bps_usd": {
+        "n": 119,
+        "min": 1506437.2322,
+        "p10": 2764238.1905199997,
+        "median": 3178014.2242,
+        "p90": 3231492.6508400002,
+        "max": 3322738.6899
+      },
+      "bid_within_25bps_usd": {
+        "n": 119,
+        "min": 4268662.5168,
+        "p10": 11016996.87612,
+        "median": 12139932.1274,
+        "p90": 13671019.13176,
+        "max": 13794267.2377
+      },
+      "bid_within_50bps_usd": {
+        "n": 119,
+        "min": 5928748.9303,
+        "p10": 13226110.62334,
+        "median": 13790013.3203,
+        "p90": 13916288.056340002,
+        "max": 13977333.614
+      },
+      "mid_usd_btc": {
+        "n": 119,
+        "min": 80566.5,
+        "p10": 80599.3,
+        "median": 80643.5,
+        "p90": 80694.8,
+        "max": 80704.5
+      },
+      "spread_bps": {
+        "n": 119,
+        "min": 0.12391343407495524,
+        "p10": 0.24783700277935675,
+        "median": 0.372150721042022,
+        "p90": 0.6196746723208438,
+        "max": 2.1082787144460498
+      },
+      "top_ask_btc": {
+        "n": 119,
+        "min": 0.0003,
+        "p10": 0.0018,
+        "median": 0.0132,
+        "p90": 0.06220000000000003,
+        "max": 0.0929
+      },
+      "top_bid_btc": {
+        "n": 119,
+        "min": 0.0006,
+        "p10": 0.0018,
+        "median": 0.015,
+        "p90": 0.07856,
+        "max": 1.1166
+      },
+      "top_two_sided_notional_usd": {
+        "n": 119,
+        "min": 459.9162,
+        "p10": 1210.4005200000001,
+        "median": 2628.9688,
+        "p90": 8256.691880000002,
+        "max": 90107.6346
+      },
+      "total_btc": {
+        "n": 119,
+        "min": 153.1802,
+        "p10": 337.56644,
+        "median": 350.3163,
+        "p90": 351.3584,
+        "max": 352.2378
+      },
+      "total_levels": {
+        "n": 119,
+        "min": 210.0,
+        "p10": 244.0,
+        "median": 249.0,
+        "p90": 254.0,
+        "max": 259.0
+      },
+      "total_notional_usd": {
+        "n": 119,
+        "min": 12315178.8026,
+        "p10": 27203649.497139998,
+        "median": 28223011.542400002,
+        "p90": 28301073.314299997,
+        "max": 28368274.6807
+      },
+      "total_within_100bps_usd": {
+        "n": 119,
+        "min": 11641138.5233,
+        "p10": 26535927.844839998,
+        "median": 27554353.4833,
+        "p90": 27623390.75824,
+        "max": 27694262.248
+      },
+      "total_within_10bps_usd": {
+        "n": 119,
+        "min": 2350399.2268,
+        "p10": 6286778.93262,
+        "median": 6818837.9864,
+        "p90": 6925049.88972,
+        "max": 7006999.727
+      },
+      "total_within_25bps_usd": {
+        "n": 119,
+        "min": 9870869.3519,
+        "p10": 24278321.54008,
+        "median": 25766594.8287,
+        "p90": 27121877.73228,
+        "max": 27390764.0331
+      },
+      "total_within_50bps_usd": {
+        "n": 119,
+        "min": 11626948.8985,
+        "p10": 26509815.019640002,
+        "median": 27536258.3099,
+        "p90": 27609040.63848,
+        "max": 27679928.1984
+      }
+    },
+    "first_checkpoint": {
+      "timestamp": "2026-11-05T00:22:29.946748+00:00",
+      "bid_levels": 158,
+      "ask_levels": 91,
+      "total_levels": 249,
+      "mid_usd_btc": 80685.5,
+      "spread_bps": 0.3718140186278823,
+      "top_bid_btc": 0.0132,
+      "top_ask_btc": 0.0038,
+      "top_two_sided_notional_usd": 1371.6394,
+      "bid_btc": 180.33,
+      "bid_notional_usd": 14482983.9399,
+      "ask_btc": 168.4139,
+      "ask_notional_usd": 13616740.382,
+      "total_btc": 348.74390000000005,
+      "total_notional_usd": 28099724.3219,
+      "bid_within_10bps_usd": 3209617.2694,
+      "ask_within_10bps_usd": 3502307.3026,
+      "total_within_10bps_usd": 6711924.572000001,
+      "bid_within_25bps_usd": 12146792.5956,
+      "ask_within_25bps_usd": 13414336.7093,
+      "total_within_25bps_usd": 25561129.304899998,
+      "bid_within_50bps_usd": 13960135.8099,
+      "ask_within_50bps_usd": 13445813.8025,
+      "total_within_50bps_usd": 27405949.612400003,
+      "bid_within_100bps_usd": 13965165.6929,
+      "ask_within_100bps_usd": 13455712.1263,
+      "total_within_100bps_usd": 27420877.8192
+    },
+    "public_trade_btc": 43.7142,
+    "public_trade_notional_usd": 3525404.2635,
+    "storage": {
+      "sample_seconds": 600,
+      "plain_bytes": 39770212,
+      "gzip_bytes": 4043787,
+      "plain_MB_per_hour": 238.621272,
+      "gzip_MB_per_hour": 24.262722,
+      "plain_GB_per_day": 5.726910528,
+      "gzip_GB_per_day": 0.582305328,
+      "gzip_GB_per_30_days": 17.46915984,
+      "ratio": 9.83489288629693
+    }
+  },
+  "coinbase_hft": {
+    "files": 176,
+    "bytes": 570762983,
+    "channels": {
+      "ticker": 773460,
+      "subscriptions": 364,
+      "market_trades": 453331
+    },
+    "full_level2_present": false,
+    "first_utc": "2026-04-20T04:14:00.343690+00:00",
+    "last_utc": "2026-04-23T22:22:48.860552+00:00",
+    "file_stream_hours": 47.52012659198708,
+    "raw_MB_per_file_stream_hour": 12.010973537605073,
+    "metrics": {
+      "mid_usd_btc": {
+        "n": 29823,
+        "min": 74137.63,
+        "p10": 74886.33899999999,
+        "median": 77608.60500000001,
+        "p90": 78223.999,
+        "max": 78945.695
+      },
+      "spread_bps": {
+        "n": 29823,
+        "min": 0.0012666935156833198,
+        "p10": 0.001278575866295121,
+        "median": 0.0012894268858221274,
+        "p90": 0.0013438323728342957,
+        "max": 6.375563718894855
+      },
+      "top_ask_btc": {
+        "n": 29823,
+        "min": 1e-08,
+        "p10": 0.000571,
+        "median": 0.15068664,
+        "p90": 0.45130934999999994,
+        "max": 11.53910801
+      },
+      "top_bid_btc": {
+        "n": 29823,
+        "min": 1e-08,
+        "p10": 3.4518000000000024e-05,
+        "median": 0.10554486,
+        "p90": 0.5083207399999999,
+        "max": 9.27544545
+      },
+      "top_two_sided_notional_usd": {
+        "n": 29823,
+        "min": 1.1523978762,
+        "p10": 8724.147643341003,
+        "median": 25845.444078951303,
+        "p90": 66558.48704000477,
+        "max": 935538.6075377532
+      }
+    },
+    "sampling": "Last available ticker observation in each UTC five-second bucket; duplicate overlapping file observations deduplicated by time bucket"
+  },
+  "binary_hft": {
+    "files": 176,
+    "bytes": 3514863228,
+    "public_message_counts": {
+      "orderbook_snapshot": 415,
+      "orderbook_delta": 13534604,
+      "trade": 822336
+    },
+    "file_stream_hours": 38.14664613140954,
+    "raw_MB_per_file_stream_hour": 92.14081929750304,
+    "metrics": {
+      "no_bid_cash_usd": {
+        "n": 27518,
+        "min": 0.0,
+        "p10": 42.1739000000001,
+        "median": 4467.93065,
+        "p90": 15454.781096,
+        "max": 60720.20124
+      },
+      "no_bid_levels": {
+        "n": 27518,
+        "min": 0.0,
+        "p10": 10.0,
+        "median": 69.0,
+        "p90": 129.0,
+        "max": 186.0
+      },
+      "top_two_outcome_bid_cash_usd": {
+        "n": 25650,
+        "min": 0.05976,
+        "p10": 26.69099,
+        "median": 357.8573,
+        "p90": 1080.7749000000001,
+        "max": 25144.228
+      },
+      "total_bid_cash_usd": {
+        "n": 27518,
+        "min": 1.0,
+        "p10": 7047.847696000001,
+        "median": 12368.2255,
+        "p90": 23673.717674,
+        "max": 66443.43978
+      },
+      "total_bid_levels": {
+        "n": 27518,
+        "min": 1.0,
+        "p10": 133.0,
+        "median": 152.0,
+        "p90": 163.0,
+        "max": 203.0
+      },
+      "yes_bid_cash_usd": {
+        "n": 27518,
+        "min": 0.0,
+        "p10": 210.893853,
+        "median": 5755.82113,
+        "p90": 17341.113946999998,
+        "max": 66443.43978
+      },
+      "yes_bid_levels": {
+        "n": 27518,
+        "min": 0.0,
+        "p10": 21.0,
+        "median": 76.0,
+        "p90": 137.0,
+        "max": 203.0
+      },
+      "yes_spread_cents": {
+        "n": 25650,
+        "min": 0.1,
+        "p10": 0.3,
+        "median": 1.0,
+        "p90": 2.0,
+        "max": 36.0
+      }
+    },
+    "sampling": "First nonempty reconstructed state per file per UTC five-second bucket; distinct contracts retained separately",
+    "warning": "YES/NO displayed bid cash is not BTC notional, deposited account collateral, or a directly comparable measure of perp risk exposure"
+  },
+  "limitations": [
+    "April historical data versus November perp sample; no contemporaneous venue ranking",
+    "Depth is displayed resting liquidity, not realized volume, hidden liquidity, or open interest",
+    "Perp depth summaries use 119 saved checkpoints; unique/level counts replay all book events",
+    "All-depth totals include distant quotes; nearby-depth bands are reported separately",
+    "Hourly/daily storage projections assume the observed ten-minute rate and gzip configuration persist",
+    "Historical Coinbase ticker captures only best quotes; no full-book total can be inferred",
+    "Historical source files and private fill payloads were not modified or exported"
+  ],
+  "provenance": {
+    "python_executable": "/Users/derickshi/anaconda3/envs/tda/bin/python",
+    "source": "market_data/assess_perp_capture.py",
+    "source_sha256": "5eefcf0c2e5ca9b357b2d7cce51fdb8ca8c340b15d1b5c174f8fc21d3acd221d",
+    "validation": [
+      "Depth bands nested at all perp checkpoints",
+      "Perp bid+ask BTC totals agree",
+      "Historical binary counts and bytes exactly match previous inventory",
+      "No L2 channel in any of 176 historical Coinbase files"
+    ]
+  }
+}

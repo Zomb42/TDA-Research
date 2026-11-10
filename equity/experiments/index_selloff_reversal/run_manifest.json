@@ -1,0 +1,22 @@
+{
+  "seed": 104,
+  "bootstrap_draws": 2000,
+  "fees": "gross only",
+  "sha256": {
+    "equity/experiments/index_selloff_reversal.py": "0365ec44b0864be0958872600ae2e6ef63ebb1ba4a7f7d4a89c7b88b99b64a35",
+    "equity/experiments/index_selloff_reversal/specification.json": "d248cc98d2330d16c6290456604cae59586760200207837f94c66df7efb67281",
+    "market_data/datasets/mean_reversion_context_2026-11-04/manifest.json": "32ce64eb4e65c046329573afc530e45896c25fd4fca322882475fd31ddd428f6",
+    "market_data/datasets/equity_daily_expanded_2016_2026-10-27/bars_all.csv": "ae0886190f55ea04648e8de3a1291b85898b6d08a752a89a844c7ab2c2f0ce11",
+    "market_data/datasets/equity_daily_expanded_2016_2026-10-27/bars_raw.csv": "29f088cee3ffd064017f4aad7e4e9968a18830eae2497e601f824b2ba90465fe",
+    "equity/experiments/index_selloff_reversal/annual_returns.csv": "d822f1af6a8c259643eb02371d3717211b16e816dcd78ba2c4df08b7b7d2bab2",
+    "equity/experiments/index_selloff_reversal/controls.csv": "1a666399107af934f1f2a969e1f9efe8b1b247a8ad311bb2de59fcac24314b55",
+    "equity/experiments/index_selloff_reversal/daily_curves.csv": "708be860650fce02d88ca4551ded685077f2c77a7fea09983b377c7d6f32d52e",
+    "equity/experiments/index_selloff_reversal/qqq_features.csv": "0422b641ba9c4cedc07db8a370bdea5b225393cea0a7e535ba968bec0501e228",
+    "equity/experiments/index_selloff_reversal/sensitivity.csv": "981348a6ce33ce5f4c2ef25553dbe141116a3723b22e8f6d78758a94454ea0d7",
+    "equity/experiments/index_selloff_reversal/spy_features.csv": "d368ecd6f99066c62219bb560ba7c46359c3b62bbdd5e4683fa2bd58daf4370f",
+    "equity/experiments/index_selloff_reversal/summary.csv": "a59b6a71b058f81bc05513bb5cecb263bb7002c85edc0bc500e15330bb42b6d6",
+    "equity/experiments/index_selloff_reversal/timing_attribution.csv": "3b28bbe9a30da44a3df087014259e7e101c888f8f60c842de5c8d7e674316101",
+    "equity/experiments/index_selloff_reversal/trades.csv": "444f35f8f508acc4b62c4dd3564d4fe92d228e2e0bddd9f732e863a4dcce986d",
+    "equity/experiments/index_selloff_reversal/vix_context.csv": "8b3027745f198867fc4df526116f86ea9205f4692c1813df6da2be6e3c1ce805"
+  }
+}

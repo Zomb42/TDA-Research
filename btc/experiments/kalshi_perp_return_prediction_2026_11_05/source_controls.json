@@ -1,0 +1,257 @@
+[
+  {
+    "source": "coinbase_reference",
+    "control": "gap_start",
+    "epoch": 1,
+    "received_at": "2026-11-05T04:58:10.084760+00:00",
+    "error_type": "WebSocketConnectionClosedException",
+    "http_status": null
+  },
+  {
+    "source": "coinbase_reference",
+    "control": "gap_end",
+    "epoch": 2,
+    "received_at": "2026-11-05T04:58:12.345565+00:00",
+    "gap_started_at": "2026-11-05T04:58:10.084747+00:00"
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_start",
+    "epoch": 1,
+    "received_at": "2026-11-05T08:24:37.252542+00:00",
+    "error_type": "ConnectionError",
+    "http_status": null
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_end",
+    "epoch": 2,
+    "received_at": "2026-11-05T08:24:39.505974+00:00",
+    "gap_started_at": "2026-11-05T08:24:37.252518+00:00"
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_start",
+    "epoch": 2,
+    "received_at": "2026-11-05T08:28:42.691353+00:00",
+    "error_type": "WebSocketConnectionClosedException",
+    "http_status": null
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_end",
+    "epoch": 3,
+    "received_at": "2026-11-05T08:28:44.891760+00:00",
+    "gap_started_at": "2026-11-05T08:28:42.691299+00:00"
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_start",
+    "epoch": 3,
+    "received_at": "2026-11-05T08:34:09.072938+00:00",
+    "error_type": "WebSocketConnectionClosedException",
+    "http_status": null
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_end",
+    "epoch": 4,
+    "received_at": "2026-11-05T08:34:11.266684+00:00",
+    "gap_started_at": "2026-11-05T08:34:09.072891+00:00"
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_start",
+    "epoch": 4,
+    "received_at": "2026-11-05T08:39:49.105984+00:00",
+    "error_type": "WebSocketConnectionClosedException",
+    "http_status": null
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_end",
+    "epoch": 5,
+    "received_at": "2026-11-05T08:39:51.301393+00:00",
+    "gap_started_at": "2026-11-05T08:39:49.105926+00:00"
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_start",
+    "epoch": 5,
+    "received_at": "2026-11-05T08:47:28.581077+00:00",
+    "error_type": "WebSocketConnectionClosedException",
+    "http_status": null
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_end",
+    "epoch": 6,
+    "received_at": "2026-11-05T08:47:30.794830+00:00",
+    "gap_started_at": "2026-11-05T08:47:28.581035+00:00"
+  },
+  {
+    "source": "coinbase_reference",
+    "control": "gap_start",
+    "epoch": 2,
+    "received_at": "2026-11-05T10:33:25.465280+00:00",
+    "error_type": "WebSocketConnectionClosedException",
+    "http_status": null
+  },
+  {
+    "source": "coinbase_reference",
+    "control": "gap_end",
+    "epoch": 3,
+    "received_at": "2026-11-05T10:33:27.735328+00:00",
+    "gap_started_at": "2026-11-05T10:33:25.465260+00:00"
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_start",
+    "epoch": 6,
+    "received_at": "2026-11-05T14:26:16.974453+00:00",
+    "error_type": "ConnectionError",
+    "http_status": null
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_end",
+    "epoch": 7,
+    "received_at": "2026-11-05T14:26:22.541885+00:00",
+    "gap_started_at": "2026-11-05T14:26:16.974431+00:00"
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_start",
+    "epoch": 7,
+    "received_at": "2026-11-05T14:28:37.349983+00:00",
+    "error_type": "ConnectionError",
+    "http_status": null
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_end",
+    "epoch": 8,
+    "received_at": "2026-11-05T14:28:39.618957+00:00",
+    "gap_started_at": "2026-11-05T14:28:37.349931+00:00"
+  },
+  {
+    "source": "coinbase_reference",
+    "control": "gap_start",
+    "epoch": 3,
+    "received_at": "2026-11-05T14:26:16.968652+00:00",
+    "error_type": "ConnectionError",
+    "http_status": null
+  },
+  {
+    "source": "coinbase_reference",
+    "control": "gap_end",
+    "epoch": 4,
+    "received_at": "2026-11-05T14:26:22.591072+00:00",
+    "gap_started_at": "2026-11-05T14:26:16.968638+00:00"
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_start",
+    "epoch": 8,
+    "received_at": "2026-11-05T15:49:53.502800+00:00",
+    "error_type": "ConnectionError",
+    "http_status": null
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_end",
+    "epoch": 9,
+    "received_at": "2026-11-05T15:49:55.814269+00:00",
+    "gap_started_at": "2026-11-05T15:49:53.502773+00:00"
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_start",
+    "epoch": 9,
+    "received_at": "2026-11-05T15:51:02.994482+00:00",
+    "error_type": "ConnectionError",
+    "http_status": null
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_end",
+    "epoch": 10,
+    "received_at": "2026-11-05T15:51:11.531855+00:00",
+    "gap_started_at": "2026-11-05T15:51:02.994463+00:00"
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_start",
+    "epoch": 10,
+    "received_at": "2026-11-05T15:52:57.449876+00:00",
+    "error_type": "WebSocketConnectionClosedException",
+    "http_status": null
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_end",
+    "epoch": 11,
+    "received_at": "2026-11-05T15:52:59.655923+00:00",
+    "gap_started_at": "2026-11-05T15:52:57.449838+00:00"
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_start",
+    "epoch": 11,
+    "received_at": "2026-11-05T15:56:20.102629+00:00",
+    "error_type": "ConnectionResetError",
+    "http_status": null
+  },
+  {
+    "source": "kalshi_perp",
+    "control": "gap_end",
+    "epoch": 12,
+    "received_at": "2026-11-05T15:56:22.326767+00:00",
+    "gap_started_at": "2026-11-05T15:56:20.102610+00:00"
+  },
+  {
+    "source": "coinbase_reference",
+    "control": "gap_start",
+    "epoch": 4,
+    "received_at": "2026-11-05T15:51:02.993902+00:00",
+    "error_type": "ConnectionError",
+    "http_status": null
+  },
+  {
+    "source": "coinbase_reference",
+    "control": "gap_end",
+    "epoch": 5,
+    "received_at": "2026-11-05T15:51:11.697915+00:00",
+    "gap_started_at": "2026-11-05T15:51:02.993887+00:00"
+  },
+  {
+    "source": "coinbase_reference",
+    "control": "gap_start",
+    "epoch": 5,
+    "received_at": "2026-11-05T15:53:18.344032+00:00",
+    "error_type": "ConnectionError",
+    "http_status": null
+  },
+  {
+    "source": "coinbase_reference",
+    "control": "gap_end",
+    "epoch": 6,
+    "received_at": "2026-11-05T15:53:22.653978+00:00",
+    "gap_started_at": "2026-11-05T15:53:18.344030+00:00"
+  },
+  {
+    "source": "coinbase_reference",
+    "control": "gap_start",
+    "epoch": 6,
+    "received_at": "2026-11-05T15:56:49.258841+00:00",
+    "error_type": "ConnectionError",
+    "http_status": null
+  },
+  {
+    "source": "coinbase_reference",
+    "control": "gap_end",
+    "epoch": 7,
+    "received_at": "2026-11-05T15:56:52.520600+00:00",
+    "gap_started_at": "2026-11-05T15:56:49.258829+00:00"
+  }
+]

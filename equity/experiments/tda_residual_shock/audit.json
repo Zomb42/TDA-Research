@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "all_source_dates": 2446,
+  "all_stock_events": 469308,
+  "sampled_independent_PCA_WLS_graph_dates": 18,
+  "independently_checked_trees": 36,
+  "maximum_independent_outcome_discrepancy": 4.1744385725905886e-14,
+  "independent_ridge_refits": 294,
+  "sklearn_weighted_multioutput_refits": 12,
+  "maximum_all_prediction_discrepancy": 4.574118861455645e-14,
+  "daily_loss_rows_checked": 15536,
+  "metric_rows_checked": 16,
+  "paired_rows_checked": 8,
+  "descriptive_response_rows_checked": 5826,
+  "response_summary_rows_checked": 6,
+  "maximum_interval_discrepancy": 9.378348791999613e-17,
+  "original_strategy_unchanged": true,
+  "no_new_policy": true,
+  "audit_source_sha256": "3682077ec746db5cb82ae4041020017b2833e67aa3036499bf9d733e0b1585a4"
+}

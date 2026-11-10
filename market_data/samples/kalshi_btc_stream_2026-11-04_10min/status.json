@@ -1,0 +1,59 @@
+{
+  "pid": 20990,
+  "state": "completed",
+  "started_at": "2026-11-05T00:22:29.323021+00:00",
+  "planned_seconds": 600,
+  "max_bytes": 536870912,
+  "ticker": "KXBTCPERP",
+  "planned_end_at": "2026-11-05T00:32:29.323169+00:00",
+  "endpoint": "wss://external-api-margin-ws.kalshi.com/trade-api/ws/v2/margin",
+  "allowed_channels": [
+    "orderbook_delta",
+    "trade",
+    "ticker"
+  ],
+  "order_actions_available": false,
+  "bytes_written": 39105403,
+  "connections": 1,
+  "sequence_gaps": 0,
+  "reconstruction_errors": 0,
+  "connection_errors": 0,
+  "checkpoints": 119,
+  "connection_attempts": 1,
+  "consecutive_connection_errors": 0,
+  "trade_sequence_gaps": 0,
+  "last_sequences": {
+    "1": 114754,
+    "2": 1327
+  },
+  "gap_windows": [],
+  "python_executable": "/Users/derickshi/anaconda3/envs/tda/bin/python",
+  "compression": "none",
+  "journal_file": "messages.jsonl",
+  "checkpoint_file": "checkpoints.jsonl",
+  "byte_cap_basis": "uncompressed journal envelopes; checkpoints additional",
+  "authenticated_connection_established": true,
+  "first_snapshot_received_at": "2026-11-05T00:22:29.946748+00:00",
+  "updated_at": "2026-11-05T00:32:29.464966+00:00",
+  "elapsed_seconds": 600.1463457079954,
+  "message_counts": {
+    "subscribed": 3,
+    "orderbook_snapshot": 1,
+    "orderbook_delta": 114753,
+    "ticker": 599,
+    "trade": 1327
+  },
+  "market_metadata_sha256": "a39b80509a3d0f4bd9190e41f1134b45f92e538d71120fe1523c776b758dbebe",
+  "market_metadata_received_at": "2026-11-05T00:22:29.624200+00:00",
+  "last_message_received_at": "2026-11-05T00:32:29.429509+00:00",
+  "stored_journal_bytes": 39105403,
+  "stored_checkpoint_bytes": 664809,
+  "journal_sha256": "30180b6b082dec40e5c2f878339a2dc44e054171f8c48a5959b1246e8ea213dd",
+  "checkpoint_sha256": "96c64d8fa0a41bef29e01334edb8373ba2549262ed9a7c9d4a7fb997f1acee13",
+  "storage_conversion": {
+    "converted_at": "2026-11-05T00:53:44.094679+00:00",
+    "reason": "User requested uncompressed, directly readable data",
+    "original_manifest": "raw/original_gzip/manifest.json",
+    "decompressed_content_sha256_verified": true
+  }
+}

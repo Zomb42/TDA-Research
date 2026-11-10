@@ -1,0 +1,14 @@
+{
+  "run_id": "2026-11-05T03-36-49Z",
+  "data_directory": "market_data/recordings/2026-11-05T03-36-49Z",
+  "status_file": "market_data/recordings/2026-11-05T03-36-49Z/status.json",
+  "launcher_pid": 23083,
+  "started_at": "2026-11-05T03:36:49.964207+00:00",
+  "mode": "continuous local market data, gzip, hourly UTC segments",
+  "stop_method": "Create STOP in the data directory or use btc_archive_control.py stop",
+  "state": "stopped",
+  "stopped_at": "2026-11-06T04:15:26.721976+00:00",
+  "stop_reason": "stop_file",
+  "final_manifest_file": "market_data/recordings/2026-11-05T03-36-49Z/manifest.json",
+  "final_validation_file": "market_data/recordings/2026-11-05T03-36-49Z/final_validation.json"
+}

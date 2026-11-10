@@ -1,0 +1,270 @@
+{
+  "frozen_at_utc": "2026-11-05T06:20:59.094867+00:00",
+  "analysis_start_utc": "2026-11-05T03:36:50.633993+00:00",
+  "analysis_end_utc": "2026-11-05T05:59:55.945403+00:00",
+  "perp_checkpoints": 1703,
+  "coinbase_samples": 17175,
+  "validation_checkpoints": 1703,
+  "perp_metrics": {
+    "spread_bps": {
+      "n": 1703,
+      "min": 0.12386125062704759,
+      "median": 0.3732945107042201,
+      "max": 2.487407499533611,
+      "p10": 0.24801156731441668,
+      "p90": 0.6216516289752632
+    },
+    "total_btc": {
+      "n": 1703,
+      "min": 229.6721,
+      "median": 351.2681,
+      "max": 357.6816,
+      "p10": 340.36782,
+      "p90": 353.70795999999996
+    },
+    "total_notional_usd": {
+      "n": 1703,
+      "min": 18429233.0365,
+      "median": 28224724.5045,
+      "max": 28783742.389200002,
+      "p10": 27348749.90904,
+      "p90": 28438483.6511
+    },
+    "total_within_10bps_usd": {
+      "n": 1703,
+      "min": 2461126.0161,
+      "median": 6822151.771,
+      "max": 7091603.7116,
+      "p10": 6316687.678,
+      "p90": 6947754.393379999
+    },
+    "total_within_25bps_usd": {
+      "n": 1703,
+      "min": 16155697.9975,
+      "median": 25805372.2332,
+      "max": 27597289.1866,
+      "p10": 24484022.0161,
+      "p90": 26000975.054840002
+    },
+    "top_two_sided_notional_usd": {
+      "n": 1703,
+      "min": 72.5606,
+      "median": 2136.4987,
+      "max": 57416.8528,
+      "p10": 1194.0665800000002,
+      "p90": 6121.5086999999985
+    },
+    "total_levels": {
+      "n": 1703,
+      "min": 212.0,
+      "median": 244.0,
+      "max": 261.0,
+      "p10": 237.0,
+      "p90": 250.0
+    }
+  },
+  "first_perp_mid": 80751.5,
+  "last_perp_mid": 80323.5,
+  "min_perp_mid": 80301.0,
+  "max_perp_mid": 80751.5,
+  "basis_bps": {
+    "n": 1716,
+    "min": -3.528605433306131,
+    "median": 1.698404616774507,
+    "max": 5.233839843257204,
+    "p10": 0.8294331282454603,
+    "p90": 2.5426135585415732
+  },
+  "paired_5s_return_correlation": 0.6232608220251007,
+  "paired_return_rows": 1714,
+  "coinbase_quote_age_ms": {
+    "n": 17175,
+    "min": 0.0,
+    "median": 101.22416599188,
+    "max": 6921.726375003345,
+    "p10": 0.0,
+    "p90": 346.2012247997336
+  },
+  "coinbase_rows_quote_over_2s": 16,
+  "duplicate_perp_trade_ids": 0,
+  "perp_traded_btc": 269.5439,
+  "perp_traded_notional_usd": 21686057.1382,
+  "gap_controls": {
+    "gap_start": 1,
+    "gap_end": 1
+  },
+  "gap_intervals": [
+    {
+      "source": "coinbase_reference",
+      "start": "2026-11-05T04:58:10.084760+00:00",
+      "end": "2026-11-05T04:58:12.345565+00:00",
+      "seconds": 2.260805
+    }
+  ],
+  "closed_storage_bytes": 59344988,
+  "closed_uncompressed_bytes": 551720357,
+  "graph_window": {
+    "window_start_utc": "2026-11-05T05:00:00+00:00",
+    "window_end_utc": "2026-11-05T05:10:00+00:00",
+    "coordinate": "Fixed absolute USD/BTC price bins; time in seconds from start",
+    "scalar_for_reeb": "Time on the clipped superlevel domain of displayed notional density",
+    "density_units": "USD displayed limit-price notional per $1/BTC price width",
+    "cases": [
+      {
+        "name": "bid_bin10_threshold10000",
+        "input": "bid_bin10_threshold10000.npz",
+        "side": "bid",
+        "bin_usd": 10,
+        "threshold": 10000,
+        "smoothing_price_usd": 10,
+        "smoothing_time_seconds": 5
+      },
+      {
+        "name": "bid_bin10_threshold25000",
+        "input": "bid_bin10_threshold25000.npz",
+        "side": "bid",
+        "bin_usd": 10,
+        "threshold": 25000,
+        "smoothing_price_usd": 10,
+        "smoothing_time_seconds": 5
+      },
+      {
+        "name": "bid_bin10_threshold50000",
+        "input": "bid_bin10_threshold50000.npz",
+        "side": "bid",
+        "bin_usd": 10,
+        "threshold": 50000,
+        "smoothing_price_usd": 10,
+        "smoothing_time_seconds": 5
+      },
+      {
+        "name": "bid_bin10_raw_threshold25000",
+        "input": "bid_bin10_raw_threshold25000.npz",
+        "side": "bid",
+        "bin_usd": 10,
+        "threshold": 25000,
+        "smoothing_price_usd": 0,
+        "smoothing_time_seconds": 0
+      },
+      {
+        "name": "bid_midrelative_bin10_threshold25000",
+        "input": "bid_midrelative_bin10_threshold25000.npz",
+        "side": "bid",
+        "bin_usd": 10,
+        "threshold": 25000,
+        "smoothing_price_usd": 10,
+        "smoothing_time_seconds": 5,
+        "coordinate": "midpoint-relative USD"
+      },
+      {
+        "name": "bid_translation_control_bin10_threshold25000",
+        "input": "bid_translation_control_bin10_threshold25000.npz",
+        "side": "bid",
+        "bin_usd": 10,
+        "threshold": 25000,
+        "smoothing_price_usd": 10,
+        "smoothing_time_seconds": 5,
+        "translation_control": true
+      },
+      {
+        "name": "ask_bin10_threshold25000",
+        "input": "ask_bin10_threshold25000.npz",
+        "side": "ask",
+        "bin_usd": 10,
+        "threshold": 25000,
+        "smoothing_price_usd": 10,
+        "smoothing_time_seconds": 5
+      },
+      {
+        "name": "ask_bin10_raw_threshold25000",
+        "input": "ask_bin10_raw_threshold25000.npz",
+        "side": "ask",
+        "bin_usd": 10,
+        "threshold": 25000,
+        "smoothing_price_usd": 0,
+        "smoothing_time_seconds": 0
+      },
+      {
+        "name": "ask_midrelative_bin10_threshold25000",
+        "input": "ask_midrelative_bin10_threshold25000.npz",
+        "side": "ask",
+        "bin_usd": 10,
+        "threshold": 25000,
+        "smoothing_price_usd": 10,
+        "smoothing_time_seconds": 5,
+        "coordinate": "midpoint-relative USD"
+      },
+      {
+        "name": "ask_translation_control_bin10_threshold25000",
+        "input": "ask_translation_control_bin10_threshold25000.npz",
+        "side": "ask",
+        "bin_usd": 10,
+        "threshold": 25000,
+        "smoothing_price_usd": 10,
+        "smoothing_time_seconds": 5,
+        "translation_control": true
+      },
+      {
+        "name": "bid_bin20_threshold10000",
+        "input": "bid_bin20_threshold10000.npz",
+        "side": "bid",
+        "bin_usd": 20,
+        "threshold": 10000,
+        "smoothing_price_usd": 10,
+        "smoothing_time_seconds": 5
+      },
+      {
+        "name": "bid_bin20_threshold25000",
+        "input": "bid_bin20_threshold25000.npz",
+        "side": "bid",
+        "bin_usd": 20,
+        "threshold": 25000,
+        "smoothing_price_usd": 10,
+        "smoothing_time_seconds": 5
+      },
+      {
+        "name": "bid_bin20_threshold50000",
+        "input": "bid_bin20_threshold50000.npz",
+        "side": "bid",
+        "bin_usd": 20,
+        "threshold": 50000,
+        "smoothing_price_usd": 10,
+        "smoothing_time_seconds": 5
+      },
+      {
+        "name": "ask_bin20_threshold25000",
+        "input": "ask_bin20_threshold25000.npz",
+        "side": "ask",
+        "bin_usd": 20,
+        "threshold": 25000,
+        "smoothing_price_usd": 10,
+        "smoothing_time_seconds": 5
+      },
+      {
+        "name": "control_one_band",
+        "input": "control_one_band.npz",
+        "control": true
+      },
+      {
+        "name": "control_two_bands",
+        "input": "control_two_bands.npz",
+        "control": true
+      },
+      {
+        "name": "control_loop",
+        "input": "control_loop.npz",
+        "control": true
+      }
+    ],
+    "centered_smoothing_is_noncausal": true,
+    "all_data_development": true,
+    "sampling": "Backwards as-of full-book checkpoints at 5-second times, maximum age 7.5 seconds"
+  },
+  "limitations": [
+    "Only a few hours, all exploratory/development data",
+    "Different venue/feed clocks and quote freshness limit basis/lead-lag interpretation",
+    "Coinbase is a sampled reference, not full-depth or an exact raw-trade tape",
+    "Displayed quantities are not order identities or guaranteed executable liquidity",
+    "Time Reeb graphs depend on depth threshold, binning, smoothing, triangulation and window boundaries"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "all_original_portfolio_dates": 2446,
+  "forecast_dates": 1942,
+  "independently_reconstructed_source_dates": 17,
+  "independent_kernel_integrations": 68,
+  "max_independent_feature_discrepancy": 1.7053025658242404e-13,
+  "max_MST_minimax_discrepancy": 1.0630385460785874e-14,
+  "fits_checked": 1176,
+  "independent_sklearn_mean_fits": 392,
+  "independent_trust_exact_risk_fits": 24,
+  "max_risk_stationarity_gradient": 3.0948438256572786e-12,
+  "max_independent_optimizer_coefficient_discrepancy": 6.579776778981028e-09,
+  "max_saved_forecast_discrepancy": 2.6775524020195007e-09,
+  "daily_loss_rows_checked": 34956,
+  "metrics_checked": 36,
+  "paired_comparisons_checked": 18,
+  "max_interval_discrepancy": 5.861977570020827e-14,
+  "original_strategy_unchanged": true,
+  "no_new_policy": true,
+  "audit_source_sha256": "00c630dfb9dddea5058534cf8cc9287b6dc1ffb5e38eb0bbeffda5c5e76ff033"
+}

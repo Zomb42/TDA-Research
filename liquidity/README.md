@@ -1,5 +1,7 @@
 # Liquidity organization on price-by-time grids
 
+**November 5: first continuous BTC archive analysis and actual Reeb graphs.** [Report and figures](experiments/btc_archive_initial_2026_11_05/README.md). Six closed segments passed validation, including 1,703 full-book checkpoints and exact hour-boundary anchors. Native TTK time-Reeb graphs summarize high-depth band connectivity, but cycle counts vary with preprocessing; a translated fixed ask profile already creates cycles after smoothing. This is exploratory feature interpretation, not an established predictor. **The recorder subsequently stopped at the user's request at 11:15:26 p.m. Indianapolis**; [completed-run pointer](../btc/ACTIVE_CAPTURE.json). No restart is authorized.
+
 This is the third mini-study: cubical persistence and merge structures of displayed depth. [Project checkpoint](../START_HERE.md).
 
 **Working Kalshi direction:** following the user's October 29 proposal, use a snapshot plus fine-grained book changes and executed trades to reconstruct displayed liquidity, then analyze broader price/time scales. See [event-by-event book design](KALSHI_EVENT_BOOK_DESIGN.md) for the distinction between execution flow and resting depth, capture requirements, and the TDA connection.

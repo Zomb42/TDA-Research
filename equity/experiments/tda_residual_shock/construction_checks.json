@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "connected",
+      "births": 1,
+      "positive_lifetimes": 1,
+      "total_prominence": 3.0,
+      "same_histogram": true
+    },
+    {
+      "case": "separated",
+      "births": 3,
+      "positive_lifetimes": 3,
+      "total_prominence": 8.1,
+      "same_histogram": true
+    }
+  ],
+  "sign_reflection": true,
+  "stock_permutation_unique_severity": true,
+  "amplitude_scaling": true,
+  "root_zero_censor_explicit": true
+}

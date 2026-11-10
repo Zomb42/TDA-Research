@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-04",
+  "written_before_new_vix_return_comparisons": true,
+  "status": "Exploratory analysis of frozen strategies on already examined history; no new untouched test",
+  "strategy": "Primary existing expanded-universe SPY+PCA3, EFA3 matched robustness. Frozen 120-session fits, original daily signals, unit gross, next raw open-to-close execution, flat overnight; no refitting holdings or gating",
+  "sources": ["equity/experiments/equity_efa_vs_pca/daily_gross_returns.csv", "market_data/datasets/mean_reversion_context_2026-11-04/vix_daily.csv", "market_data/datasets/equity_daily_expanded_2016_2026-10-27/close_all.csv"],
+  "periods": {"full": "2017-02-03 through 2026-10-27", "earlier": "execution before 2024", "later": "execution from 2024"},
+  "alignment": "Prior equity-session VIX close and prior-session log VIX change available before strategy entry; contemporaneous close and change strictly descriptive. Align on full equity calendar before lagging. No filling or missing-row deletion silently",
+  "lagged_vix_bins": ["below15", "15to20", "20to30", "30plus"],
+  "primary_bin_contrast": "Prior VIX at least20 minus below20, fixed descriptive contrast, not a selected trading gate",
+  "same_day_vix_change_bins": ["below-5pct", "-5pct_to0", "0to5pct", "5pct_plus"],
+  "associations": "Pearson/Spearman of signed return and absolute return against lagged VIX level/change and same-day VIX change. Same-day comparison not an entry predictor. Display both mean and dispersion",
+  "regressions": "OLS mean return and absolute return in bps. Model VIXOnly uses lag log VIX and lag log VIX change; Controls uses prior20 SPY realized-vol log and prior SPY simple return; Controls+VIX adds both VIX variables; SameDayDiagnostic adds contemporaneous log VIX change to Controls+VIX. Newey-West20 HAC errors, descriptive in-sample",
+  "forecast_check": "Expanding OLS with intercept, initial504 completed observations, refit each21 sessions, no tuning. For both mean return and absolute return, compare intercept-only, Controls and Controls+VIX. Clip negative absolute-return predictions to0. Predict execution t only from data through t-1. One target observation per day, no overlap",
+  "forecast_primary": "Paired squared error difference Controls+VIX minus Controls, bps squared; negative is better. Report full available forecast period and same earlier/later split. No return prediction is used to trade or gate",
+  "uncertainty": "2000 circular moving-block resamples, primary block60 and sensitivity20, fixed seed2026110407. Bin means/contrast intervals pointwise exploratory. Forecast paired loss simultaneous intervals for four model/target combinations within each period, max standardized bootstrap deviation; also pointwise intervals. No correction over project-wide experiments or across periods",
+  "figures": "Continuous original equity and VIX, lagged-level bin mean/risk, lagged vs same-day scatter, forecast error comparisons",
+  "reporting": "Gross/pre-fee only. Unit gross allocation, no VIX sizing or threshold tuning. Separate associations, prediction, risk and mean. Correlation with VIX does not identify causal selling, tradable VIX exposure, or failure of fitted linear neutrality"
+}

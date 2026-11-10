@@ -1,0 +1,67 @@
+{
+  "pid": 23083,
+  "started_at": "2026-11-05T03:36:50.141910+00:00",
+  "updated_at": "2026-11-05T06:32:22.714540+00:00",
+  "elapsed_seconds": 10532.659945707994,
+  "state": "collecting",
+  "feeds": {
+    "kalshi_perp": {
+      "state": "collecting",
+      "connections": 1,
+      "attempts": 1,
+      "connection_errors": 0,
+      "sequence_gaps": 0,
+      "rows_written": 319361,
+      "message_counts": {
+        "subscribed": 3,
+        "orderbook_snapshot": 1,
+        "orderbook_delta": 1867941,
+        "trade": 16289,
+        "ticker": 10531
+      },
+      "stored_bytes": 68941922,
+      "trade_sequence_gaps": 0,
+      "reconstruction_errors": 0,
+      "market_metadata_saved": true,
+      "epoch": 1,
+      "book_valid": true,
+      "authentication_used": true,
+      "last_received_at": "2026-11-05T06:32:22.706438+00:00",
+      "snapshot_received_at": "2026-11-05T03:36:50.633993+00:00",
+      "checkpoints": 2088,
+      "closed_segments": 3,
+      "current_file": "kalshi_perp/2026-11-05T06-00-00Z.jsonl.gz.partial"
+    },
+    "coinbase_reference": {
+      "state": "collecting",
+      "connections": 2,
+      "attempts": 2,
+      "connection_errors": 1,
+      "sequence_gaps": 0,
+      "rows_written": 0,
+      "message_counts": {
+        "ticker": 48388,
+        "subscriptions": 6,
+        "market_trades": 30597,
+        "heartbeats": 10528
+      },
+      "stored_bytes": 2375392,
+      "samples": 21059,
+      "missed_sample_slots": 0,
+      "epoch": 2,
+      "authentication_used": true,
+      "last_quote_received_at": "2026-11-05T06:32:22.657695+00:00",
+      "last_received_at": "2026-11-05T06:32:22.657695+00:00",
+      "closed_segments": 3,
+      "current_file": "coinbase_reference/2026-11-05T06-00-00Z.jsonl.gz.partial",
+      "quote_age_ms": 171.83674999978393,
+      "last_error": {
+        "error_type": "WebSocketConnectionClosedException",
+        "http_status": null
+      },
+      "gap_started_at": null
+    }
+  },
+  "stop_reason": null,
+  "free_disk_gib": 150.37046813964844
+}

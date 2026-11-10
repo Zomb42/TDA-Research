@@ -9,11 +9,16 @@ import base64
 from collections import Counter
 from datetime import datetime, timezone
 from decimal import Decimal
+import gzip
+import hashlib
 import json
 import os
 from pathlib import Path
+import shutil
 import signal
+import sys
 import time
+import urllib.request
 
 from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import padding
@@ -109,14 +114,23 @@ def main():
     parser.add_argument("--private-key-file", type=Path, default=HFT / "secrets/TestExample1.pem")
     parser.add_argument("--seconds", type=int, default=3600)
     parser.add_argument("--max-mb", type=int, default=256)
+    parser.add_argument("--gzip", action="store_true", help="Compress journals losslessly as they are written")
+    parser.add_argument("--include-ticker", action="store_true", help="Also retain public prices/marks/funding/open-interest ticker context")
+    parser.add_argument("--max-consecutive-errors", type=int, default=5, help="Stop after this many consecutive failures; 0 retries until the duration/cap")
     parser.add_argument("--out", type=Path, required=True)
     args = parser.parse_args()
     if args.seconds <= 0 or args.max_mb <= 0:
         parser.error("positive duration and byte cap required")
+    if args.max_consecutive_errors < 0:
+        parser.error("max-consecutive-errors must be nonnegative")
     args.out.mkdir(parents=True, exist_ok=True)
-    journal_path = args.out / "messages.jsonl"
-    if journal_path.exists():
+    suffix = ".jsonl.gz" if args.gzip else ".jsonl"
+    journal_path = args.out / ("messages" + suffix)
+    checkpoint_path = args.out / ("checkpoints" + suffix)
+    if any(args.out.glob("messages.jsonl*")) or checkpoint_path.exists():
         raise SystemExit("Existing journal: select a new directory")
+    # Fail before connecting if either credential is missing or cannot be read.
+    headers(args.credentials_file, args.private_key_file)
     started = time.monotonic()
     deadline = started + args.seconds
     stopped = False
@@ -126,37 +140,62 @@ def main():
     signal.signal(signal.SIGTERM, stop)
     signal.signal(signal.SIGINT, stop)
     counts = Counter()
+    channels = ["orderbook_delta", "trade"] + (["ticker"] if args.include_ticker else [])
     stats = dict(pid=os.getpid(), state="starting", started_at=datetime.now(timezone.utc).isoformat(),
                  planned_seconds=args.seconds, max_bytes=args.max_mb*1024*1024, ticker=TICKER,
-                 endpoint=WS_URL, allowed_channels=["orderbook_delta", "trade"],
+                 planned_end_at=datetime.fromtimestamp(time.time()+args.seconds, timezone.utc).isoformat(),
+                 endpoint=WS_URL, allowed_channels=channels,
                  order_actions_available=False, bytes_written=0, connections=0, sequence_gaps=0,
                  reconstruction_errors=0, connection_errors=0, checkpoints=0,
+                 connection_attempts=0, consecutive_connection_errors=0,
+                 trade_sequence_gaps=0, last_sequences={}, gap_windows=[],
+                 python_executable=sys.executable, compression="gzip" if args.gzip else "none",
+                 journal_file=journal_path.name, checkpoint_file=checkpoint_path.name,
+                 byte_cap_basis="uncompressed journal envelopes; checkpoints additional",
                  authenticated_connection_established=False, first_snapshot_received_at=None)
     def status():
         stats.update(updated_at=datetime.now(timezone.utc).isoformat(), elapsed_seconds=time.monotonic()-started,
                      message_counts=dict(counts))
         atomic_json(args.out / "status.json", stats)
     status()
-    with journal_path.open("x", buffering=1) as raw, (args.out / "checkpoints.jsonl").open("x", buffering=1) as checkpoints:
+    # Preserve the instrument's unit/contract metadata using a public GET only.
+    try:
+        url = "https://external-api.kalshi.com/trade-api/v2/margin/markets/" + TICKER
+        with urllib.request.urlopen(url, timeout=5) as response:
+            payload = response.read()
+        (args.out / "market.json").write_bytes(payload)
+        stats["market_metadata_sha256"] = hashlib.sha256(payload).hexdigest()
+        stats["market_metadata_received_at"] = datetime.now(timezone.utc).isoformat()
+    except Exception as error:
+        stats["market_metadata_error_type"] = type(error).__name__
+    opener = (lambda p: gzip.open(p, "xt", encoding="utf-8", compresslevel=3)) if args.gzip else (lambda p: p.open("x", buffering=1))
+    with opener(journal_path) as raw, opener(checkpoint_path) as checkpoints:
         def journal(value):
             line = json.dumps(value, separators=(",", ":")) + "\n"
             raw.write(line)
             stats["bytes_written"] += len(line.encode())
+        last_healthy_receive = None
+        pending_gap = None
         while not stopped and time.monotonic() < deadline and stats["bytes_written"] < stats["max_bytes"]:
             ws = None
             book = PerpBook()
-            epoch = stats["connections"] + 1
+            stats["connection_attempts"] += 1
+            epoch = stats["connection_attempts"]
+            sequences = {}
             try:
+                if shutil.disk_usage(args.out).free < 1024**3:
+                    stats["state"] = "low_disk_space"
+                    break
                 # The signed header values never enter logs or saved journals.
                 ws = websocket.create_connection(WS_URL, header=headers(args.credentials_file, args.private_key_file),
                                                  timeout=min(10, max(1, deadline-time.monotonic())))
                 ws.settimeout(2)
-                stats["connections"] = epoch
+                stats["connections"] += 1
                 stats["authenticated_connection_established"] = True
                 stats["state"] = "awaiting_snapshot"
                 journal(dict(control="connected", epoch=epoch, received_at=datetime.now(timezone.utc).isoformat()))
                 # These are the ONLY application messages this recorder sends.
-                for identifier, channel in [(1, "orderbook_delta"), (2, "trade")]:
+                for identifier, channel in enumerate(channels, 1):
                     params = dict(channels=[channel], market_ticker=TICKER)
                     if channel == "orderbook_delta":
                         params["update_interval_ms"] = 0
@@ -174,14 +213,28 @@ def main():
                             raise ConnectionError("no_data_for_30_seconds")
                         continue
                     received_at = datetime.now(timezone.utc).isoformat()
+                    received_unix_ns = time.time_ns()
+                    received_monotonic_ns = time.monotonic_ns()
                     last_receive = time.monotonic()
                     event = json.loads(message)
-                    journal(dict(epoch=epoch, received_at=received_at, message=event))
+                    journal(dict(epoch=epoch, received_at=received_at,
+                                 received_unix_ns=received_unix_ns,
+                                 received_monotonic_ns=received_monotonic_ns, message=event))
                     kind = event.get("type", "unknown")
                     counts[kind] += 1
+                    stats["last_message_received_at"] = received_at
                     if kind == "error":
                         stats["server_error_code"] = event.get("msg", {}).get("code")
                         raise ConnectionError("server_subscription_error")
+                    sid, seq = event.get("sid"), event.get("seq")
+                    if sid is not None and seq is not None:
+                        previous = sequences.get(sid)
+                        if kind == "trade" and previous is not None and seq != previous+1:
+                            stats["trade_sequence_gaps"] += 1
+                            journal(dict(control="trade_sequence_gap", epoch=epoch,
+                                         previous_seq=previous, seq=seq, received_at=received_at))
+                        sequences[sid] = seq
+                        stats["last_sequences"] = {str(k): v for k,v in sequences.items()}
                     try:
                         changed = book.apply(event)
                     except InvalidBook as error:
@@ -191,35 +244,64 @@ def main():
                         journal(dict(control="book_invalid", epoch=epoch, reason=str(error), received_at=received_at))
                         raise
                     if kind == "orderbook_snapshot":
+                        if pending_gap is not None:
+                            pending_gap["next_snapshot_received_at"] = received_at
+                            journal(dict(control="gap_ended_at_snapshot", **pending_gap))
+                            pending_gap = None
                         stats["first_snapshot_received_at"] = stats["first_snapshot_received_at"] or received_at
                         stats["state"] = "collecting"
+                        stats["consecutive_connection_errors"] = 0
                         status()
+                    if kind in ("orderbook_snapshot", "orderbook_delta") and book.ready:
+                        last_healthy_receive = received_at
                     if changed and (kind == "orderbook_snapshot" or time.monotonic()-last_checkpoint >= 5):
                         saved = dict(epoch=epoch, received_at=received_at, **book.checkpoint())
                         checkpoints.write(json.dumps(saved) + "\n")
                         stats["checkpoints"] += 1
                         last_checkpoint = time.monotonic()
                     if time.monotonic()-last_status >= 5:
+                        raw.flush(); checkpoints.flush()
                         status()
                         last_status = time.monotonic()
+                        if shutil.disk_usage(args.out).free < 1024**3:
+                            stats["state"] = "low_disk_space"
+                            stopped = True
             except Exception as error:
                 stats["connection_errors"] += 1
+                stats["consecutive_connection_errors"] += 1
                 # Do not serialize exception text/headers, which may include credentials.
                 detail = dict(error_type=type(error).__name__, http_status=getattr(error, "status_code", None))
                 stats["last_connection_error"] = detail
+                if pending_gap is None:
+                    pending_gap = dict(previous_last_valid_book_at=last_healthy_receive,
+                                       disconnected_at=datetime.now(timezone.utc).isoformat(),
+                                       next_snapshot_received_at=None)
+                    stats["gap_windows"].append(pending_gap)
                 journal(dict(control="connection_ended", epoch=epoch, received_at=datetime.now(timezone.utc).isoformat(), **detail))
                 stats["state"] = "reconnecting"
                 status()
-                if detail["http_status"] in (401,403) or stats["connection_errors"] >= 5:
+                if detail["http_status"] in (401,403) or stats.get("server_error_code") is not None or (args.max_consecutive_errors and stats["consecutive_connection_errors"] >= args.max_consecutive_errors):
                     stats["state"] = "access_or_connection_failed"
                     break
-                time.sleep(min(2, max(0, deadline-time.monotonic())))
+                retry_until = min(deadline, time.monotonic()+min(30,2**min(stats["consecutive_connection_errors"],5)))
+                while not stopped and time.monotonic() < retry_until:
+                    time.sleep(min(0.25, max(0,retry_until-time.monotonic())))
             finally:
                 if ws is not None:
-                    ws.close()
-        if stats["state"] != "access_or_connection_failed":
+                    try:
+                        ws.close(timeout=1)
+                    except Exception:
+                        pass
+        if stats["state"] not in ("access_or_connection_failed", "low_disk_space"):
             stats["state"] = "stopped_by_signal" if stopped else "byte_cap_reached" if stats["bytes_written"] >= stats["max_bytes"] else "completed"
         status()
+    stats["stored_journal_bytes"] = journal_path.stat().st_size
+    stats["stored_checkpoint_bytes"] = checkpoint_path.stat().st_size
+    with journal_path.open("rb") as stream:
+        stats["journal_sha256"] = hashlib.file_digest(stream, "sha256").hexdigest()
+    with checkpoint_path.open("rb") as stream:
+        stats["checkpoint_sha256"] = hashlib.file_digest(stream, "sha256").hexdigest()
+    status()
     atomic_json(args.out / "manifest.json", stats)
     print(json.dumps(stats, indent=2))
 

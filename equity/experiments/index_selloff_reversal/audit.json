@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "ledger_rows_checked": 1716,
+  "checks": [
+    "hand-calculated timing cases",
+    "right-censored last positions",
+    "independent scalar volatility/signal computation",
+    "future-price perturbation",
+    "independent first-up exit and blocking reconstruction, all periods/modes",
+    "trade wealth equals marked daily wealth",
+    "lagged VIX alignment"
+  ]
+}

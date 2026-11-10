@@ -1,0 +1,7 @@
+{
+  "known_controls_passed": true,
+  "all_reeb_components_and_cycles_match_clipped_mesh_homology": true,
+  "all_display_reductions_preserve_components_and_cycles": true,
+  "case_count": 17,
+  "uniform_density_and_threshold_scaling_preserves_clipped_mesh": true
+}

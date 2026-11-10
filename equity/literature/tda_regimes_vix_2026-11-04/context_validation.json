@@ -1,0 +1,16 @@
+{
+  "status": "Read-only alignment and plot; not a new strategy/forecast experiment",
+  "rows": 490,
+  "first_execution": "2017-02-03",
+  "last_execution": "2026-10-27",
+  "missing_context_rows": 0,
+  "source_files_unchanged": true,
+  "sha256": {
+    "equity/experiments/equity_full_basket_states/state_features_and_targets.csv": "a0848d052171246fac4fb68358e07f2fe0268a4fcf1bf4f49b9a359da266d785",
+    "market_data/datasets/mean_reversion_context_2026-11-04/vix_daily.csv": "cbe8e28f2950eb7baa0ff5d54fa1b5b0514b1b3b7bc93daa803c97ae2abe1969",
+    "market_data/datasets/equity_daily_expanded_2016_2026-10-27/close_all.csv": "fa8f8546acadb0c2a49f4d08b14cff32893df97f92a5111ebd40ecc57639b6d8",
+    "equity/experiments/equity_efa_vs_pca/daily_gross_returns.csv": "c2c9065cc452a078f92fc0e9ef82b57cddc3eae4da08e378db145c117ae46094"
+  },
+  "information_timing": "VIX uses last completed equity-session close before first_execution; TDA retains original topology_feature_end",
+  "no_future_return_labels_in_output": true
+}

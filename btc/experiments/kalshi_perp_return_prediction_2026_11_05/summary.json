@@ -1,0 +1,166 @@
+{
+  "completed_at": "2026-11-05T16:33:33.087652+00:00",
+  "specification_sha256": "17f6702bd42c172586816272462e92ece7d08ec3ff0f25bcc93e2b6dad894078",
+  "source_sha256": "a87c6093b31122e85b1ddd5f500ba2d9712d7ff8f76bc9cc9a185ca86d37943f",
+  "n_features": 528,
+  "n_scored": 348,
+  "n_refits": 12,
+  "first_forecast": "2026-11-05T07:10:00+00:00",
+  "last_forecast": "2026-11-05T15:46:00+00:00",
+  "metrics": [
+    {
+      "target": "signed_bps",
+      "model": "Zero",
+      "n": 348,
+      "MSE": 86.2602263825,
+      "MAE": 5.9238072426,
+      "correlation": null,
+      "nonzero_actuals": 345,
+      "direction_accuracy": 0.0
+    },
+    {
+      "target": "absolute_bps",
+      "model": "Zero",
+      "n": 348,
+      "MSE": 86.2602263825,
+      "MAE": 5.9238072426,
+      "correlation": null,
+      "nonzero_actuals": 345,
+      "direction_accuracy": null
+    },
+    {
+      "target": "signed_bps",
+      "model": "HistoryMean",
+      "n": 348,
+      "MSE": 85.1049777333,
+      "MAE": 5.8974561844,
+      "correlation": 0.1234583315,
+      "nonzero_actuals": 345,
+      "direction_accuracy": 0.5246376812
+    },
+    {
+      "target": "absolute_bps",
+      "model": "HistoryMean",
+      "n": 348,
+      "MSE": 56.7826187385,
+      "MAE": 4.2672410772,
+      "correlation": 0.5295139482,
+      "nonzero_actuals": 345,
+      "direction_accuracy": null
+    },
+    {
+      "target": "signed_bps",
+      "model": "Ordinary18",
+      "n": 348,
+      "MSE": 83.2255173866,
+      "MAE": 5.8248761432,
+      "correlation": 0.1446213364,
+      "nonzero_actuals": 345,
+      "direction_accuracy": 0.5246376812
+    },
+    {
+      "target": "absolute_bps",
+      "model": "Ordinary18",
+      "n": 348,
+      "MSE": 35.6628583287,
+      "MAE": 3.6336684135,
+      "correlation": 0.6100028751,
+      "nonzero_actuals": 345,
+      "direction_accuracy": null
+    },
+    {
+      "target": "signed_bps",
+      "model": "OrdinaryPlusTDA21",
+      "n": 348,
+      "MSE": 83.2608914221,
+      "MAE": 5.8158413011,
+      "correlation": 0.1445345757,
+      "nonzero_actuals": 345,
+      "direction_accuracy": 0.5217391304
+    },
+    {
+      "target": "absolute_bps",
+      "model": "OrdinaryPlusTDA21",
+      "n": 348,
+      "MSE": 35.4639333886,
+      "MAE": 3.630998798,
+      "correlation": 0.6087285764,
+      "nonzero_actuals": 345,
+      "direction_accuracy": null
+    },
+    {
+      "target": "signed_bps",
+      "model": "OrdinaryPlusTDAInteractions24",
+      "n": 348,
+      "MSE": 83.3303496164,
+      "MAE": 5.8213215497,
+      "correlation": 0.1447492777,
+      "nonzero_actuals": 345,
+      "direction_accuracy": 0.5188405797
+    },
+    {
+      "target": "absolute_bps",
+      "model": "OrdinaryPlusTDAInteractions24",
+      "n": 348,
+      "MSE": 35.5341277449,
+      "MAE": 3.6255077716,
+      "correlation": 0.6077273931,
+      "nonzero_actuals": 345,
+      "direction_accuracy": null
+    }
+  ],
+  "comparisons": [
+    {
+      "target": "signed_bps",
+      "model": "OrdinaryPlusTDA21",
+      "comparator": "Ordinary18",
+      "loss_difference": 0.03537403541131647,
+      "reduction_percent": -0.04250383358625399,
+      "point95_low": -0.20234293902488262,
+      "point95_high": 0.28305899763305675,
+      "simultaneous95_low": -0.26468586894218143,
+      "simultaneous95_high": 0.33543393976481434,
+      "reduction_sim95_low": -0.4030421802083738,
+      "reduction_sim95_high": 0.31803451303586594
+    },
+    {
+      "target": "signed_bps",
+      "model": "OrdinaryPlusTDAInteractions24",
+      "comparator": "Ordinary18",
+      "loss_difference": 0.10483222975087887,
+      "reduction_percent": -0.12596164378751817,
+      "point95_low": -0.2806098997807584,
+      "point95_high": 0.6004638972464988,
+      "simultaneous95_low": -0.4289839890254909,
+      "simultaneous95_high": 0.6386484485272487,
+      "reduction_sim95_low": -0.7673709561459177,
+      "reduction_sim95_high": 0.5154476685708812
+    },
+    {
+      "target": "absolute_bps",
+      "model": "OrdinaryPlusTDA21",
+      "comparator": "Ordinary18",
+      "loss_difference": -0.19892494008890368,
+      "reduction_percent": 0.5577930356996419,
+      "point95_low": -0.5972312212259872,
+      "point95_high": 0.06723639724780395,
+      "simultaneous95_low": -0.6267674288374762,
+      "simultaneous95_high": 0.22891754865966882,
+      "reduction_sim95_low": -0.6418934414896919,
+      "reduction_sim95_high": 1.7574795128889753
+    },
+    {
+      "target": "absolute_bps",
+      "model": "OrdinaryPlusTDAInteractions24",
+      "comparator": "Ordinary18",
+      "loss_difference": -0.12873058379348584,
+      "reduction_percent": 0.36096541283091216,
+      "point95_low": -0.4245827620503156,
+      "point95_high": 0.08276475804793035,
+      "simultaneous95_low": -0.4493642075126744,
+      "simultaneous95_high": 0.19190303992570273,
+      "reduction_sim95_low": -0.5381033627674234,
+      "reduction_sim95_high": 1.2600341884292476
+    }
+  ]
+}

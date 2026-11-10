@@ -1,0 +1,39 @@
+{
+  "user_requested_seconds": 600,
+  "conda_environment": "tda",
+  "python_executable": "/Users/derickshi/anaconda3/envs/tda/bin/python",
+  "python_version": "3.13.2",
+  "websocket_client_version": "1.8.0",
+  "cryptography_version": "46.0.5",
+  "recorder_source": "market_data/record_kalshi_btc_stream.py",
+  "recorder_source_sha256": "9f5dc81f2d278045818f14993f67e5dbdf2ff19be4cec3408273c2e852ef0292",
+  "hft_reference": "Junior-Spring/HFT/Kalshi-Orderbook-Predictor/collector",
+  "hft_reference_modified": false,
+  "hft_executable_launched": false,
+  "channels": [
+    "orderbook_delta",
+    "trade",
+    "ticker"
+  ],
+  "update_interval_ms": 0,
+  "credentials_read_in_place": true,
+  "paid_services_used": false,
+  "persistent_service_installed": false,
+  "maximum_uncompressed_journal_bytes": 536870912,
+  "minimum_free_disk_bytes": 1073741824,
+  "capture_started_at": "2026-11-05T00:22:29.323021+00:00",
+  "recorder_source_snapshot": "raw/recorder_source.py",
+  "audit_source": "market_data/audit_kalshi_btc_stream.py",
+  "audit_source_sha256": "0ea97efb8a1a8cdb7a26af5fe47520c0f080acce3610ae3d75020ec96be37c2d",
+  "final_state": "completed",
+  "independent_replay_passed": true,
+  "recording_compression": "gzip",
+  "current_storage_compression": "none",
+  "original_capture_metadata": "raw/original_gzip",
+  "storage_conversion": {
+    "converted_at": "2026-11-05T00:53:44.094679+00:00",
+    "reason": "User requested uncompressed, directly readable data",
+    "original_manifest": "raw/original_gzip/manifest.json",
+    "decompressed_content_sha256_verified": true
+  }
+}

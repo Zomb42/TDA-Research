@@ -1,0 +1,71 @@
+#!/bin/bash -l
+#$ -S /bin/bash
+#$ -cwd
+#$ -q long
+#$ -N kalshi_btc
+#$ -j y
+#$ -r n
+#$ -notify
+#$ -l h_rt=168:10:00
+
+# Submit from the repository root: qsub jobs/kalshi_btc_crc.job
+# Grid Engine supplies one CPU by default; this recorder needs no GPU or MPI.
+set -euo pipefail
+umask 077
+
+if [[ -z "${JOB_ID:-}" || -z "${SGE_O_WORKDIR:-}" ]]; then
+    echo 'Submit with qsub jobs/kalshi_btc_crc.job from the repository root.' >&2
+    exit 2
+fi
+cd "$SGE_O_WORKDIR"
+if [[ ! -f market_data/record_btc_archive.py ]]; then
+    echo 'Submit from the TDA-Research repository root.' >&2
+    exit 2
+fi
+
+# Private machine-specific paths and limits. Never put credentials in Git.
+if [[ -f jobs/crc_capture.local.sh ]]; then
+    source jobs/crc_capture.local.sh
+fi
+: "${KALSHI_CREDENTIALS:=$HOME/.config/kalshi/kalshi_credentials.json}"
+: "${KALSHI_KEY:=$HOME/.config/kalshi/private_key.pem}"
+: "${CAPTURE_ROOT:=$PWD/market_data/recordings/crc}"
+: "${CAPTURE_SECONDS:=604800}"
+: "${CAPTURE_MAX_GIB:=20}"
+: "${CAPTURE_TOTAL_GIB:=20}"
+: "${CAPTURE_MIN_FREE_GIB:=10}"
+: "${CAPTURE_STARTUP_TIMEOUT:=120}"
+: "${CAPTURE_COINBASE:=0}"
+
+# setup_crc.sh records the actual Conda path on CRC for batch activation.
+source jobs/crc_conda.sh
+initialize_crc_conda
+conda activate tda
+python -c 'import sys; assert sys.version_info >= (3, 11), "Python 3.11+ required"; import cryptography, websocket, jwt'
+
+mkdir -p "$CAPTURE_ROOT"
+# All submissions sharing this folder use the same lock; released on exit.
+exec 9>"$CAPTURE_ROOT/.collector.lock"
+if ! flock -n 9; then
+    echo 'Another collector already holds the lock for this archive folder.' >&2
+    exit 2
+fi
+run_dir="$CAPTURE_ROOT/$(date -u +%Y-%m-%dT%H-%M-%SZ)-job-$JOB_ID"
+feeds=(--kalshi-only)
+case "$CAPTURE_COINBASE" in
+    0) ;;
+    1) feeds=(--coinbase-credentials "${COINBASE_CREDENTIALS:?Set COINBASE_CREDENTIALS to enable Coinbase}") ;;
+    *) echo 'CAPTURE_COINBASE must be 0 or 1.' >&2; exit 2 ;;
+esac
+printf 'Host: %s\nJob: %s\nOutput: %s\n' "$(hostname)" "$JOB_ID" "$run_dir"
+# exec lets Grid Engine signals reach Python directly for graceful finalization.
+exec python -u market_data/record_btc_archive.py \
+    --out "$run_dir" \
+    --kalshi-credentials "$KALSHI_CREDENTIALS" \
+    --kalshi-key "$KALSHI_KEY" \
+    --seconds "$CAPTURE_SECONDS" \
+    --max-gb "$CAPTURE_MAX_GIB" \
+    --storage-root "$CAPTURE_ROOT" --max-total-gb "$CAPTURE_TOTAL_GIB" \
+    --min-free-gb "$CAPTURE_MIN_FREE_GIB" \
+    --startup-timeout "$CAPTURE_STARTUP_TIMEOUT" \
+    "${feeds[@]}"

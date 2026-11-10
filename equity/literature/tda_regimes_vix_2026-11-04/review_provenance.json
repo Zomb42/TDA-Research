@@ -1,0 +1,104 @@
+{
+  "review_started": "2026-11-04",
+  "type": "Primary-source review, mathematical illustrations and cached-feature context alignment; no new backtest or forecasting model",
+  "sources": [
+    {
+      "study": "Bubenik2015",
+      "url": "https://arxiv.org/html/1207.6437",
+      "access": "Relevant mathematical sections and Proposition2.5"
+    },
+    {
+      "study": "Gidea2017",
+      "url": "https://arxiv.org/html/1701.06081",
+      "access": "Relevant full method/results text"
+    },
+    {
+      "study": "GideaKatz2018",
+      "url": "https://arxiv.org/html/1703.04385",
+      "access": "Relevant full methods/results and VIX comparison"
+    },
+    {
+      "study": "AguilarEnsor2020",
+      "url": "https://www.scirp.org/journal/paperinformation?paperid=103953",
+      "access": "Publisher HTML methods/results and figure captions"
+    },
+    {
+      "study": "BaitingerFlegel2021",
+      "url": "https://link.springer.com/article/10.1007/s11408-020-00377-x",
+      "access": "Publisher abstract/preview only; main journal body subscription restricted"
+    },
+    {
+      "study": "BaitingerFlegel2019preprint",
+      "url": "https://www.researchgate.net/publication/337857521_The_Better_Turbulence_Index_Forecasting_Adverse_Financial_Markets_Regimes_with_Persistent_Homology",
+      "access": "Author-posted full text, especially3.4 and3.6; exact settings refer to preprint"
+    },
+    {
+      "study": "IsmailEtAl2022",
+      "url": "https://www.frontiersin.org/journals/applied-mathematics-and-statistics/articles/10.3389/fams.2022.940133/full",
+      "access": "Publisher methods/results and Table2"
+    },
+    {
+      "study": "Valdivia2023",
+      "url": "https://www.aimspress.com/aimspress-data/qfe/2023/3/PDF/QFE-07-03-019.pdf",
+      "access": "Relevant full text; complete PDF pages4,10,11 rendered with native PDFKit and visually inspected",
+      "download_sha256": "6ac883217886141c0dd8144bcaf74254df6607a620a497c23fe261080beb8c10"
+    },
+    {
+      "study": "Souto2023",
+      "url": "https://www.newswise.com/pdf_docs/170055790161323_1-s2.0-S2405918823000235-main.pdf",
+      "access": "Relevant full-paper method/results/AppendixA text and separate author code"
+    },
+    {
+      "study": "SoutoPublicExample",
+      "url": "https://github.com/hugogobato/Topological-Tail-Dependence-Evidence-from-Forecasting-Realized-Volatility/blob/4e4ae5fcdeb692228c009d70d1316bd9e24dced3/Persistent%20Homology%20for%20Realized%20Volatility%20(PH-RV)%20algorithm.py",
+      "commit": "4e4ae5fcdeb692228c009d70d1316bd9e24dced3",
+      "access": "Downloaded and inspected, never executed",
+      "sha256": "9f0560a4347ca391e9f736f4bc9134934f8a50b8b652291cc4eceeba5e4f049d"
+    }
+  ],
+  "public_example_finding": "The illustrative PH-RV file compares separated20-return windows using H0 inputs and assigns an intermediate date. Later-window inputs occur after that date. This does not audit the paper's entire empirical code or invalidate every reported result.",
+  "illustrative_window_timing": {
+    "w": 20,
+    "i": 0,
+    "assigned_price_date_position": 20,
+    "last_price_date_needed_by_second_window": 41,
+    "future_sessions_relative_to_assigned_date": 21
+  },
+  "proposed_comparison_executed": false,
+  "new_figures_are_predictive_evidence": false,
+  "local_links_checked": 159,
+  "original_control_count": 33,
+  "original_controls_include_vix": false,
+  "context_rows": 490,
+  "protected_sources_unchanged": true,
+  "execution_status_scope": "proposed_comparison_executed=false describes the initial November 4 review only; subsequent execution is recorded below",
+  "subsequent_execution": {
+    "date": "2026-11-05",
+    "report": "equity/experiments/tda_vix_matched/README.md",
+    "audit_passed": true
+  },
+  "initial_review_output_sha256": {
+    "README.md": "d5641eea2826617a2705f37df8b81dd323cf1656f6b9eb1714c647161c223342",
+    "assemble_context.py": "5ee2183de88a8fa00c68887e8beea251757a51c5646bd6ee753b251ca57ac660",
+    "cached_tda_and_vix.png": "ae7e932a6df8dfd15bdbbf487e8da9b39557cb279baaa673cf59f8eab1851041",
+    "cached_tda_vix_context.csv": "720a1f7846346f4a4620cea1370432fe023a0092713dcb82fc4c49839455cbb1",
+    "context_validation.json": "99ee33163ef8c8cd175250e30b71c7d1b85864ef2234b48401d704440614485d",
+    "illustration_checks.json": "d88f7b4502fe7320dafe3ab54d68f31bb74bfc232a037b6b25542f0e2ca5a9f3",
+    "illustrations.py": "c9340061716668d8f5a3dcee5f586c08b48c7039c574f294321ddabfc87c8550",
+    "landscapes_explained.png": "a931eef52e1d2b335e84750a17d70001dabde5f5c463d1d780527edf2923aedd",
+    "proposed_comparison.json": "c31cedf95882668d66a9be6829f748681ec6e9fc6f946f9e259aec57855ece0d",
+    "vix_and_structure_explained.png": "bee376c8d1d3c82258594d792cfa338b0a947403e5caa254315fe730de5d60e2"
+  },
+  "review_output_sha256": {
+    "README.md": "1c6934ab4510fe01e2e2763b687dca4842da30d87fefa59ec2310d8937fd80d4",
+    "assemble_context.py": "5ee2183de88a8fa00c68887e8beea251757a51c5646bd6ee753b251ca57ac660",
+    "cached_tda_and_vix.png": "ae7e932a6df8dfd15bdbbf487e8da9b39557cb279baaa673cf59f8eab1851041",
+    "cached_tda_vix_context.csv": "720a1f7846346f4a4620cea1370432fe023a0092713dcb82fc4c49839455cbb1",
+    "context_validation.json": "99ee33163ef8c8cd175250e30b71c7d1b85864ef2234b48401d704440614485d",
+    "illustration_checks.json": "d88f7b4502fe7320dafe3ab54d68f31bb74bfc232a037b6b25542f0e2ca5a9f3",
+    "illustrations.py": "c9340061716668d8f5a3dcee5f586c08b48c7039c574f294321ddabfc87c8550",
+    "landscapes_explained.png": "a931eef52e1d2b335e84750a17d70001dabde5f5c463d1d780527edf2923aedd",
+    "proposed_comparison.json": "eb312cd3fb9ffbd8d062aba7b01d4ebfac735324e5552e7b9fa80ab2d18230d5",
+    "vix_and_structure_explained.png": "bee376c8d1d3c82258594d792cfa338b0a947403e5caa254315fe730de5d60e2"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "source_alignment_rows": 490,
+  "forecast_anchors": 379,
+  "independent_ridge_fits": 5306,
+  "max_independent_forecast_difference": 2.4868995751603507e-14,
+  "metric_rows_checked": 28,
+  "paired_comparison_rows_checked": 36,
+  "max_interval_difference": 3.1086244689504383e-15,
+  "forecast_scores_per_model_target": {
+    "development": 233,
+    "later": 138
+  },
+  "original_HistoryMean_and_Controls_reproduced": true,
+  "source_strategy_unchanged": true,
+  "no_new_policy": true,
+  "checks": [
+    "VIX source/calendar lag alignment",
+    "all completed20-session labels from frozen PCA returns",
+    "exact saved completed-label memberships",
+    "training-only population standardization",
+    "all predictions via independent sklearn Ridge",
+    "all forecast metrics",
+    "paired losses and all bootstrap families",
+    "original input/output hashes"
+  ]
+}

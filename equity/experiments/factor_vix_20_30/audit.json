@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "performance_rows_checked": 48,
+  "curve_rows_checked": 39136,
+  "annual_rows_checked": 160,
+  "episodes_checked": 220,
+  "active_date_rows_checked": 625,
+  "leave_year_out_rows_checked": 40,
+  "hac_models_checked": 12,
+  "forecast_rows_refitted": 7768,
+  "strategy_source_matches_frozen_provenance": true,
+  "hashes_checked": 20,
+  "checks": [
+    "20 included and30 excluded",
+    "whole-calendar wealth/drawdown/exposure",
+    "hindsight control calibration",
+    "annual decomposition",
+    "contiguous episodes and entry-available origins/ages",
+    "year deletion diagnostics",
+    "independent statsmodels HAC and all nonlinear forecasts",
+    "past-only forecast chronology",
+    "paired forecast losses",
+    "source/output hashes"
+  ]
+}

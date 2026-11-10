@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "synthetic": true,
+  "cases": [
+    {
+      "method": "single",
+      "same_side_tree_proxy": 0.2744964490890643,
+      "opposite_side_tree_proxy": 0.07905694150420947,
+      "same_side_covariance_variance": 0.45,
+      "opposite_side_covariance_variance": 0.04999999999999999
+    },
+    {
+      "method": "average",
+      "same_side_tree_proxy": 0.2744964490890643,
+      "opposite_side_tree_proxy": 0.07905694150420947,
+      "same_side_covariance_variance": 0.45,
+      "opposite_side_covariance_variance": 0.04999999999999999
+    }
+  ],
+  "threshold_integration": true,
+  "merge_integration": true,
+  "signed_holdings_identity": true,
+  "global_sign_invariance": true,
+  "label_and_holdings_joint_permutation": true
+}

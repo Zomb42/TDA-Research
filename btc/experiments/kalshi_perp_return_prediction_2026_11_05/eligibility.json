@@ -1,0 +1,12 @@
+{
+  "clock_slots": 8917,
+  "valid_clock_slots": 7326,
+  "eligible_decisions": 528,
+  "excluded": {
+    "incomplete_window_or_label": 11,
+    "connection_epoch_change": 22,
+    "missing_stale_or_gap": 182
+  },
+  "first": "2026-11-05T03:47:00+00:00",
+  "last": "2026-11-05T15:46:00+00:00"
+}

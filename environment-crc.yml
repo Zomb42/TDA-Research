@@ -1,0 +1,14 @@
+# Portable collector environment; no Mac build IDs or absolute prefix.
+# Recreate on CRC with: bash jobs/setup_crc.sh
+name: tda
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+      # Keep aligned with market_data/requirements-capture.txt.
+      - cryptography==46.0.5
+      - websocket-client==1.8.0
+      - PyJWT==2.10.1

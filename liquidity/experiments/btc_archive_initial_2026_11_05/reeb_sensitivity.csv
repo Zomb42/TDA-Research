@@ -1,0 +1,18 @@
+name,side,bin_usd,threshold,smoothing_price_usd,smoothing_time_seconds,control,coordinate,translation_control,nodes,arcs,components,cycles,display_nodes,display_arcs
+bid_bin10_threshold10000,bid,10.0,10000.0,10.0,5.0,,,,2,1,1,0,2,1
+bid_bin10_threshold25000,bid,10.0,25000.0,10.0,5.0,,,,42,59,1,18,42,59
+bid_bin10_threshold50000,bid,10.0,50000.0,10.0,5.0,,,,68,53,17,2,68,53
+bid_bin10_raw_threshold25000,bid,10.0,25000.0,0.0,0.0,,,,378,384,28,34,374,380
+bid_midrelative_bin10_threshold25000,bid,10.0,25000.0,10.0,5.0,,midpoint-relative USD,,26,36,1,11,26,36
+bid_translation_control_bin10_threshold25000,bid,10.0,25000.0,10.0,5.0,,,True,2,1,1,0,2,1
+ask_bin10_threshold25000,ask,10.0,25000.0,10.0,5.0,,,,16,17,1,2,16,17
+ask_bin10_raw_threshold25000,ask,10.0,25000.0,0.0,0.0,,,,368,378,17,27,368,378
+ask_midrelative_bin10_threshold25000,ask,10.0,25000.0,10.0,5.0,,midpoint-relative USD,,16,19,1,4,16,19
+ask_translation_control_bin10_threshold25000,ask,10.0,25000.0,10.0,5.0,,,True,40,52,1,13,40,52
+bid_bin20_threshold10000,bid,20.0,10000.0,10.0,5.0,,,,2,1,1,0,2,1
+bid_bin20_threshold25000,bid,20.0,25000.0,10.0,5.0,,,,32,45,1,14,32,45
+bid_bin20_threshold50000,bid,20.0,50000.0,10.0,5.0,,,,52,34,18,0,52,34
+ask_bin20_threshold25000,ask,20.0,25000.0,10.0,5.0,,,,24,28,1,5,24,28
+control_one_band,,,,,,True,,,2,1,1,0,2,1
+control_two_bands,,,,,,True,,,4,2,2,0,4,2
+control_loop,,,,,,True,,,8,8,1,1,8,8

@@ -1,5 +1,7 @@
 # Financial TDA research
 
+**Python environment:** `conda activate tda`; select the `tda` kernel for notebooks. For commands without activation, use `conda run --no-capture-output -n tda python ...`.
+
 **GitHub checkout:** source, notebooks, figures, and research reports are versioned; bulk histories and large generated artifacts stay local. See [repository/data setup and cleanup](REPOSITORY_CLEANUP.md) and the [local-data inventory](LOCAL_DATA_MANIFEST.json). Before pushing, run `python3 scripts/check_git_size.py` after staging your changes.
 
 **Start with [START_HERE.md](START_HERE.md).** It is the concise, authoritative context for future chats, updated October 29, 2026. Current performance reporting is **gross/pre-fee only**, per the user's instruction.

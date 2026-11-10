@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "independent_ridge_fits": 72,
+  "refits": 12,
+  "forecast_rows": 3480,
+  "eligible_labels_checked": 528,
+  "max_forecast_discrepancy": 1.0302869668521453e-13,
+  "max_coefficient_discrepancy": 3.3931191190106347e-15,
+  "max_label_discrepancy": 3.552713678800501e-15,
+  "max_topology_discrepancy": 2.220446049250313e-16,
+  "max_interval_discrepancy": 2.9976021664879227e-15,
+  "geometry_windows_checked": 9,
+  "reflection_scale_constant_controls_passed": true,
+  "past_only_geometry_checked": true,
+  "all_input_hashes_rechecked": true,
+  "all_asof_joins_checked": true,
+  "selected_raw_replay": [
+    {
+      "file": "/Users/derickshi/Documents/Classes/Senior-Fall/TDA-Research/market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T03-00-00Z.jsonl.gz",
+      "live_partial": false,
+      "limited_prefix": false,
+      "rows_checked": 232067,
+      "counts": {
+        "segment_start": 1,
+        "connected": 1,
+        "subscribed": 3,
+        "orderbook_snapshot": 1,
+        "book_checkpoint": 275,
+        "orderbook_delta": 227984,
+        "trade": 2413,
+        "ticker": 1389
+      },
+      "checkpoints_matched": 275,
+      "passed": true,
+      "final_hash_verified": true
+    },
+    {
+      "file": "/Users/derickshi/Documents/Classes/Senior-Fall/TDA-Research/market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T09-00-00Z.jsonl.gz",
+      "live_partial": false,
+      "limited_prefix": false,
+      "rows_checked": 3597,
+      "counts": {
+        "segment_start": 1,
+        "ticker": 3594,
+        "orderbook_delta": 1,
+        "book_checkpoint": 1
+      },
+      "checkpoints_matched": 1,
+      "passed": true,
+      "final_hash_verified": true
+    },
+    {
+      "file": "/Users/derickshi/Documents/Classes/Senior-Fall/TDA-Research/market_data/recordings/2026-11-05T03-36-49Z/kalshi_perp/2026-11-05T15-00-00Z.jsonl.gz",
+      "live_partial": false,
+      "limited_prefix": true,
+      "rows_checked": 250000,
+      "counts": {
+        "segment_start": 1,
+        "orderbook_delta": 248274,
+        "trade": 1516,
+        "ticker": 174,
+        "book_checkpoint": 35
+      },
+      "checkpoints_matched": 35,
+      "passed": true,
+      "final_hash_verified": true
+    }
+  ],
+  "limit": "Raw independent replay is selected250k-row prefixes, not every delta. Full frozen files passed production gzip CRC/row/hash checks. Short-history bootstrap does not establish future generalization."
+}

@@ -1,0 +1,22 @@
+{
+  "bid": {
+    "absolute_profile_cosine_to_first": {
+      "median": 0.654156424629772,
+      "min": 0.49836512651363174
+    },
+    "relative_profile_cosine_to_first": {
+      "median": 0.9651667655109468,
+      "min": 0.8890328764003613
+    }
+  },
+  "ask": {
+    "absolute_profile_cosine_to_first": {
+      "median": 0.5442095750348165,
+      "min": 0.34038985965133195
+    },
+    "relative_profile_cosine_to_first": {
+      "median": 0.9426528243656512,
+      "min": 0.8624696494276136
+    }
+  }
+}

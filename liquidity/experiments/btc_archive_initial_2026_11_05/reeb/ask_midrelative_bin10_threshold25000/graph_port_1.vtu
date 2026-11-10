@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<VTKFile type="UnstructuredGrid" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
+  <UnstructuredGrid>
+    <Piece NumberOfPoints="16"                   NumberOfCells="19"                  >
+      <PointData>
+        <DataArray type="Int8" Name="ttkMaskScalarField" format="appended" RangeMin="0"                    RangeMax="0"                    offset="0"                   />
+      </PointData>
+      <CellData Scalars="ArcId">
+        <DataArray type="Int32" Name="ArcId" format="appended" RangeMin="0"                    RangeMax="18"                   offset="40"                  />
+      </CellData>
+      <Points>
+        <DataArray type="Float32" Name="Points" NumberOfComponents="3" format="appended" RangeMin="25"                   RangeMax="635.52963969"         offset="124"                 />
+      </Points>
+      <Cells>
+        <DataArray type="Int64" Name="connectivity" format="appended" RangeMin=""                     RangeMax=""                     offset="292"                 />
+        <DataArray type="Int64" Name="offsets" format="appended" RangeMin=""                     RangeMax=""                     offset="392"                 />
+        <DataArray type="UInt8" Name="types" format="appended" RangeMin=""                     RangeMax=""                     offset="488"                 />
+      </Cells>
+    </Piece>
+  </UnstructuredGrid>
+  <AppendedData encoding="base64">
+   _AQAAAACAAAAQAAAACwAAAA==eJxjYEAFAAAQAAE=AQAAAACAAABMAAAALAAAAA==eJwNwwcOgCAQALBzIkNA//9Y2qQREZu7h6eXt8nHbLHafO0Op5+/CxIcAKw=AQAAAACAAADAAAAAagAAAA==eJxjYAABQWcQWSH0womB4ZkTAxyccASRc7//gIuHhXM7w9gNthpA9i8w22aHBlx8WowJnL30mIbzZKmvYPYFw2C4+BfdZDjba24ZnH2sdzacPenwPDib4YCISwrPBzi7Nyge7GYAv4UqCQ==AQAAAACAAAAwAQAAOQAAAA==eJx1yLcNADAMA0HnHPbf1oWl5gGxOTyd+/NiQKsRJqPVDAu64mc3/B0Oo9UJl9Hqhgd9xQd3wAEbAQAAAACAAACYAAAANQAAAA==eJwtxdEGgDAAAMDJTDLJZCbJTPr/T+xhdy+3hCk6efXm7N2Hi09XN1++/bh7+PXnH1O4AX0=AQAAAACAAAATAAAACwAAAA==eJxjZsYAAAJNADo=
+  </AppendedData>
+</VTKFile>

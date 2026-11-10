@@ -1,0 +1,157 @@
+{
+  "window_start_utc": "2026-11-05T05:00:00+00:00",
+  "window_end_utc": "2026-11-05T05:10:00+00:00",
+  "coordinate": "Fixed absolute USD/BTC price bins; time in seconds from start",
+  "scalar_for_reeb": "Time on the clipped superlevel domain of displayed notional density",
+  "density_units": "USD displayed limit-price notional per $1/BTC price width",
+  "cases": [
+    {
+      "name": "bid_bin10_threshold10000",
+      "input": "bid_bin10_threshold10000.npz",
+      "side": "bid",
+      "bin_usd": 10,
+      "threshold": 10000,
+      "smoothing_price_usd": 10,
+      "smoothing_time_seconds": 5
+    },
+    {
+      "name": "bid_bin10_threshold25000",
+      "input": "bid_bin10_threshold25000.npz",
+      "side": "bid",
+      "bin_usd": 10,
+      "threshold": 25000,
+      "smoothing_price_usd": 10,
+      "smoothing_time_seconds": 5
+    },
+    {
+      "name": "bid_bin10_threshold50000",
+      "input": "bid_bin10_threshold50000.npz",
+      "side": "bid",
+      "bin_usd": 10,
+      "threshold": 50000,
+      "smoothing_price_usd": 10,
+      "smoothing_time_seconds": 5
+    },
+    {
+      "name": "bid_bin10_raw_threshold25000",
+      "input": "bid_bin10_raw_threshold25000.npz",
+      "side": "bid",
+      "bin_usd": 10,
+      "threshold": 25000,
+      "smoothing_price_usd": 0,
+      "smoothing_time_seconds": 0
+    },
+    {
+      "name": "bid_midrelative_bin10_threshold25000",
+      "input": "bid_midrelative_bin10_threshold25000.npz",
+      "side": "bid",
+      "bin_usd": 10,
+      "threshold": 25000,
+      "smoothing_price_usd": 10,
+      "smoothing_time_seconds": 5,
+      "coordinate": "midpoint-relative USD"
+    },
+    {
+      "name": "bid_translation_control_bin10_threshold25000",
+      "input": "bid_translation_control_bin10_threshold25000.npz",
+      "side": "bid",
+      "bin_usd": 10,
+      "threshold": 25000,
+      "smoothing_price_usd": 10,
+      "smoothing_time_seconds": 5,
+      "translation_control": true
+    },
+    {
+      "name": "ask_bin10_threshold25000",
+      "input": "ask_bin10_threshold25000.npz",
+      "side": "ask",
+      "bin_usd": 10,
+      "threshold": 25000,
+      "smoothing_price_usd": 10,
+      "smoothing_time_seconds": 5
+    },
+    {
+      "name": "ask_bin10_raw_threshold25000",
+      "input": "ask_bin10_raw_threshold25000.npz",
+      "side": "ask",
+      "bin_usd": 10,
+      "threshold": 25000,
+      "smoothing_price_usd": 0,
+      "smoothing_time_seconds": 0
+    },
+    {
+      "name": "ask_midrelative_bin10_threshold25000",
+      "input": "ask_midrelative_bin10_threshold25000.npz",
+      "side": "ask",
+      "bin_usd": 10,
+      "threshold": 25000,
+      "smoothing_price_usd": 10,
+      "smoothing_time_seconds": 5,
+      "coordinate": "midpoint-relative USD"
+    },
+    {
+      "name": "ask_translation_control_bin10_threshold25000",
+      "input": "ask_translation_control_bin10_threshold25000.npz",
+      "side": "ask",
+      "bin_usd": 10,
+      "threshold": 25000,
+      "smoothing_price_usd": 10,
+      "smoothing_time_seconds": 5,
+      "translation_control": true
+    },
+    {
+      "name": "bid_bin20_threshold10000",
+      "input": "bid_bin20_threshold10000.npz",
+      "side": "bid",
+      "bin_usd": 20,
+      "threshold": 10000,
+      "smoothing_price_usd": 10,
+      "smoothing_time_seconds": 5
+    },
+    {
+      "name": "bid_bin20_threshold25000",
+      "input": "bid_bin20_threshold25000.npz",
+      "side": "bid",
+      "bin_usd": 20,
+      "threshold": 25000,
+      "smoothing_price_usd": 10,
+      "smoothing_time_seconds": 5
+    },
+    {
+      "name": "bid_bin20_threshold50000",
+      "input": "bid_bin20_threshold50000.npz",
+      "side": "bid",
+      "bin_usd": 20,
+      "threshold": 50000,
+      "smoothing_price_usd": 10,
+      "smoothing_time_seconds": 5
+    },
+    {
+      "name": "ask_bin20_threshold25000",
+      "input": "ask_bin20_threshold25000.npz",
+      "side": "ask",
+      "bin_usd": 20,
+      "threshold": 25000,
+      "smoothing_price_usd": 10,
+      "smoothing_time_seconds": 5
+    },
+    {
+      "name": "control_one_band",
+      "input": "control_one_band.npz",
+      "control": true
+    },
+    {
+      "name": "control_two_bands",
+      "input": "control_two_bands.npz",
+      "control": true
+    },
+    {
+      "name": "control_loop",
+      "input": "control_loop.npz",
+      "control": true
+    }
+  ],
+  "centered_smoothing_is_noncausal": true,
+  "all_data_development": true,
+  "sampling": "Backwards as-of full-book checkpoints at 5-second times, maximum age 7.5 seconds"
+}

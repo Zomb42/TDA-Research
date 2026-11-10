@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-04",
+  "status": "Exploratory follow-up selected after viewing the four VIX bands; this is not a preregistered discovery or fresh holdout",
+  "question": "Does the fixed 20<=prior VIX<30 band improve the frozen factor-neutral strategy after counting cash days, matching exposure/risk, and checking concentration?",
+  "sources": "Frozen PCA3/EFA3 aligned returns and prior-session VIX from factor_reversal_vix; original strategy and source data unchanged",
+  "policy": "Trade unchanged unit-gross next-open-to-close long/short holdings iff previous-equity-session closing VIX>=20 and<30; otherwise zero return cash. No overnight positions, leverage, cash yield, costs or position refits",
+  "models": "PCA3 primary; EFA3 matched robustness",
+  "periods": "full 2017-02-03 through2026-10-27; earlier before2024; later from2024; all already examined",
+  "comparisons": "AlwaysOn, Target20to30, ComplementOutside20to30; constant always-on strategy fraction equal to target active fraction; constant fraction equal to target/always-on realized daily volatility. Constant weights are hindsight diagnostic calibrations, recomputed per reported period, no claim of implementability",
+  "context": "Report fixed policies for all original four bands, no selecting a new winner or adjusting20/30",
+  "metrics": "Whole-calendar compounded returns and CAGR252, volatility, Sharpe versus0, daily marked drawdown, initial100000 wealth, active-day fraction, mean on all days and on active days, initial dollar commitment. Full curve never resets; subperiod metrics separately start at1",
+  "inference": "2000 paired circular calendar block resamples, primary60 sessions/sensitivity20, seed2026110418. Pointwise target conditional mean, calendar mean and paired increments. Simultaneous max-standardized-deviation bands across original4 VIX bins x2 models separately for conditional means, calendar means, and gate-minus-always means within each period. Descriptive selection sensitivity, not correction for prior project research or all imaginable thresholds",
+  "concentration": "Annual results and active counts; all contiguous active episodes with entry from below20 versus at least30 (determined at episode start); known-at-entry episode age buckets1,2to5,6to20,21plus; leave each year out without tuning; remove5 best and5 worst target days separately as ex-post diagnostics, retain all remaining calendar days",
+  "band_regression": "OLS signed return in bps on target indicator plus prior SPY return/logRV20; second adds log prior VIX and prior VIX log change. HAC20; explanatory only",
+  "nonlinear_forecast": "One fixed chronological OLS comparison of prior ControlsVIX linear features versus those features plus indicator20to30; initial504 completed days, refit21, no tuning, mean-return target only. Score all dates and prior split, paired MSE difference. Primary60 and20 blocks; simultaneous across PCA/EFA within each period. No forecast used to trade",
+  "not_tested": "No boundary grid, alternative windows, leverage, optimized sizing, actual costs, holdings attribution, causal economic mechanism, or new future validation",
+  "reporting": "Gross/pre-fee only; specify exploratory status prominently; preserve favorable estimates and practical/uncertainty limitations"
+}
