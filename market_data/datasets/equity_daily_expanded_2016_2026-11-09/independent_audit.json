@@ -1,0 +1,50 @@
+{
+  "checks": {
+    "top_200_selection_independently_reproduced": true,
+    "universe_and_collection_plan_hashes_match": true,
+    "full_pagination_and_response_row_keys_verified": true,
+    "raw_adjusted_calendar_and_close_matrices_verified": true,
+    "positive_finite_ordered_ohlcv": true,
+    "all_returns_match_adjacent_observed_closes": true,
+    "contiguous_log_return_compounding": true,
+    "no_missing_history_imputation": true,
+    "all_coverage_counts_reproduced": true,
+    "all_original_30_retained": true,
+    "original_dataset_hashes_unchanged": true,
+    "large_return_flags_reproduced": true
+  },
+  "pages": {
+    "raw": {
+      "pages": 53,
+      "bars": 528637
+    },
+    "all": {
+      "pages": 53,
+      "bars": 528637
+    }
+  },
+  "equities": 200,
+  "sessions": 2729,
+  "fully_observed_equities": 182,
+  "equities_with_leading_missing": 18,
+  "equities_with_internal_missing": 0,
+  "internal_missing_equity_sessions": 0,
+  "equities_with_trailing_missing": 0,
+  "valid_return_equities_first_observation": 182,
+  "valid_return_equities_last_observation": 200,
+  "sectors": {
+    "Utilities": 5,
+    "Real Estate": 6,
+    "Materials": 7,
+    "Communication": 10,
+    "Consumer Staples": 11,
+    "Energy": 13,
+    "Consumer Discretionary": 16,
+    "Health Care": 25,
+    "Financials": 31,
+    "Industrials": 34,
+    "Information Technology": 42
+  },
+  "price_adjustment_caveat": "all-adjusted vendor prices, not an audited action ledger",
+  "source_sha256": "a2b3967353318cac3795482367520a44783561b177b987bfcf794c25ec5937f4"
+}

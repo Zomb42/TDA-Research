@@ -1,0 +1,32 @@
+{
+  "decision_date": "2026-10-28",
+  "purpose": "time extension of the frozen October 2026 universe; no reselection or strategy retuning",
+  "universe_rule": "top 200 IVV equity holdings by published USD market value descending, ticker ascending ties; active tradable Alpaca us_equity; union original 30; SPY benchmark",
+  "holdings_source": "https://www.ishares.com/us/products/239726/ishares-core-s-p-500-etf/latest-holdings.csv",
+  "holdings_snapshot": "downloaded provider snapshot, recorded before price-history collection; must not postdate requested history end",
+  "mapping": "spaces in provider share-class tickers become dots; verify against Alpaca active asset master; no history-based replacements",
+  "share_classes": "distinct listed securities retained, including multiple classes of one issuer; not independent issuers",
+  "classification": "provider sector snapshot, not historical labels; legacy manual groups retained separately",
+  "requested_start": "2016-01-01",
+  "requested_end": "2026-11-09",
+  "symbol_asof": "2026-10-28",
+  "data": "SIP 1Day OHLCV, raw and all-adjusted, full pagination; same range as original panel",
+  "earlier_history_probe": "SPY raw SIP daily bars 2000-01-01 through 2015-12-31; records actual returned availability only",
+  "selection_uses_strategy_outcomes": false,
+  "missingness": "keep all selected symbols; calendar-aligned blanks; no forward fill, backfill or zero-return substitution; returns require adjacent observed sessions",
+  "audit": "unique symbol/date, positive finite ordered OHLC, calendar, missing leading/internal/trailing, compounding, prior-panel overlap changes",
+  "future_analysis": "freeze separate structural design before evaluating expanded-universe outcomes; consider 120-day shrinkage and declared longer-window baseline",
+  "limitations": [
+    "Current survivor/size selection; not a point-in-time historical investable universe.",
+    "Fund weight is a size selection proxy, not a measured liquidity guarantee.",
+    "Current sector labels and current asset tradability are not historical eligibility.",
+    "Adding names does not create independent time histories or restore untouched 2024+ data.",
+    "Adjusted returns are a vendor proxy, not an audited action-level total-return ledger.",
+    "A longer historical panel is not itself a test of long-run equilibrium mean reversion."
+  ],
+  "fees": "no performance or fee experiment in this collection",
+  "universe_refresh": "reuse original holdings, asset master and security identifiers byte for byte",
+  "vintage": "complete raw/all-adjusted history repull; do not splice old and new adjusted prices",
+  "source_dataset": "equity_daily_expanded_2016_2026-10-27",
+  "source_manifest_sha256": "afe95d027ebe43b72f6579c23c1d753d17615ebbf42eac8789d4c713764626ff"
+}

@@ -1,3 +1,5 @@
+> **OUTDATED PROPOSAL STATUS — marked November 10, 2026.** The matched TDA-beyond-VIX comparison proposed in this November 4 review was completed November 5. Statements below that it remains unexecuted belong to the original review stage. Read the [executed comparison](../../experiments/tda_vix_matched/README.md) or entry 20 of the [consolidated research document](../../EQUITY_RESEARCH_LOG.md) for findings. The literature review, illustrations and cached context remain supporting evidence.
+
 # TDA regimes, persistence landscapes and VIX: what the research supports
 
 **Subsequent execution, November 5:** the user authorized the matched comparison proposed here. It is now [complete, with separate risk/mean results and an independent audit](../../experiments/tda_vix_matched/README.md). Later TDA risk-error point improvements beyond VIX are2.16–3.64%, with all intervals spanning zero; no trading policy changed. The review below preserves what was reviewed and proposed on November4; statements about an unexecuted comparison refer to that initial review date.

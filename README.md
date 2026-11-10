@@ -4,9 +4,9 @@
 
 **GitHub checkout:** source, notebooks, figures, and research reports are versioned; bulk histories and large generated artifacts stay local. See [repository/data setup and cleanup](REPOSITORY_CLEANUP.md) and the [local-data inventory](LOCAL_DATA_MANIFEST.json). Before pushing, run `python3 scripts/check_git_size.py` after staging your changes.
 
-**Start with [START_HERE.md](START_HERE.md).** It is the concise, authoritative context for future chats, updated October 29, 2026. Current performance reporting is **gross/pre-fee only**, per the user's instruction.
+**Start with [START_HERE.md](START_HERE.md).** It is the authoritative project context, with updates through November 10, 2026. Current performance reporting is **gross/pre-fee only**, per the user's instruction.
 
-**For equities, start with the [running research log](equity/EQUITY_RESEARCH_LOG.md).** It explains what we did, why, and what we learned; [current next steps](equity/EQUITY_NEXT_STEPS.md) contains the present decision.
+**For equities, start with the [consolidated methods and findings](equity/EQUITY_RESEARCH_LOG.md).** It contains all 23 research steps, detailed specifications, reconciled findings and the data refresh through November 9; [current next steps](equity/EQUITY_NEXT_STEPS.md) contains the present decision. Superseded summaries and proposal statuses carry an **OUTDATED** notice with a link to their replacement. Dated results remain available for reproduction.
 
 **For BTC, start with its [running research log](btc/BTC_RESEARCH_LOG.md).** The independent BTC track now has audited price/depth histories, Kalshi perp data, [executed descriptive features](btc/experiments/initial_features/README.md), and a [real liquidity-grid pilot](liquidity/experiments/btc_liquidity_features/README.md). [Data sources](btc/DATA_SOURCES.md) distinguish historical depth bands, candle history and live L2 capture.
 

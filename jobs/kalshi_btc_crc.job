@@ -1,4 +1,4 @@
-#!/bin/bash -l
+#!/bin/bash
 #$ -S /bin/bash
 #$ -cwd
 #$ -q long
@@ -9,6 +9,7 @@
 #$ -l h_rt=168:10:00
 
 # Submit from the repository root: qsub jobs/kalshi_btc_crc.job
+# Keep the shebang free of arguments: CRC's qsub wrapper expands it after -S.
 # Grid Engine supplies one CPU by default; this recorder needs no GPU or MPI.
 set -euo pipefail
 umask 077
@@ -36,6 +37,19 @@ fi
 : "${CAPTURE_MIN_FREE_GIB:=10}"
 : "${CAPTURE_STARTUP_TIMEOUT:=120}"
 : "${CAPTURE_COINBASE:=0}"
+
+# Check paths before environment activation or creating a run directory. Report
+# only filenames/paths, never file contents or authentication material.
+required_credentials=("$KALSHI_CREDENTIALS" "$KALSHI_KEY")
+if [[ "$CAPTURE_COINBASE" == 1 ]]; then
+    required_credentials+=("${COINBASE_CREDENTIALS:?Set COINBASE_CREDENTIALS to enable Coinbase}")
+fi
+for credential_path in "${required_credentials[@]}"; do
+    if [[ ! -f "$credential_path" || ! -r "$credential_path" ]]; then
+        printf 'Missing or unreadable credential file: %s\nSet its path in jobs/crc_capture.local.sh.\n' "$credential_path" >&2
+        exit 2
+    fi
+done
 
 # setup_crc.sh records the actual Conda path on CRC for batch activation.
 source jobs/crc_conda.sh

@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "all_12_snapshot_partitions_independently_reconstructed": true,
+    "centroid_groups_match_direct_greedy_center_merging": true,
+    "single_average_groups_match_separate_clustering_implementation": true,
+    "group_balance_and_all_partition_changes_reproduced": true,
+    "all_six_short_future_correlation_gaps_reproduced": true,
+    "stock_log_returns_match_independent_simple_compounding": true
+  },
+  "source_sha256": "50fdc2df2bf46f04558031ecbffea118a26b98c26591cd6c6538e91edeb25f33"
+}

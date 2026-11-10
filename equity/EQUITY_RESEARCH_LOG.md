@@ -1,10 +1,16 @@
-# Equity research log
+# Equity research: consolidated methods and findings
 
-Updated November 5, 2026. **Start here for the story of the equity work.** This is the running record of what we tried, why we tried it, what the results mean, and what remains unanswered. The numbered entries follow the research sequence. Entries 01–09 summarize October 28 work; entries 10–15 record the October 29 broader rerun, regime/image tests, coordinate review, full-basket day states, and matched EFA/PCA comparison. Entry 13 is a review; entries 14–15 are executed experiments. Entry 16 tests an approximation of a user-supplied index sell-off strategy and adds separate VIX context. Entry 17 compares VIX with the original factor-neutral strategy's returns and risk. Entry 18 investigates the user-selected 20–30 VIX band as a fixed exploratory filter. Entry 19 revisits historical TDA regime studies and their use alongside VIX; it adds a review and context alignment. Entry 20 executes the matched ordinary-controls/VIX/TDA comparison with separate risk and mean targets. Entry 21 tests local current-residual-shock merge trees for next-session stock forecasts. Entry 22 tests labeled relationship changes and signed portfolio exposures against covariance and average linkage.
+Updated November 10, 2026. **This is the single consolidated equity document:** the research sequence, intuitive findings, linkage explanation, reconciled performance tables, complete saved method specifications, and the latest data update are included here. Linked source files remain the reproducible evidence. The numbered entries follow the research sequence. Entries 01–09 summarize October 28 work; entries 10–15 record the October 29 broader rerun, regime/image tests, coordinate review, full-basket day states, and matched EFA/PCA comparison. Entry 13 is a review; entries 14–15 are executed experiments. Entry 16 tests an approximation of a user-supplied index sell-off strategy and adds separate VIX context. Entry 17 compares VIX with the original factor-neutral strategy's returns and risk. Entry 18 investigates the user-selected 20–30 VIX band as a fixed exploratory filter. Entry 19 revisits historical TDA regime studies and their use alongside VIX; it adds a review and context alignment. Entry 20 executes the matched ordinary-controls/VIX/TDA comparison with separate risk and mean targets. Entry 21 tests local current-residual-shock merge trees for next-session stock forecasts. Entry 22 tests labeled relationship changes and signed portfolio exposures against covariance and average linkage. Entry 23 refreshes prices through November 9, compares centroid linkage, and addresses the user's recent deleveraging hypothesis.
+
+**Reading guide:** [linkage and centroids](#single-linkage-rips-and-the-proposed-average-point), [latest refresh](#23--refresh-through-november-9-and-examine-the-unwind-question), [reconciled result tables](#appendix-a--reconciled-performance-and-risk-findings), [full experiment specifications](#appendix-b--complete-executed-method-specifications). Earlier strategy/forecast results still end October 27; only entry 23 uses the refreshed vintage.
+
+**Documentation cleanup, November 10:** this is the current consolidated reference. Six older summary/proposal documents now start with **OUTDATED** notices explaining exactly which project-status claims have been superseded and linking to the executed work. Fifteen disposable Python cache files were removed; historical datasets, experiments and notebooks were retained. See the [maintenance record](../REPOSITORY_CLEANUP.md#november-10-equity-documentation-cleanup). This is housekeeping, not another research experiment.
 
 **Validation review, October 29:** use [EQUITY_VALIDATION.md](EQUITY_VALIDATION.md) for reconciled metrics and aligned graphs. Eight existing audits and additional legacy reconstructions passed. All fifty figures embedded in eleven notebooks match saved project images. No numerical discrepancy was found in the audited results; earlier presentations mixed periods, portfolios and risk definitions. This review adds no new strategy experiment.
 
 ## Where we stand
+
+**November 10 refresh:** a separate full raw/adjusted vintage now covers 200 unchanged stocks plus SPY through November 9: 2,729 sessions, nine new dates, no internal/trailing gaps. All 106 response pages and adjacent-return checks pass. The old vintage is intact; 55,674 old adjusted bars differ in the new vendor vintage, so histories were not spliced. On the nine new sessions SPY returned −2.20%, but the median stock returned +2.02%. At K=11 the newest 120-session largest group contains 188 stocks under H0/single, 119 under average, and 188 under centroid linkage. Centroid linkage is a distinct tested descriptive comparator, not an equivalent shortcut to average linkage. The short extension does not establish a regime or the cause of the selloff. Contemporary reporting supports investigating deleveraging; specific factor neutrality and causal attribution remain unverified. See entry 23 and its fully included report below.
 
 **November5 labeled relationship/exposure test:** attaching actual signed holdings to complete H0/single-linkage stock hierarchies gives favorable squared-return forecasting point increments beyond covariance/VIX controls and average linkage. H0 beyond the average tree has QLIKE differences−0.00270 earlier and−0.00523 later, with both simultaneous intervals spanning zero. Later downside improves in point estimate, earlier downside worsens; mean MSE worsens0.410%/0.161%. All1,176 fits and34,956 forecast losses pass audit. This retains stock identities and position alignment, but establishes neither an incremental effect nor a new allocation policy. [Report and figures](experiments/tda_relationship_exposure/README.md), entry22 below.
 
@@ -49,13 +55,13 @@ The useful positive result is persistent structure. The unresolved step is turni
 
 | Document | Its job |
 |---|---|
-| **This running log** | Explain the whole equity research story intuitively, with links to evidence. |
+| **This consolidated running document** | Contain the whole research story, findings, reconciled metrics, linkage math and full specifications; links supply original evidence. |
 | [EQUITY_VALIDATION.md](EQUITY_VALIDATION.md) | Give reconciled performance/risk numbers, common-calendar graphs, definitions and validation evidence. |
-| [EQUITY_PROGRESS_REPORT.md](EQUITY_PROGRESS_REPORT.md) | Give a brief report-ready synthesis of completed work, findings, potential TDA uses, and limits. |
+| [EQUITY_PROGRESS_REPORT.md](EQUITY_PROGRESS_REPORT.md) | **OUTDATED summary:** retain the October 29 progress snapshot; use this consolidated document for the complete current findings. |
 | [EQUITY_NEXT_STEPS.md](EQUITY_NEXT_STEPS.md) | State the current decision and open choices. Completed work belongs in this log, not in a growing stack of old plans. |
-| [EQUITY_INTUITION.md](EQUITY_INTUITION.md) | Give the detailed original correlation/PCA explanation. It is about the first descriptive notebook, not the entire project. |
+| [EQUITY_INTUITION.md](EQUITY_INTUITION.md) | Original correlation/PCA explanation, with **OUTDATED project status** clearly marked. It is about the first descriptive notebook, not the entire project. |
 | [MEAN_REVERSION_SCOPE.md](MEAN_REVERSION_SCOPE.md) | Separate return reversal, equilibrium price spreads, and multi-year valuation questions. |
-| [PERSISTENCE_REGIME_IDEAS.md](PERSISTENCE_REGIME_IDEAS.md) | Explain stock exposure points versus day/state points, the PCA geometry identity, and the original regime proposal, now linked to its completed first test. |
+| [PERSISTENCE_REGIME_IDEAS.md](PERSISTENCE_REGIME_IDEAS.md) | Explain stock exposure points versus day/state points and the PCA geometry identity; its **OUTDATED proposal status** points to completed tests. |
 | [TDA regime and coordinate review](literature/tda_regimes_and_coordinate_design_2026-10-29.md) | Compare prior papers' exact point objects/dimensions with ours; separate a proposed next construction from completed tests. |
 | Each experiment's README and notebook, linked below | Supply exact settings, full results, plots, uncertainty, and reproduction instructions. |
 | [START_HERE.md](../START_HERE.md) | Keep project-wide context and rules across equity, BTC, and liquidity studies. |
@@ -89,6 +95,62 @@ Average linkage says D is `(0.40 + 0.30 + 0.20) / 3 = 0.30` away from the ABC gr
 That difference is why we compare the methods. Average linkage considers how well groups match across all their member pairs; single linkage asks whether there is one short bridge. Average linkage can still make uneven groups and does not globally optimize all possible partitions. In our measured basket it produced stronger future peer separation, rather than being guaranteed superior by definition.
 
 **The word “average” here refers to pairwise distances.** It does not mean averaging stock prices, buying an equal-weight portfolio, or taking average returns as a trading signal. Portfolio weighting is a separate step.
+
+### Single linkage, Rips, and the proposed average point
+
+**Yes: the connected components of our ordinary Rips filtration follow single linkage. Your average-point proposal is centroid linkage, a different grouping rule.** For two current groups A and B, the three distances are:
+
+| Method | Group distance | What can trigger a merge? |
+|---|---|---|
+| Single linkage | `min d(a,b)` over a in A, b in B | One short cross-group bridge |
+| Average linkage | `sum d(a,b) / (|A| |B|)` | The average of every cross-group pair is small |
+| Centroid linkage | `norm(mu_A - mu_B)` | The two arithmetic-mean coordinate vectors are close |
+
+At each step, merge the current group pair with the smallest distance under the chosen rule. Average linkage does compare one point with every member when one group is a singleton; once both groups have multiple members, it averages **all** cross-group combinations. The [SciPy linkage definitions](https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html) provide implementation references for these three rules.
+
+**Why Rips H0 gives single linkage.** At distance threshold epsilon, retain each original point and add every original pair edge with distance at most epsilon. One edge joining two components immediately makes them one component. A connected chain at positions `0, 0.9, 1.8` is therefore one component at epsilon 1, although its endpoints are 1.8 apart. Single linkage records precisely this connectivity rule. A minimum spanning tree retains the merge distances and connected components; the original pilot checked that equivalence.
+
+This equivalence concerns **H0**, not the whole Rips complex. A higher-dimensional simplex enters only once *all* edges among its vertices are present: its filtration value is the largest pair distance. The three chain points above have no filled triangle at epsilon 1. This all-pair simplex requirement does not turn H0 into complete linkage. H1 also depends on cycles and their fillings; a single-linkage tree alone cannot recover it. Here epsilon means edge-distance threshold; radius-based conventions may differ by a factor of two. [GUDHI Rips definition](https://gudhi.inria.fr/doc/3.12.0/group__rips__complex.html).
+
+**Why a centroid changes the answer.** Consider two small hypothetical groups in a plane:
+
+```text
+B: (-1,4) -------- (1,4)      center (0,4)
+
+A: (-1,0) -------- (1,0)      center (0,0)
+```
+
+Both groups form internally at distance 2. Their four cross distances are `4, sqrt(20), sqrt(20), 4`. Thus single distance is **4**, average distance is **4.236**, and centroid distance is **4**. At a threshold of 4.1, single and centroid would join these groups, but average would not. These are valid alternative rules, not two ways of calculating the same quantity. The example is arithmetic, not an observed stock configuration.
+
+A center describes location but loses within-group spread and arrangement. Two differently dispersed groups can have the same center. For Euclidean coordinates, a useful exact identity is:
+
+```text
+mean over all cross pairs of ||a-b||^2
+  = ||mu_A-mu_B||^2
+    + mean within A of ||a-mu_A||^2
+    + mean within B of ||b-mu_B||^2
+```
+
+This follows by expanding each squared norm; the centered cross terms average to zero. Even the average **squared** distance therefore needs the two spreads in addition to the center distance. Ordinary average linkage averages distances rather than their squares, so this identity is an explanation of the lost information, not a replacement formula for our implementation.
+
+**What is an average stock point?** In these experiments, each stock is its standardized prior SPY-residual-return history divided by `sqrt(L-1)`. Average these vectors in that same coordinate space. Their Euclidean distances are our `sqrt(2*(1-rho))`. An average dollar share price has no role. Full eigenvalue-weighted PCA coordinates preserve this geometry too; a truncated representation changes it. Do not normalize the centroid to unit length after averaging: that would define another criterion, closer to comparing correlations of aggregate histories.
+
+After joining A and B, use the size-weighted center `mu_(A union B) = (|A| mu_A + |B| mu_B) / (|A|+|B|)`. Giving a two-stock and a twenty-stock group equal weights would not produce the mean of their 22 original points.
+
+There is a further geometric reason to inspect centroid behavior here: individual standardized stock vectors have norm one, while averaging imperfectly aligned vectors moves a centroid inside that unit sphere. A broad group's center can therefore become close to many other points without those stocks being mutually similar. This is a possible mechanism for large centroid groups, not an independently established explanation of the measured group sizes.
+
+**The intended computational shortcut already exists for average linkage.** Keep the previously computed group distances and update exactly:
+
+```text
+D_average(A union B, C)
+  = (|A| D_average(A,C) + |B| D_average(B,C)) / (|A|+|B|)
+```
+
+The cross pairs simply split into pairs from A and from B, which proves the update. We need not revisit all original pairs at every merge. Thus using centers is unnecessary to avoid repeated all-pair averaging. Efficient hierarchical-clustering algorithms are covered by [Müllner's algorithm paper](https://arxiv.org/abs/1109.2378); the exact average-distance update above follows directly from the definition.
+
+**Why “merge when the average gets close enough” needs care.** Moving a centroid after a merge can make its next merge distance *smaller* than a previous distance. An equilateral triangle of side 2 demonstrates this: merge any pair at 2, then its midpoint is only `sqrt(3)` from the third point. Centroid trees can therefore have decreasing merge heights. They still define a sequence of nested groups, but those raw heights do not give the increasing-threshold connectivity filtration of the original Rips metric. Our descriptive comparison stops after N−11 merges, rather than treating centroid heights as an ordinary horizontal filtration cut. In the real refreshed snapshots this issue occurs: 39–46 decreasing-height steps per centroid tree.
+
+**What our evidence says.** Previous future-correlation comparisons favor average linkage over the tested H0 partitions; they did not test centroid linkage. Entry 23 now adds a small centroid comparison on the same full stock vectors. Centroid still puts 188–190 of 200 names into its largest group at the latest eleven-group cuts. This establishes how the proposed rule behaves in these snapshots, not a general verdict or a centroid trading-return result.
 
 ## The central idea in plain language
 
@@ -539,6 +601,22 @@ The primary paired EFA-minus-PCA mean is **+0.065 bps/day**, approximate 95% int
 
 **Evidence.** [Report and four figures](experiments/tda_relationship_exposure/README.md), [pre-run design](experiments/tda_relationship_exposure/specification.json), [metrics](experiments/tda_relationship_exposure/forecast_metrics.csv), [paired intervals](experiments/tda_relationship_exposure/paired_comparisons.csv), [named component exposures](experiments/tda_relationship_exposure/fixed_date_components.csv), [independent audit](experiments/tda_relationship_exposure/audit.json). All2,446 source outcomes reconcile;17 source reconstructions and68 exact kernel integrations pass, including independent Ledoit–Wolf moment calculations and MST minimax checks. All1,176 fits and34,956 daily losses check, with392 sklearn mean fits and24 separate trust-region risk optimizations. Maximum risk stationarity gradient3.10e-12; all original hashes remain intact.
 
+## 23 — Refresh through November 9 and examine the unwind question
+
+**Question, November 10.** Does the latest available daily history include the recent selloff, how do the equity relationships change, and can average-linkage distances be replaced by average stock points? The user identifies long/short factor-neutral deleveraging as the suspected market mechanism.
+
+**Data approach.** Reuse the exact original 200-stock universe, saved holdings and asset master. Pull a separate full raw/all-adjusted history through November 9, the latest completed prior date. There are nine new sessions, 2,729 total sessions and 528,637 bars per mode. All 106 pages and independent calendar/return checks pass. The original panel remains unchanged. Raw overlap matches, but 55,674 adjusted OHLC bars differ; do not splice vintages. No new selection, corporate-action causal attribution or fee schedule is introduced.
+
+**Descriptive approach.** Freeze all 200 names using 272 observed returns through October 27. Fit after-close 120/252-session SPY-residual geometries at October 27 and November 9 on the new common vintage. Compare single/H0, average and centroid on identical full standardized vectors at eleven groups. The method specification was saved before computing outcomes. Centroid groups stop after N−11 chronological merges because their heights can decrease. Independently reconstruct all twelve partitions, including centroid by direct greedy center merging. Old trading and forecast results are preserved on their original dates.
+
+**Findings.** The latest largest group has 188/119/188 stocks for single/average/centroid with 120 observations, and 187/96/190 with 252. Centroid does not repair concentration here. Mean raw 120-session correlation rises from 0.0660 to 0.0940; residual correlation rises from 0.0453 to 0.0513. During the nine-session extension, SPY returns −2.20% and the median stock +2.02%. Average linkage has a higher frozen-label future correlation-gap point estimate in the short block too; nine returns per stock do not supply the old twenty-session test or a reliable new method ranking.
+
+**Economic interpretation.** Contemporary Reuters reporting describes leverage cuts and overlapping hedge-fund books; it does not establish that the relevant portfolios were neutral to our factors or that they caused the decline. Unwinding a neutral book sells longs **and buys back shorts**; crowding can generate residual losses even when fitted factor neutrality holds, while the index effect depends on constituent weights and liquidity. The same-side/opposite-side distinction motivates labeled relationships attached to signed holdings, already tested in entry 22. Neither a global correlation rise nor an H0/H1 scalar alone identifies fund flows. Treat the user's mechanism as a focused hypothesis, not a proved cause.
+
+**Decision.** The refreshed data and new descriptive centroid comparison are complete. Average remains the stronger historically tested structural comparator. No trading gate, new profitability conclusion, causal claim or parameter choice follows. Exact snapshot and event-source details are included in Appendix C; full method settings are in Appendix B.
+
+**Evidence:** [new dataset](../market_data/datasets/equity_daily_expanded_2016_2026-11-09/README.md), [recent report](experiments/equity_recent_refresh_2026_11_10/README.md), [independent reconstruction](experiments/equity_recent_refresh_2026_11_10/independent_audit.json), [source](experiments/equity_recent_refresh.py), [data refresh source](../market_data/refresh_equity_daily.py).
+
 ## How to read the recurring measurements
 
 | Term | Plain-language meaning | What it does not establish |
@@ -576,3 +654,1755 @@ The primary paired EFA-minus-PCA mean is **+0.065 bps/day**, approximate 95% int
 After each completed equity experiment, append the next numbered, dated entry with **question → what we did → result → intuition → limit → decision → evidence**. Update the short “Where we stand” section when a conclusion changes. Keep old findings attached to their original sample and experiment rather than silently rewriting them.
 
 Maintain [EQUITY_NEXT_STEPS.md](EQUITY_NEXT_STEPS.md) as the current decision page. Exact numerical ledgers, full settings, and audits remain in the experiment folders; this log explains their meaning instead of copying every table. Hypothetical examples must be labeled, and proposed work must be distinguished from completed work.
+
+<!-- BEGIN GENERATED CONSOLIDATED APPENDICES -->
+
+## Appendix A — Reconciled performance and risk findings
+
+The complete validated comparison is reproduced here for one-document reading. These metrics use the October 27 data vintage and original experiment periods; they are not updated strategy results through November 9.
+
+## Equity results: validated definitions and comparison ledger
+
+Validated October 29, 2026. **Use this page for current performance/risk numbers.** The [research log](EQUITY_RESEARCH_LOG.md) preserves the sequence of experiments; this page reconciles their different scopes. No strategy was retuned and no return ledger was changed.
+
+### The direct answer about TDA and risk
+
+There are two separate favorable later point observations:
+
+1. **Realized portfolio volatility:** the stock-loading-diagram mean gate has 3.21% annualized volatility versus 3.80% for always running PCA. Its point CAGR is 3.39% versus 3.37%, and Sharpe 1.06 versus 0.89. It trades only 69.4% of calendar days. The ordinary SimpleGate has 3.18% volatility while active 67.2% of days. Lower exposure through flat days can reduce measured volatility without establishing a uniquely useful topological signal.
+2. **Accuracy of a risk forecast:** full-basket RawChange lowers later squared log-RMS forecast error by **3.44%** relative to its 33-control model. That forecast was **not used to size, hedge, or switch off the portfolio**. This is neither a 3.44% return nor a demonstrated reduction in realized portfolio risk.
+
+Both point observations are valid. The declared paired uncertainty intervals include zero; a reliable incremental TDA benefit over matched conventional controls remains unestablished. Saying simply “TDA improves risk” omits these essential distinctions.
+
+### 1. Same later period: January 2, 2024–October 27, 2026
+
+Every row below uses **the same 708 trading sessions**. All returns are gross/pre-fee, with no cash-interest return, 1× gross exposure on active days, and flat days included as zero. CAGR means annualized compounded return, not total profit.
+
+| Strategy | Start | Days | Gross CAGR | Realized annualized volatility | Sharpe vs zero | Active days |
+|---|---|---:|---:|---:|---:|---:|
+| PCA3 ungated | 2024-01-02 | 708 | 3.37% | 3.80% | 0.89 | 100.0% |
+| EFA3 ungated | 2024-01-02 | 708 | 3.54% | 3.81% | 0.93 | 100.0% |
+| SimpleGate | 2024-01-02 | 708 | 2.33% | 3.18% | 0.74 | 67.2% |
+| StockPDGate | 2024-01-02 | 708 | 3.39% | 3.21% | 1.06 | 69.4% |
+| ImageGate | 2024-01-02 | 708 | 1.19% | 2.83% | 0.43 | 55.9% |
+| BasketControlsGate | 2024-01-02 | 708 | 2.44% | 3.12% | 0.79 | 67.9% |
+| BasketRawChangeGate | 2024-01-02 | 708 | 1.90% | 3.06% | 0.63 | 63.7% |
+
+PCA120 and EFA120 are **ungated and use no persistence features**. Every gate shown acts on the fixed PCA120 underlying strategy, not EFA. StockPDGate uses the three stock-loading diagram summaries; ImageGate uses the H0 bins and H1 image; BasketRawChangeGate uses full-basket day-diagram changes. SimpleGate and BasketControlsGate are different ordinary-control feature sets. The basket control includes conventional MST/H0-equivalent summaries. Compare additions to their own control, not unrelated rows as though one feature alone changed.
+
+The stock-PD gate's paired later mean increment over SimpleGate remains +0.411 bps/day, simultaneous interval [−0.213,+1.035]. The basket RawChange mean gate instead trails its own control in point returns. The risk predictor and the mean-return gate are fitted to different targets.
+
+### 2. What “overall” means
+
+Full native baseline history, **February 3, 2017–October 27, 2026**:
+
+| Strategy | Start | Days | Gross CAGR | Realized annualized volatility | Sharpe vs zero | Active days |
+|---|---|---:|---:|---:|---:|---:|
+| PCA3 ungated | 2017-02-03 | 2446 | 0.68% | 3.92% | 0.19 | 100.0% |
+| EFA3 ungated | 2017-02-03 | 2446 | 0.66% | 3.92% | 0.19 | 100.0% |
+
+The 3.54% EFA CAGR applies only to the later subperiod. Its full native-history CAGR is 0.66%, with 17.14% maximum drawdown; $100,000 becomes approximately $106,550. This does not contradict a 3.54% recent-period CAGR.
+
+The gates need completed training labels and first trade on **April 22, 2019**. Their native “full” period therefore starts later. They have no generated decisions before that date. We do not fabricate early gate returns or prepend zeros and call that an equivalent strategy.
+
+For comparison, every row below is restarted at the same capital on **April 22, 2019**, then compounded continuously through October 27, 2026: **1,891 common sessions**, with no reset at 2024.
+
+| Strategy | Start | Days | Gross CAGR | Realized annualized volatility | Sharpe vs zero | Active days |
+|---|---|---:|---:|---:|---:|---:|
+| PCA3 ungated | 2019-04-22 | 1891 | 0.87% | 4.15% | 0.23 | 100.0% |
+| EFA3 ungated | 2019-04-22 | 1891 | 0.87% | 4.15% | 0.23 | 100.0% |
+| SimpleGate | 2019-04-22 | 1891 | 1.48% | 3.23% | 0.47 | 50.6% |
+| StockPDGate | 2019-04-22 | 1891 | 1.66% | 3.25% | 0.52 | 51.1% |
+| ImageGate | 2019-04-22 | 1891 | 1.30% | 3.00% | 0.45 | 45.3% |
+| BasketControlsGate | 2019-04-22 | 1891 | 2.10% | 3.20% | 0.67 | 45.8% |
+| BasketRawChangeGate | 2019-04-22 | 1891 | 1.88% | 3.19% | 0.60 | 44.5% |
+
+![Same calendar and starting capital](experiments/equity_validation_review_2026_10_29/01_common_calendar_profit.png)
+
+Those common-period gate point returns can exceed the ungated point return. That is a descriptive result, not established TDA-specific alpha: ordinary gates also change performance, and all originally declared paired TDA-versus-control intervals remain unresolved. The common-calendar table is a reporting alignment, not a newly selected test or a fresh holdout.
+
+### 3. The exact risk-forecast result
+
+**Underlying target strategy:** ungated PCA120. **Forecast target:** log of the next twenty daily gross strategy returns' RMS, measured in bps. RMS is the square root of average squared returns; both large gains and large losses raise it. It is different from expected return, downside-only risk, and portfolio volatility after applying a policy.
+
+On the later **138 completed, non-boundary forecast targets**:
+
+| Risk predictor | Squared log-RMS forecast error | Meaning |
+|---|---:|---|
+| Ordinary 33 controls | 0.06924038 | Baseline prediction error |
+| Same controls + RawChange | 0.06686171 | 3.435% lower point prediction error |
+
+The percentage is `(0.06924038 − 0.06686171) / 0.06924038 × 100`. The paired loss difference is **−0.00237868**, approximate simultaneous 95% interval **[−0.00600227,+0.00124491]**, including zero. Earlier point reduction is only 0.43%. All four declared additions' primary simultaneous intervals span zero in both periods.
+
+As a secondary metric, RMS absolute forecast error is 4.844 versus 4.792 bps. Different loss functions give different percentage changes; these are not interchangeable definitions of “risk improvement.” No allocation rule based on these risk predictions was evaluated.
+
+![Risk prediction error, separate from profit](experiments/equity_validation_review_2026_10_29/02_risk_forecast_accuracy.png)
+
+### 4. Why earlier numbers or plots differ
+
+| Difference | What must be held fixed before comparing |
+|---|---|
+| 0.66% versus 3.54% EFA CAGR | Full 2017-onward history versus the 2024-onward subperiod |
+| Ungated versus TDA-gated profit | Different trading policies; the latest EFA curve has no TDA gate |
+| 2017 baseline versus 2019 gate start | Admission/history warmup differs from completed-label forecasting warmup |
+| Original thirty versus expanded two hundred stocks | Different universes; the original negative result remains valid for its basket |
+| 120 versus 252 factor-fit sessions | Separate fixed lookbacks; no winning setting has been validated |
+| Daily 708 later executions versus 689 event formations | The 1/5/20-session event study uses common complete20 dates and omits nineteen tail dates |
+| Raw daily P&L versus adjusted event returns | Different saved price conventions; both are pre-fee |
+| A curve beginning at zero in each panel versus a continuous curve | The former resets capital for each displayed subperiod; the latter does not |
+| Dollar profit versus percentage total return versus CAGR | Different units; $100k capital and the 252-session annualization must be stated |
+| Active-day mean versus calendar mean | Our gate performance includes all inactive zero-return days |
+| Different confidence endpoints on identical point returns | Earlier HAC5 intervals versus block-bootstrap intervals, and different seeds/comparison families; no underlying return change is implied |
+| Ordinary pointwise versus simultaneous intervals | Several isolated secondary pointwise results exclude zero but do not survive their declared comparison family |
+
+Dollar neutrality also does not mean zero gross stock exposure. A $100,000 account at 1× gross initially has roughly $50,000 long and $50,000 short. Estimated SPY beta and three factor exposures balance at formation, but other risks and later exposure changes remain.
+
+### 5. What was revalidated
+
+- **Eight audit reruns passed:** full expanded data pagination/returns/coverage, expanded PCA and its price ledger, scalar diagram forecasts/gates, images, full-basket states and both targets, EFA/PCA, expanded peer structure, and the earlier direct response study. They ran in isolated report directories. At audit completion, all 476 snapshotted original files were unchanged.
+- **Additional independent legacy reconstruction passed:** all 2,598 original thirty-stock daily portfolios, all five PC-sensitivity return series, every H0 peer-pilot return, selected daily peer labels, all thirty cuts at all 127 original hierarchy anchors, original descriptive PCA, and gross performance/HAC intervals.
+- The same underlying PCA return series matches every gate's AlwaysOn ledger. Scalar and image studies' shared Simple/StockPD gates match exactly. All native-period CAGR, volatility, Sharpe and drawdown figures reproduce to numerical tolerance.
+- All **11 existing notebooks** have executed code and no saved execution errors. All **50 embedded figures** match current saved project PNGs byte for byte. This rules out stale embedded versus sidecar image mismatches; it does not make their differently scoped graphs comparable automatically.
+- Forecast risk losses were recalculated directly from saved predictions and actual target labels. The underlying daily returns were separately reconciled against prices and holdings by the audit chain.
+
+**No numerical discrepancy was found in these audited returns, losses or metrics. The reporting problem was switching among valid but differently scoped quantities without keeping the distinctions prominent.** This page and its machine-readable ledger now make those scopes explicit. Historical source tables/graphs are preserved; documentation was clarified rather than changing strategy outcomes.
+
+This validates implementation and internal consistency, not an economic edge. It does not independently certify every vendor price/corporate-action adjustment, realistic fills, point-in-time universe membership, or future generalization. Current-survivor selection, examined evaluation dates, short time history, overlapping labels, conditional bootstrap inference and multiple historical experiments remain limitations. No trading costs were introduced in this review.
+
+### Evidence and reproduction
+
+- [All return metrics with strategy, universe, lookback, scope, dates and counts](experiments/equity_validation_review_2026_10_29/canonical_return_metrics.csv)
+- [Separate risk-forecast metrics](experiments/equity_validation_review_2026_10_29/canonical_risk_forecast_metrics.csv)
+- [Common-calendar daily returns and equity](experiments/equity_validation_review_2026_10_29/common_calendar_returns_and_equity.csv)
+- [Audit rerun results/log paths](experiments/equity_validation_review_2026_10_29/audit_reruns.json), [legacy checks](experiments/equity_validation_review_2026_10_29/legacy_checks.json), [ledger checks](experiments/equity_validation_review_2026_10_29/ledger_validation.json), [notebook/image inventory](experiments/equity_validation_review_2026_10_29/notebook_output_inventory.csv)
+- [Audit runner](experiments/revalidate_equity_research.py), [legacy reconstruction](experiments/equity_validation_review_2026_10_29/check_legacy_results.py), [ledger/report generator](experiments/equity_validation_review_2026_10_29/build_comparison_ledger.py)
+
+No new TDA/EFA combination, risk-sizing policy, strategy tuning or external data collection was run. This is a validation and reporting reconciliation of existing equity work.
+
+
+## Appendix B — Complete executed method specifications
+
+These are the complete saved specifications, embedded verbatim as JSON so exact windows, features, fitting, thresholds, target timing, missingness, comparison families and random seeds can be read in this document. Expand an experiment for its technical detail. Findings and interpretations are in entries 01–23 and Appendix A/C. Archived instructions describe their own experiment only. Historical cost scenarios in the original frozen backtest specification are superseded by the October 28 gross/pre-fee reporting instruction; they are retained as provenance, not current assumptions.
+
+### equity efa vs pca
+
+Original: [experiments/equity_efa_vs_pca/specification.json](experiments/equity_efa_vs_pca/specification.json). SHA256 `4beb0f771452bebf3d0e276e928ef85510a4b841c2d2d4c378dfc7203b72aa10`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "decision_date": "2026-10-29",
+  "status": "exploratory comparison on previously examined history/current-survivor candidate universe",
+  "hypothesis": "explicit heterogeneous unique variances may estimate shared factors better than PCA; whether the resulting residuals reverse is a separate test",
+  "universe": "same expanded200 candidates and daily admission: 272 complete prior contiguous log returns, no future availability filter",
+  "fit": "120 prior observations ending t-1; stockwise intercept+SPY fit; demean/standardize residuals with sample SD floor0.0001",
+  "PCA": "top3 right singular vectors of the standardized residual matrix",
+  "EFA": "sklearn FactorAnalysis, three factors, lapack SVD, no rotation, tol0.001, max_iter1000, default all-ones unique variance initialization, no warm start or outcome-based model selection",
+  "raw_exposures": "residual_sigma[:,None] times PCA vectors or EFA loading matrix; add ones and past SPY beta; rank5",
+  "signal": "same one-day vendor-adjusted close-close log return at t",
+  "portfolio": "same cross-sectional WLS and holdings -W*residual / sum(abs(W*residual)); W=inverse prior total-return variance, sigma floor0.0001; no caps",
+  "not_changed": "do not replace portfolio W by EFA unique variances or use posterior factor scores as a different trading signal",
+  "execution": "next vendor raw daily-bar open to same-day raw close, ideal fractional dollars, unit gross, flat nightly, no gate",
+  "primary": "paired EFA3 minus PCA3 daily gross mean, 1000 circular60-day bootstrap, approximate95 interval separately per period",
+  "horizon_secondary": "same common complete20 dates as previous study; frozen initial sleeves, cumulative all-adjusted next-open to 1/5/20-close; mean profit and e'W R/e'W e response slope",
+  "structural_secondary": "every20 formation dates with complete next20 returns and no split crossing; future WLS residual mean absolute pair correlation using past-fixed exposures/W, and raw loading-subspace overlap with previous diagnostic block on common stocks",
+  "structure_interpretation": "future common-return coefficients are ex-post decompositions only, never used in trading; raw subspace overlap = ||Qprev'Qcurrent||F^2/3, rotation-invariant, not economic-factor identification",
+  "uncertainty_secondary": "60-day blocks for overlapping daily horizon events; three diagnostic-block draws for structural summaries; simultaneous two-metric structural bands, three-horizon bands separately for event means/slopes; no correction across project history",
+  "periods": "entry before2024 development, otherwise later; later already examined, not untouched holdout",
+  "checks": "full saved PCA holdings/returns/events reconciliation; EFA convergence/likelihood/uniqueness logs; rotation/column-scale invariance; independent WLS and EM likelihood audit",
+  "fees": "excluded entirely",
+  "seed": 2026102961
+}
+```
+
+</details>
+
+### equity expanded pca reversal
+
+Original: [experiments/equity_expanded_pca_reversal/specification.json](experiments/equity_expanded_pca_reversal/specification.json). SHA256 `88b2dbaa7db149300074e0e00b4c727473a538975c1891ba0454c02f69ca2af0`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "decision_date": "2026-10-29",
+  "status": "exploratory on previously examined dates and current-survivor selected securities",
+  "data": "equity_daily_expanded_2016_2026-10-27",
+  "stocks": 200,
+  "benchmark": "SPY",
+  "no_additional_download": true,
+  "primary_models": [
+    "SPY_only",
+    "SPY_PCA3"
+  ],
+  "additional_comparators": [
+    "Sector11",
+    "Average11",
+    "SPY_PCA10"
+  ],
+  "primary_lookback": 120,
+  "sensitivity_lookback": 252,
+  "eligibility": "272 complete contiguous prior log returns ending t-1; same admitted stocks across windows/models; no future availability filtering",
+  "signal": "one-session vendor-adjusted close-to-close log return at t",
+  "training": "prior observations t-lookback:t, exclusive of signal day",
+  "weights": "inverse prior total-return variance; daily sigma floor 0.0001",
+  "holdings": "minus W times cross-sectional WLS residual, normalized to unit gross; no caps",
+  "exposures": "SPY_only: dollars+SPY beta; PCA3/PCA10: additional raw-return-scaled residual PCs; sectors/average: 11 group indicators+SPY beta",
+  "pca_scaling": "standardize prior SPY residual histories; raw exposure basis = residual_sigma[:,None] * right_singular_vectors",
+  "primary_execution": "next vendor raw daily-bar open to same session raw close; ideal fractional-dollar targets, flat nightly",
+  "horizon_response": "1/5/20-session cumulative all-adjusted next-open-to-exit-close returns of frozen initial sleeves; common complete 20-session dates, omit split-crossing events; not a funded overlapping-cohort strategy",
+  "horizon_slope": "pooled e'W R / e'W e; equivalent to future formation-exposure residual/sigma on signal residual/sigma; negative indicates reversal",
+  "universe_control": "rerun original30 SPY_only and PCA3 on identical dates/windows; groups/PCA10 comparators only expanded200",
+  "split": "entry before 2024-01-01 development, otherwise later; not untouched holdout",
+  "descriptive_PCA": "2016-2023 only, balance using availability in that period only; original30 and expanded200; standardized raw log returns; full-panel membership is not used for backtest admission",
+  "uncertainty": "1000 circular moving-block resamples of 60 formation dates per period; pointwise approximate 95%; paired broad-minus-original control uses identical resamples",
+  "reported_selection": "all declared models/windows/periods; no winning setting selected",
+  "state_features": "save past-fit mean residual correlation, residual PC1 share, H0 death quantiles, prior SPY volatility as potential regime inputs; no state-to-profit model fitted",
+  "representation_snapshot": "formation 2023-12-29, prior 252 sessions, current admitted stocks; stock residual-history geometry, full weighted loadings identity control, top3 weighted loading geometry, and day points in top3 factor-score space",
+  "snapshot_scaling": "each non-control distance matrix divided by its own positive median pair distance for diagram comparison; raw scale saved separately",
+  "persistence": "snapshot H0/H1 Vietoris-Rips, finite intervals saved; no interpretation as economic cycles, significance, calendar duration, or profitable regimes",
+  "fees": "excluded entirely",
+  "regime_filter": false,
+  "seed": 2026102901
+}
+```
+
+</details>
+
+### equity expanded structure
+
+Original: [experiments/equity_expanded_structure/specification.json](experiments/equity_expanded_structure/specification.json). SHA256 `b266abad4c093f34bae40eb75d9b7617e98b401b71b7c4af86a8eab36f015dd3`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "decision_date": "2026-10-28",
+  "status": "exploratory cross-sectional generalization, no fresh time holdout",
+  "input_dataset": "equity_daily_expanded_2016_2026-10-27",
+  "input_equities": 200,
+  "benchmark": "SPY",
+  "eligibility": "272 contiguous finite prior adjusted daily log returns ending t-1; no future eligibility filter or history filling",
+  "common_membership": "same eligible stocks at each anchor for both windows, methods, all cuts and sector baseline",
+  "windows": [
+    120,
+    252
+  ],
+  "scored_group_counts": [
+    6,
+    11,
+    20,
+    40
+  ],
+  "all_cuts": "balance only at K=1..N; no outcome-based cut selection",
+  "geometry": "sample correlation distance sqrt(2*(1-rho)) of separately fitted prior-window SPY residuals",
+  "regularization": "none: distance geometry needs no inverse covariance; longer window and perturbations measure sensitivity",
+  "future_target": "20 future daily log returns after anchor, residualized with the common frozen 252-session SPY fit; same target for both windows and sector reference",
+  "first_signal_index": 272,
+  "anchor_stride": 20,
+  "future_sessions": 20,
+  "boundary": "2024-01-01; exclude future blocks crossing boundary",
+  "history_perturbations": {
+    "120": [
+      100,
+      140
+    ],
+    "252": [
+      232,
+      272
+    ],
+    "older_shift_sessions": 5
+  },
+  "bootstrap_history_repetitions": 40,
+  "bootstrap_history_block_sessions": 5,
+  "random_label_repetitions": 250,
+  "random_labels": "common random relabelings within anchor, preserving every partition's exact group sizes",
+  "stable_local_branches": {
+    "min_size": 3,
+    "max_size": 8,
+    "bootstrap_exact_recovery_min": 0.75,
+    "window_exact_recovery_min": 0.6666666666666666
+  },
+  "branch_recovery": "same exact stock set anywhere in perturbed tree, not restricted to scored K",
+  "uncertainty": "1000 circular bootstrap resamples of six consecutive anchors; approximate pointwise and simultaneous bands",
+  "simultaneous_family": "eight scored (window,K) cells per method and period; paired H0-minus-average same eight cells; sector comparisons analogous; not all research choices",
+  "sector_baseline": "October 27, 2026 provider snapshot; eleven groups when all sectors represented; no empirical membership-stability claim",
+  "seed": 2026102821,
+  "anchor_bootstrap_repetitions": 1000,
+  "anchor_bootstrap_block": 6,
+  "fees": "no performance or fee calculations",
+  "strategy_changes": false,
+  "outcome_selected_settings": false
+}
+```
+
+</details>
+
+### equity full basket states
+
+Original: [experiments/equity_full_basket_states/specification.json](experiments/equity_full_basket_states/specification.json). SHA256 `09ef552dd4cb35a554a069d9c40235050e6b669c802678d9bea82f037ac616d5`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "decision_date": "2026-10-29",
+  "status": "exploratory; examined history and current-survivor candidate universe",
+  "question": "do the full traded basket's day states, or changes in their topology, forecast strategy risk/mean beyond conventional controls?",
+  "point": "one historical day, coordinates = that day's 182 reference-stock daily log returns; no SPY coordinate",
+  "cohort": "reuse reference names fixed by 272 complete returns at initial formation; no future-completeness selection; no changing dimensions",
+  "cloud": "120 prior days ending t-1; 182 coordinates; no PCA truncation or downsampling",
+  "raw": "raw log-return vectors divided by sqrt(182), so Euclidean distance is RMS stock-return difference; broad market retained",
+  "residual": "regress each stock on intercept and SPY over the same prior120, standardize residual columns by sample SD, divide vectors by sqrt(182)",
+  "distance": "complete Euclidean Vietoris-Rips H0/H1; compute after dividing distances by their median; raw diagram scales restored when using amplitude features",
+  "changes": "compare current diagram with five-sessions-earlier window (115 shared days); representations refit on their own past windows",
+  "Wasserstein": "order1 sum of Euclidean birth/death matching costs, with diagonal cost lifetime/sqrt(2); exact assignment, finite H1 only; empty diagram cost sum of diagonal costs",
+  "H0": "one essential interval excluded; finite deaths equal MST edges; MST quantile and squared sum included as ordinary controls, no H0-only alpha claim",
+  "ordinary_controls": [
+    "SPY_vol20",
+    "residual_mean_corr",
+    "residual_pc1_share",
+    "residual_pc3_share",
+    "factor_lag1_acf_mean",
+    "factor_dominant_power_share_mean",
+    "strategy_trailing20_bps",
+    "strategy_stock_count",
+    "lag_cloud_median_distance",
+    "loading_cloud_median_distance",
+    "strategy_trailing20_logRMS",
+    "basket_vol20_RMS",
+    "basket_vol20_dispersion",
+    "raw_log_scale",
+    "raw_distance_cv",
+    "raw_distance_q10",
+    "raw_distance_q90",
+    "raw_MST_q90",
+    "raw_MST_sum_squared",
+    "raw_effective_rank",
+    "raw_mean_stock_corr",
+    "raw_covariance_change5",
+    "raw_log_scale_change5",
+    "residual_log_scale",
+    "residual_distance_cv",
+    "residual_distance_q10",
+    "residual_distance_q90",
+    "residual_MST_q90",
+    "residual_MST_sum_squared",
+    "residual_effective_rank",
+    "residual_mean_stock_corr",
+    "residual_covariance_change5",
+    "residual_log_scale_change5"
+  ],
+  "augmentations": {
+    "RawLevel": [
+      "raw_H1_count",
+      "raw_H1_max_bps",
+      "raw_H1_sum_squared_bps2"
+    ],
+    "RawChange": [
+      "raw_H1_W1_bps",
+      "raw_H1_W1_shape",
+      "raw_H1_delta_shape_squared"
+    ],
+    "ResidualLevel": [
+      "residual_H1_count",
+      "residual_H1_max_shape",
+      "residual_H1_sum_squared_shape"
+    ],
+    "ResidualChange": [
+      "residual_H1_W1_shape",
+      "residual_H1_delta_shape_squared"
+    ]
+  },
+  "models": {
+    "HistoryMean": [],
+    "Controls": [
+      "SPY_vol20",
+      "residual_mean_corr",
+      "residual_pc1_share",
+      "residual_pc3_share",
+      "factor_lag1_acf_mean",
+      "factor_dominant_power_share_mean",
+      "strategy_trailing20_bps",
+      "strategy_stock_count",
+      "lag_cloud_median_distance",
+      "loading_cloud_median_distance",
+      "strategy_trailing20_logRMS",
+      "basket_vol20_RMS",
+      "basket_vol20_dispersion",
+      "raw_log_scale",
+      "raw_distance_cv",
+      "raw_distance_q10",
+      "raw_distance_q90",
+      "raw_MST_q90",
+      "raw_MST_sum_squared",
+      "raw_effective_rank",
+      "raw_mean_stock_corr",
+      "raw_covariance_change5",
+      "raw_log_scale_change5",
+      "residual_log_scale",
+      "residual_distance_cv",
+      "residual_distance_q10",
+      "residual_distance_q90",
+      "residual_MST_q90",
+      "residual_MST_sum_squared",
+      "residual_effective_rank",
+      "residual_mean_stock_corr",
+      "residual_covariance_change5",
+      "residual_log_scale_change5"
+    ],
+    "RawLevel": [
+      "SPY_vol20",
+      "residual_mean_corr",
+      "residual_pc1_share",
+      "residual_pc3_share",
+      "factor_lag1_acf_mean",
+      "factor_dominant_power_share_mean",
+      "strategy_trailing20_bps",
+      "strategy_stock_count",
+      "lag_cloud_median_distance",
+      "loading_cloud_median_distance",
+      "strategy_trailing20_logRMS",
+      "basket_vol20_RMS",
+      "basket_vol20_dispersion",
+      "raw_log_scale",
+      "raw_distance_cv",
+      "raw_distance_q10",
+      "raw_distance_q90",
+      "raw_MST_q90",
+      "raw_MST_sum_squared",
+      "raw_effective_rank",
+      "raw_mean_stock_corr",
+      "raw_covariance_change5",
+      "raw_log_scale_change5",
+      "residual_log_scale",
+      "residual_distance_cv",
+      "residual_distance_q10",
+      "residual_distance_q90",
+      "residual_MST_q90",
+      "residual_MST_sum_squared",
+      "residual_effective_rank",
+      "residual_mean_stock_corr",
+      "residual_covariance_change5",
+      "residual_log_scale_change5",
+      "raw_H1_count",
+      "raw_H1_max_bps",
+      "raw_H1_sum_squared_bps2"
+    ],
+    "RawChange": [
+      "SPY_vol20",
+      "residual_mean_corr",
+      "residual_pc1_share",
+      "residual_pc3_share",
+      "factor_lag1_acf_mean",
+      "factor_dominant_power_share_mean",
+      "strategy_trailing20_bps",
+      "strategy_stock_count",
+      "lag_cloud_median_distance",
+      "loading_cloud_median_distance",
+      "strategy_trailing20_logRMS",
+      "basket_vol20_RMS",
+      "basket_vol20_dispersion",
+      "raw_log_scale",
+      "raw_distance_cv",
+      "raw_distance_q10",
+      "raw_distance_q90",
+      "raw_MST_q90",
+      "raw_MST_sum_squared",
+      "raw_effective_rank",
+      "raw_mean_stock_corr",
+      "raw_covariance_change5",
+      "raw_log_scale_change5",
+      "residual_log_scale",
+      "residual_distance_cv",
+      "residual_distance_q10",
+      "residual_distance_q90",
+      "residual_MST_q90",
+      "residual_MST_sum_squared",
+      "residual_effective_rank",
+      "residual_mean_stock_corr",
+      "residual_covariance_change5",
+      "residual_log_scale_change5",
+      "raw_H1_W1_bps",
+      "raw_H1_W1_shape",
+      "raw_H1_delta_shape_squared"
+    ],
+    "ResidualLevel": [
+      "SPY_vol20",
+      "residual_mean_corr",
+      "residual_pc1_share",
+      "residual_pc3_share",
+      "factor_lag1_acf_mean",
+      "factor_dominant_power_share_mean",
+      "strategy_trailing20_bps",
+      "strategy_stock_count",
+      "lag_cloud_median_distance",
+      "loading_cloud_median_distance",
+      "strategy_trailing20_logRMS",
+      "basket_vol20_RMS",
+      "basket_vol20_dispersion",
+      "raw_log_scale",
+      "raw_distance_cv",
+      "raw_distance_q10",
+      "raw_distance_q90",
+      "raw_MST_q90",
+      "raw_MST_sum_squared",
+      "raw_effective_rank",
+      "raw_mean_stock_corr",
+      "raw_covariance_change5",
+      "raw_log_scale_change5",
+      "residual_log_scale",
+      "residual_distance_cv",
+      "residual_distance_q10",
+      "residual_distance_q90",
+      "residual_MST_q90",
+      "residual_MST_sum_squared",
+      "residual_effective_rank",
+      "residual_mean_stock_corr",
+      "residual_covariance_change5",
+      "residual_log_scale_change5",
+      "residual_H1_count",
+      "residual_H1_max_shape",
+      "residual_H1_sum_squared_shape"
+    ],
+    "ResidualChange": [
+      "SPY_vol20",
+      "residual_mean_corr",
+      "residual_pc1_share",
+      "residual_pc3_share",
+      "factor_lag1_acf_mean",
+      "factor_dominant_power_share_mean",
+      "strategy_trailing20_bps",
+      "strategy_stock_count",
+      "lag_cloud_median_distance",
+      "loading_cloud_median_distance",
+      "strategy_trailing20_logRMS",
+      "basket_vol20_RMS",
+      "basket_vol20_dispersion",
+      "raw_log_scale",
+      "raw_distance_cv",
+      "raw_distance_q10",
+      "raw_distance_q90",
+      "raw_MST_q90",
+      "raw_MST_sum_squared",
+      "raw_effective_rank",
+      "raw_mean_stock_corr",
+      "raw_covariance_change5",
+      "raw_log_scale_change5",
+      "residual_log_scale",
+      "residual_distance_cv",
+      "residual_distance_q10",
+      "residual_distance_q90",
+      "residual_MST_q90",
+      "residual_MST_sum_squared",
+      "residual_effective_rank",
+      "residual_mean_stock_corr",
+      "residual_covariance_change5",
+      "residual_log_scale_change5",
+      "residual_H1_W1_shape",
+      "residual_H1_delta_shape_squared"
+    ]
+  },
+  "primary_target": "risk: log(next20 RMS gross daily strategy return measured in bps); primary loss = squared log error; exp(prediction) is a positive RMS estimate, not an arithmetic conditional-mean claim",
+  "secondary_target": "mean of next20 daily gross strategy returns in bps; same target and gates as earlier studies",
+  "strategy": "unchanged expanded200 120-session SPY_PCA3 daily raw next-open to close, unit gross, flat nightly; no recomputation",
+  "training": "exact original 379 decision dates and expanding completed prior target memberships, minimum104; each target fitted separately; feature means/SD from training only; ridge lambda1 (sklearn alpha=n)",
+  "gate": "secondary mean forecast >0 activates original daily portfolio for next5 sessions, else zero; no risk-based gate; every calendar day included",
+  "periods": "entry before2024 development; otherwise later; complete targets crossing boundary excluded from period forecast scores, not from P&L",
+  "uncertainty": "1000 circular block draws; 12 five-session anchors for prediction loss, 60 daily trades for gate means; conditional on saved forecasts, not full refitting",
+  "families": "four augmentation-minus-Controls comparisons, simultaneous approximate95 bands separately per period and metric; risk primary, mean/gates secondary; not a correction across project history",
+  "controls": "first prior window: day permutation, stock permutation, raw returns x3, residual unit invariance; H0/MST equivalence; exact PCA isometry with all nonzero components",
+  "selection": "one 120-day cloud, one lag5, four declared augmentations; no image, window/component search, threshold tuning, or new downloads",
+  "fees": "excluded entirely",
+  "seed": 2026102951
+}
+```
+
+</details>
+
+### equity h0 peers
+
+Original: [experiments/equity_h0_peers/specification.json](experiments/equity_h0_peers/specification.json). SHA256 `f64263042a3e34312619833bebfd2ee87c67e2124f2782c47bf921033d3b8473`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "status": "exploratory after original evaluation was examined",
+  "lookback": 120,
+  "clusters": 6,
+  "residual_pcs": 5,
+  "geometry": "sample correlation distance of prior SPY-regression residuals",
+  "distance": "sqrt(2*(1-rho)); stock vertices, dates are coordinates",
+  "signal": "one-day adjusted close-to-close log return",
+  "holding": "next vendor daily-bar raw open to close; ideal dollar fills",
+  "weights": "inverse prior total-return variance; daily sigma floor 0.0001",
+  "gross_target": 1.0,
+  "fees": "excluded entirely",
+  "models": [
+    "Manual6",
+    "Average6",
+    "Single6",
+    "H0_6",
+    "PCA5"
+  ],
+  "future_structure": "20 non-overlapping future-return blocks; fixed prior SPY betas; omit boundary-crossing blocks",
+  "snapshot_fit_ends": [
+    "2019-12-31",
+    "2020-03-31",
+    "2023-12-29"
+  ],
+  "no_parameter_search": true
+}
+```
+
+</details>
+
+### equity h0 scale robustness
+
+Original: [experiments/equity_h0_scale_robustness/specification.json](experiments/equity_h0_scale_robustness/specification.json). SHA256 `625323a686be43175818993605304157e426ee9b9362bdb4c12da821e038327f`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "status": "post-evaluation exploratory structural experiment; no trading selection",
+  "base_window": 120,
+  "all_group_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "methods": [
+    "Single_H0",
+    "Average"
+  ],
+  "perturbations": {
+    "shorter": 100,
+    "longer": 140,
+    "older_shift_sessions": 5
+  },
+  "history_bootstrap_repetitions": 40,
+  "history_bootstrap_block_sessions": 5,
+  "random_label_repetitions": 250,
+  "random_seed": 20261028,
+  "future_block_sessions": 20,
+  "anchor_stride": 20,
+  "first_signal_index": 140,
+  "future_residuals": "use frozen base-window SPY coefficients",
+  "period_boundary": "2024-01-01; exclude crossing future blocks",
+  "mean_uncertainty_bootstrap_repetitions": 1000,
+  "anchor_bootstrap_block_length": 6,
+  "bands": "pointwise percentile and max-standardized simultaneous approximate 95% across cuts",
+  "stable_local_branch": {
+    "size_min": 3,
+    "size_max": 8,
+    "exact_bootstrap_recovery_min": 0.75,
+    "window_perturbation_recovery_min": 0.6666666666666666
+  },
+  "fees": "no performance or fee calculations in this structural experiment",
+  "trading_changes": false,
+  "parameter_selection_by_PnL": false
+}
+```
+
+</details>
+
+### equity persistence images
+
+Original: [experiments/equity_persistence_images/specification.json](experiments/equity_persistence_images/specification.json). SHA256 `47ccc0ebdb8ce5b9250edc056d1bb9d53db0a40cc7db599417fd6ba7722972e4`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "decision_date": "2026-10-29",
+  "status": "exploratory follow-up on already examined history, current-survivor universe",
+  "hypothesis": "diagram birth/lifetime distributions contain useful information discarded by the three existing scalar summaries",
+  "fixed_strategy_and_gate": "reuse previous expanded200 SPY_PCA3 120-session daily raw open-close gross returns; next20 mean target, positive forecast activates next5 daily trades",
+  "point_object": "stock loading cloud only; same fixed 182 reference names, prior120 standardized SPY residuals, three eigenvalue-weighted PCA coordinates, median-normalized pair distances",
+  "H0": "four finite merge-distance frequency bins; upper internal edges at .25,.5,.75 times 1.25 times initial calibration maximum death; fourth bin includes overflow; essential interval excluded",
+  "H1": "4x4 birth-persistence image, lifetime weights, separable Gaussian integrated exactly per pixel; finite grid retains raw weighted mass without renormalization",
+  "grid_calibration": "first prediction's completed valid training anchors only, selected by date not outcomes; upper birth and lifetime = 1.25 times respective calibration maxima; frozen thereafter",
+  "kernel_sigma": "half a pixel width on each axis; no outcome-based selection",
+  "out_of_grid": "no clipping or grid expansion for H1; report point counts and fraction of lifetime-weighted Gaussian mass retained, including ordinary boundary truncation",
+  "ordinary_control": "20 new coordinates: ten 5th,15th,...95th quantiles each of normalized truncated-loading pair distances and full residual correlations, from the same prior120 reference-stock returns",
+  "models": {
+    "HistoryMean": [],
+    "Simple": [
+      "SPY_vol20",
+      "residual_mean_corr",
+      "residual_pc1_share",
+      "residual_pc3_share",
+      "factor_lag1_acf_mean",
+      "factor_dominant_power_share_mean",
+      "strategy_trailing20_bps",
+      "strategy_stock_count",
+      "lag_cloud_median_distance",
+      "loading_cloud_median_distance"
+    ],
+    "SimplePlusStockPD": [
+      "SPY_vol20",
+      "residual_mean_corr",
+      "residual_pc1_share",
+      "residual_pc3_share",
+      "factor_lag1_acf_mean",
+      "factor_dominant_power_share_mean",
+      "strategy_trailing20_bps",
+      "strategy_stock_count",
+      "lag_cloud_median_distance",
+      "loading_cloud_median_distance",
+      "stock_H0_q90",
+      "stock_H1_max_lifetime",
+      "stock_H1_total_squared_lifetime"
+    ],
+    "Ordinary20": [
+      "SPY_vol20",
+      "residual_mean_corr",
+      "residual_pc1_share",
+      "residual_pc3_share",
+      "factor_lag1_acf_mean",
+      "factor_dominant_power_share_mean",
+      "strategy_trailing20_bps",
+      "strategy_stock_count",
+      "lag_cloud_median_distance",
+      "loading_cloud_median_distance",
+      "loading_distance_q00",
+      "loading_distance_q01",
+      "loading_distance_q02",
+      "loading_distance_q03",
+      "loading_distance_q04",
+      "loading_distance_q05",
+      "loading_distance_q06",
+      "loading_distance_q07",
+      "loading_distance_q08",
+      "loading_distance_q09",
+      "residual_correlation_q00",
+      "residual_correlation_q01",
+      "residual_correlation_q02",
+      "residual_correlation_q03",
+      "residual_correlation_q04",
+      "residual_correlation_q05",
+      "residual_correlation_q06",
+      "residual_correlation_q07",
+      "residual_correlation_q08",
+      "residual_correlation_q09"
+    ],
+    "PersistenceImage20": [
+      "SPY_vol20",
+      "residual_mean_corr",
+      "residual_pc1_share",
+      "residual_pc3_share",
+      "factor_lag1_acf_mean",
+      "factor_dominant_power_share_mean",
+      "strategy_trailing20_bps",
+      "strategy_stock_count",
+      "lag_cloud_median_distance",
+      "loading_cloud_median_distance",
+      "H0_bin_0",
+      "H0_bin_1",
+      "H0_bin_2",
+      "H0_bin_3",
+      "H1_birth0_persistence0",
+      "H1_birth0_persistence1",
+      "H1_birth0_persistence2",
+      "H1_birth0_persistence3",
+      "H1_birth1_persistence0",
+      "H1_birth1_persistence1",
+      "H1_birth1_persistence2",
+      "H1_birth1_persistence3",
+      "H1_birth2_persistence0",
+      "H1_birth2_persistence1",
+      "H1_birth2_persistence2",
+      "H1_birth2_persistence3",
+      "H1_birth3_persistence0",
+      "H1_birth3_persistence1",
+      "H1_birth3_persistence2",
+      "H1_birth3_persistence3"
+    ]
+  },
+  "minimum_training_labels": 104,
+  "training": "identical expanding completed-label memberships and train-only standardization as original; fixed ridge mean-square objective penalty lambda=1; no feature selection",
+  "threshold": 0.0,
+  "forecast_stride_sessions": 5,
+  "target_sessions": 20,
+  "gate_sessions": 5,
+  "periods": "entry before 2024 development, 2024 onward later; boundary targets omitted from forecast scoring, never from daily gate P&L",
+  "primary_comparisons": "PersistenceImage20 minus Simple, three-summary model, and Ordinary20; simultaneous bands across these three comparisons within each period and metric",
+  "uncertainty": "1000 circular block resamples, 12 forecast anchors for MSE and 60 calendar days for P&L; conditional on causal saved forecasts, not refit bootstrap",
+  "other_diagnostics": "baseline forecasts reconcile original; image range coverage; representation tests; all return means and secondary model statistics",
+  "fees": "all excluded; gross/pre-fee only",
+  "seed": 2026102941,
+  "selection": "one fixed image resolution/bandwidth, no lag-image variant or outcome-based parameter search",
+  "reference": "Adams et al. 2017 https://www.jmlr.org/papers/volume18/16-337/16-337.pdf"
+}
+```
+
+</details>
+
+### equity persistence regimes
+
+Original: [experiments/equity_persistence_regimes/specification.json](experiments/equity_persistence_regimes/specification.json). SHA256 `55bda035e2bbef5150873a54aa68e47895f6eae80ad2b7d11ca13d2e82fe850c`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "decision_date": "2026-10-29",
+  "status": "exploratory on already examined dates and current-survivor universe",
+  "fixed_strategy": "expanded200, 120-session SPY_PCA3, raw next-bar open to close, unit gross, flat nightly, pre-fee",
+  "strategy_source": "equity_expanded_pca_reversal",
+  "recompute_strategy": false,
+  "reference_stocks": "freeze names with 272 complete prior returns at first formation; no later additions or future-completeness filter",
+  "first_formation_index": 272,
+  "feature_fit_sessions": 120,
+  "forecast_stride_sessions": 5,
+  "decision_time": "after anchor close t; feature histories end t-1; trailing strategy outcomes and completed training labels may end t",
+  "forecast_target": "mean gross bps/day of next twenty actual daily strategy trades, not twenty-day frozen initial positions",
+  "target_sessions": 20,
+  "gate_holding_sessions": 5,
+  "latest_partial_targets": "predict and trade available days without scoring incomplete twenty-session labels",
+  "history_object": "fit SPY residuals on fixed reference stocks; standardize each stock, retain top three residual PCs",
+  "lag_object": "119 points (whitened factor scores at s, scores at s-1)/sqrt(2), six coordinates",
+  "stock_object": "fixed reference-stock points in top-three eigenvalue-weighted correlation loading coordinates",
+  "scaling": "each cloud's pair distances divided by its own positive median; both raw median distances included in all simple models",
+  "persistence": "complete Vietoris-Rips H0/H1 with ripser; infinite H0 excluded from finite summaries, separately counted",
+  "basic_features": [
+    "SPY_vol20",
+    "residual_mean_corr",
+    "residual_pc1_share",
+    "residual_pc3_share",
+    "factor_lag1_acf_mean",
+    "factor_dominant_power_share_mean",
+    "strategy_trailing20_bps",
+    "strategy_stock_count",
+    "lag_cloud_median_distance",
+    "loading_cloud_median_distance"
+  ],
+  "stock_features": [
+    "stock_H0_q90",
+    "stock_H1_max_lifetime",
+    "stock_H1_total_squared_lifetime"
+  ],
+  "lag_features": [
+    "lag_H0_q90",
+    "lag_H1_max_lifetime",
+    "lag_H1_total_squared_lifetime"
+  ],
+  "minimum_completed_training_labels": 104,
+  "training": "expanding prior anchors only; training target end <= decision date; no own/future label; no validation-selected settings",
+  "ridge": "unpenalized intercept; training-only mean/std; objective average squared bps error + 1*sum(beta^2); fixed lambda=1, equivalent sklearn alpha=n",
+  "forecast_models": [
+    "HistoryMean",
+    "Simple",
+    "SimplePlusStockPD",
+    "SimplePlusLagPD"
+  ],
+  "gate_rule": "predicted next20 daily mean > 0 => unit-gross original daily strategy for next five sessions, else flat",
+  "calendar": "all eligible post-warmup trading days, flat days recorded as zero; five-session allocations do not overlap",
+  "mean_baseline": "HistoryMean uses completed historical target mean; AlwaysOn supplies raw strategy and shares its forecast diagnostic with HistoryMean",
+  "period_split": "entry before 2024-01-01 development, otherwise later; forecast labels crossing boundary excluded only from period forecast scoring",
+  "online_later_training": "completed later labels enter expanding training as time passes; not a fixed 2023-trained model or untouched holdout",
+  "uncertainty": "1000 circular block resamples, 60 daily executions for P&L and 12 five-session forecast anchors for loss; conditional on saved causal forecasts, not a model-refit bootstrap",
+  "primary_comparisons": "each PD augmentation minus Simple, paired; approximate simultaneous 95% bands across two augmentations per period, separately for forecast loss and gate mean",
+  "secondary": "all model metrics, sign calibration, active fraction, and pointwise intervals; no winning state, threshold or feature selected",
+  "controls": "first prior-history window only: common row shuffle, time reversal, uniform return scaling; target outcomes not involved",
+  "fees": "excluded entirely",
+  "seed": 2026102931
+}
+```
+
+</details>
+
+### equity recent refresh 2026 11 10
+
+Original: [experiments/equity_recent_refresh_2026_11_10/specification.json](experiments/equity_recent_refresh_2026_11_10/specification.json). SHA256 `63bf5ffa067802ecbf9e9ade2af3edb6fbefd707838825c7021038df69a7a882`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "decision_date": "2026-11-10",
+  "status": "descriptive extension; not an independent regime or forecasting test",
+  "dataset": "equity_daily_expanded_2016_2026-11-09",
+  "old_cutoff": "2026-10-27",
+  "new_cutoff": "2026-11-09",
+  "universe": "frozen original 200 stocks plus SPY; no holdings refresh",
+  "eligibility": "272 consecutive observed returns through old cutoff; freeze those names for both snapshots; assert subsequent completeness, never fill",
+  "histories": [
+    120,
+    252
+  ],
+  "groups": 11,
+  "snapshots": "descriptive after-close fits, include cutoff close; no forward-return interpretation of in-sample coherence",
+  "geometry": "separately fit intercept and SPY, standardize residual histories; stock vector z_i/sqrt(L-1); Euclidean distance sqrt(2*(1-rho))",
+  "methods": [
+    "single",
+    "average",
+    "centroid"
+  ],
+  "centroid": "Euclidean mean of fixed stock vectors, size-weighted after merging; no centroid renormalization; cut by merge count because heights can invert",
+  "comparisons": "snapshot correlation/PC shares, K11 group balance, old-to-new ARI; no winning window or method selection",
+  "short_extension": "post-cutoff cumulative returns and future residual-correlation gap with old-cutoff labels and frozen old 252-session SPY coefficients; descriptive only, shorter than original 20-session target",
+  "uncertainty": "no confidence interval or significance test on this short extension; dates share most training data",
+  "economic_context": "verify dates from primary releases; no causal assignment of price moves to an event",
+  "strategy": "none; prior gross trading ledgers remain on their original data and dates"
+}
+```
+
+</details>
+
+### equity residual backtest
+
+Original: [experiments/equity_residual_backtest/frozen_specification.json](experiments/equity_residual_backtest/frozen_specification.json). SHA256 `21a35959902a50a0202268b91b3b49a938db8e9bb61b80afee461a17742f9977`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "specification": {
+    "training_sessions": 120,
+    "residual_pcs": 3,
+    "volatility_floor_daily": 0.0001,
+    "models": [
+      "SPY_only",
+      "SPY_plus_3_residual_PCs"
+    ],
+    "signal": "one-session adjusted close-to-close log return at t",
+    "exposures_and_weights": "estimated from 120 return observations ending t-1",
+    "entry": "next session vendor daily-bar raw open; ideal fractional-dollar target fill",
+    "exit": "same entry session vendor daily-bar raw close; liquidate all positions",
+    "gross_per_starting_equity": 1.0,
+    "regression_weights": "inverse trailing total-return variance, floored",
+    "neutrality": "dollars, SPY beta; additional 3 residual-PC raw-return exposures for PCA model",
+    "per_side_execution_cost_bps": [
+      0,
+      1,
+      2,
+      5,
+      10
+    ],
+    "annual_borrow_cost_bps": [
+      0,
+      100,
+      500
+    ],
+    "primary_execution_cost_bps_per_side": 5,
+    "primary_annual_borrow_bps": 100,
+    "borrow_convention": "entry short notional * assumed annual rate / 252, charged each trade day",
+    "development_last_execution_date": "2023-12-31",
+    "evaluation_first_execution_date": "2024-01-01",
+    "annual_sessions": 252,
+    "newey_west_lags": 5,
+    "position_caps": null,
+    "signal_threshold": "numerical-zero only",
+    "cash_interest_financing": "omitted; gross and adjusted returns are compared to zero",
+    "selection": "fixed 2026-selected 30-stock basket; survivorship/selection bias remains",
+    "parameter_search": false
+  },
+  "sha256": "9b92bebd8afcce07bcb039ca643f21eb74e3ed2e37d0967aace55c2f60549eaa"
+}
+```
+
+</details>
+
+### equity residual diagnostics
+
+Original: [experiments/equity_residual_diagnostics/diagnostic_specification.json](experiments/equity_residual_diagnostics/diagnostic_specification.json). SHA256 `8b6dad986804b7f96ea75ca9651df9ae6bcc54462f1a4446d1a150862e7a70bd`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "status": "exploratory follow-up after original evaluation was examined",
+  "regimes": "SPY 60-session trailing log return >=0 or <0, crossed with 20-session sample volatility annualized >=20% or <20%",
+  "regime_information_end": "signal day close; before next-bar entry",
+  "regime_threshold_selection": "fixed round 20% and zero; not optimized against strategy returns",
+  "component_counts": [
+    0,
+    1,
+    3,
+    5,
+    10
+  ],
+  "all_other_trading_choices": "same as frozen original experiment",
+  "timing": "adjusted previous-close to next-open hypothetical attribution; actual original raw open-close PnL retained separately",
+  "uncertainty": "approximate Newey-West 5-lag conditional mean intervals on full calendar with zeros outside regime",
+  "profit_plot_initial_equity": 100000
+}
+```
+
+</details>
+
+### equity reversal response
+
+Original: [experiments/equity_reversal_response/specification.json](experiments/equity_reversal_response/specification.json). SHA256 `9af287ce5a75302c579c024c3e42ec2f84d1d7b0f3072a69e7b44d2ee68f53d0`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "status": "exploratory on already examined history; no untouched holdout",
+  "models": [
+    "Manual6",
+    "Average6",
+    "PCA5"
+  ],
+  "horizons_sessions": [
+    1,
+    5,
+    20
+  ],
+  "base_lookback": 120,
+  "first_signal_index": 140,
+  "exposure_rank": 7,
+  "signal": "adjusted one-session close-to-close log return, residualized by frozen prior X and W",
+  "normalization": "signal residual / prior total daily sigma, floor 0.0001",
+  "weights": "inverse prior total variance; holdings proportional to minus W times residual, unit gross",
+  "entry": "next vendor daily-bar open; ideal fractional-dollar targets",
+  "exit": "close of entry session or fifth or twentieth session including entry session",
+  "return_prices": "all-adjusted open/close for every horizon; vendor total-return proxy, no action-level ledger",
+  "holding": "initial dollar sleeves buy and hold; no intermediate rebalance; exposures may drift",
+  "future_relative_return": "cumulative simple open-to-close stock return residualized cross-sectionally with formation X,W",
+  "slope": "pooled through-origin slope of future residual/sigma on signal residual/sigma; negative means reversal",
+  "signal_bin_edges_finite": [
+    -2,
+    -1,
+    -0.5,
+    0,
+    0.5,
+    1,
+    2
+  ],
+  "bin_edges": "left inclusive, right exclusive; outer bins unbounded",
+  "exclude_zero_signal": "abs(signal residual / sigma) <= 1e-10; includes constrained singleton stocks",
+  "stability": "Average6 stock-level mean Jaccard overlap of peer sets across 100,140,120-shifted-5 past-session fits",
+  "stability_high": ">=0.75; complementary lower group; no outcome-selected threshold",
+  "stability_manual": "fixed by construction, not an empirical stability test",
+  "stability_PCA": "not defined: no discrete peer assignment",
+  "date_sample": "same dates for all horizons; omit any 20-session outcome crossing 2024 boundary",
+  "split": "entry before 2024-01-01 development, otherwise evaluation",
+  "uncertainty": "1000 circular moving-block date resamples; block 60 sessions; all stocks together",
+  "intervals": "approximate 95% pointwise percentile; pooled ratios recomputed per resample; no multiplicity correction",
+  "bootstrap_repetitions": 1000,
+  "bootstrap_block_sessions": 60,
+  "seed": 2026102807,
+  "fees": "excluded entirely",
+  "parameter_selection_by_profit": false,
+  "outputs": "event responses, not daily returns of an overlapping-cohort trading strategy"
+}
+```
+
+</details>
+
+### factor reversal vix
+
+Original: [experiments/factor_reversal_vix/specification.json](experiments/factor_reversal_vix/specification.json). SHA256 `8b3390a812980b440dbfecbfe20a49649aeee8c9f178a1881ee027c245e16e8f`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "date": "2026-11-04",
+  "written_before_new_vix_return_comparisons": true,
+  "status": "Exploratory analysis of frozen strategies on already examined history; no new untouched test",
+  "strategy": "Primary existing expanded-universe SPY+PCA3, EFA3 matched robustness. Frozen 120-session fits, original daily signals, unit gross, next raw open-to-close execution, flat overnight; no refitting holdings or gating",
+  "sources": [
+    "equity/experiments/equity_efa_vs_pca/daily_gross_returns.csv",
+    "market_data/datasets/mean_reversion_context_2026-11-04/vix_daily.csv",
+    "market_data/datasets/equity_daily_expanded_2016_2026-10-27/close_all.csv"
+  ],
+  "periods": {
+    "full": "2017-02-03 through 2026-10-27",
+    "earlier": "execution before 2024",
+    "later": "execution from 2024"
+  },
+  "alignment": "Prior equity-session VIX close and prior-session log VIX change available before strategy entry; contemporaneous close and change strictly descriptive. Align on full equity calendar before lagging. No filling or missing-row deletion silently",
+  "lagged_vix_bins": [
+    "below15",
+    "15to20",
+    "20to30",
+    "30plus"
+  ],
+  "primary_bin_contrast": "Prior VIX at least20 minus below20, fixed descriptive contrast, not a selected trading gate",
+  "same_day_vix_change_bins": [
+    "below-5pct",
+    "-5pct_to0",
+    "0to5pct",
+    "5pct_plus"
+  ],
+  "associations": "Pearson/Spearman of signed return and absolute return against lagged VIX level/change and same-day VIX change. Same-day comparison not an entry predictor. Display both mean and dispersion",
+  "regressions": "OLS mean return and absolute return in bps. Model VIXOnly uses lag log VIX and lag log VIX change; Controls uses prior20 SPY realized-vol log and prior SPY simple return; Controls+VIX adds both VIX variables; SameDayDiagnostic adds contemporaneous log VIX change to Controls+VIX. Newey-West20 HAC errors, descriptive in-sample",
+  "forecast_check": "Expanding OLS with intercept, initial504 completed observations, refit each21 sessions, no tuning. For both mean return and absolute return, compare intercept-only, Controls and Controls+VIX. Clip negative absolute-return predictions to0. Predict execution t only from data through t-1. One target observation per day, no overlap",
+  "forecast_primary": "Paired squared error difference Controls+VIX minus Controls, bps squared; negative is better. Report full available forecast period and same earlier/later split. No return prediction is used to trade or gate",
+  "uncertainty": "2000 circular moving-block resamples, primary block60 and sensitivity20, fixed seed2026110407. Bin means/contrast intervals pointwise exploratory. Forecast paired loss simultaneous intervals for four model/target combinations within each period, max standardized bootstrap deviation; also pointwise intervals. No correction over project-wide experiments or across periods",
+  "figures": "Continuous original equity and VIX, lagged-level bin mean/risk, lagged vs same-day scatter, forecast error comparisons",
+  "reporting": "Gross/pre-fee only. Unit gross allocation, no VIX sizing or threshold tuning. Separate associations, prediction, risk and mean. Correlation with VIX does not identify causal selling, tradable VIX exposure, or failure of fitted linear neutrality"
+}
+```
+
+</details>
+
+### factor vix 20 30
+
+Original: [experiments/factor_vix_20_30/specification.json](experiments/factor_vix_20_30/specification.json). SHA256 `465de90534cca3504d4b0ada56369011f2f78305c5fb8fb4d4e1b92882d407e2`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "date": "2026-11-04",
+  "status": "Exploratory follow-up selected after viewing the four VIX bands; this is not a preregistered discovery or fresh holdout",
+  "question": "Does the fixed 20<=prior VIX<30 band improve the frozen factor-neutral strategy after counting cash days, matching exposure/risk, and checking concentration?",
+  "sources": "Frozen PCA3/EFA3 aligned returns and prior-session VIX from factor_reversal_vix; original strategy and source data unchanged",
+  "policy": "Trade unchanged unit-gross next-open-to-close long/short holdings iff previous-equity-session closing VIX>=20 and<30; otherwise zero return cash. No overnight positions, leverage, cash yield, costs or position refits",
+  "models": "PCA3 primary; EFA3 matched robustness",
+  "periods": "full 2017-02-03 through2026-10-27; earlier before2024; later from2024; all already examined",
+  "comparisons": "AlwaysOn, Target20to30, ComplementOutside20to30; constant always-on strategy fraction equal to target active fraction; constant fraction equal to target/always-on realized daily volatility. Constant weights are hindsight diagnostic calibrations, recomputed per reported period, no claim of implementability",
+  "context": "Report fixed policies for all original four bands, no selecting a new winner or adjusting20/30",
+  "metrics": "Whole-calendar compounded returns and CAGR252, volatility, Sharpe versus0, daily marked drawdown, initial100000 wealth, active-day fraction, mean on all days and on active days, initial dollar commitment. Full curve never resets; subperiod metrics separately start at1",
+  "inference": "2000 paired circular calendar block resamples, primary60 sessions/sensitivity20, seed2026110418. Pointwise target conditional mean, calendar mean and paired increments. Simultaneous max-standardized-deviation bands across original4 VIX bins x2 models separately for conditional means, calendar means, and gate-minus-always means within each period. Descriptive selection sensitivity, not correction for prior project research or all imaginable thresholds",
+  "concentration": "Annual results and active counts; all contiguous active episodes with entry from below20 versus at least30 (determined at episode start); known-at-entry episode age buckets1,2to5,6to20,21plus; leave each year out without tuning; remove5 best and5 worst target days separately as ex-post diagnostics, retain all remaining calendar days",
+  "band_regression": "OLS signed return in bps on target indicator plus prior SPY return/logRV20; second adds log prior VIX and prior VIX log change. HAC20; explanatory only",
+  "nonlinear_forecast": "One fixed chronological OLS comparison of prior ControlsVIX linear features versus those features plus indicator20to30; initial504 completed days, refit21, no tuning, mean-return target only. Score all dates and prior split, paired MSE difference. Primary60 and20 blocks; simultaneous across PCA/EFA within each period. No forecast used to trade",
+  "not_tested": "No boundary grid, alternative windows, leverage, optimized sizing, actual costs, holdings attribution, causal economic mechanism, or new future validation",
+  "reporting": "Gross/pre-fee only; specify exploratory status prominently; preserve favorable estimates and practical/uncertainty limitations"
+}
+```
+
+</details>
+
+### index selloff reversal
+
+Original: [experiments/index_selloff_reversal/specification.json](experiments/index_selloff_reversal/specification.json). SHA256 `d248cc98d2330d16c6290456604cae59586760200207837f94c66df7efb67281`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "written_before_new_backtest": "2026-11-04",
+  "status": "Exploratory approximation; author parameters unavailable; existing dates already examined",
+  "source_post": "https://www.linkedin.com/feed/update/urn:li:activity:7523503251665723394/",
+  "data": "Existing SPY daily bars and separate QQQ download, 2016-01-04 through 2026-10-27, all-adjusted SIP; raw-price sensitivity",
+  "primary": {
+    "signal": "(close[t]/close[t-3]-1) / (sqrt(3)*sample_std(daily simple returns[t-20:t-1])) <= -1.5",
+    "lookback": 20,
+    "threshold": 1.5,
+    "consecutive_down_required": false,
+    "exit": "First session u > entry-signal session t with close[u] > close[u-1]",
+    "position": "Long one fully invested ETF sleeve, no leverage, no pyramiding, zero cash return; ignore signals while holding; do not reenter on exit session",
+    "no_stop_or_max_hold": true
+  },
+  "timing": [
+    "ideal_close: observed signal close to first-up close (optimistic)",
+    "delay_entry: next open to same first-up close (exit still optimistic)",
+    "causal_open: next open to open after first-up close (causal daily-bar proxy)",
+    "overnight_only: signal close to next open (optimistic entry)"
+  ],
+  "sensitivity": {
+    "lookbacks": [
+      10,
+      20,
+      60
+    ],
+    "thresholds": [
+      1.0,
+      1.5,
+      2.0
+    ],
+    "consecutive_down": [
+      false,
+      true
+    ],
+    "report_all": true,
+    "no_winner_selection": true
+  },
+  "periods": [
+    "2016-2019",
+    "2020-2026-10-27",
+    "full"
+  ],
+  "inference": "Primary mean completed-trade return ratio bootstrap over entry-date calendar, circular moving blocks 20 and 60 sessions, 2000 draws; intervals pointwise exploratory, not multiple-testing corrected. Descriptive trade t-stat is not confirmation. Right-censored last trades excluded from completed-trade stats, marked to last close in equity.",
+  "controls": "Always-enter-when-flat with identical first-up exit; all eligible next-day close/overnight/intraday means; circularly shift primary entry-signal sequence by 21..n-21 sessions within each period, report every available shift to compare daily mean P&L (descriptive alignment check, not formal regime-invariant null).",
+  "vix": "Save Cboe history independently; use previous-equity-session VIX close only, no fill; fixed bins below20/20to30/30plus; descriptive, never optimize or gate strategy",
+  "reporting": "Gross/pre-fee only under existing project instruction; cannot verify post's net-of-costs claim, pre-1995 behavior, preregistration or independent replication",
+  "relation_to_factor_work": "Market-direction sell-off reversal, not market/peer-neutral stock residual reversal; no TDA gate in this experiment"
+}
+```
+
+</details>
+
+### tda relationship exposure
+
+Original: [experiments/tda_relationship_exposure/specification.json](experiments/tda_relationship_exposure/specification.json). SHA256 `8299b375afaaa692ff3cd92b8f7bf4adea220c409aa9666c10fc037e5f9f97ca`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "date": "2026-11-05",
+  "authorization": "User requested work more after the local residual-shock test; pursue the previously proposed labeled relationship/exposure question",
+  "written_before_new_scores": true,
+  "status": "Exploratory, previously examined current-survivor history; fixed VIX20to30 inherited post-selection",
+  "scope": "Labeled persistent stock components and their five-session changes, evaluated against actual next-session frozen portfolio outcomes; no portfolio changes",
+  "source": "Frozen expanded200 SPY_PCA3 unit-gross raw next-open-to-close returns and holdings;2446 signal dates, original admission and120-session model",
+  "relationship": "For admitted stocks,120 past standardized SPY-residual returns ending t-1. Correlation distance sqrt(2(1-rho)). Repeat with120-session window ending t-6 on identical current stock membership. No cut, component count or window tuning",
+  "hierarchies": "Full single-linkage H0 labeled merge hierarchy and matched average-linkage hierarchy; ordinary H0 diagram without labels is insufficient. No H1 or zigzag claim",
+  "kernel": "For merge distance c_ij in[0,2], K_ij=1-c_ij/2, diagonal1. Equal to integral from0to2 of component co-membership divided by2; positive semidefinite. Single linkage uses all correlation-distance thresholds. Average linkage supplies a matched ordinary hierarchy",
+  "position_attachment": "v_i=current frozen dollar weight times prior120 intraday sample sigma in bps, sigma floor1bp. Tree second-moment proxy=v'Kv. Current v on both current and older tree. Zero/negative numerical proxies floored at1e-8bps2; proxies are not validated conditional moments by definition",
+  "tree_features_each": [
+    "log_tree_second_moment",
+    "signed_tree_change5_over_diagonal_variance",
+    "sum_abs_vivj_times_abs_kernel_change5_over_sum_abs_v_squared"
+  ],
+  "ordinary_features": [
+    "log_LW_intraday",
+    "log_LW_closeclose",
+    "log_diagonal",
+    "weighted_cov_change5",
+    "signed_cov_change5",
+    "residual_mean_corr",
+    "residual_PC1_share",
+    "max_abs_weight",
+    "weight_hhi",
+    "sector_net_sq",
+    "historical_sleeve_downside_log",
+    "historical_sleeve_mean",
+    "historical_sleeve_kurtosis",
+    "strategy_mean20",
+    "strategy_logRMS20",
+    "strategy_logDownsideRMS20",
+    "vix_log",
+    "vix_change",
+    "vix_band20to30",
+    "SPY_vol20"
+  ],
+  "covariances": "Past raw open-to-close120-session LedoitWolf centered covariance and adjusted close-close covariance; current holdings on both. Intraday covariance also compared with five-session older estimate on common stocks. Independent diagonal risk and historical-current-sleeve downside/mean/kurtosis controls. Centering uses past observations only",
+  "models": [
+    "ControlsVIX20",
+    "AverageTree23",
+    "H0Tree23",
+    "BothTrees26"
+  ],
+  "baselines": "Risk: uncalibrated intraday LW h'Sigma h and training-calibrated scalar times that proxy. Mean: zero and expanding historical mean. Same forecast dates and completed-label refits",
+  "primary_risk": "Next-session frozen gross return in bps squared: conditional raw second moment, not centered variance or a volatility reduction policy",
+  "secondary_downside": "Next-session max(-gross_bps,0) squared, scored separately as a downside second moment",
+  "mean": "Next-session frozen gross return in bps, separate squared forecast error",
+  "risk_fit": "Expanding convex penalized QLIKE: average(log(vhat)+realized_square/vhat)+0.5*sum(beta^2), log(vhat)=log(intradayLWproxy)+intercept+standardized_features*beta. Unpenalized intercept; training-only population scaling, SD<=1e-10 replaced1. Fixed penalty1. Both moment targets fitted independently; zero realized downside labels allowed",
+  "mean_fit": "Expanding ridge average squared bps error+sum(beta^2), same training-only scaling and unpenalized intercept",
+  "calendar": "First504 completed signal outcomes train; refit every20 forecast dates; predict every day. Training execution <= refit signal close, never use current next-session outcome. First20 source rows use available trailing strategy trades, zero fallback when no ledger history",
+  "scoring": "1942 daily forecasts,1234 development and708 later, split by execution before2024; QLIKE primary for both positive moment forecasts, mean-target MSE separately. All models share dates. Calibration mean(realized_square/forecast) reported descriptively",
+  "primary_comparison": "BothTrees minus AverageTree: H0 value after ordinary controls and matched ordinary hierarchy",
+  "other_comparisons": "H0Tree minus ControlsVIX and AverageTree minus ControlsVIX; simultaneous three-comparison95 bands within each target/period. Report every model; no winner selection",
+  "uncertainty": "1000 circular60-date paired resamples, seed2026110519 plus period index. Max-standardized-deviation intervals across three declared comparisons per target/period. Conditional on saved forecasts, no model-refit bootstrap or correction across targets/periods/prior experiments. QLIKE percentage changes not reported because absolute score depends on return units; paired loss differences are invariant",
+  "construction_checks": "Four-stock relabeling with identical global geometry but different holdings risk; exact threshold integration versus v'Kv; simultaneous labels+holdings permutation and global position-sign reversal; direct sparse-tree merge integration; scale controls",
+  "source_examples": "Prespecify2020-03-16 and2024-08-05 for component/exposure plots, without selecting future portfolio outcomes",
+  "audit": "All original holdings/returns and hashes; sampled independent residual covariance/graph reconstruction, MST minimax H0 cophenetic check and partition integration; training cutoffs; all forecast risk optimization gradients and mean fits; selected independent optimizer/sklearn fits; all loss/metric/bootstrap reconstruction",
+  "reporting": "Gross/pre-fee only, no fees, downloads, portfolio gate, reweighting, sizing or changed strategy results. A risk gain never automatically becomes a trading-off rule"
+}
+```
+
+</details>
+
+### tda residual shock
+
+Original: [experiments/tda_residual_shock/specification.json](experiments/tda_residual_shock/specification.json). SHA256 `fa07512919bf57a1cf17987af529450152066304fd4cd2b4809837c43e497ab3`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "date": "2026-11-05",
+  "authorization": "User: Let's test it; execute the first recommended current-residual-shock hypothesis",
+  "written_before_outcomes_evaluated": true,
+  "status": "Exploratory on previously examined current-survivor history; not a fresh holdout",
+  "scope": "Current residual-shock topology on a past stock network. Relationship-failure tracking, Mapper, portfolio reweighting and trading gates are not run",
+  "source": "Existing expanded200 candidates; original272 complete-prior-return admission,120-session SPY+PCA3 factors, inverse total variance, signal and frozen raw next-open-to-close ledger",
+  "network": "Daily graph from120 prior SPY-residual standardized return observations ending t-1. Each stock selects its5 most positively correlated peers (positive correlations only), ties by existing symbol order; undirected union. No outcome-based graph tuning",
+  "signal": "Original cross-sectional WLS residual at signal close divided by prior total daily sigma, floor0.0001",
+  "topology": "For negative and positive residuals separately, use nonnegative same-sign severity. Activate positive-severity vertices in descending severity and graph edges when endpoints active. Elder-rule H0 merge tree; ties by stock index. Stop at zero, cap surviving roots there and mark them censored. Zero-level vertices excluded. Lifetime is severity contrast, not calendar duration",
+  "local_assignment": "At activation assign vertex to elder peak among active neighbor components, or itself if none. Keep this owner after future merges. Two inputs per stock: its owner's peak-minus-death prominence and number of vertices in owner's component immediately before death/zero cap divided by admitted stocks. Select its own signal sign; zero-signal stocks get0",
+  "ordinary_core": [
+    "z",
+    "abs_z",
+    "sigma",
+    "sector_mean_z",
+    "sector_abs_z",
+    "cs_dispersion",
+    "SPY_vol20",
+    "SPY_return5",
+    "residual_pc1_share",
+    "vix_log",
+    "vix_change",
+    "vix_band20to30",
+    "strategy_trailing20_bps",
+    "strategy_trailing20_logRMS"
+  ],
+  "ordinary_graph": [
+    "neighbor_mean_z",
+    "neighbor_mean_abs_z",
+    "neighbor_same_sign_fraction",
+    "neighbor_mean_corr",
+    "degree_fraction",
+    "component_1sigma_fraction"
+  ],
+  "TDA": [
+    "branch_prominence",
+    "branch_support_fraction"
+  ],
+  "interactions": "Every feature except z also enters multiplied by z, identically across ordinary and TDA models. Training-only scaling of every raw and interaction column",
+  "models": [
+    "ZeroMean_or_HistoryAbs",
+    "CoreVIX",
+    "GraphVIX",
+    "GraphVIXTDA"
+  ],
+  "primary_target": "Mean: next-session raw open-to-close simple stock return projected through formation-date WLS residual operator and divided by formation total sigma. Same price convention and exposure span as frozen strategy; negative slope on z means reversal",
+  "secondary_risk_target": "Absolute value of the same normalized relative stock return. Stock-level conditional absolute move, not portfolio RMS or a policy",
+  "fit": "Expanding ridge, date-equal average squared stock loss plus lambda1 times squared standardized coefficients; unpenalized intercept; population means/SD, floor1e-10 replaced1. First504 completed signal dates used for training; refit every20 forecast dates; predict every day. Current features updated daily. Every training execution date <= refit signal close; never train on current next-session target",
+  "scoring": "Identical dates and stocks across models; daily cross-sectional average squared error, then equal date averages. Entry before2024 development, otherwise later. Baseline is zero mean for signed target and expanding historical mean absolute target at same refits",
+  "primary_comparison": "GraphVIXTDA minus GraphVIX paired daily mean-target loss. Secondary GraphVIX minus CoreVIX and identical risk comparisons. Report both increments with simultaneous two-comparison95 bands per target/period; no adjustment across targets, periods or past research",
+  "uncertainty": "1000 circular60-date block resamples; all stocks on a date kept together; seed2026110507 plus period index. Max-standardized-deviation intervals conditional on saved forecasts, no model refits",
+  "description": "Fix branch-prominence median from initial504 training dates only; describe low/high subsequent residual-response slopes, ordinary-model implied slopes and paired errors. Bins do not select holdings or establish incremental value",
+  "controls": "Same residual histogram on connected versus separated synthetic shocks; independent graph-connected-components barcode check; sign reflection, stock permutation with unique severities, amplitude scaling and zero censor checks. Real source-date plots fixed to2020-03-16 and2024-08-05 without outcome selection",
+  "audit": "Reconstruct independent WLS/PCA and graph on sampled dates; compare all daily original holdings/returns; independently reconstruct H0 via threshold component counts; reproduce all forecasts from moments and selected fits via sklearn Ridge with date weights; metrics, block intervals, training cutoffs, source hashes",
+  "reporting": "No new investment returns, portfolio weights, gating, costs, topology tuning or download. Preserve source results. Gross/pre-fee outcomes only"
+}
+```
+
+</details>
+
+### tda vix matched
+
+Original: [experiments/tda_vix_matched/specification.json](experiments/tda_vix_matched/specification.json). SHA256 `f3c29967c465b33bd7808e0b70c0b728c5f2d2bec210c320282a5374967f7e5c`.
+
+<details>
+<summary>Complete saved method specification</summary>
+
+```json
+{
+  "decision_date": "2026-11-05",
+  "written_before_new_forecasts": true,
+  "authorization": "User explicitly requested execution of the previously documented matched comparison",
+  "status": "Exploratory comparison on already examined history; the20to30 indicator was selected after earlier outcome inspection",
+  "strategy": "Frozen expanded200 SPY_PCA3 residual reversal, next raw open-to-close, unit gross, flat nightly; no holdings or return changes",
+  "source_experiment": "equity/experiments/equity_full_basket_states",
+  "inputs": "Original490 cached state/target rows, original379 prediction dates, exact saved completed-label training memberships, saved490-row entry-available VIX alignment",
+  "models": "HistoryMean; Controls33; ControlsVIX36; then ControlsVIX plus each original RawLevel3, RawChange3, ResidualLevel3, ResidualChange2 augmentation. Report every model, no selecting a winner",
+  "vix": "log previous-equity-session VIX close, completed previous-session log VIX change, fixed indicator20<=VIX<30. Last equity session before target_start is formation_date. Preserve older cached topology history_end",
+  "targets": {
+    "risk": "Original log(next20-session strategy RMS in bps)",
+    "mean": "Original next20-session mean strategy gross return in bps"
+  },
+  "fit": "Original expanding ridge: training-only feature means and population SD; SD floor1e-10 replaced by1; unpenalized intercept; mean squared error plus lambda1 squared standardized coefficients, equivalently sklearn alpha=n. Minimum104 completed labels, exact old memberships",
+  "scoring": "Exact original development/later samples:233 and138 complete non-cross-boundary labels.379 forecasts also include4 split-crossing and4 latest incomplete targets, neither scored. Same dates for every model",
+  "primary": "Paired risk log-squared error of each TDA+VIX model minus ControlsVIX; simultaneous four-addition95 bands within each period",
+  "secondary": "Same comparison for mean-return MSE; VIX-minus-Controls baseline increment for each target; joint TDA+VIX-minus-original-Controls reported as a separate four-model family",
+  "uncertainty": "Reuse original1000 circular block draws, block12 forecast anchors, original seed2026102951 plus period index. Max-standardized bootstrap deviation simultaneous bands for four TDA additions; VIX single comparison uses pointwise percentile95. Conditional on saved forecasts, not model refits. No correction across periods, targets, families or past project experiments",
+  "checks": "Independently reconstruct VIX timing from sources, completed labels from frozen PCA returns, original membership and HistoryMean/Controls forecasts; independently refit all new forecasts with sklearn Ridge; recompute paired losses and resampling intervals; hash protected original inputs",
+  "reporting": "Forecast accuracy only. Risk forecast is logRMS, not a risk-reduction policy or return estimate. No new trading gate, sizing, threshold search, topology computation, stock selection, data download or costs. Gross/pre-fee strategy inputs remain unchanged"
+}
+```
+
+</details>
+
+### Initial correlation/PCA descriptive analysis
+
+The initial study stores its settings and exact descriptive results together rather than in a separate specification. Its complete summary follows.
+
+<details>
+<summary>Initial descriptive settings and findings</summary>
+
+```json
+{
+  "development_start": "2016-01-05",
+  "development_end": "2023-12-29",
+  "return_observations": 2011,
+  "equities": 30,
+  "held_out_from": "2024-01-01",
+  "windows_sessions": [
+    60,
+    120
+  ],
+  "pca_variance_share": [
+    0.4359140518735049,
+    0.10911499829428924,
+    0.06276202954360538,
+    0.044542938664954485,
+    0.03841377737983833,
+    0.026851615285987836,
+    0.0256762684653398,
+    0.021349290152250372,
+    0.019977629036527726,
+    0.019663370952156176,
+    0.01848600522053884,
+    0.01746588534244953,
+    0.016037268865235113,
+    0.014457592604110996,
+    0.013956701276360494,
+    0.013317402522186154,
+    0.012230281222507359,
+    0.011124416438924247,
+    0.00985699540021854,
+    0.009324420541243753,
+    0.008708064554727772,
+    0.008195606979241894,
+    0.007287569179417599,
+    0.007132103733551305,
+    0.006534695201368515,
+    0.005844235919287976,
+    0.0044554812409993505,
+    0.004270105330277721,
+    0.004161018539553607,
+    0.002888180239344984
+  ],
+  "pc1_spy_correlation": 0.9275479767051642,
+  "components_for_50pct": 2,
+  "components_for_80pct": 10,
+  "latest_rolling": [
+    {
+      "date": "2023-12-29T00:00:00.000",
+      "window": 60,
+      "average_correlation": 0.2297260917,
+      "within_group_correlation": 0.5105019903,
+      "between_group_correlation": 0.184801948,
+      "peer_correlation_gap": 0.3257000424,
+      "pc1_variance_share": 0.2943586898,
+      "top3_variance_share": 0.5149081742,
+      "effective_dimension": 7.7311439779,
+      "pc1_spy_correlation": 0.789206122,
+      "market_removed_average_correlation": 0.0504891474,
+      "market_removed_peer_gap": 0.3835474797,
+      "market_removed_pc1_share": 0.2300315624
+    },
+    {
+      "date": "2023-12-29T00:00:00.000",
+      "window": 120,
+      "average_correlation": 0.2152898073,
+      "within_group_correlation": 0.4869016302,
+      "between_group_correlation": 0.1718319156,
+      "peer_correlation_gap": 0.3150697146,
+      "pc1_variance_share": 0.2672857702,
+      "top3_variance_share": 0.4838170201,
+      "effective_dimension": 8.9368063095,
+      "pc1_spy_correlation": 0.7819630646,
+      "market_removed_average_correlation": 0.0507872855,
+      "market_removed_peer_gap": 0.3573388461,
+      "market_removed_pc1_share": 0.209447883
+    }
+  ],
+  "snapshots": [
+    {
+      "end_date": "2019-12-31",
+      "start_date": "2019-07-12",
+      "sessions": 120,
+      "average_correlation": 0.38850740886054713,
+      "within_group_correlation": 0.578455848507873,
+      "between_group_correlation": 0.3581156585169749,
+      "pc1_variance_share": 0.44293525145364027,
+      "market_removed_within": 0.32668284533051967,
+      "market_removed_between": -0.01277579913064127
+    },
+    {
+      "end_date": "2020-03-31",
+      "start_date": "2019-10-09",
+      "sessions": 120,
+      "average_correlation": 0.678095396700613,
+      "within_group_correlation": 0.7886803667258814,
+      "between_group_correlation": 0.66040180149657,
+      "pc1_variance_share": 0.6950673260310704,
+      "market_removed_within": 0.37892871450202814,
+      "market_removed_between": 0.013980965687271998
+    },
+    {
+      "end_date": "2023-12-29",
+      "start_date": "2023-07-12",
+      "sessions": 120,
+      "average_correlation": 0.2152898072888436,
+      "within_group_correlation": 0.48690163021004645,
+      "between_group_correlation": 0.17183191562145114,
+      "pc1_variance_share": 0.26728577015233645,
+      "market_removed_within": 0.3588380148640939,
+      "market_removed_between": 0.0014991687618939788
+    }
+  ],
+  "method": "Pearson correlations and sample-correlation PCA of daily log returns; SPY residuals use same-window OLS with intercept.",
+  "checks": {
+    "input_no_missing": true,
+    "held_out_excluded": true,
+    "pca_reconstruction_and_trace": true,
+    "residual_market_orthogonality": true
+  },
+  "source_file_sha256": "2f1b0d66d17db0faeeed7c30b3fafc4685e204e2d79bf25962a271dcdebe42e9"
+}
+```
+
+</details>
+
+### Data collection: equity_daily_expanded_2016_2026-10-27
+
+<details>
+<summary>Complete collection design</summary>
+
+```json
+{
+  "decision_date": "2026-10-28",
+  "purpose": "broader cross-sectional structural research; no automatic strategy or TDA retuning",
+  "universe_rule": "top 200 IVV equity holdings by published USD market value descending, ticker ascending ties; active tradable Alpaca us_equity; union original 30; SPY benchmark",
+  "holdings_source": "https://www.ishares.com/us/products/239726/ishares-core-s-p-500-etf/latest-holdings.csv",
+  "holdings_snapshot": "downloaded provider snapshot, recorded before price-history collection; must not postdate requested history end",
+  "mapping": "spaces in provider share-class tickers become dots; verify against Alpaca active asset master; no history-based replacements",
+  "share_classes": "distinct listed securities retained, including multiple classes of one issuer; not independent issuers",
+  "classification": "provider sector snapshot, not historical labels; legacy manual groups retained separately",
+  "requested_start": "2016-01-01",
+  "requested_end": "2026-10-27",
+  "symbol_asof": "2026-10-28",
+  "data": "SIP 1Day OHLCV, raw and all-adjusted, full pagination; same range as original panel",
+  "earlier_history_probe": "SPY raw SIP daily bars 2000-01-01 through 2015-12-31; records actual returned availability only",
+  "selection_uses_strategy_outcomes": false,
+  "missingness": "keep all selected symbols; calendar-aligned blanks; no forward fill, backfill or zero-return substitution; returns require adjacent observed sessions",
+  "audit": "unique symbol/date, positive finite ordered OHLC, calendar, missing leading/internal/trailing, compounding, prior-panel overlap changes",
+  "future_analysis": "freeze separate structural design before evaluating expanded-universe outcomes; consider 120-day shrinkage and declared longer-window baseline",
+  "limitations": [
+    "Current survivor/size selection; not a point-in-time historical investable universe.",
+    "Fund weight is a size selection proxy, not a measured liquidity guarantee.",
+    "Current sector labels and current asset tradability are not historical eligibility.",
+    "Adding names does not create independent time histories or restore untouched 2024+ data.",
+    "Adjusted returns are a vendor proxy, not an audited action-level total-return ledger.",
+    "A longer historical panel is not itself a test of long-run equilibrium mean reversion."
+  ],
+  "fees": "no performance or fee experiment in this collection"
+}
+```
+
+</details>
+
+### Data collection: equity_daily_expanded_2016_2026-11-09
+
+<details>
+<summary>Complete collection design</summary>
+
+```json
+{
+  "decision_date": "2026-10-28",
+  "purpose": "time extension of the frozen October 2026 universe; no reselection or strategy retuning",
+  "universe_rule": "top 200 IVV equity holdings by published USD market value descending, ticker ascending ties; active tradable Alpaca us_equity; union original 30; SPY benchmark",
+  "holdings_source": "https://www.ishares.com/us/products/239726/ishares-core-s-p-500-etf/latest-holdings.csv",
+  "holdings_snapshot": "downloaded provider snapshot, recorded before price-history collection; must not postdate requested history end",
+  "mapping": "spaces in provider share-class tickers become dots; verify against Alpaca active asset master; no history-based replacements",
+  "share_classes": "distinct listed securities retained, including multiple classes of one issuer; not independent issuers",
+  "classification": "provider sector snapshot, not historical labels; legacy manual groups retained separately",
+  "requested_start": "2016-01-01",
+  "requested_end": "2026-11-09",
+  "symbol_asof": "2026-10-28",
+  "data": "SIP 1Day OHLCV, raw and all-adjusted, full pagination; same range as original panel",
+  "earlier_history_probe": "SPY raw SIP daily bars 2000-01-01 through 2015-12-31; records actual returned availability only",
+  "selection_uses_strategy_outcomes": false,
+  "missingness": "keep all selected symbols; calendar-aligned blanks; no forward fill, backfill or zero-return substitution; returns require adjacent observed sessions",
+  "audit": "unique symbol/date, positive finite ordered OHLC, calendar, missing leading/internal/trailing, compounding, prior-panel overlap changes",
+  "future_analysis": "freeze separate structural design before evaluating expanded-universe outcomes; consider 120-day shrinkage and declared longer-window baseline",
+  "limitations": [
+    "Current survivor/size selection; not a point-in-time historical investable universe.",
+    "Fund weight is a size selection proxy, not a measured liquidity guarantee.",
+    "Current sector labels and current asset tradability are not historical eligibility.",
+    "Adding names does not create independent time histories or restore untouched 2024+ data.",
+    "Adjusted returns are a vendor proxy, not an audited action-level total-return ledger.",
+    "A longer historical panel is not itself a test of long-run equilibrium mean reversion."
+  ],
+  "fees": "no performance or fee experiment in this collection",
+  "universe_refresh": "reuse original holdings, asset master and security identifiers byte for byte",
+  "vintage": "complete raw/all-adjusted history repull; do not splice old and new adjusted prices",
+  "source_dataset": "equity_daily_expanded_2016_2026-10-27",
+  "source_manifest_sha256": "afe95d027ebe43b72f6579c23c1d753d17615ebbf42eac8789d4c713764626ff"
+}
+```
+
+</details>
+
+## Appendix C — Complete recent-data and unwind assessment
+
+## Recent equity update and centroid-linkage comparison
+
+Executed November 10, 2026. **Data now extends through November 9.** The
+original 200 equities plus SPY are unchanged. Nine added sessions are too short
+to establish a new regime, forecast benefit or causal explanation of an unwind.
+
+### Data and design
+
+The [new complete data vintage](../market_data/datasets/equity_daily_expanded_2016_2026-11-09/README.md)
+contains 2,729 sessions and 528,637 bars per raw/adjusted mode. Independent
+pagination, prices, returns and coverage checks passed. All source-vintage files
+remain unchanged. Adjusted OHLC changed on 55,674 overlap bars; raw OHLC did not.
+
+The [specification](experiments/equity_recent_refresh_2026_11_10/specification.json) was saved before computing these results.
+Freeze membership using 272 complete daily log returns through October 27:
+all 200 stocks qualify. Compare after-close snapshots on October 27 and November
+9 with 120/252 observed returns, including each snapshot close. Fit each stock
+on intercept and SPY; standardize residual columns. Each stock is a vector of
+those standardized residuals divided by `sqrt(L-1)`, giving Euclidean distances
+`sqrt(2*(1-rho))`. Use the same vectors for single, average and centroid linkage.
+
+Stop after `N-11` actual merges for eleven groups. Centroid heights can decrease,
+so its result is a merge-count partition, not a horizontal filtration cut.
+Every centroid height reconstructs from size-weighted original-point means.
+Single-linkage cuts independently match threshold-graph connected components.
+The two snapshots use the same refreshed price vintage; they are not exact
+reproductions of the older study's t−1 formation convention.
+
+### Measured results
+
+| Quantity | October 27 | November 9 |
+|---|---:|---:|
+| Mean raw pair correlation, 120 sessions | 0.0660 | 0.0940 |
+| Mean SPY-residual pair correlation, 120 sessions | 0.0453 | 0.0513 |
+| Raw PC1 variance share, 120 sessions | 20.55% | 21.08% |
+| Residual top-three PC variance share, 120 sessions | 32.85% | 35.59% |
+| Mean raw pair correlation, 252 sessions | 0.0924 | 0.1050 |
+| Mean SPY-residual pair correlation, 252 sessions | 0.0438 | 0.0451 |
+
+Raw and residual correlations both rise in these rolling snapshots. Most
+observations overlap, and nine observations enter as nine old observations
+leave; this does not identify a structural break or a cause.
+
+| History | Method | Largest group, Oct 27 → Nov 9 | Singletons, Nov 9 | Old/new partition ARI |
+|---|---|---:|---:|---:|
+| 120 | Single / Rips H0 | 188 → 188 | 8 | 0.728 |
+| 120 | Average | 86 → 119 | 1 | 0.635 |
+| 120 | Centroid | 190 → 188 | 9 | 0.706 |
+| 252 | Single / Rips H0 | 187 → 187 | 8 | 0.747 |
+| 252 | Average | 73 → 96 | 1 | 0.643 |
+| 252 | Centroid | 189 → 190 | 10 | 0.642 |
+
+Centroids do not repair the giant-group problem in these snapshots. Their trees
+have 39–46 decreasing-height steps across the four fits. This is an observed
+property of the centroid criterion, not an error to remove by relabeling heights.
+ARI measures assignment agreement, not correctness; a nearly all-in-one partition
+can have substantial agreement while providing little peer resolution.
+
+![Group balance and extension returns](experiments/equity_recent_refresh_2026_11_10/01_recent_refresh.png)
+
+Over October 28–November 9, SPY's adjusted cumulative return is **−2.20%**, while
+the median cumulative stock return is **+2.02%**. The median curve is a changing
+cross-sectional median, not a self-financing equal-weight portfolio. These
+close-to-close returns are separate from our old next-open-to-close strategies.
+Within that interval, SPY falls **4.41% on November 5** and rises **2.37% on
+November 9**. The cumulative extension return therefore does not describe the
+size of the individual selloff day.
+
+For a bounded forward descriptive check, freeze October 27 group labels and
+252-session SPY coefficients. Measure within-minus-between residual correlations
+over the nine new sessions:
+
+| Formation history | Single | Average | Centroid |
+|---|---:|---:|---:|
+| 120 sessions | 0.0996 | 0.5369 | 0.1926 |
+| 252 sessions | 0.1267 | 0.4509 | 0.2545 |
+
+Average has the higher point gap here too, but these are **one short block**,
+not the old twenty-session target or an independent confirmation. With only nine
+returns per stock, individual correlations are noisy and rank-limited. We report
+no significance interval and select no method/lookback from these ranks. Group
+sizes and the pairs counted within groups differ. In-sample gaps in the CSV
+are formation diagnostics, not forecast results.
+
+### The user's hedge-fund unwind hypothesis
+
+The user identifies a recent reduction of long/short factor-neutral positions
+as the suspected mechanism. Keep three levels of evidence separate:
+
+1. **Observed in our panel:** the index drawdown, cross-sectional differences,
+   correlations, and changed group assignments above.
+2. **Reported externally:** a November 6 Reuters report describes leverage
+   reductions at multi-manager funds, Walleye reducing its internal equity
+   long/short business, and concern about overlapping positions. It reports
+   substantial losses in tech-focused long/short books. This is contemporaneous
+   reporting, not a downloaded fund-position ledger. [Reuters, syndicated copy](https://d2233.cms.socastsrm.com/2026/11/06/tech-selloff-wipes-out-hedge-fund-gains-prompting-risk-cuts-and-layoffs/).
+3. **Not established:** that these specific books were neutral to the same
+   factors as our strategy, that most long/short funds downsized, or that their
+   trading caused the broad-market decline. The panel has no fund holdings,
+   trade signs, gross-exposure changes, financing shocks or intraday sequencing.
+
+**Why factor neutrality does not rule out unwind losses.** If a portfolio `h`
+has fitted factor exposures `B' h = 0`, scaling it to `a h`, `0 < a < 1`, keeps
+`B' (a h) = 0`. But the unwind sells existing longs and buys back existing
+shorts. Shared crowded books can therefore have falling long names and rising
+short names, adverse execution pressure and correlated residual losses while
+remaining approximately neutral to the fitted factors. This is a mechanism,
+not a measured finding about the funds in this episode. Long/short alone also
+does not imply dollar, beta, sector or style neutrality.
+
+A neutral unwind need not push every stock down: short covering creates buy
+pressure. Its broad index effect depends on names, weights, liquidity and
+responses by other investors. Nor must it raise all pairwise correlations:
+same-side holdings can move together while opposite-side holdings separate.
+That motivates **signed holdings and labeled relationships**, the distinction
+already studied in research-log entry 22. A global H0/H1 scalar alone loses
+who was long and who was short.
+
+The [IMF's October 6 analysis](https://www.imf.org/en/blogs/articles/2026/10/06/hedge-funds-improve-market-functioning-but-can-also-amplify-stress)
+provides general evidence of amplification through leverage, crowding and
+synchronized unwinds; it does not attribute the November episode. A future
+causal study needs independently dated position/flow evidence. A return-only
+study could instead test whether frozen labeled relationships describe the
+episode differently from ordinary correlations/covariance, explicitly without
+calling the patterns evidence of particular funds' actions.
+
+### Files and reproduction
+
+- [Source](experiments/equity_recent_refresh.py), [specification](experiments/equity_recent_refresh_2026_11_10/specification.json), [summary](experiments/equity_recent_refresh_2026_11_10/summary.json), [independent output checks](experiments/equity_recent_refresh_2026_11_10/independent_audit.json).
+- [Correlation/PCA snapshots](experiments/equity_recent_refresh_2026_11_10/correlation_snapshots.csv), [group balance](experiments/equity_recent_refresh_2026_11_10/group_balance.csv), [assignments](experiments/equity_recent_refresh_2026_11_10/stock_groups.csv), [partition changes](experiments/equity_recent_refresh_2026_11_10/partition_changes.csv).
+- [Nine-session correlation check](experiments/equity_recent_refresh_2026_11_10/short_extension_coherence.csv), [stock returns](experiments/equity_recent_refresh_2026_11_10/extension_stock_returns.csv).
+
+Run `python equity/experiments/equity_recent_refresh.py` in `tda` from the
+project root. Old trading and prediction ledgers remain dated through October
+27; no strategy, gate, sizing rule or fee assumption changed.
+
+
+## Consolidation provenance
+
+Generated with [build_equity_compendium.py](experiments/build_equity_compendium.py). Contains 18 full experiment specifications, the original descriptive summary, both expanded data-collection designs, the full validated comparison ledger and the complete recent-update assessment. This is documentation consolidation; it does not rerun archived models. Rebuild after updating the source documents; maintain new numbered entries above the generated marker.

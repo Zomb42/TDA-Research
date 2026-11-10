@@ -1,5 +1,7 @@
 # Financial TDA research — current starting point
 
+**November 10 equity refresh and consolidation:** the same 200 equities plus SPY now have a separate audited daily vintage through **November 9** (nine added sessions). [Consolidated equity document](equity/EQUITY_RESEARCH_LOG.md) now includes all 23 research steps, full saved method specifications, reconciled performance/risk findings, and the single/average/centroid explanation. [Latest descriptive update](equity/experiments/equity_recent_refresh_2026_11_10/README.md) tests the centroid proposal on identical vectors and distinguishes the user's deleveraging hypothesis from measured returns and documented fund-risk cuts. Existing strategy/forecast ledgers remain on the October 27 vintage; BTC/liquidity work is separate.
+
 **November 10 CRC collection setup:** [deployment guide](btc/CRC_COLLECTION.md) and
 [Grid Engine job](jobs/kalshi_btc_crc.job) are prepared for a new Kalshi BTC-perp
 capture on the student/CRC system. No remote submission or new local capture

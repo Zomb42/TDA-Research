@@ -1,6 +1,8 @@
 # Equity dependence, peers, and residual reversal
 
-**Read [EQUITY_RESEARCH_LOG.md](EQUITY_RESEARCH_LOG.md) first.** It is the running, intuitive account of everything we have done for equities: the question behind each experiment, what we measured, what the result means, and why we moved to the next test.
+**Read [EQUITY_RESEARCH_LOG.md](EQUITY_RESEARCH_LOG.md) first.** It is the single consolidated equity document: all 23 research steps, detailed method specifications, reconciled findings, the single/average/centroid explanation, and the November 10 data refresh. The question behind each experiment, what we measured, what the result means, and the evidence are together there.
+
+**Latest data:** the frozen 200-stock universe plus SPY now extends through **November 9, 2026**, in a separate [fully audited vintage](../market_data/datasets/equity_daily_expanded_2016_2026-11-09/README.md). The [recent descriptive comparison](experiments/equity_recent_refresh_2026_11_10/README.md) includes centroid linkage and the user's deleveraging hypothesis. Existing trading/forecast results below still use the October 27 vintage and end dates.
 
 **For performance numbers and graphs, use [EQUITY_VALIDATION.md](EQUITY_VALIDATION.md).** It reconciles the full and later periods, ordinary and TDA gates, realized volatility and risk-forecast error, with common-calendar plots and audit evidence.
 
@@ -10,20 +12,20 @@ Current position: repeatable peers exist; the expanded daily strategy has positi
 |---|---|
 | The full research story and intuitive explanations | **[Equity research log](EQUITY_RESEARCH_LOG.md)** |
 | Consistent performance/risk comparisons and validation evidence | **[Validated comparison ledger](EQUITY_VALIDATION.md)** |
-| A brief report-ready account of progress and TDA's potential role | [Progress report](EQUITY_PROGRESS_REPORT.md) |
+| The earlier October 29 progress snapshot, now superseded | [OUTDATED summary](EQUITY_PROGRESS_REPORT.md); use the consolidated document for current findings |
 | How the frozen factor-neutral strategy's returns and risk compare with VIX | [Factor/VIX comparison and forecast check](experiments/factor_reversal_vix/README.md) |
 | Whether trading only at prior VIX20–30 improves that strategy | [Fixed-band policy, capital, concentration and nonlinear check](experiments/factor_vix_20_30/README.md) |
-| How historical studies used landscapes/networks for regimes and where VIX fits | [Updated primary-source review, illustrations and cached context](literature/tda_regimes_vix_2026-11-04/README.md) |
+| How historical studies used landscapes/networks for regimes and where VIX fits | [Literature review and illustrations; OUTDATED proposal status](literature/tda_regimes_vix_2026-11-04/README.md) |
 | Whether existing TDA adds mean/risk forecasts beyond ordinary controls and VIX | [Executed matched comparison and independent audit](experiments/tda_vix_matched/README.md) |
-| Other concrete TDA roles beyond global regime summaries | [Local shocks, relationship failures, state paths and portfolio construction](literature/tda_alternative_uses_2026-11-05.md) |
+| Original rationale for alternative TDA roles | [Proposal note; OUTDATED status for its first two tests](literature/tda_alternative_uses_2026-11-05.md); completed results are linked below |
 | Whether today's local residual-shock topology improves next-session stock forecasts | [Executed shock merge-tree comparison and audit](experiments/tda_residual_shock/README.md) |
 | Whether changing labeled stock relationships identify risk in actual portfolio holdings | [Executed hierarchy-exposure comparison against covariance and average linkage](experiments/tda_relationship_exposure/README.md) |
 | The current decision and open choices | [Current next steps](EQUITY_NEXT_STEPS.md) |
-| The original correlation/PCA explanation in more detail | [PCA intuition](EQUITY_INTUITION.md) |
+| The original correlation/PCA explanation in more detail | [PCA intuition; OUTDATED project status, retained explanations](EQUITY_INTUITION.md) |
 | An actual Microsoft factor equation, coefficients and worked interpretation | [Microsoft PCA example](MSFT_PCA_EXAMPLE.md) |
 | The distinction between different mean-reversion claims | [Mean-reversion scope](MEAN_REVERSION_SCOPE.md) |
-| Factor coefficients, market states, and a proposed profitability-regime test | [Persistence/regime ideas](PERSISTENCE_REGIME_IDEAS.md) |
-| Exact dimensions used in prior regime papers, compared with ours | [Coordinate-design literature review](literature/tda_regimes_and_coordinate_design_2026-10-29.md) |
+| Original factor-coordinate and profitability-regime proposal | [Persistence/regime ideas; OUTDATED proposal status](PERSISTENCE_REGIME_IDEAS.md) |
+| Exact dimensions used in prior regime papers, compared with ours | [Coordinate-design literature review; OUTDATED proposal status](literature/tda_regimes_and_coordinate_design_2026-10-29.md) |
 | Exact trading equations and source reference | [Verified strategy math](literature/residual_mean_reversion_151_2026-10-28.md) |
 | Context across equity, BTC, and liquidity | [Project starting point](../START_HERE.md) |
 
@@ -47,7 +49,7 @@ Each experiment has an adjacent README, specification, result tables, plots, sou
 
 ## Data and files
 
-The shared [original 30-stock panel](../market_data/datasets/equity_daily_30_2016_2026-10-27/README.md) and [expanded 200-stock panel](../market_data/datasets/equity_daily_expanded_2016_2026-10-27/README.md) both use the 2016–October 2026 calendar, with SPY separate. The expanded structural and PCA/reversal tests use the broader panel; the earlier frozen trading tests remain on their original 30 stocks.
+**Current data:** the [refreshed 200-stock panel plus SPY](../market_data/datasets/equity_daily_expanded_2016_2026-11-09/README.md) runs through November 9. **Archived experiment inputs:** the [original 30-stock panel](../market_data/datasets/equity_daily_30_2016_2026-10-27/README.md) and [older expanded panel](../market_data/datasets/equity_daily_expanded_2016_2026-10-27/README.md) end October 27. Keep those exact vintages for their original structural, trading and forecasting results. Older data does not make a dated experiment invalid; the November refresh is a separate descriptive extension.
 
 `market_data` in this folder is an alias to the shared data directory, not another copy of prices or credentials. Old project-root notebook/script/result paths are compatibility aliases. Select **TDA (conda)** for the notebook kernel; reproduction commands live in the experiment READMEs.
 

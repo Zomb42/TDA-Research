@@ -1,3 +1,5 @@
+> **OUTDATED PROPOSAL STATUS — marked November 10, 2026.** The scalar-regime, persistence-image and full-basket experiments discussed as proposals here have been completed. Their outcomes are in entries 11–15 and 20 of the [consolidated research document](EQUITY_RESEARCH_LOG.md). This note retains the coordinate explanations and original reasoning; its proposals are not a pending work queue.
+
 # Persistence diagrams, factor exposures, and strategy regimes
 
 October 29, 2026. This records the user's proposal to use factor coefficients as coordinates and investigate when residual reversal is profitable. **The first proposed regime-forecast experiment has now been executed:** [notebook](equity_persistence_regimes.ipynb), [results](experiments/equity_persistence_regimes/README.md). Stock-loading features have a modest favorable later point estimate versus the simple gate; neither stock nor lagged-state persistence establishes an incremental benefit. The conceptual discussion and design questions below preserve the proposal stage; exact executed choices are in the linked specification.

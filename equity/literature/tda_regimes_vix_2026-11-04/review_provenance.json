@@ -90,7 +90,7 @@
     "vix_and_structure_explained.png": "bee376c8d1d3c82258594d792cfa338b0a947403e5caa254315fe730de5d60e2"
   },
   "review_output_sha256": {
-    "README.md": "1c6934ab4510fe01e2e2763b687dca4842da30d87fefa59ec2310d8937fd80d4",
+    "README.md": "039e1cb96c549ee3c7e22e8d435094b4a6c9518b80f11af6708c6202134a1ce8",
     "assemble_context.py": "5ee2183de88a8fa00c68887e8beea251757a51c5646bd6ee753b251ca57ac660",
     "cached_tda_and_vix.png": "ae7e932a6df8dfd15bdbbf487e8da9b39557cb279baaa673cf59f8eab1851041",
     "cached_tda_vix_context.csv": "720a1f7846346f4a4620cea1370432fe023a0092713dcb82fc4c49839455cbb1",
@@ -100,5 +100,14 @@
     "landscapes_explained.png": "a931eef52e1d2b335e84750a17d70001dabde5f5c463d1d780527edf2923aedd",
     "proposed_comparison.json": "eb312cd3fb9ffbd8d062aba7b01d4ebfac735324e5552e7b9fa80ab2d18230d5",
     "vix_and_structure_explained.png": "bee376c8d1d3c82258594d792cfa338b0a947403e5caa254315fe730de5d60e2"
-  }
+  },
+  "documentation_annotations": [
+    {
+      "date": "2026-11-10",
+      "change": "Prepended OUTDATED proposal-status notice linking to completed experiments; original report body unchanged",
+      "previous_document_sha256": "1c6934ab4510fe01e2e2763b687dca4842da30d87fefa59ec2310d8937fd80d4",
+      "annotated_document_sha256": "039e1cb96c549ee3c7e22e8d435094b4a6c9518b80f11af6708c6202134a1ce8"
+    }
+  ],
+  "current_document_sha256": "039e1cb96c549ee3c7e22e8d435094b4a6c9518b80f11af6708c6202134a1ce8"
 }

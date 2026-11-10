@@ -1,3 +1,5 @@
+> **OUTDATED PROPOSAL STATUS — marked November 10, 2026.** This October 29 review preceded the completed full-basket and matched VIX/TDA tests. Its next-design and unexecuted-comparison language is historical. The four-ETF suggestion was not selected. See entries 14 and 20 of the [consolidated research document](../EQUITY_RESEARCH_LOG.md) for executed choices and results. The literature and coordinate explanations are retained.
+
 # TDA regimes: what the points and dimensions should represent
 
 **November4 follow-up:** the [updated regime/VIX review](tda_regimes_vix_2026-11-04/README.md) incorporates the completed full-basket study, recent VIX results, landscape equivalences, additional source checks, and an unexecuted comparison using cached TDA after adding VIX controls. The original review-stage proposal below is preserved as historical context.

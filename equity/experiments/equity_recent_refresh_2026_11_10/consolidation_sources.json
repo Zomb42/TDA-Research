@@ -1,0 +1,87 @@
+{
+  "embedded_specifications": 18,
+  "sources": [
+    {
+      "source": "experiments/equity_efa_vs_pca/specification.json",
+      "sha256": "4beb0f771452bebf3d0e276e928ef85510a4b841c2d2d4c378dfc7203b72aa10"
+    },
+    {
+      "source": "experiments/equity_expanded_pca_reversal/specification.json",
+      "sha256": "88b2dbaa7db149300074e0e00b4c727473a538975c1891ba0454c02f69ca2af0"
+    },
+    {
+      "source": "experiments/equity_expanded_structure/specification.json",
+      "sha256": "b266abad4c093f34bae40eb75d9b7617e98b401b71b7c4af86a8eab36f015dd3"
+    },
+    {
+      "source": "experiments/equity_full_basket_states/specification.json",
+      "sha256": "09ef552dd4cb35a554a069d9c40235050e6b669c802678d9bea82f037ac616d5"
+    },
+    {
+      "source": "experiments/equity_h0_peers/specification.json",
+      "sha256": "f64263042a3e34312619833bebfd2ee87c67e2124f2782c47bf921033d3b8473"
+    },
+    {
+      "source": "experiments/equity_h0_scale_robustness/specification.json",
+      "sha256": "625323a686be43175818993605304157e426ee9b9362bdb4c12da821e038327f"
+    },
+    {
+      "source": "experiments/equity_persistence_images/specification.json",
+      "sha256": "47ccc0ebdb8ce5b9250edc056d1bb9d53db0a40cc7db599417fd6ba7722972e4"
+    },
+    {
+      "source": "experiments/equity_persistence_regimes/specification.json",
+      "sha256": "55bda035e2bbef5150873a54aa68e47895f6eae80ad2b7d11ca13d2e82fe850c"
+    },
+    {
+      "source": "experiments/equity_recent_refresh_2026_11_10/specification.json",
+      "sha256": "63bf5ffa067802ecbf9e9ade2af3edb6fbefd707838825c7021038df69a7a882"
+    },
+    {
+      "source": "experiments/equity_residual_backtest/frozen_specification.json",
+      "sha256": "21a35959902a50a0202268b91b3b49a938db8e9bb61b80afee461a17742f9977"
+    },
+    {
+      "source": "experiments/equity_residual_diagnostics/diagnostic_specification.json",
+      "sha256": "8b6dad986804b7f96ea75ca9651df9ae6bcc54462f1a4446d1a150862e7a70bd"
+    },
+    {
+      "source": "experiments/equity_reversal_response/specification.json",
+      "sha256": "9af287ce5a75302c579c024c3e42ec2f84d1d7b0f3072a69e7b44d2ee68f53d0"
+    },
+    {
+      "source": "experiments/factor_reversal_vix/specification.json",
+      "sha256": "8b3390a812980b440dbfecbfe20a49649aeee8c9f178a1881ee027c245e16e8f"
+    },
+    {
+      "source": "experiments/factor_vix_20_30/specification.json",
+      "sha256": "465de90534cca3504d4b0ada56369011f2f78305c5fb8fb4d4e1b92882d407e2"
+    },
+    {
+      "source": "experiments/index_selloff_reversal/specification.json",
+      "sha256": "d248cc98d2330d16c6290456604cae59586760200207837f94c66df7efb67281"
+    },
+    {
+      "source": "experiments/tda_relationship_exposure/specification.json",
+      "sha256": "8299b375afaaa692ff3cd92b8f7bf4adea220c409aa9666c10fc037e5f9f97ca"
+    },
+    {
+      "source": "experiments/tda_residual_shock/specification.json",
+      "sha256": "fa07512919bf57a1cf17987af529450152066304fd4cd2b4809837c43e497ab3"
+    },
+    {
+      "source": "experiments/tda_vix_matched/specification.json",
+      "sha256": "f3c29967c465b33bd7808e0b70c0b728c5f2d2bec210c320282a5374967f7e5c"
+    },
+    {
+      "source": "market_data/datasets/equity_daily_expanded_2016_2026-10-27/collection_plan.json",
+      "sha256": "a9354f66144744ab71d4d99d3121c03fb43e6c0a32a8ce4594d4c8d60cb21f1a"
+    },
+    {
+      "source": "market_data/datasets/equity_daily_expanded_2016_2026-11-09/collection_plan.json",
+      "sha256": "15c8a4b16a5eb2f38fe163347f62e98e00f97535a34a18e60cb64afefee6904e"
+    }
+  ],
+  "validation_sha256": "471288b5e24ad05ffd78d865f53bfc8dcdbf8b8eddb8db69f8d0f30e73bc98d6",
+  "recent_report_sha256": "ddbae6b556b0cf6c4448673d553109258922301416bd582aab3b38007e3d873b"
+}

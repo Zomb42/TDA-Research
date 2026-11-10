@@ -1,3 +1,5 @@
+> **OUTDATED STATUS FOR PROPOSALS 1–2 — marked November 10, 2026.** The local residual-shock and labeled relationship/exposure proposals have been executed; see entries 21–22 of the [consolidated research document](../EQUITY_RESEARCH_LOG.md). Their proposal-stage language below is historical. Conditional state paths, temporal asset selection, Mapper and new allocation rules remain unrun ideas, not agreed tasks. The method rationale is retained.
+
 # Other roles for TDA in residual reversal
 
 **Second subsequent execution, November5:** the user requested more work. The [labeled relationship/exposure test is complete](../experiments/tda_relationship_exposure/README.md): H0 hierarchy features give favorable squared-return risk point estimates in both periods, including beyond average-linkage controls, but every interval includes zero. Downside gains vary by period and mean forecasts worsen slightly. This tests the second proposal with a fixed H0 construction; Mapper, alternative temporal asset selection and new allocation rules remain unrun.

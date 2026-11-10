@@ -1,3 +1,5 @@
+> **OUTDATED SUMMARY — marked November 10, 2026.** This October 29 report omits subsequent VIX, shock, relationship-exposure and recent-data work. Use the [consolidated methods and findings](EQUITY_RESEARCH_LOG.md) for the complete current account. Historical numbers below retain their original scope.
+
 # Progress report: TDA for equity structure and trading regimes
 
 October 29, 2026. Scope: the equity study. All performance is gross/pre-fee.

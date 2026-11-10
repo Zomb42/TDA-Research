@@ -1,0 +1,48 @@
+{
+  "configuration": {
+    "decision_date": "2026-11-10",
+    "status": "descriptive extension; not an independent regime or forecasting test",
+    "dataset": "equity_daily_expanded_2016_2026-11-09",
+    "old_cutoff": "2026-10-27",
+    "new_cutoff": "2026-11-09",
+    "universe": "frozen original 200 stocks plus SPY; no holdings refresh",
+    "eligibility": "272 consecutive observed returns through old cutoff; freeze those names for both snapshots; assert subsequent completeness, never fill",
+    "histories": [
+      120,
+      252
+    ],
+    "groups": 11,
+    "snapshots": "descriptive after-close fits, include cutoff close; no forward-return interpretation of in-sample coherence",
+    "geometry": "separately fit intercept and SPY, standardize residual histories; stock vector z_i/sqrt(L-1); Euclidean distance sqrt(2*(1-rho))",
+    "methods": [
+      "single",
+      "average",
+      "centroid"
+    ],
+    "centroid": "Euclidean mean of fixed stock vectors, size-weighted after merging; no centroid renormalization; cut by merge count because heights can invert",
+    "comparisons": "snapshot correlation/PC shares, K11 group balance, old-to-new ARI; no winning window or method selection",
+    "short_extension": "post-cutoff cumulative returns and future residual-correlation gap with old-cutoff labels and frozen old 252-session SPY coefficients; descriptive only, shorter than original 20-session target",
+    "uncertainty": "no confidence interval or significance test on this short extension; dates share most training data",
+    "economic_context": "verify dates from primary releases; no causal assignment of price moves to an event",
+    "strategy": "none; prior gross trading ledgers remain on their original data and dates"
+  },
+  "stocks": 200,
+  "added_sessions": 9,
+  "extension_start": "2026-10-28",
+  "extension_end": "2026-11-09",
+  "SPY_extension_adjusted_return": -0.022048696827170366,
+  "median_stock_extension_adjusted_return": 0.020243028477267076,
+  "checks": {
+    "past_only_cohort": true,
+    "complete_unfilled_extension": true,
+    "Euclidean_and_correlation_distances_match": true,
+    "single_matches_Rips_H0_connectivity": true,
+    "every_centroid_merge_reconstructed": true
+  },
+  "input_sha256": {
+    "returns_log.csv": "b69590a5e262bc4814d6581d706b5ed9a9f8e19d09299df513741cc9bd641d8a",
+    "universe.csv": "48b808035b20fde59881882b67f5091678651bf7efffbb79cb9c5a535c0e4729",
+    "manifest.json": "4bd324689cff4f997966025496f4994ab2094472d1798b0730350f0df5de8c71"
+  },
+  "source_sha256": "78131b4724b2b890d621a6eba724a3be8345dc463004155111ab969e6e1e7f58"
+}

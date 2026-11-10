@@ -24,5 +24,14 @@
     "object": "fixed-reference standardized SPY-residual rolling120 PCA top3 variance share"
   },
   "review_sha256": "1db2ee88cd688782592e008962c90e5ea2e175baf0f7134d6a537776fe790fca",
-  "subsequent_status_update": "Full-basket day-state experiment completed; original four-ETF proposal remains unrun."
+  "subsequent_status_update": "Full-basket day-state experiment completed; original four-ETF proposal remains unrun.",
+  "documentation_annotations": [
+    {
+      "date": "2026-11-10",
+      "change": "Prepended OUTDATED proposal-status notice linking to completed experiments; original report body unchanged",
+      "previous_document_sha256": "da55fa2025ecc636f3e98d253b737f159cecd2f581352f4b791e6f7327e130a8",
+      "annotated_document_sha256": "e21c97ee91ac96104c0df5954e1257d232d6d2cc96413c876e8fdec36004db5f"
+    }
+  ],
+  "current_document_sha256": "e21c97ee91ac96104c0df5954e1257d232d6d2cc96413c876e8fdec36004db5f"
 }

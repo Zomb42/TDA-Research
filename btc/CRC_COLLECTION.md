@@ -14,6 +14,19 @@ job and runs it on a compute node when a slot is available. You can disconnect
 SSH after submission. Running `bash jobs/kalshi_btc_crc.job` is not submission;
 the script refuses to run without the scheduler environment.
 
+Keep the first line exactly `#!/bin/bash`, with no `-l` argument. The CRC
+`qsub` wrapper inspected on crcfe01 expands the complete shebang unquoted
+after its `-S` option. A header of `#!/bin/bash -l` therefore adds a scheduler
+`-l` option and causes the misleading submission error
+`error opening BASH_ENV=/users/.../.bash_profile`. Conda initialization in
+this job is explicit and does not require a login shell. For an older checkout
+with that header, repair it on CRC before submitting:
+
+```bash
+sed -i '1c#!/bin/bash' jobs/kalshi_btc_crc.job
+qsub jobs/kalshi_btc_crc.job
+```
+
 CRC documents a default single CPU for serial jobs and the `long` queue for
 long-running jobs. The general-purpose `long` queue currently permits up to
 14 days, with different limits possible on lab-owned equipment. This job uses
@@ -174,6 +187,21 @@ in the [upstream job guide](https://docs.oracle.com/cd/E19957-01/820-0699/chp5-1
 
 Optional email notifications can be added at submission:
 `qsub -M "$USER@nd.edu" -m ae jobs/kalshi_btc_crc.job`.
+
+If the job disappears from `qstat`, read `kalshi_btc.oJOB_ID` in the submission
+directory. The November 10 attempt, job 1721365, reached compute node
+`d32cepyc218` but reported `startup_failed` / `FileNotFoundError`; no healthy
+capture was confirmed. A likely cause is a missing credential JSON or PEM:
+Conda setup and Git pull do not provision either file. New versions of the job
+check that credential paths are readable before launching Python and report
+the specific missing path without printing secret contents. Correct the paths
+in `jobs/crc_capture.local.sh` or securely provision the existing matching files
+outside Git, then submit a new job. Preserve the failed attempt's log.
+
+`qacct -j JOB_ID` can provide a finished job's accounting record when CRC
+accounting is available. If it reports a missing accounting file, use the
+scheduler log and saved run status/manifest instead; that accounting error
+does not explain the recorder's startup failure.
 
 ## Output and validation
 

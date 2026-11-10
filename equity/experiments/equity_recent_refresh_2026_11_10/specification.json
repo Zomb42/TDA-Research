@@ -1,0 +1,27 @@
+{
+  "decision_date": "2026-11-10",
+  "status": "descriptive extension; not an independent regime or forecasting test",
+  "dataset": "equity_daily_expanded_2016_2026-11-09",
+  "old_cutoff": "2026-10-27",
+  "new_cutoff": "2026-11-09",
+  "universe": "frozen original 200 stocks plus SPY; no holdings refresh",
+  "eligibility": "272 consecutive observed returns through old cutoff; freeze those names for both snapshots; assert subsequent completeness, never fill",
+  "histories": [
+    120,
+    252
+  ],
+  "groups": 11,
+  "snapshots": "descriptive after-close fits, include cutoff close; no forward-return interpretation of in-sample coherence",
+  "geometry": "separately fit intercept and SPY, standardize residual histories; stock vector z_i/sqrt(L-1); Euclidean distance sqrt(2*(1-rho))",
+  "methods": [
+    "single",
+    "average",
+    "centroid"
+  ],
+  "centroid": "Euclidean mean of fixed stock vectors, size-weighted after merging; no centroid renormalization; cut by merge count because heights can invert",
+  "comparisons": "snapshot correlation/PC shares, K11 group balance, old-to-new ARI; no winning window or method selection",
+  "short_extension": "post-cutoff cumulative returns and future residual-correlation gap with old-cutoff labels and frozen old 252-session SPY coefficients; descriptive only, shorter than original 20-session target",
+  "uncertainty": "no confidence interval or significance test on this short extension; dates share most training data",
+  "economic_context": "verify dates from primary releases; no causal assignment of price moves to an event",
+  "strategy": "none; prior gross trading ledgers remain on their original data and dates"
+}

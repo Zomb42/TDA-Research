@@ -1,6 +1,8 @@
 # Equity research: current decision and open choices
 
-Updated November 5, 2026. **The completed research story now lives in [EQUITY_RESEARCH_LOG.md](EQUITY_RESEARCH_LOG.md).** This page contains the current decision, not superseded proposals. Exact settings and results stay in the linked experiment records.
+Updated November 10, 2026. **The completed research story, detailed settings and reconciled results now live together in [EQUITY_RESEARCH_LOG.md](EQUITY_RESEARCH_LOG.md).** This page contains the current decision, not superseded proposals. Original experiment records remain reproducible evidence.
+
+**Latest refresh is complete:** nine new sessions through November 9, same 200 stocks plus SPY, separate full raw/adjusted vintage, independent data and descriptive-output audits. The centroid proposal was implemented as a distinct comparator on identical stock vectors; its latest eleven-group partitions still place 188–190 of 200 names in the largest group. This does not replace average linkage or establish a new trading result. Old strategy and forecasting ledgers remain through October 27. The recent selloff motivates the user's hypothesis of crowded long/short deleveraging; available returns and contemporaneous reporting do not identify factor-neutral fund flows or establish that they caused the decline. [Full update](experiments/equity_recent_refresh_2026_11_10/README.md), consolidated entry 23.
 
 **Use [EQUITY_VALIDATION.md](EQUITY_VALIDATION.md) for reconciled numbers and graphs.** It distinguishes full history from the later period, aligns all gate comparisons on common dates, and separates realized volatility from risk-forecast error. Eight audit reruns plus legacy reconstructions passed without changing strategy results.
 

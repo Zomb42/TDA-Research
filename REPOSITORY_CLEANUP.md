@@ -2,6 +2,37 @@
 
 Cleanup performed November 4, 2026. Research conclusions, frozen experiment source, notebooks, and original data bytes were preserved.
 
+## November 10 equity documentation cleanup
+
+At the user's request, removed **15 ignored Python bytecode cache files**
+(425,216 bytes) from the equity code/review folders and the equity downloader's
+cache. These are generated `.pyc` files; the source scripts remain available.
+No research dataset, result, notebook, experiment source or compatibility link
+was removed.
+
+Prepended **OUTDATED** notices to six documents, identifying the particular
+status or proposal that has been superseded and linking to completed work:
+
+| Document | What is outdated |
+|---|---|
+| [Earlier progress report](equity/EQUITY_PROGRESS_REPORT.md) | October 29 project summary omits research steps 16–23 |
+| [Original PCA walkthrough](equity/EQUITY_INTUITION.md) | Initial next-step/holdout status; the original mathematical explanations remain useful |
+| [Persistence/regime ideas](equity/PERSISTENCE_REGIME_IDEAS.md) | Proposal-stage status for experiments now completed |
+| [Coordinate-design review](equity/literature/tda_regimes_and_coordinate_design_2026-10-29.md) | Earlier proposed next design and comparison status |
+| [Regime/VIX review](equity/literature/tda_regimes_vix_2026-11-04/README.md) | Matched VIX/TDA comparison described as unexecuted; completed November 5 |
+| [Alternative TDA uses](equity/literature/tda_alternative_uses_2026-11-05.md) | First two proposals now executed; remaining ideas are still unrun |
+
+The [consolidated equity document](equity/EQUITY_RESEARCH_LOG.md) is the current
+reading entry point. Navigation now identifies the archived notes and separates
+the November 9 data vintage from October 27 experiment inputs. Review-provenance
+metadata retains earlier hashes and records the documentation annotations.
+
+Historical result reports and older dataset vintages were retained because they
+are still the evidence for their stated periods. Their age alone does not make
+their calculations outdated. Before/after SHA256 checks verified **all 768
+snapshotted experiment/data/notebook files** were unchanged by this cleanup;
+local links in the edited documents were checked.
+
 ## The three studies
 
 | Study | Object and current evidence | Current boundary |

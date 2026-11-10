@@ -1,3 +1,5 @@
+> **OUTDATED PROJECT STATUS — marked November 10, 2026.** Retained as the original 30-stock correlation/PCA walkthrough. Its historical next-step and holdout language does not describe the current project; later experiments have been completed and examined those dates. The mathematical explanations and dated results remain useful. Start with the [consolidated research document](EQUITY_RESEARCH_LOG.md) for current methods, findings and data.
+
 # What we learned from the equity correlation and PCA exploration
 
 October 28, 2026. This walkthrough explains the saved [notebook](equity_correlation_pca.ipynb). It describes our computed results, distinguishes mathematical definitions from interpretations, and does not assign untested economic causes to components.

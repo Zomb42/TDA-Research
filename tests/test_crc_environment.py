@@ -13,6 +13,38 @@ ROOT=Path(__file__).resolve().parents[1]
 
 
 class CrcEnvironmentTest(unittest.TestCase):
+    def test_missing_credentials_identify_path_without_printing_contents(self):
+        for missing in ('json','pem'):
+            with self.subTest(missing=missing),tempfile.TemporaryDirectory(prefix='crc-key-test-') as directory:
+                root=Path(directory);(root/'market_data').mkdir()
+                (root/'market_data/record_btc_archive.py').touch()
+                credentials=root/'credentials.json';key=root/'private.pem'
+                if missing=='pem':credentials.write_text('SECRET_VALUE_MUST_NOT_BE_LOGGED')
+                env={k:v for k,v in os.environ.items() if k!='BASH_ENV' and not k.startswith('BASH_FUNC_')}
+                env.update(JOB_ID='123',SGE_O_WORKDIR=str(root),KALSHI_CREDENTIALS=str(credentials),
+                           KALSHI_KEY=str(key),CAPTURE_COINBASE='0')
+                result=subprocess.run(['/bin/bash',str(ROOT/'jobs/kalshi_btc_crc.job')],
+                                      env=env,capture_output=True,text=True)
+                self.assertEqual(result.returncode,2,result.stdout+result.stderr)
+                self.assertIn(str(credentials if missing=='json' else key),result.stderr)
+                self.assertIn('Missing or unreadable credential file',result.stderr)
+                self.assertNotIn('SECRET_VALUE_MUST_NOT_BE_LOGGED',result.stdout+result.stderr)
+                self.assertFalse((root/'market_data/recordings').exists())
+
+    def test_job_shebang_survives_crc_wrapper_argument_expansion(self):
+        job=ROOT/'jobs/kalshi_btc_crc.job'
+        # Reproduce the wrapper supplied from crcfe01: USR_SHELL is expanded
+        # unquoted after -S. A login flag here becomes a qsub resource flag.
+        command='''USR_SHELL=$(grep -s '#!/bin/' "$1" | sed 's/#!//')
+capture() { printf '%s\\n' "$@"; }
+capture -binding linear_per_task:1 -S $USR_SHELL -v "BASH_ENV=$HOME/.bash_profile" "$1"
+'''
+        result=subprocess.run(['/bin/bash','-c',command,'crc-wrapper-test',str(job)],
+                              capture_output=True,text=True,check=True)
+        self.assertEqual(result.stdout.splitlines(),[
+            '-binding','linear_per_task:1','-S','/bin/bash','-v',
+            'BASH_ENV='+str(Path.home()/'.bash_profile'),str(job)])
+
     def test_recipe_matches_the_capture_requirements(self):
         recipe=(ROOT/'environment-crc.yml').read_text()
         pins=set(re.findall(r'^\s+- ([\w-]+==\S+)$',recipe,re.MULTILINE))
