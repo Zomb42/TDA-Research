@@ -1,1 +1,0 @@
-../../../equity_persistence_images/README.md

@@ -1,6 +1,6 @@
 # TDA project instructions
 
-Read `START_HERE.md` for project context. User instructions in the conversation take precedence.
+Read `README.md` for project context (the old `START_HERE.md` is in `_archive/root_docs/`). User instructions in the conversation take precedence. The rules below are for the BTC and liquidity data collection; the equity study is described in `equity/README.md`.
 
 ## Python environment — user, November 4, 2026
 

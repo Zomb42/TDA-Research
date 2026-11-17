@@ -40,18 +40,14 @@ __pycache__/
 /market_data/**/close_*.csv
 /market_data/**/returns_*.csv
 
-# Large generated experiment artifacts are listed below by exact path.
-/equity/experiments/equity_efa_vs_pca/positions_and_loadings.npz
-/equity/experiments/equity_expanded_pca_reversal/daily_gross_returns.csv
-/equity/experiments/equity_expanded_pca_reversal/horizon_events.csv
-/equity/experiments/equity_expanded_pca_reversal/positions.npz
-/equity/experiments/equity_full_basket_states/coefficient_history.csv
-/equity/experiments/equity_h0_scale_robustness/size_matched_random_curves.npz
-/equity/experiments/equity_residual_backtest/development_only/daily_positions.csv
-/equity/experiments/equity_residual_backtest/evaluated/daily_positions.csv
-/equity/experiments/equity_reversal_response/stock_events.csv.gz
-/equity/experiments/tda_residual_shock/state_panel.npz
-/equity/experiments/tda_residual_shock/stock_predictions.npz
-/equity/experiments/tda_relationship_exposure/labeled_hierarchies.npz
+# Large generated liquidity artifacts.
 /liquidity/experiments/btc_liquidity_features/binance_depth_baselines.parquet
 /liquidity/experiments/btc_liquidity_features/kalshi_quote_baselines_1m.parquet
+
+# Old equity experiments, docs and notebooks moved out on 2026-11-16.
+# Kept on disk only; the tracked copies are in the git tag pre-cleanup-2026-11-16.
+/_archive/
+
+# Large caches written by equity studies.
+/equity/results/**/*.npz
+/equity/results/**/*.parquet

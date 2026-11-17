@@ -1,1 +1,0 @@
-../equity/experiments/equity_residual_backtest.py
