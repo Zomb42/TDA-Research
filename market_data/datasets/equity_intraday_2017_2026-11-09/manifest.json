@@ -1,0 +1,12 @@
+{
+  "source": "Alpaca /v2/stocks/bars, feed sip, adjustment raw",
+  "symbols": 201,
+  "first_day": "2017-01-03",
+  "last_day": "2026-11-09",
+  "days": 2477,
+  "files": {
+    "half_hours": 2477,
+    "last_half_hour": 2477
+  },
+  "finished_at": "2026-11-17T14:23:26.758072-05:00"
+}

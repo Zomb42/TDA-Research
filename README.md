@@ -8,6 +8,16 @@ Three small studies of topological data analysis (TDA) on financial data. Each u
 | BTC | Shapes traced by a price series over time | [btc/](btc/README.md) |
 | Liquidity | Order-book depth as a surface over price and time | [liquidity/](liquidity/README.md) |
 
+## Where each study stands (November 17, 2026)
+
+| Study | State | Main result | Next |
+|---|---|---|---|
+| Equity | 10 studies, [results](equity/RESULTS.md) | TDA peer groups beat sectors (0.62 against 0.41) and tie a plain fine clustering. The strongest effect is not topological: the late part of a stock's day reverses by the next open, and it is visible before the close | Measure real spreads near the close, forward test |
+| BTC | 1 large study, [results](btc/RESULTS.md) | Shape features improve a volatility forecast by 1%; plain fat-tail measures improve it by 2% and make shape redundant | Stop return prediction; move to the order book |
+| Liquidity | Plumbing and one method finding | Loop counts in depth surfaces come from the smoothing and binning, not from the book. 25 hours of order-book data is too little to test anything | One week of order-book recording is in progress on a VM; then test book shape against spread, depth and imbalance |
+
+The same pattern holds in every head-to-head test so far: TDA points at something real, and a plain measure of the same thing ties or beats it.
+
 ## Setup
 
 Use the existing `tda` Conda environment: `conda activate tda`, or `conda run -n tda python ...`.

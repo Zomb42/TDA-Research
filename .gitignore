@@ -51,3 +51,4 @@ __pycache__/
 # Large caches written by equity studies.
 /equity/results/**/*.npz
 /equity/results/**/*.parquet
+/market_data/**/*.npz

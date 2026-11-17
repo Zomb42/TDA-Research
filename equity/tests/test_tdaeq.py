@@ -78,6 +78,18 @@ def test_rank_ic_and_bootstrap():
     assert low < 1 < high and abs(mean - 1) < 0.1
 
 
+def test_path_bars():
+    # the worked example in Zeng et al. (2021), Figure 2: x1 < x3 < x2 < x5 < x4
+    bars = topology.path_bars([0, 2, 1, 4, 3])
+    assert sorted(b[:2] for b in bars) == [(1, 2), (3, 4)]
+    # for any path: distance travelled = range + total length of all valley and peak bars
+    rng = np.random.default_rng(4)
+    for _ in range(200):
+        path = np.cumsum(rng.normal(size=61))
+        total = sum(d - b for b, d, _ in topology.path_bars(path) + topology.path_bars(-path))
+        assert np.isclose(np.abs(np.diff(path)).sum(), np.ptp(path) + total)
+
+
 if __name__ == "__main__":
     for name, check in list(globals().items()):
         if name.startswith("test_"):

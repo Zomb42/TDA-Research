@@ -1,0 +1,6 @@
+shape_measure,explained_by_plain,corr_with_mean_abs_corr
+Typical distance to nearest group (H0),0.8515883043715424,-0.8702691248855655
+Total ring lifetime (H1),0.8032945519069049,-0.8915048819593923
+Number of TDA peer groups,0.1487013831880991,-0.1080824825923036
+Share of stocks with no close peer,0.25019192484543584,0.45781972869759474
+Change in ring diagram over 5 days,0.25620743427634074,-0.33895577676927613

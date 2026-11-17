@@ -78,3 +78,36 @@ def market_and_groups(history, market, labels, rng):
             kept[:, i] = slope * factor
     leftover = residual - kept
     return (history - residual) + kept + shuffle_each_stock(leftover, rng)
+
+
+def path_bars(levels):
+    """Valley barcode of ONE series (0-dimensional sublevel-set persistence).
+
+    Picture water rising from the bottom of the chart. Every valley (local low)
+    starts its own pool at the valley's level: its birth. When the water reaches
+    the peak between two pools they join, and the pool with the higher floor
+    ends there: its death. The deepest pool never ends and is left out.
+
+    Returns a list of (birth, death, position of the valley), one per pool that
+    ends. death - birth is the size of a dip that was fully recovered inside the
+    window. Call with the negated series to get the same for peaks.
+    """
+    x = [float(v) for v in levels]
+    n = len(x)
+    root, floor, bars = [-1] * n, [0] * n, []      # floor = position of a pool's lowest point
+    for i in sorted(range(n), key=x.__getitem__):
+        root[i], floor[i] = i, i
+        for j in (i - 1, i + 1):
+            if 0 <= j < n and root[j] >= 0:
+                a, b = i, j
+                while root[a] != a:
+                    a = root[a]
+                while root[b] != b:
+                    b = root[b]
+                if a == b:
+                    continue
+                young, old = (a, b) if x[floor[a]] >= x[floor[b]] else (b, a)
+                if x[i] > x[floor[young]]:
+                    bars.append((x[floor[young]], x[i], floor[young]))
+                root[young] = old
+    return bars
