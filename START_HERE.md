@@ -4,8 +4,11 @@
 
 **November 10 CRC collection setup:** [deployment guide](btc/CRC_COLLECTION.md) and
 [Grid Engine job](jobs/kalshi_btc_crc.job) are prepared for a new Kalshi BTC-perp
-capture on the student/CRC system. No remote submission or new local capture
-was launched; the completed November 5 archive below remains preserved.
+capture on the student/CRC system. The user subsequently reported job 1723668
+collected about 32m40s before a runtime `FileNotFoundError`; an offline-reproduced
+storage-scan race and misleading shutdown reporting are fixed locally, pending
+CRC deployment. See the deployment guide for evidence and archive-validation
+commands. No new Mac capture was launched; the November 5 archive is preserved.
 
 **Latest collection instruction, November 5: stopped and finalized.** At the user's explicit request, both Kalshi BTC-perp and Coinbase reference feeds stopped gracefully at **11:15:26 p.m. Indianapolis**. The recorder PID no longer exists; all 52 gzip segments are closed, the final manifest is saved, and no partial files remain. [Completed-run pointer](btc/ACTIVE_CAPTURE.json) · [Collection guide](btc/LIVE_COLLECTION.md). Preserve the archive and STOP marker; do not restart without a new user request. All 52 closed files passed hash, gzip and row-count validation; all 11,467 checkpoints and 25 carried hour-boundary books matched exact-decimal replay. The archive contains 21,694,928 book updates, 165,084 trade messages and 130,962 regular Coinbase samples, totaling 725.14 MiB compressed. Interruptions are retained. [Completion report](btc/experiments/btc_archive_final_2026_11_05/README.md). The November 4 start instruction is superseded. No order actions or paid services were involved.
 

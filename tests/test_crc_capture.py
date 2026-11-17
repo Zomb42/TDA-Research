@@ -3,6 +3,7 @@ from contextlib import redirect_stdout
 import io
 import json
 from pathlib import Path
+import signal
 import sys
 import tempfile
 import unittest
@@ -15,6 +16,99 @@ import audit_btc_archive as audit
 
 
 class CrcCaptureTest(unittest.TestCase):
+    def test_storage_scan_survives_atomic_rename(self):
+        for rename_before_stat in (False,True):
+            with self.subTest(rename_before_stat=rename_before_stat),tempfile.TemporaryDirectory() as directory:
+                root=Path(directory);temporary=root/'latest_perp_book.tmp';final=root/'latest_perp_book.json'
+                temporary.write_bytes(b'example')
+                original_stat=Path.stat
+                def racing_stat(path,*args,**kwargs):
+                    if path==temporary and rename_before_stat:temporary.replace(final)
+                    result=original_stat(path,*args,**kwargs)
+                    if path==temporary and not rename_before_stat:temporary.replace(final)
+                    return result
+                with patch.object(Path,'stat',racing_stat):
+                    size=archive.directory_bytes(root)
+                self.assertIn(size,(0,7))
+                self.assertEqual(archive.directory_bytes(root),7)
+
+    def test_storage_scan_does_not_hide_missing_root_or_permission_errors(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);file=root/'book.gz';file.write_bytes(b'example')
+            with self.assertRaises(FileNotFoundError):archive.directory_bytes(root/'missing')
+            original_stat=Path.stat
+            def denied(path,*args,**kwargs):
+                if path==file:raise PermissionError('offline test')
+                return original_stat(path,*args,**kwargs)
+            with patch.object(Path,'stat',denied),self.assertRaises(PermissionError):archive.directory_bytes(root)
+
+    def test_runtime_scan_failure_is_failed_manifest_with_closed_gzip(self):
+        def fake_feed(args,stop,state):
+            log=archive.HourlyLog(args.out/'kalshi_perp','kalshi_perp')
+            log.write(dict(control='offline_fixture'));state.update(state='collecting')
+            stop.wait(3);log.close()
+            state.update(state='stopped',stored_bytes=log.stored_bytes,closed_segments=log.segments)
+        with tempfile.TemporaryDirectory() as directory:
+            out=Path(directory);missing=out/'missing-output-path'
+            output=io.StringIO()
+            with (patch.object(sys,'argv',['recorder','--out',directory,'--kalshi-only']),
+                  patch.object(archive,'headers',return_value={}),patch.object(archive,'run_kalshi',side_effect=fake_feed),
+                  patch.object(archive,'storage_stop_reason',side_effect=[None,FileNotFoundError(2,'offline',str(missing))]),
+                  redirect_stdout(output)):
+                self.assertEqual(archive.main(),1)
+            final=json.loads((out/'manifest.json').read_text())
+            self.assertEqual(final,json.loads(output.getvalue()))
+            self.assertEqual(final['state'],'failed')
+            self.assertEqual(final['stop_reason'],'runtime_error')
+            self.assertEqual(final['runtime_error']['stage'],'storage_check')
+            self.assertEqual(final['runtime_error']['missing_path'],str(missing))
+            self.assertIsNone(final['stop_signal'])
+            self.assertEqual(final['feeds']['kalshi_perp']['closed_segments'],1)
+            self.assertFalse(list(out.rglob('*.partial')))
+
+    def test_signal_shutdown_records_the_received_signal(self):
+        handlers={}
+        def fake_feed(args,stop,state):
+            state.update(state='collecting')
+            handlers[signal.SIGTERM](signal.SIGTERM,None)
+            stop.wait(3);state.update(state='stopped')
+        with tempfile.TemporaryDirectory() as directory:
+            with (patch.object(sys,'argv',['recorder','--out',directory,'--kalshi-only']),
+                  patch.object(archive,'headers',return_value={}),patch.object(archive,'run_kalshi',side_effect=fake_feed),
+                  patch.object(archive.signal,'signal',side_effect=lambda number,handler:handlers.update({number:handler})),
+                  redirect_stdout(io.StringIO())):
+                self.assertEqual(archive.main(),0)
+            final=json.loads((Path(directory)/'manifest.json').read_text())
+            self.assertEqual(final['state'],'stopped')
+            self.assertEqual(final['stop_reason'],'signal_received')
+            self.assertEqual(final['stop_signal'],'SIGTERM')
+            self.assertIsNone(final['runtime_error'])
+
+    def test_finalization_failure_is_not_reported_as_startup_failure(self):
+        def fake_feed(args,stop,state):
+            state.update(state='collecting');stop.wait(3);state.update(state='stopped')
+        original_json=archive.atomic_json
+        def failing_manifest(path,value):
+            if path.name=='manifest.json':raise OSError('offline fixture')
+            original_json(path,value)
+        with tempfile.TemporaryDirectory() as directory:
+            output=io.StringIO()
+            with (patch.object(sys,'argv',['recorder','--out',directory,'--kalshi-only','--seconds','.01']),
+                  patch.object(archive,'headers',return_value={}),patch.object(archive,'run_kalshi',side_effect=fake_feed),
+                  patch.object(archive,'atomic_json',side_effect=failing_manifest),redirect_stdout(output)):
+                self.assertEqual(archive.main(),1)
+            final=json.loads(output.getvalue())
+            self.assertEqual(final['state'],'failed')
+            self.assertEqual(final['stop_reason'],'finalization_error')
+            self.assertEqual(final['last_error']['error_type'],'OSError')
+
+    def test_missing_file_diagnostic_reports_path_without_exception_text(self):
+        error=FileNotFoundError(2,'SECRET_EXCEPTION_TEXT','/example/kalshi/private_key.pem')
+        detail=archive.safe_error(error)
+        self.assertEqual(detail['missing_path'],'/example/kalshi/private_key.pem')
+        self.assertNotIn('SECRET_EXCEPTION_TEXT',json.dumps(detail))
+        self.assertNotIn('missing_path',archive.safe_error(ValueError('SECRET_EXCEPTION_TEXT')))
+
     def test_total_cap_counts_previous_runs_and_partial_files(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);out=root/'new';out.mkdir()

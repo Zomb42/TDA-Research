@@ -17,6 +17,7 @@ from pathlib import Path
 import secrets
 import shutil
 import signal
+import stat
 import sys
 import threading
 import time
@@ -32,8 +33,23 @@ COINBASE_URL = 'wss://advanced-trade-ws.coinbase.com'
 
 
 def directory_bytes(directory):
-    """Count all archived files, including open gzip segments and metadata."""
-    return sum(p.stat().st_size for p in Path(directory).rglob('*') if p.is_file())
+    """Best-effort size snapshot while writers replace metadata/rotate gzip."""
+    directory=Path(directory)
+    if not stat.S_ISDIR(directory.stat().st_mode):
+        raise NotADirectoryError(str(directory))
+    def scan_error(error):
+        raise error
+    total=0
+    for parent,_,names in os.walk(directory,onerror=scan_error):
+        for name in names:
+            try:
+                metadata=(Path(parent)/name).stat()
+            except FileNotFoundError:
+                # A .tmp or .partial entry can be renamed after enumeration.
+                # Its replacement will be counted by the next periodic scan.
+                continue
+            if stat.S_ISREG(metadata.st_mode):total+=metadata.st_size
+    return total
 
 
 def storage_stop_reason(out, max_gb, min_free_gb, storage_root=None, max_total_gb=None):
@@ -146,7 +162,12 @@ def close_socket(ws):
 
 def safe_error(error):
     # Exception strings and handshake headers may contain authentication material.
-    return dict(error_type=type(error).__name__, http_status=getattr(error, 'status_code', None))
+    detail=dict(error_type=type(error).__name__, http_status=getattr(error, 'status_code', None))
+    # The OS filename identifies a broken path without logging exception text,
+    # credential contents, signatures, or WebSocket handshake headers.
+    if isinstance(error,FileNotFoundError) and error.filename is not None:
+        detail['missing_path']=os.fsdecode(error.filename)
+    return detail
 
 
 def run_kalshi(args, stop, state):
@@ -237,7 +258,7 @@ def run_kalshi(args, stop, state):
                 close_socket(ws)
     finally:
         log.close();state.update(message_counts=dict(counts), stored_bytes=log.stored_bytes,
-                                 closed_segments=log.segments,book_valid=False)
+                                 closed_segments=log.segments,book_valid=False,current_file=None)
         if state.snapshot()['state']!='access_failed':state.update(state='stopped')
 
 
@@ -375,7 +396,7 @@ def run_coinbase(args,stop,state):
     finally:
         if reference.trade_count:
             log.write(reference.sample(epoch,False,time.monotonic(),time.monotonic()))
-        log.close();state.update(message_counts=dict(counts),stored_bytes=log.stored_bytes,closed_segments=log.segments)
+        log.close();state.update(message_counts=dict(counts),stored_bytes=log.stored_bytes,closed_segments=log.segments,current_file=None)
         if state.snapshot()['state']!='access_failed':state.update(state='stopped')
 
 
@@ -414,11 +435,16 @@ def main():
     headers(args.kalshi_credentials,args.kalshi_key)
     if not args.kalshi_only:coinbase_jwt(coinbase_credentials(args.coinbase_credentials))
     stop=threading.Event()
+    stop_signal=None
+    def request_stop(number,frame):
+        nonlocal stop_signal
+        if stop_signal is None:stop_signal=signal.Signals(number).name
+        stop.set()
     stop_signals=[signal.SIGTERM,signal.SIGINT]
     # Grid Engine -notify warns before suspension/deletion. Close the archive
     # instead of leaving a gzip stream open when the scheduler stops the job.
     stop_signals += [getattr(signal,name) for name in ('SIGUSR1','SIGUSR2') if hasattr(signal,name)]
-    for number in stop_signals:signal.signal(number,lambda *_:stop.set())
+    for number in stop_signals:signal.signal(number,request_stop)
     (args.out/'source').mkdir()
     source_hashes={}
     for name in ['record_btc_archive.py','record_kalshi_btc_stream.py']:
@@ -445,18 +471,21 @@ def main():
     threads=[threading.Thread(target=guarded,args=(fn,states[name]),name=name,daemon=True)
              for name,fn in feeds]
     started=time.monotonic();reason='stop_requested';last_status=0;ready_feeds=set();failed=False
-    for thread in threads:thread.start()
+    runtime_error=None;runtime_stage='start_workers'
     def status(final=False):
         feeds={name:s.snapshot() for name,s in states.items()}
         healthy=all(s['state']=='collecting' for s in feeds.values())
         result=dict(pid=os.getpid(),started_at=config['started_at'],updated_at=utc(),elapsed_seconds=time.monotonic()-started,
                     state=('failed' if failed else 'stopped') if final else 'collecting' if healthy else 'starting_or_degraded',
-                    feeds=feeds,stop_reason=reason if final else None,free_disk_gib=shutil.disk_usage(args.out).free/1024**3)
+                    feeds=feeds,stop_reason=reason if final else None,stop_signal=stop_signal,
+                    runtime_error=runtime_error,free_disk_gib=shutil.disk_usage(args.out).free/1024**3)
         atomic_json(args.out/'status.json',result)
         return result
-    status()
     try:
+        for thread in threads:thread.start()
+        runtime_stage='status_write';status()
         while not stop.wait(.5):
+            runtime_stage='monitor'
             now=time.monotonic()
             ready_feeds.update(name for name,s in states.items() if s.snapshot()['state']=='collecting')
             if any(not t.is_alive() for t in threads):reason='feed_stopped';failed=True;stop.set()
@@ -465,15 +494,28 @@ def main():
             if (args.out/'STOP').exists():reason='stop_file';stop.set()
             if args.seconds and now-started>=args.seconds:reason='duration_completed';stop.set()
             if now-last_status>=5:
+                runtime_stage='storage_check'
                 limit=storage_limit()
                 if limit:reason=limit;stop.set()
+                runtime_stage='status_write'
                 status();last_status=now
+    except Exception as error:
+        failed=True;reason='runtime_error'
+        runtime_error=dict(stage=runtime_stage,**safe_error(error))
     finally:
         stop.set()
-        for thread in threads:thread.join(timeout=15)
+        for thread in threads:
+            if thread.ident is not None:thread.join(timeout=15)
+        if reason=='stop_requested' and stop_signal is not None:reason='signal_received'
         if any(t.is_alive() for t in threads):reason='shutdown_incomplete';failed=True
         if any(s.snapshot()['state'] in ('failed','access_failed') for s in states.values()):failed=True
-        final=status(True);atomic_json(args.out/'manifest.json',final)
+        try:
+            final=status(True);atomic_json(args.out/'manifest.json',final)
+        except Exception as error:
+            failed=True
+            final=dict(state='failed',stop_reason='finalization_error',prior_stop_reason=reason,
+                       stop_signal=stop_signal,runtime_error=runtime_error,last_error=safe_error(error),
+                       feeds={name:s.snapshot() for name,s in states.items()})
         print(json.dumps(final,indent=2),flush=True)
     return 1 if failed else 0
 

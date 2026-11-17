@@ -203,6 +203,58 @@ accounting is available. If it reports a missing accounting file, use the
 scheduler log and saved run status/manifest instead; that accounting error
 does not explain the recorder's startup failure.
 
+If files were provisioned but a new job still reports `FileNotFoundError`,
+check the exact names and any config overrides rather than retrying unchanged:
+
+```bash
+ls -la "$HOME/.config/kalshi"
+grep -nE 'KALSHI_(CREDENTIALS|KEY)' jobs/kalshi_btc_crc.job jobs/crc_capture.local.sh 2>/dev/null
+```
+
+The default PEM filename is `private_key.pem`, even if the original local key
+was named `TestExample1.pem`. Paths in the ignored local config take precedence
+over the job's defaults. New recorder errors include `missing_path` for OS
+file-not-found failures while keeping exception text and credential contents
+out of logs. Job 1723545 also failed at startup with the older, pathless error
+format; its missing path was not yet established from the supplied log.
+
+**Job 1723668: capture worked, then a runtime error was mislabeled.** After the
+PEM filename was corrected, the user's log reports collection from
+2026-11-10 21:53:32 to 22:26:11 UTC (about 32m40s), 218,673 book deltas,
+2,470 trade messages, no recorded sequence/connection errors, and two closed
+gzip segments totaling 9,044,992 bytes. The final `stopped` / `stop_requested`
+summary followed by `startup_failed` / `FileNotFoundError` is consistent with
+an exception escaping the monitor loop: its `finally` block first closed the
+feeds, then the outer handler mislabeled the pending exception as startup.
+That stop reason did not prove a user or scheduler requested termination.
+
+An offline reproduction established a race in `directory_bytes`: the writer
+renames `latest_perp_book.tmp` while the monitor separately calls `is_file()`
+and `stat()`. The second call can fail. The exact missing filename was absent
+from the CRC log, so this is a strong explanation, not a confirmed remote
+traceback. The fix uses one stat per entry, tolerates entries disappearing
+during a scan, and still propagates missing-root/permission failures. A moved
+file can be omitted from one scan and is counted on a subsequent scan; these
+are periodic limits, not transactional byte quotas. Runtime failures now save
+`state: failed`, `stop_reason: runtime_error`, the failure stage and safe error
+details. Signals save their names, and finalized feeds clear the stale
+`.partial` current-file pointer. Eighteen offline tests pass.
+
+Deploy the updated `market_data/record_btc_archive.py` before another capture.
+The completed files from job 1723668 should be preserved and validated on CRC:
+
+```bash
+source jobs/crc_conda.sh
+initialize_crc_conda
+conda activate tda
+python market_data/audit_btc_archive.py --out market_data/recordings/crc/2026-11-10T21-53-19Z-job-1723668
+```
+
+The saved summary reports closed files; CRC gzip/hash/replay verification has
+not yet been supplied. `book_valid: false` after shutdown is expected. The old
+`current_file` ending in `.partial` was stale status metadata and does not by
+itself prove that a partial file remains on disk.
+
 ## Output and validation
 
 Each Kalshi UTC-hour file retains all delivered parsed book/trade/ticker
