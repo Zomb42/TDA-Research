@@ -1,0 +1,114 @@
+[
+  {
+    "side": "bid",
+    "second_start_utc": "2026-11-12T12:05:08+00:00",
+    "book_updates": 292,
+    "first_both_flanks_high_middle_low": {
+      "receipt_us": 19223,
+      "utc": "2026-11-12T12:05:08.019223+00:00",
+      "sequence": 1218453,
+      "delta_side": "ask",
+      "delta_price_usd_btc": 72851,
+      "delta_contracts": 199.0,
+      "mid_usd_btc": 72849.5,
+      "previous_mid_usd_btc": 72850.0,
+      "three_depths_usd": [
+        3702253.2292,
+        1090.47,
+        1619205.9752
+      ]
+    },
+    "number_of_entries_into_that_state": 7,
+    "fraction_of_second_with_separate_flanks": 0.09308100000000002,
+    "first_lineage_split": {
+      "receipt_us": 19223,
+      "utc": "2026-11-12T12:05:08.019223+00:00",
+      "sequence": 1218453,
+      "delta_side": "ask",
+      "delta_price_usd_btc": 72851,
+      "delta_contracts": 199.0,
+      "mid_usd_btc": 72849.5,
+      "previous_mid_usd_btc": 72850.0,
+      "three_depths_usd": [
+        3702253.2292,
+        1090.47,
+        1619205.9752
+      ]
+    },
+    "number_of_lineage_splits": 5,
+    "loss_of_all_original_descendants": {
+      "receipt_us": 922727,
+      "utc": "2026-11-12T12:05:08.922727+00:00",
+      "sequence": 1218680,
+      "delta_side": "ask",
+      "delta_price_usd_btc": 72856,
+      "delta_contracts": -421.0,
+      "mid_usd_btc": 72856.5,
+      "previous_mid_usd_btc": 72853.5,
+      "three_depths_usd": [
+        496243.4094,
+        3271174.0763,
+        1090.47
+      ]
+    },
+    "original_lineage_reaches_left_flank_at_close": false,
+    "original_lineage_reaches_right_flank_at_close": false,
+    "endpoint_ladder_and_sequence_verified": true
+  },
+  {
+    "side": "ask",
+    "second_start_utc": "2026-11-12T12:11:20+00:00",
+    "book_updates": 758,
+    "first_both_flanks_high_middle_low": {
+      "receipt_us": 103779,
+      "utc": "2026-11-12T12:11:20.103779+00:00",
+      "sequence": 1363137,
+      "delta_side": "ask",
+      "delta_price_usd_btc": 72840,
+      "delta_contracts": -10.0,
+      "mid_usd_btc": 72840.5,
+      "previous_mid_usd_btc": 72839.0,
+      "three_depths_usd": [
+        1950006.9096,
+        1340736.7628,
+        1920098.3817
+      ]
+    },
+    "number_of_entries_into_that_state": 14,
+    "fraction_of_second_with_separate_flanks": 0.27980599999999994,
+    "first_lineage_split": {
+      "receipt_us": 103779,
+      "utc": "2026-11-12T12:11:20.103779+00:00",
+      "sequence": 1363137,
+      "delta_side": "ask",
+      "delta_price_usd_btc": 72840,
+      "delta_contracts": -10.0,
+      "mid_usd_btc": 72840.5,
+      "previous_mid_usd_btc": 72839.0,
+      "three_depths_usd": [
+        1950006.9096,
+        1340736.7628,
+        1920098.3817
+      ]
+    },
+    "number_of_lineage_splits": 4,
+    "loss_of_all_original_descendants": {
+      "receipt_us": 286906,
+      "utc": "2026-11-12T12:11:20.286906+00:00",
+      "sequence": 1363170,
+      "delta_side": "ask",
+      "delta_price_usd_btc": 72840,
+      "delta_contracts": -421.0,
+      "mid_usd_btc": 72842.5,
+      "previous_mid_usd_btc": 72837.0,
+      "three_depths_usd": [
+        1270002.4515,
+        490737.2969,
+        1920098.3817
+      ]
+    },
+    "original_lineage_reaches_left_flank_at_close": false,
+    "original_lineage_reaches_right_flank_at_close": false,
+    "endpoint_ladder_and_sequence_verified": true
+  }
+]

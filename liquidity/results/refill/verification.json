@@ -1,0 +1,8 @@
+{
+  "matched_pairs_checked": 1791,
+  "independently_checked_bin_transitions": 1024,
+  "verified_native_hour_side_diagonal_windows": 576,
+  "full_message_split_windows": 869,
+  "example_split_times_checked_in_both_mesh_orientations": 2,
+  "unique_source_updates_in_split_seconds": 241429
+}

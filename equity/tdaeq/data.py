@@ -107,11 +107,14 @@ def load_intraday(panel, vintage=INTRADAY):
     so only compare them with other prices from the same day (e.g. panel.close_raw).
     Built from the raw files by market_data/download_equity_intraday.py and cached.
 
-    A stock-day is left missing (NaN) unless every bar is present: all 30-minute
-    bars from the open to 30 minutes before the close, and all three 10-minute
-    bars after that. About 0.2% of stock-days fail, mostly on six days when the
-    data provider's feed has holes in the last half hour. Filling those from an
-    earlier price would make a stale price look like a late-day move.
+    A stock-day is left missing (NaN) unless every bar up to 10 minutes before
+    the close is present: all 30-minute bars from the open to 30 minutes before
+    the close, and the two 10-minute bars after that. About 0.2% of stock-days
+    fail, mostly on six days when the data provider's feed has holes in the last
+    half hour. Filling those from an earlier price would make a stale price look
+    like a late-day move. `last_trade` also needs the final 10-minute bar; it can
+    be missing on a day the other prices are present. (Requiring that bar for
+    every price would use information from after 3:50 pm to choose the stocks.)
     """
     import gzip
     import json
@@ -119,7 +122,7 @@ def load_intraday(panel, vintage=INTRADAY):
 
     folder = dataset_folder(vintage)
     files = sorted((folder / "raw" / "last_half_hour").glob("*.json.gz"))
-    cache = folder / "compiled_v2.npz"                    # v2: incomplete stock-days are missing
+    cache = folder / "compiled_v3.npz"                    # v3: completeness checked only up to 10 minutes before the close
     if cache.exists():
         saved = np.load(cache)
         if int(saved["files"]) == len(files):
@@ -142,9 +145,9 @@ def load_intraday(panel, vintage=INTRADAY):
             before = early["bars"].get(symbol, [])
             if not before or (symbol not in column and symbol != "SPY"):
                 continue
-            regular = [bar for bar in bars if pd.Timestamp(bar["t"]) < close]
-            if len(before) != expected or len(regular) != 3:
-                continue                                   # incomplete: leave missing
+            starts = {round((pd.Timestamp(bar["t"]) - close).total_seconds() / 60) for bar in bars}
+            if len(before) != expected or not {-30, -20} <= starts:
+                continue                                   # incomplete up to 10 minutes before the close: leave missing
             value = sum(bar["v"] * bar["vw"] for bar in before)
             shares = sum(bar["v"] for bar in before)
             price = before[-1]["c"]
@@ -158,7 +161,8 @@ def load_intraday(panel, vintage=INTRADAY):
                     got.update(price_20=price, vwap_20=value / shares)
                 elif minutes == -20:
                     got.update(price_10=price, vwap_10=value / shares)
-            got["last_trade"] = price
+            if -10 in starts:
+                got["last_trade"] = price
             for name, number in got.items():
                 if symbol == "SPY":
                     out[f"spy_{name}"][row[day]] = number

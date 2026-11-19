@@ -1,0 +1,10 @@
+{
+  "decimal_replay_seconds": {
+    "2026-11-11T00/0-120": 120,
+    "2026-11-12T08/3045-3070": 25,
+    "2026-11-17T23/2880-3000": 120
+  },
+  "independent_band_age_endpoint_and_path_checks": 61,
+  "synthetic_graph_checks": "passed",
+  "inputs": "Unsmoothed native levels; integer price and contract quantities; UTC receipt clock"
+}

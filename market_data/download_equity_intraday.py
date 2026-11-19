@@ -40,7 +40,7 @@ DAILY = HERE / "datasets/equity_daily_expanded_2016_2026-11-09"
 OUT = HERE / "datasets/equity_intraday_2017_2026-11-09"
 NY = ZoneInfo("America/New_York")
 HOST, ENDPOINT = "https://data.alpaca.markets", "/v2/stocks/bars"
-KINDS = {"half_hours": "30Min", "last_half_hour": "10Min"}
+KINDS = {"half_hours": "30Min", "last_half_hour": "10Min", "five_minutes": "5Min"}
 SPACING = 0.33                      # seconds between request starts: about 180 a minute, under the 200 limit
 
 _lock, _next_slot = threading.Lock(), [0.0]
@@ -81,6 +81,8 @@ def window(day, kind):
     open_, close = stamp(day["open"]), stamp(day["close"])
     if kind == "half_hours":
         return open_, close - timedelta(minutes=30, seconds=1)
+    if kind == "five_minutes":                       # whole regular session
+        return open_, close - timedelta(seconds=1)
     return close - timedelta(minutes=30), close + timedelta(minutes=10) - timedelta(seconds=1)
 
 
@@ -112,6 +114,8 @@ def main():
     parser.add_argument("--start", default="2017-01-03")
     parser.add_argument("--end", default="2026-11-09")
     parser.add_argument("--probe", action="store_true", help="fetch one early and one recent day, then stop")
+    parser.add_argument("--kinds", default="half_hours,last_half_hour", help="comma-separated, from: " + ", ".join(KINDS))
+    parser.add_argument("--every", type=int, default=1, help="only every Nth trading day")
     parser.add_argument("--credentials-file", type=Path, default=HERE / ".alpaca-paper.local.json")
     args = parser.parse_args()
     local = json.loads(args.credentials_file.read_text()) if args.credentials_file.exists() else {}
@@ -125,11 +129,13 @@ def main():
     with (DAILY / "universe.csv").open() as stream:
         symbols = sorted({row["symbol"] for row in csv.DictReader(stream)} | {"SPY"})
     days = [d for d in json.loads((DAILY / "calendar.json").read_text()) if args.start <= d["date"] <= args.end]
+    days = days[::args.every]
     if args.probe:
         days = [days[0], days[-1]]
     # Every fifth day first, then the next fifth, and so on: a partial download is an even sample of the whole period.
     days = [day for offset in range(5) for day in days[offset::5]]
-    jobs = [(day, kind) for day in days for kind in KINDS]
+    kinds = args.kinds.split(",")
+    jobs = [(day, kind) for day in days for kind in kinds]
     print(f"{len(symbols)} symbols, {len(days)} days, {len(jobs)} files", flush=True)
 
     done, total_bars, started = 0, 0, time.time()
@@ -139,6 +145,8 @@ def main():
             total_bars += count
             if done % 200 == 0 or done == len(jobs):
                 print(f"{done}/{len(jobs)} files, {total_bars:,} new bars, {time.time() - started:.0f}s", flush=True)
+    if kinds != ["half_hours", "last_half_hour"]:
+        return                                       # the manifest describes the main download only
     (OUT / "manifest.json").write_text(json.dumps({
         "source": "Alpaca /v2/stocks/bars, feed sip, adjustment raw", "symbols": len(symbols),
         "first_day": min(d["date"] for d in days), "last_day": max(d["date"] for d in days), "days": len(days),

@@ -52,3 +52,8 @@ __pycache__/
 /equity/results/**/*.npz
 /equity/results/**/*.parquet
 /market_data/**/*.npz
+/equity/results/**/*.npy
+/market_data/datasets/equity_quotes_*/days/
+
+# Per-second order-book snapshots built from the CRC capture (large, regenerable).
+/liquidity/results/book_shape/snapshots/

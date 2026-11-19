@@ -1,0 +1,14 @@
+{
+  "calibration_prints": 211366,
+  "all_study_prints": 1486775,
+  "large_cutoff_contracts": 1851.0,
+  "evaluation_large_prints": 14684,
+  "evaluation_large_seconds": 7637,
+  "isolated_unidirectional_valid": 1935,
+  "matched": 1791,
+  "unique_controls": 1791,
+  "event_later_large": 0.480178671133445,
+  "calm_later_large": 0.3696259073143495,
+  "matched_max_delay_ms_median": 13.909912109375,
+  "matched_max_delay_ms_p99": 44.47499999999984
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "quantile": 0.75,
+    "translated_moving": {
+      "births": 0,
+      "deaths": 0,
+      "splits": 0,
+      "merges": 0
+    },
+    "translated_fixed": {
+      "births": 205,
+      "deaths": 205,
+      "splits": 0,
+      "merges": 0
+    },
+    "observed_moving": {
+      "births": 216,
+      "deaths": 218,
+      "splits": 5,
+      "merges": 5
+    }
+  },
+  {
+    "quantile": 0.9,
+    "translated_moving": {
+      "births": 0,
+      "deaths": 0,
+      "splits": 0,
+      "merges": 0
+    },
+    "translated_fixed": {
+      "births": 16,
+      "deaths": 16,
+      "splits": 0,
+      "merges": 0
+    },
+    "observed_moving": {
+      "births": 128,
+      "deaths": 127,
+      "splits": 0,
+      "merges": 0
+    }
+  },
+  {
+    "quantile": 0.975,
+    "translated_moving": {
+      "births": 0,
+      "deaths": 0,
+      "splits": 0,
+      "merges": 0
+    },
+    "translated_fixed": {
+      "births": 40,
+      "deaths": 40,
+      "splits": 0,
+      "merges": 0
+    },
+    "observed_moving": {
+      "births": 28,
+      "deaths": 28,
+      "splits": 0,
+      "merges": 0
+    }
+  }
+]

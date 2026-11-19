@@ -1,0 +1,19 @@
+target,model,windows_fit,windows_test,r2_out_of_sample,pct_mse_change,lo95,hi95
+next_rv,baseline,852.0,861.0,0.5967190845112615,,,
+next_rv,baseline + depth only,852.0,861.0,0.6309457846813793,,,
+next_rv,baseline + twins,852.0,861.0,0.6572666622314713,,,
+next_rv,baseline + TDA,852.0,861.0,0.6069008971476224,,,
+next_rv,baseline + twins + TDA,852.0,861.0,0.6587569305070835,,,
+next_rv,baseline + twins + TDA vs baseline + twins,,,,-0.434818592587148,-1.2777663993796755,0.4975106687608221
+next_rv,baseline + TDA vs baseline,,,,-2.524744475949578,-9.946557955765952,4.829457455101268
+next_rv,baseline + twins vs baseline,,,,-15.01374733957638,-23.307362098227177,-6.278427857310649
+next_rv,baseline + depth only vs baseline,,,,-8.487061711967737,-16.775258626085048,0.29693099000563894
+next_markout,baseline,828.0,861.0,-0.009567681111026127,,,
+next_markout,baseline + depth only,828.0,861.0,-0.01844516461337742,,,
+next_markout,baseline + twins,828.0,861.0,-0.09310018865357605,,,
+next_markout,baseline + TDA,828.0,861.0,-0.02508400757669116,,,
+next_markout,baseline + twins + TDA,828.0,861.0,-0.08872390439738198,,,
+next_markout,baseline + twins + TDA vs baseline + twins,,,,-0.40035527407458105,-2.1827017815083205,1.230686273591895
+next_markout,baseline + TDA vs baseline,,,,1.5369278113765708,0.4712228721484619,2.781384516116258
+next_markout,baseline + twins vs baseline,,,,8.274086929033093,3.7002197480734265,13.738490353681021
+next_markout,baseline + depth only vs baseline,,,,0.8793351519119422,-0.7267185122400509,2.3449257839383484

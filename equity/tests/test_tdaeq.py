@@ -90,6 +90,15 @@ def test_path_bars():
         assert np.isclose(np.abs(np.diff(path)).sum(), np.ptp(path) + total)
 
 
+def test_path_pairs_match_path_bars():
+    rng = np.random.default_rng(5)
+    for _ in range(200):
+        path = np.cumsum(rng.normal(size=75))
+        bars = sorted((b, d) for b, d, _ in topology.path_bars(path))
+        pairs = sorted((path[b], path[d]) for b, d in topology.path_pairs(path))
+        assert np.allclose(bars, pairs)
+
+
 if __name__ == "__main__":
     for name, check in list(globals().items()):
         if name.startswith("test_"):

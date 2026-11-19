@@ -1,0 +1,11 @@
+method,scored_year,chosen
+walk-forward,2019,"last 2 hours | divided by volatility | 1 / variance | (126, 3) | sector hedge"
+walk-forward,2020,"since the open | rank | 1 / variance | (126, 2) | left out"
+walk-forward,2021,"since the open | rank | 1 / variance | (126, 2) | left out"
+walk-forward,2022,"since the open | rank | 1 / variance | (126, 2) | left out"
+walk-forward,2023,"since the open | rank | 1 / variance | (126, 2) | left out"
+walk-forward,2024,"last 2 hours | divided by volatility | equal | (252, 5) | left out"
+walk-forward,2025,"last hour | raw move | 1 / volatility | (252, 2) | left out"
+walk-forward,2026,"last hour | clipped at 3 sd | 1 / volatility | (252, 2) | left out"
+interleaved,even years,"last hour | clipped at 3 sd | 1 / variance | (252, 2) | left out"
+interleaved,odd years,"last 2 hours | rank | equal | (252, 2) | sector hedge"

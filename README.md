@@ -1,47 +1,46 @@
 # Financial TDA research
 
-Three small studies of topological data analysis (TDA) on financial data. Each uses a different kind of object:
+Three studies of topological data analysis (TDA) on financial data, each built on a different kind of object. They will be presented together on December 4, 2026.
 
-| Study | Object | Where |
+| Study | Object | Start here |
 |---|---|---|
-| **Equity** (current focus) | Relationships among 200 stocks | [equity/](equity/README.md) |
-| BTC | Shapes traced by a price series over time | [btc/](btc/README.md) |
-| Liquidity | Order-book depth as a surface over price and time | [liquidity/](liquidity/README.md) |
+| **Equity** | 200 stocks as points, linked by correlation | [equity/README.md](equity/README.md), then [RESULTS.md](equity/RESULTS.md) |
+| **BTC price path** | The shape traced by BTC's recent returns | [btc/README.md](btc/README.md), then [RESULTS.md](btc/RESULTS.md) |
+| **Liquidity** | The Kalshi BTC perp order book: depth over price and time, bands, point clouds | [liquidity/README.md](liquidity/README.md) |
 
-## Where each study stands (November 17, 2026)
+## Main results (as of November 18, 2026)
 
-| Study | State | Main result | Next |
+| Study | What TDA found | Plain competitor | Trading result (before costs unless stated) |
 |---|---|---|---|
-| Equity | 10 studies, [results](equity/RESULTS.md) | TDA peer groups beat sectors (0.62 against 0.41) and tie a plain fine clustering. The strongest effect is not topological: the late part of a stock's day reverses by the next open, and it is visible before the close | Measure real spreads near the close, forward test |
-| BTC | 1 large study, [results](btc/RESULTS.md) | Shape features improve a volatility forecast by 1%; plain fat-tail measures improve it by 2% and make shape redundant | Stop return prediction; move to the order book |
-| Liquidity | Plumbing and one method finding | Loop counts in depth surfaces come from the smoothing and binning, not from the book. 25 hours of order-book data is too little to test anything | One week of order-book recording is in progress on a VM; then test book shape against spread, depth and imbalance |
+| Equity | Persistence (H0) finds about 45 tight peer groups; peers track a stock at 0.62, against 0.41 for sector peers | A plain clustering cut equally finely ties it | The late-day move reverses overnight. Hedged with TDA peers: Sharpe 2.2 before costs; after measured costs only the auction-to-auction version survives (net Sharpe 1.0) |
+| BTC price path | Shape of the last day's returns improves a volatility forecast by 1% | Plain fat-tail measures improve it by 2% and make shape redundant | Return direction not forecastable |
+| Liquidity | Depth sits in ridges that move with the price. The band graph (time-Reeb graph) and point clouds of book states show real structure | Plain bin counts explain 72–97% of the topological features, which add nothing to forecasts | Kalshi copies Binance about 100–200 ms late. Resting orders lose; no strategy slower than about 100 ms found an edge |
 
-The same pattern holds in every head-to-head test so far: TDA points at something real, and a plain measure of the same thing ties or beats it.
-
-## Setup
-
-Use the existing `tda` Conda environment: `conda activate tda`, or `conda run -n tda python ...`.
-
-## Layout
-
-```
-equity/        shared library, studies, results (start with equity/README.md)
-btc/           BTC features and data-collection notes
-liquidity/     depth-grid experiments
-market_data/   download scripts and datasets (bulk data is local, not in git)
-literature/    reviews that apply to more than one study
-jobs/, tests/  BTC collection job and its tests
-_archive/      old equity experiments, notebooks and docs (local only, not in git)
-```
-
-Tutorial notebooks, [TUTORIAL_GUIDE.md](TUTORIAL_GUIDE.md) and the ParaView/TTK launchers stay at the top level. [AGENTS.md](AGENTS.md) holds the rules for BTC data collection (no orders, no paid data).
+**The pattern across all three:** TDA points at something real, and a plain measure of the same thing ties or beats it. The equity peer groups are where TDA earns its place, as the hedge behind the one profitable strategy.
 
 ## Conventions
 
-- Performance is reported **before costs**, and says so.
-- Anything used to make a decision on day t must be known before that day's trade.
+- Performance is reported **before costs** and says so. Measured costs are shown separately where they were measured.
+- Anything used to decide at time t must be known before t: receipt times for the order book, signals known before the trade for equities.
 - Every TDA result is shown next to a plain method that uses the same inputs.
 
-## History
+## Setup and layout
 
-On 2026-11-16 the equity folder was rebuilt around one shared library. The earlier 23 experiments are summarised in [equity/FINDINGS_V1.md](equity/FINDINGS_V1.md). Their files are in `_archive/equity_v1/` on this machine, and the tracked ones are also in git under the tag `pre-cleanup-2026-11-16` (`git checkout pre-cleanup-2026-11-16 -- <path>` restores any of them).
+Use the `tda` Conda environment: `conda activate tda`, or `/Users/derickshi/anaconda3/envs/tda/bin/python` on this Mac.
+
+```
+equity/        shared library (tdaeq/), studies s01-s19, results
+btc/           price-path study b01, BTC data notes (DATA.md)
+liquidity/     order-book studies l01-l17, results
+market_data/   download/recording scripts and datasets (bulk data local only; see its README)
+literature/    reviews used by more than one study
+jobs/, tests/  the CRC recording job and its tests
+_archive/      superseded experiments and notes (local only, not in git)
+```
+
+Tutorial notebooks, [TUTORIAL_GUIDE.md](TUTORIAL_GUIDE.md) and the ParaView/TTK launchers stay at the top level; the Reeb-graph code uses that TTK install. [AGENTS.md](AGENTS.md) holds the standing rules for AI assistants working here.
+
+## History and archive
+
+- **November 16:** the equity folder was rebuilt around one shared library. The 23 earlier experiments are summarized in [equity/FINDINGS_V1.md](equity/FINDINGS_V1.md). Their files are in `_archive/equity_v1/`, and the tracked ones are in git under the tag `pre-cleanup-2026-11-16`.
+- **November 18:** the liquidity and BTC notes were rewritten. Superseded plans, logs, design notes and October pilots are in `_archive/liquidity_2026-11-18/`, `_archive/btc_2026-11-18/` and `_archive/root_docs/`. Files that were tracked can be restored from git commit `5f0579f` (`git checkout 5f0579f -- <path>`).

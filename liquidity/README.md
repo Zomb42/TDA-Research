@@ -1,27 +1,86 @@
-# Liquidity organization on price-by-time grids
+# Liquidity: the Kalshi BTC perp order book
 
-**November 5: first continuous BTC archive analysis and actual Reeb graphs.** [Report and figures](experiments/btc_archive_initial_2026_11_05/README.md). Six closed segments passed validation, including 1,703 full-book checkpoints and exact hour-boundary anchors. Native TTK time-Reeb graphs summarize high-depth band connectivity, but cycle counts vary with preprocessing; a translated fixed ask profile already creates cycles after smoothing. This is exploratory feature interpretation, not an established predictor. **The recorder subsequently stopped at the user's request at 11:15:26 p.m. Indianapolis**; [completed-run pointer](../btc/ACTIVE_CAPTURE.json). No restart is authorized.
+The third of the project's three studies. It asks how displayed liquidity in an order book is organized, whether topology (mainly Reeb graphs, plus point clouds) describes it better than plain measures, and whether anything in it can be traded. Everything is before fees.
 
-This is the third mini-study: cubical persistence and merge structures of displayed depth. [Project checkpoint](../START_HERE.md).
+## Read in this order
 
-**Working Kalshi direction:** following the user's October 29 proposal, use a snapshot plus fine-grained book changes and executed trades to reconstruct displayed liquidity, then analyze broader price/time scales. See [event-by-event book design](KALSHI_EVENT_BOOK_DESIGN.md) for the distinction between execution flow and resting depth, capture requirements, and the TDA connection.
+1. **[BOOK_SHAPE.md](BOOK_SHAPE.md):** what the book looks like. Depth ridges, how they move, refill after large trades, the band graph, Reeb splits. Descriptive.
+2. **[WHO_WINS.md](WHO_WINS.md):** who makes money trading against the book, and why. Kalshi follows Binance with a 100–200 ms delay, plus every trading test.
+3. **[BOOK_CLOUD.md](BOOK_CLOUD.md):** each second of the book as a point in a point cloud. Its shape, and whether that shape forecasts anything.
 
-**HFT follow-up:** [archive/collector review](HFT_KALSHI_REVIEW.md) found 176 replayable historical BTC binary-contract book files (13.5 million deltas). Their subcent price structure should be preserved. A separate authenticated BTC-perp stream probe passed replay validation, and a bounded one-hour data-only capture was started. [Live status](../market_data/samples/kalshi_btc_stream_2026-10-29_session01/status.json). No orders were submitted; the original trading executable was not run.
+## Main results
 
-**See the actual historical data:** [reconstructed book table and depth heatmap](experiments/historical_book_preview/README.md) show an April 23 binary-contract session, with exact native price/quantity rows and an explicitly sampled price-by-time field. This historical dataset is already usable for liquidity geometry; live perp collection is additional data.
+- **The book is a ladder that moves with the price.** Depth sits in narrow ridges at fixed distances from the midpoint (about 6–7, 20–21 and 24–25 bp). The whole ladder re-prices when Binance moves; Binance explains 75% of Kalshi's one-second price changes.
+- **Resting orders lose almost immediately.** A filled resting order is worth −0.42 bp per contract 0.1 s later, mostly because the trade followed a Binance move from the last 300 ms.
+- **No slow strategy found an edge.** We tried taking after Binance moves with a 100 ms delay, resting orders at any distance, pulling quotes after Binance moves, and a hedged Kalshi–Binance gap trade. All lose before fees, or break even only with an unrealistically instant reaction.
+- **Topology finds real structure but adds no forecasting power.** The band graph's events are mostly the midpoint moving. Its features, and the point cloud's persistence, are explained 72–97% by plain counts and add nothing once those are known. This matches the equity and BTC studies.
+- **A plain by-product:** average displayed depth plus how much the book's shape moved improves a 5-minute volatility forecast by 15%.
 
-**October 29, 2026:** the [real BTC liquidity pilot](experiments/btc_liquidity_features/README.md) now includes historical Binance band-depth baselines, Kalshi quote baselines, a bounded two-minute Kalshi perp depth recording, and H0 persistence on an attributed price-by-time grid. This establishes working data/feature plumbing, not forecasting value. See [BTC source assessment](../btc/DATA_SOURCES.md) and [research log](../btc/BTC_RESEARCH_LOG.md).
+## What changes the book, from biggest effect to smallest
 
-Earlier local work is a **synthetic educational demonstration**, not a validated predictor:
+1. **Binance moves.** Market makers re-post their whole ladder at the new price within about 100–200 ms. Binance explains 75% of Kalshi's one-second price changes.
+2. **Fast traders trade in that window.** 44% of volume follows Binance's last 300 ms move, hitting quotes that haven't been updated yet. They ride the move rather than cause it.
+3. **Large trades.** Nearby depth dips, but about 90% of the disappearing depth is cancelled and re-posted rather than traded. The price steps about 2 bp and does not bounce back, because Binance moved too.
+4. **Flicker at the best quotes.** Small adds and cancels, about 575 updates per second, move the midpoint by fractions of a tick. That reshuffles bins and produces most Reeb-graph splits.
+5. **A standing pattern.** Ridges at about 6–7 and 20–25 bp are there day after day, almost never traded against. They look like market makers quoting fixed sizes at fixed distances from a Binance-based price. That reading is inferred from timing and shape; the feed shows no order identities.
 
-- [Depth-topology source](experiments/depth_topology_demo.py)
-- [Figure](experiments/depth_topology_demo.png)
-- [Numerical results](experiments/depth_topology_demo.json)
+## Words used throughout
 
-The demo calculates closed-cell Betti counts at thresholds; it is not a general persistence-pairing or merge-tree implementation. The broader [technical note](../literature/merge_trees_and_return_pilots_2026-10-12.md) explains candidate constructions and limitations.
+| Term | Meaning |
+|---|---|
+| **bp** (basis point) | 0.01% of price. One tick ($1/BTC) is about 0.14 bp. The median spread is 0.46 bp. |
+| **Bid, ask, spread** | Best price someone will buy at, best price someone will sell at, and the gap between them. |
+| **Midpoint** | Plain (best bid + best ask) / 2, with no weighting by size, used everywhere. A size-weighted version, the *microprice*, was checked in BOOK_SHAPE §5 and changes nothing. |
+| **Depth** | Dollar value of resting orders displayed at a price, or summed over a range of prices. |
+| **Moving frame / fixed frame** | Measuring depth by distance from the current midpoint, or at fixed prices. |
+| **Ridge** | A distance from the midpoint where depth is consistently piled up. |
+| **High bin, band** | A 1-bp bin above the frozen depth cutoff (the November 11 90th percentile, about $1.51m); a band is a run of neighbouring high bins. |
+| **Band graph / time-Reeb graph** | Bands at each second joined across time, recording births, deaths, splits and merges. Astra's discrete version links bands that share a bin; the continuous TTK version interpolates between snapshots. |
+| **Maker / resting order, taker** | An order waiting in the book, and the order that trades against it. |
+| **Markout** | What a filled resting order is worth later: fill price against the later midpoint, positive when the resting order gained. |
+| **Plain twin** | A simple, non-topological measure built from the same inputs as a TDA feature. Every TDA result is shown against one. |
+| **Out-of-sample** | Fit on November 12–14, scored on November 15–17. |
+| **95% interval** | Resampling whole hours (moves cluster in time) and taking the middle 95% of results. |
+| **Receipt time** | When the recorder received a message. Every analysis uses it, so only information available at the time is used. |
 
-Historical Binance data now supplies coarse cumulative depth at ±1–5%; its two January outages are retained. It cannot reconstruct near-quote levels. Kalshi public perp candles and current depth were verified; a long historical Kalshi multilevel archive remains unestablished. The shared [Alpaca data notes](../market_data/README.md) separately establish live spot depth access. Kalshi event contracts, Kalshi perps, Binance USDT perps and Alpaca spot are different products. A final venue for a predictive liquidity study has not been selected.
+## Data
 
-The shared [TTK notebook](../topology_toolkit_intro.ipynb), [runtime guide](../TUTORIAL_GUIDE.md), `ttk_assets/`, and **ParaView TTK.app** remain at project root so their installed launchers and library paths continue to work. They are reusable learning/runtime assets. They have not been moved or rebuilt.
+- **Kalshi KXBTCPERP**, November 10, 23:50 to November 17, 23:50 UTC: full order-book updates and trades, recorded on Notre Dame's CRC cluster. It is 7.6 GB compressed, in `market_data/recordings/crc/2026-11-10T23-50-19Z-job-1724180/` (not in git). Every saved book checkpoint matches the replay; there is one 2.6 s reconnect gap. November 11 is used only for calibration.
+- **Binance BTCUSDT** futures and spot trades for the same days, from Binance's free public files, in `market_data/datasets/btc_binance_aggtrades_2026-11-11_17/`.
+- **This is the final dataset** (user decision, November 18). No further collection.
 
-Attach source-region price, recency, width, and duration to merge measurements. The new pilot retains these coordinates explicitly. Branch persistence measures depth contrast, not seconds. Future performance reporting is gross/pre-fee. BTC and its liquidity-data work are active independently of equity.
+More on data sources and validation: [btc/DATA.md](../btc/DATA.md).
+
+## Scripts (`studies/`, run in order with the `tda` Python)
+
+| Script | What it does | Used in |
+|---|---|---|
+| `l01_snapshots.py` (+ `replay_book.cpp`) | Rebuild the book at the end of every second; check against every saved book | all |
+| `l02_describe.py` | Depth profile; fixed vs moving frame | BOOK_SHAPE §1–2 |
+| `l03_band_age.py`, `check_book_shape.py` | Band graph, band paths, band-age forecasts, independent check | BOOK_SHAPE §3 |
+| `l04_trade_tape.py` | Individual trades, reconciled with the books | |
+| `l05_refill.py`, `l06_book_breaks.py`, `check_refill.py` | Large trades vs matched quiet seconds; ridges; band transitions | BOOK_SHAPE §4 |
+| `l07_native_reeb.py`, `l08_split_replay.py`, `l09_audit_splits.py` | Continuous TTK Reeb graphs; message-level replay of splits | BOOK_SHAPE §5 |
+| `l10_reference_tape.py` | Kalshi's published reference index | WHO_WINS §1 |
+| `l11_bbo_tape.py` (+ `replay_bbo.cpp`) | Best quotes every 100 ms and just before every trade | WHO_WINS |
+| `l12_binance_grid.py` | Binance prices every 100 ms | WHO_WINS |
+| `l13_who_wins.py` | Lead-lag, markouts, slow taker, resting orders, predictability | WHO_WINS §1–5 |
+| `l14_band_features.py` | Band graph vs plain twins for forecasting | WHO_WINS §6 |
+| `l15_quote_filter.py` | Pulling quotes after Binance moves | WHO_WINS §7 |
+| `l16_book_cloud.py` | Point clouds of book states | BOOK_CLOUD |
+| `l17_gap_trade.py` | Hedged Kalshi–Binance gap trade | WHO_WINS §8 |
+| `l18_followups.py` | Microprice check of splits; price path after large trades; trade distances; Kalshi–Binance price gap | BOOK_SHAPE §1, §4, §5; WHO_WINS §1 |
+
+Large intermediate files (hourly books, quote grids, trade tapes) are written to `results/book_shape/snapshots/` and are not in git. Small results and figures are in `results/book_shape/`, `results/refill/` and `results/who_wins/`.
+
+## Earlier work
+
+- **November 5 pilot:** a 25-hour capture and the first continuous Reeb graphs with TTK, in `experiments/btc_archive_initial_2026_11_05/`. It showed that cycle counts depend heavily on settings, which shaped the later design (summarized in BOOK_SHAPE §6). It stays in place because `l07_native_reeb.py` reuses its TTK code.
+- **October pilots** (synthetic demo, binary-contract preview, Binance coarse depth, capture assessment) and the superseded plans and design notes are in `_archive/liquidity_2026-11-18/` on this machine. Tracked files can also be restored from git commit `5f0579f`.
+
+## Open questions, if time allows
+
+Everything needed for the December 4 presentation is done. Optional extras:
+
+- Exit the gap trade with a resting order instead of crossing the spread. I expect a loss, since resting orders are what gets picked off.
+- Check whether the band-graph splits survive a half-bin shift of the grid, or a 2-bp grid.

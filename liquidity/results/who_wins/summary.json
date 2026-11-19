@@ -1,0 +1,10 @@
+{
+  "evaluation": "Nov 12 00:00 - Nov 17 23:50 UTC, first 10 s of each hour excluded",
+  "trades_scored": 1271259,
+  "one_second_r2_on_binance_futures": 0.7535713510669286,
+  "beta_same_second": 0.9934402837246437,
+  "beta_previous_second": -0.015824125882353254,
+  "split_seconds": 869,
+  "split_share_binance_move_ge_1bp": 0.08170310701956271,
+  "all_seconds_share_binance_move_ge_1bp": 0.1710421299776061
+}

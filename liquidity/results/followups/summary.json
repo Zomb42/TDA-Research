@@ -1,0 +1,21 @@
+{
+  "price_gap": {
+    "kalshi_minus_binance_fut_usd": {
+      "median": -33.5,
+      "p5": -54.89999999999418,
+      "p95": -9.5,
+      "share_within_100": 0.9903044899910162
+    },
+    "kalshi_minus_binance_spot_usd": {
+      "median": -64.16999999999825,
+      "p5": -85.52999999999884,
+      "p95": -38.64999999999418,
+      "share_within_100": 0.992014190080813
+    }
+  },
+  "large_trades_binance_same_direction_share": 0.7671691792294807,
+  "taker_orders": 915273,
+  "median_order_contracts": 195.0,
+  "p999_order_contracts": 23166.832000002265,
+  "orders_reaching_20bp": 4
+}

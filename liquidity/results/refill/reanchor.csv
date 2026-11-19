@@ -1,0 +1,25 @@
+side,sample,event,counterfactual,actual,same_parent_same_event
+bid,evaluation,death,current_book_old_mid,419986,133643
+bid,event index,death,current_book_old_mid,1421,854
+bid,calm index,death,current_book_old_mid,534,149
+bid,evaluation,split,current_book_old_mid,489,81
+bid,event index,split,current_book_old_mid,1,0
+bid,calm index,split,current_book_old_mid,1,0
+bid,evaluation,death,old_book_current_mid,419986,367355
+bid,event index,death,old_book_current_mid,1421,1230
+bid,calm index,death,old_book_current_mid,534,450
+bid,evaluation,split,old_book_current_mid,489,324
+bid,event index,split,old_book_current_mid,1,0
+bid,calm index,split,old_book_current_mid,1,1
+ask,evaluation,death,current_book_old_mid,424957,135629
+ask,event index,death,current_book_old_mid,1418,838
+ask,calm index,death,current_book_old_mid,633,173
+ask,evaluation,split,current_book_old_mid,380,58
+ask,event index,split,current_book_old_mid,2,1
+ask,calm index,split,current_book_old_mid,2,0
+ask,evaluation,death,old_book_current_mid,424957,372000
+ask,event index,death,old_book_current_mid,1418,1241
+ask,calm index,death,old_book_current_mid,633,553
+ask,evaluation,split,old_book_current_mid,380,262
+ask,event index,split,old_book_current_mid,2,1
+ask,calm index,split,old_book_current_mid,2,2

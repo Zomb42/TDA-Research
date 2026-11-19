@@ -34,7 +34,11 @@ def drop_singletons(labels):
     return np.where(sizes[labels] > 1, labels, NO_GROUP)
 
 
-def build_state(panel, window=252, refit=5, plain_groups=100):
+def build_state(panel, window=252, refit=5, plain_groups=100, min_cluster_size=2, min_samples=1):
+    """window must be at most MIN_HISTORY (272) so every eligible stock has a full window.
+    plain_groups=None skips the average-linkage groups (faster when they are not needed)."""
+    if window > MIN_HISTORY:
+        raise ValueError(f"window {window} is longer than the {MIN_HISTORY}-day eligibility history")
     days, stocks = panel.returns.shape
     blank = lambda: np.full((days, stocks), np.nan)
     state = DailyState(blank(), blank(), blank(), np.full((days, stocks), NOT_USED),
@@ -46,8 +50,9 @@ def build_state(panel, window=252, refit=5, plain_groups=100):
             cols = panel.eligible(start)
             geo = factors.geometry(panel.returns[start - window:start, cols],
                                    panel.market[start - window:start])
-            labels = clusters.hdbscan_labels(geo.distance, min_cluster_size=2, min_samples=1)
-            plain = drop_singletons(clusters.tree_labels(geo.distance, "average", plain_groups))
+            labels = clusters.hdbscan_labels(geo.distance, min_cluster_size=min_cluster_size, min_samples=min_samples)
+            plain = (drop_singletons(clusters.tree_labels(geo.distance, "average", plain_groups))
+                     if plain_groups else np.full(len(cols), NO_GROUP))
             nearest = np.sort(geo.distance + np.eye(len(cols)) * 9, axis=1)
             top5 = 1 - nearest[:, :5] ** 2 / 2          # distance back to correlation
             for t in range(start, min(start + refit, days)):

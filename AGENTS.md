@@ -1,40 +1,25 @@
-# TDA project instructions
+# Rules for AI assistants in this project
 
-Read `README.md` for project context (the old `START_HERE.md` is in `_archive/root_docs/`). User instructions in the conversation take precedence. The rules below are for the BTC and liquidity data collection; the equity study is described in `equity/README.md`.
+Read [README.md](README.md) first. The user's instructions in the conversation take precedence over this file. The full history behind these rules (October–November 2026) is in `_archive/root_docs/AGENTS_before_2026-11-18.md`.
 
-## Python environment — user, November 4, 2026
+## Environment
 
-Use the existing **`tda` Conda environment** for this project, including research, data recording, checks, and notebooks. Activate with `conda activate tda`, or use `conda run --no-capture-output -n tda python ...`. On this Mac the interpreter is `/Users/derickshi/anaconda3/envs/tda/bin/python`. Do not use the base environment or create a replacement environment by default.
+- Use the existing `tda` Conda environment (`/Users/derickshi/anaconda3/envs/tda/bin/python`). Do not use the base environment or create a new one. Installing extra packages into `tda` is allowed.
+- Commit only when the user asks. Nothing has been pushed.
 
-## New live collection — user, November 4, 2026
+## Data and trading
 
-**Latest instruction, November 5: stop and finalize.** The user explicitly requested stopping both feeds. Run `2026-11-05T03-36-49Z` stopped gracefully on November 5 at 11:15:26 p.m. Indianapolis (November 6, 04:15:26 UTC). Both feeds are stopped, the recorder PID no longer exists, the final manifest is saved, and no partial segment remains. `btc/ACTIVE_CAPTURE.json` is retained as a pointer to the completed run, not authorization to restart it. Preserve all archived data and the STOP marker. All 52 closed files passed hash, gzip and row-count validation; all 11,467 checkpoints and 25 carried hour-boundary books matched exact-decimal replay. The archive contains 21,694,928 book updates, 165,084 trade messages and 130,962 regular Coinbase samples, totaling 725.14 MiB compressed. Interruptions are retained. See `btc/experiments/btc_archive_final_2026_11_05/README.md`. A new capture requires a new user request. This supersedes the older continuous-collection instruction below.
-
-**Latest authorization: continuous collection is now requested.** The user accepted the perp-focused scope and explicitly says to start both the Kalshi BTC perp and lightweight Coinbase BTC-USD reference now, using existing keys, compression, and roughly hourly files. The earlier ten-minute duration applies only to the completed example. The active run is recorded in `btc/ACTIVE_CAPTURE.json`; inspect the referenced `status.json` for fresh live state. Use `record_btc_archive.py` in `tda`; it retains all delivered public perp L2/trade/ticker events, samples the Coinbase reference at 2 Hz with trade aggregates, and rotates gzip files at UTC hours without reconnecting. It runs until stopped, capped at 20 GiB of compressed data or a 10 GiB free-disk floor. No automatic login/boot service is installed. Do not start a duplicate recorder; inspect the active run first. Market-data-only/no-fee restrictions remain.
-
-**Storage preference, latest clarification:** keep the initial ten-minute sample **uncompressed and readable**, including `data_preview.json`. The user now prefers **lossless compression for future capture**; use `--gzip`, retain all book events, and keep raw files ignored by Git. Compression is a storage choice, not permission to sample/drop book updates or restart/extend collection.
-
-**Comparison request, latest November 4 clarification:** the user explicitly asks for measured price-level counts, storage rates, and liquidity comparisons against the existing HFT Coinbase BTC files and 15-minute event contracts. This bounded descriptive comparison is authorized. Keep products/units distinct, note April versus November dates, and do not infer Coinbase full depth from its ticker-only best quotes. The user is considering a perp-focused BTC/liquidity study with a lightweight broader-BTC reference; recommendations are not a chosen prediction target or authorization for another capture.
-
-The user now explicitly requests new BTC-perp collection for feature engineering and liquidity, using the old HFT C++ recorder as an implementation reference. **The initial run is ten minutes only.** Kalshi BTC perps remain the intended instrument. Retain the no-fee/no-order restrictions; capture public book updates/trades and preserve sequence/connection gaps. Distinguish aggregated L2 from individual-order L3 data. Do not install a permanent service or silently extend this run. Historical backfill remains a separate question.
-
-## BTC/liquidity scope correction — user, October 29, 2026
-
-- **Coinbase follow-up:** the user also requested Coinbase historical-depth documentation, their existing key context and data-volume assessment. This is exploration within the no-fee constraint, not a commitment to switch venues or start indefinite collection. See `btc/COINBASE_HISTORICAL_API.md` for the checked distinction between free live depth and unestablished free historical replay. Preserve the user's historical-data question.
-
-- **Latest budget/preference instruction:** the user does not want to pay any fee and is leaning toward collecting Kalshi data themselves. Treat paid data/API subscriptions, purchases, and paid cloud hosting as out of scope. Use public/free access and existing resources only; do not initiate trials requiring payment or buy a subscription. The Deribit/Tardis pilot was obtained from free samples and is not a reason to recommend paid access. Recommend improving data-only Kalshi BTC-perp recording for new history under this constraint, while preserving the distinction from historical backfill. A stated preference is not authorization to start an indefinite process or install a persistent service.
-
-- **Platform preference, latest October 29 clarification:** Kalshi is preferred, but the user explicitly accepts other venues if historical full-depth data is available. Investigate and validate practical alternatives rather than blocking on Kalshi. Prefer a simple data-access platform; a Tardis archive is third-party data access, not an exchange's own API. A third-party Kalshi archive must explicitly support the requested perps; prediction-event coverage is insufficient. Free public sample collection is within scope; paid subscriptions/purchases are not automatically authorized.
-
-- The user is asking whether **external historical data contains the snapshots, incremental order-book messages, and trades needed to reconstruct books for markets beyond their existing recordings**. Investigate archived data access, actual schemas, market/date coverage, completeness, granularity and cost.
-- Keep the BTC project focused on relevant BTC markets, including actual spot/perpetual instruments and Kalshi perps. **Do not substitute Kalshi BTC 15-minute binary event contracts for this work.** Only work on those event contracts again if the user explicitly requests them.
-- The user already knows their HFT folder contains complete previously collected order-book streams. Do not present finding, recounting, plotting or replaying those files as a discovery or as an answer to external historical-data availability. The folder was supplied for implementation techniques and access context.
-- Distinguish historical message-level L2/L3 data, periodic depth snapshots, trade-only tapes, candles and coarse depth bands. Candles/trades/band totals do not satisfy a request for archived book updates. L2 also does not automatically reveal every original order or exact queue position.
-- Treat live recording as a separate activity. It does not answer whether historical data can be obtained. Do not redirect a historical-data request into more live collection.
-- Verify external availability with provider/exchange documentation and, where possible, a real sample from a market/date not in the user's existing archive. Clearly separate documented, access-tested, downloaded and replay-validated claims. Do not infer global unavailability from one exchange's API or a failed URL.
-- **Do not submit, amend or cancel orders.** Do not launch the original HFT collector/strategy executable. Use isolated market-data-only tools. Read existing credentials in place only when needed for authorized data access; do not expose or copy secrets.
-- Record conclusions candidly. The prior focus on the user's old 15-minute files was an assistant scope mistake, not newly requested research progress.
+- **Never submit, amend or cancel orders**, on any venue or paper account. Do not launch the user's old HFT trading executable. Use read-only, market-data-only tools.
+- **No paid data, subscriptions, trials or paid hosting.** Free, public or already-entitled data only.
+- **Credentials:** read them in place only when needed for authorized data access. Never print, copy or commit them.
+- **No new data collection.** The user declared the November 10–17 Kalshi capture, plus the Binance files already downloaded, the final dataset (November 18, 2026). Do not start or restart any recorder without an explicit new request.
+- **Keep the scope on BTC perpetuals and spot.** Do not substitute the Kalshi BTC 15-minute binary event contracts unless the user explicitly asks.
+- Keep distinct: order-level (L3) against aggregated price-level (L2) data; live recording against historical backfill; documented access against tested, downloaded and replay-validated data.
 
 ## Research reporting
 
-Keep equity, BTC temporal features, and liquidity geometry distinct. Preserve gross/pre-fee reporting, causal preprocessing, source attribution, and the separation between descriptive findings and predictive claims. Do not alter equity work merely to update BTC context.
+- Report performance **before fees** and say so. Spread crossing is a trading cost and is included where a strategy crosses it.
+- Use only information available at the decision time: receipt times for order-book data.
+- Show every TDA result next to a plain competitor built from the same inputs.
+- Fix settings before seeing results; report every setting tried. Keep descriptive findings separate from predictive claims.
+- Keep documentation short and plain, for a senior undergraduate in CS and applied math: define terms, avoid unexplained acronyms, give the reason for each statistical choice. Archive superseded notes rather than deleting them.

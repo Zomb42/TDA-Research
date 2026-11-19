@@ -1,0 +1,4 @@
+quantile,cases,high_again,connected_to_original,high_every_second,connected_with_4s_gaps
+0.75,97821,49487,3368,168,36106
+0.9,40175,12673,19,8,4553
+0.975,10302,2085,1,1,68

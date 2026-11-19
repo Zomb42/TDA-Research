@@ -111,3 +111,33 @@ def path_bars(levels):
                     bars.append((x[floor[young]], x[i], floor[young]))
                 root[young] = old
     return bars
+
+
+def path_pairs(levels):
+    """Same sweep as path_bars, returning positions instead of levels:
+    (position of the valley floor, position of the peak where it was recovered).
+
+    For a series x, each bar is (x[birth], x[death]). Written this way a bar's
+    length x[death] - x[birth] can be differentiated with respect to x: the
+    positions are found from the current values, and the length is then a
+    plain difference of two entries. Used by study 14 to learn the filter.
+    """
+    x = [float(v) for v in levels]
+    n = len(x)
+    root, floor, pairs = [-1] * n, [0] * n, []
+    for i in sorted(range(n), key=x.__getitem__):
+        root[i], floor[i] = i, i
+        for j in (i - 1, i + 1):
+            if 0 <= j < n and root[j] >= 0:
+                a, b = i, j
+                while root[a] != a:
+                    a = root[a]
+                while root[b] != b:
+                    b = root[b]
+                if a == b:
+                    continue
+                young, old = (a, b) if x[floor[a]] >= x[floor[b]] else (b, a)
+                if x[i] > x[floor[young]]:
+                    pairs.append((floor[young], i))
+                root[young] = old
+    return pairs

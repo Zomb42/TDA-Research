@@ -1,0 +1,4 @@
+comparison,book_sharpe_difference,low,high
+"Learned curve + barcode minus Learned curve, no barcode",0.0018293622466010184,-1.4352760381205178,1.5743972586609258
+Learned curve + barcode minus Plain features only,-0.180581434471911,-1.7272310721408606,1.5995051240028357
+Learned curve + barcode minus Rule: bet against the signal vs peers,-0.5945830551971385,-1.9720414258537546,0.752584215746818

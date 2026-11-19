@@ -1,0 +1,10 @@
+{
+  "source": "Alpaca /v2/stocks/quotes, feed sip",
+  "window": "5 seconds ending 10 minutes before the close",
+  "every_nth_trading_day": 5,
+  "days": 496,
+  "first_day": "2017-01-03",
+  "last_day": "2026-11-06",
+  "symbols": 201,
+  "finished_at": "2026-11-17T21:50:13.691786-05:00"
+}

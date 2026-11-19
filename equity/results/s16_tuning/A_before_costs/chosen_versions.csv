@@ -1,0 +1,11 @@
+method,scored_year,chosen
+walk-forward,2019,"since the open | rank | 1 / variance | (126, 2) | left out"
+walk-forward,2020,"since the open | rank | 1 / variance | (126, 2) | left out"
+walk-forward,2021,"since the open | rank | 1 / variance | (126, 2) | left out"
+walk-forward,2022,"since the open | rank | 1 / variance | (126, 2) | left out"
+walk-forward,2023,"since the open | rank | 1 / variance | (126, 2) | left out"
+walk-forward,2024,"since the open | rank | 1 / variance | (126, 2) | left out"
+walk-forward,2025,"since the open | rank | 1 / volatility | (126, 2) | left out"
+walk-forward,2026,"since the open | rank | 1 / volatility | (126, 2) | left out"
+interleaved,even years,"since the open | divided by volatility | equal | (252, 3) | left out"
+interleaved,odd years,"since the open | rank | 1 / variance | (126, 2) | left out"

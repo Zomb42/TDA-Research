@@ -1,0 +1,13 @@
+{
+  "share_of_seconds": 0.14306021427077442,
+  "episodes": 32048,
+  "median_episode_s": 1.0,
+  "emptiest_band_counts": {
+    "bid 2-5 bp": 17053,
+    "ask 2-5 bp": 15307,
+    "bid 5-10 bp": 12313,
+    "ask 20-25 bp": 7194
+  },
+  "median_abs_move_next_60s_after_hole_bp": 5.360327020214754,
+  "median_abs_move_next_60s_all_bp": 4.0868100703228265
+}

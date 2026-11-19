@@ -1,0 +1,6 @@
+arm,region,origin,bin_events,median_return_or_censor_s
+calm,0–5 bp,no_prior_band,309,4.0
+calm,0–5 bp,unrecovered,21,61.0
+event,0–5 bp,no_prior_band,672,5.0
+event,0–5 bp,original_band,3,2.0
+event,0–5 bp,unrecovered,99,61.0
