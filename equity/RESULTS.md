@@ -1,6 +1,6 @@
 # Equity results, November 17, 2026
 
-Nineteen studies on 200 large US stocks, January 2016 – November 9, 2026. Settings were chosen on dates before 2024; "2024 on" is the check period. Returns are before trading costs except in study 12, which charges measured costs. Read the [caveats](#caveats-that-apply-to-everything) before quoting any number.
+Twenty studies on 200 large US stocks, January 2016 – November 9, 2026. Settings were chosen on dates before 2024; "2024 on" is the check period. Returns are before trading costs except in study 12, which charges measured costs. Read the [caveats](#caveats-that-apply-to-everything) before quoting any number.
 
 Words used below:
 
@@ -37,7 +37,7 @@ Words used below:
 - **Capacity.** At $100 million gross a typical position is about 1% of the stock's trading in the last 10 minutes.
 - **The decisive test** is a forward test with real auction orders.
 
-## The thirteen findings
+## The fourteen findings
 
 1. **Groups are real; ring totals are mostly noise.** With a 252-day window, 94% of the links between groups are closer than 99% of the links in scrambled data. Total ring lifetime is the opposite: real data has *less* of it than noise (4.2 versus 16.9), and it mostly just mirrors the average correlation between stocks (correlation −0.79). This is why the old ring-based features added nothing.
 2. **Reading the H0 tree by its long-lived branches fixes the "one giant group" problem.** It gives about 45 tight groups (MA/V, the refiners, the defence contractors, the insurance brokers) and leaves about 30% of stocks ungrouped. These peers track a stock at 0.62, against 0.41 for its sector peers. A plain method cut equally finely does just as well.
@@ -52,6 +52,7 @@ Words used below:
 11. **The paper's 1D-sweep barcode does not help, even inside the day where the effect lives,** and neither does learning the curve it is taken of (Remark 3.2 of the paper). Total bar length is exactly distance travelled minus range, the other summaries are 72–74% explained by plain path measures, and no learner, with or without the barcode, beats the one-line rule.
 12. **The strategy's settings cannot be usefully tuned.** Of 576 versions over 2017–2026, the current settings rank 18th (Sharpe 2.20; middle version 1.41). The versions that beat it by about 0.1 do so in only 5 of 10 years, and tuning that never sees the years it is scored on does not beat the current settings.
 13. **It is the choice of members that matters, not just small groups.** With the same stocks and group sizes but members shuffled within sectors, 300 random versions reach a median Sharpe of 1.63 and never 2.21. Rebuilding the groups more often helps a little, with most of the gain reached by every 5 days; a shorter window does not help (study 19).
+14. **HDBSCAN's density step hurts; plain H0 single linkage is the right reading.** With the smallest group kept at 2, raising `min_samples` merges tight groups into looser ones: Sharpe 2.21 at k = 1 (k = 2 is mathematically identical), 2.06 at k = 3 and 1.59 at k = 5 (−0.62, interval excludes zero). Rebuilding daily rather than every 5 days is +0.07 overall but not better from 2024 on (study 20).
 
 Short version: TDA pointed at the right structure (small tight groups, and stocks with no peers), and that structure is useful. In every head-to-head test a plain method that uses the same idea matched it. The largest effect found is not a shape: it is what happens to a stock in the last part of the trading day. TDA's contribution to it is the peer groups the bet is hedged against.
 
@@ -560,6 +561,29 @@ No shuffle of either kind reached 2.21. Before 2024 and from 2024 on the picture
 - **Shorter windows give noisier groups.** Their books correlate only 0.56–0.66 with the current one, so they are partly different bets, and none beats it with an interval that excludes zero.
 - **Slightly better settings exist, but the current one is where to leave it.** Several versions beat it on paper: here 252 days rebuilt daily (2.27) and 126 days rebuilt daily (2.32); in study 16, clipping or ranking the signal (+0.11 each) and the hindsight best of 576 (2.45). Each gain is small, its interval includes zero, and which setting wins does not carry over between periods: across these 16 settings the before-2024 and 2024-on Sharpes have a rank correlation of −0.13, and the best before 2024 (126 days, rebuilt daily: 2.57) fell to 1.77 after. The current setting is 2.21 and 2.20 in the two periods. Daily rebuilding is the one change with a reason besides its score (it uses the newest data and does not add trading, since the book goes fully in and out every day), so it is a reasonable choice for a live version. It was not switched here because every earlier study uses every 5 days.
 - A window longer than 252 days was not possible without changing the rule that a stock needs 272 days of history to be traded.
+
+## 20. HDBSCAN's density step, with the smallest group kept at 2 (`s20_density_k`)
+
+**Question.** The groups use `min_samples` (k) = 1. In scikit-learn k counts the stock itself, so the density step is switched off and the groups are plain single linkage (the H0 tree) with HDBSCAN's stability selection. From k = 3, each distance is first raised to at least both stocks' distance to their (k−1)-th nearest other stock. That stops stocks in sparse areas from chaining groups together. Study 16 only changed k together with the smallest group size, so the two effects were mixed. Here the smallest group stays at 2 and only k changes, with groups rebuilt every 5 days and every day. The strategy is study 19's (signal 3:40, trade 3:50, sell at the next open, before costs). The design was fixed before results were seen.
+
+| k | Rebuilt every | Sharpe 2017–2026 | Before 2024 | 2024 on | Median groups | Stocks grouped | Against k = 1, same rebuild |
+|---|---|---:|---:|---:|---:|---:|---:|
+| **1 (current)** | 5 days | **2.21** | 2.21 | 2.20 | 43 | 70% | |
+| 2 | 5 days | 2.21 | 2.21 | 2.20 | 43 | 70% | identical |
+| 3 | 5 days | 2.06 | 2.21 | 1.72 | 19 | 55% | −0.14 (−0.73 to 0.37) |
+| 5 | 5 days | 1.59 | 1.63 | 1.49 | 8 | 47% | **−0.62 (−1.29 to −0.03)** |
+| 1 | 1 day | 2.27 | 2.33 | 2.14 | 43 | 70% | +0.07 against current (−0.14 to 0.24) |
+| 3 | 1 day | 1.98 | 2.13 | 1.59 | 19 | 55% | −0.30 (−0.87 to 0.18) |
+| 5 | 1 day | 1.56 | 1.70 | 1.18 | 8 | 47% | **−0.72 (−1.31 to −0.08)** |
+
+**What it means.**
+
+- **k = 2 is the same as k = 1, by mathematics, not by chance.** With k = 2 a stock's core distance is its distance to its nearest other stock, which can never exceed its distance to any particular stock, so the raised distance is always the original one. The density step only acts from k = 3.
+- **The density step makes the book worse, and more so as k grows.** It merges small tight groups into fewer, looser ones (43 → 19 → 8 groups) and leaves more stocks without a peer (70% → 55% → 47% grouped). At k = 5 the loss is clear at both rebuild speeds. At k = 3 it is smaller, comes from 2024 on, and its interval includes zero. This explains study 16's drop for "smallest group 5" (1.71): most of it is k, since k = 5 alone gives 1.59 here.
+- **The current choice, k = 1 (plain H0 single linkage), is right.** It is also the most purely topological reading of the tree.
+- **Daily against 5-day rebuilds:** daily is ahead over 2017–2026 (+0.07) and before 2024 (2.33 against 2.21), but behind from 2024 on (2.14 against 2.20), and the interval includes zero. Either is fine. Daily uses the newest data and adds no trading, so it is the natural choice for a forward test. Every earlier study uses 5 days, so 5 days stays the reference here.
+
+Results: [density_k.csv](results/s20_density_k/density_k.csv).
 
 ## How this relates to published work
 

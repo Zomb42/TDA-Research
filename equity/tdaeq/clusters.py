@@ -20,12 +20,17 @@ def tree_labels(distance, method, k):
 
 
 def hdbscan_labels(distance, min_cluster_size=3, min_samples=None, selection="eom"):
-    """Single linkage made robust to 'bridge' stocks.
+    """Single linkage (the H0 tree), with groups chosen by how long they survive.
 
-    A stock only counts as close to another if both sit in a dense
-    neighbourhood, so one stray link cannot chain two groups together. Groups
-    are then kept by how long they survive as the distance threshold grows
-    (their persistence), not by asking for a fixed number of groups.
+    Groups are kept by their persistence as the distance threshold grows, not by
+    asking for a fixed number of groups. Stocks in no chosen group get -1.
+
+    min_samples (k) counts the stock itself. With k = 1 or 2 the distances are
+    left unchanged, so this is exactly single linkage plus stability selection
+    (the strategy uses k = 1). From k = 3 each distance is first raised to at
+    least both stocks' distance to their (k-1)-th nearest other stock, so sparse
+    stocks cannot chain groups together. Study 20 found that this makes the
+    late-day book worse.
     """
     model = HDBSCAN(metric="precomputed", min_cluster_size=min_cluster_size,
                     min_samples=min_samples, cluster_selection_method=selection,
